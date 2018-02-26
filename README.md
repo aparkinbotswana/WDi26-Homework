@@ -14,14 +14,14 @@ You only need to do this once, not every time you're submitting homework!
     + Hit the **Fork** button in the top right-hand corner of this page.
 - **Clone your forked repository to your computer**
     + *'Cloning' takes your 'forked' repository on GitHub and creates a local copy - or 'clone' - on your computer.*
-    + Make sure you're browser is open to **your** forked version of this repository on Github (eg [http://github.com/{{YOUR_USERNAME}}/wdi26-homework](http://github.com/{{YOUR_USERNAME}}/wdi26-homework)).
+    + Make sure you're browser is open to **your** forked version of this repository on Github (eg [http://github.com/{{YOUR_USERNAME}}/WDi26-Homework](http://github.com/{{YOUR_USERNAME}}/WDi26-Homework)).
     + Hit the **Clone or Download** button in the top right-hand corner of the page and copy the URL to your clipboard.
     + Open your computer's terminal to the directory in which you intend to store your homework.
     + `git clone url_of_your_fork_on_github` (where `url_of_your_fork_on_github` is the URL you copied after hitting 'Clone or Download', above).
 - **Add an upstream remote repository**
     +  *Adding an upstream repository links the local repository on your computer to the original repository on Github (i.e. mine, the one from which you created the fork)*
-    + `cd wdi26-homework`
-    + `git remote add upstream https://github.com/aparkinbotswana/wdi26-homework.git`
+    + `cd WDi26-Homework`
+    + `git remote add upstream https://github.com/aparkinbotswana/WDi26-Homework.git`
     + `git pull upstream master`
 
 ### Do your Homework
@@ -47,7 +47,7 @@ You need to do this every time you're submitting homework.
     + `git pull upstream master` - merge changes that have been made to this repository into your own local repository.
     + `git push origin master`
 - **Once you're finished, submit a pull request for me to accept your homework**
-    + Navigate to your forked version of this repository on Github (eg [https://github.com/{{YOUR_USERNAME_HERE}}/wdi26-homework](https://github.com/{{YOUR_USERNAME_HERE}}/wdi26-homework)).
+    + Navigate to your forked version of this repository on Github (eg [https://github.com/{{YOUR_USERNAME_HERE}}/WDi26-Homework](https://github.com/{{YOUR_USERNAME_HERE}}/WDi26-Homework)).
     + Hit the **Pull request** button.
     + Make sure the destination for the pull request is set to my repository, not your own or anyone else's.
     - **IMPORTANT:** In the pull request comment, tell me the following:
