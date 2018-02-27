@@ -14,4 +14,10 @@ console.log(farTemp + " Farenheit is " + farConvert + " in Celsius");
 console.log(celsiTemp + " Celsius is " + celsiConvert + " in Farenheit");
 */
 
-const 
+const verbing = function(anyString) {
+  if (anyString <= 2) {
+    return(anyString)
+  } else if (true) {
+
+  }
+};

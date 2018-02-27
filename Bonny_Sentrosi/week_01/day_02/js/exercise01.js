@@ -20,7 +20,7 @@ const areaOfCircle = function(radius) {
   const area = (Math.PI * radius * radius).toFixed(2);
   return(`The area for a circle with a radius of ${ radius } is ${ area }. OMG I SO EXCITE!`)
 };
-
+/*
 const meltMyBrain = function(ouch){
   const result1 = num1 * num1;
   const result2 = num2 / 2;
@@ -28,3 +28,4 @@ const meltMyBrain = function(ouch){
   const area = (Math.PI * radius * radius).toFixed(2);
   let summedUp = (ouch / 2) (summedUp )
 };
+*/

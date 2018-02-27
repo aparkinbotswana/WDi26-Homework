@@ -6,6 +6,9 @@ let circumference = radius * 2 * pi;
 
 console.log("The circumference is " + circumference + " and the area is " + area);
 */
+NOTHING WORKS
+NOTHING!!
+I WILL INVENT A TIME TRAVELLING MACHINE TO STOP REGULAR EXPRESSIONS FROM EVER BEING A NOTHING
 
 const fixStart = function(anyString) {
   let firstLetter = anyString.charAt(0);

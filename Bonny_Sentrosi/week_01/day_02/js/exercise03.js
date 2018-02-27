@@ -11,7 +11,7 @@ let totalSnax = daysLeft * dailySnax;
 
 console.log("I will need " + totalSnax + " snacks to last me until the ripe old age of " + maxAge);
 */
-
+console.log("Fun fact: I have a Russian Blue cat called Zephyr");
 const mixUp = function(string1, string2) {
   return `${string2[0]}${string2[1]}${string1.slice(2)} ${string1[0]}${string1[1]}${string2.slice(2)}`
 };
