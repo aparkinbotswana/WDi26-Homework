@@ -21,8 +21,12 @@ drEvil(1000000);
 // Look up the JavaScript string reference to find methods which may be useful!
 
 const mixUp = function (string1,string2) {
+  const word1 = string1;
+  const word2 = string2;
 
 }
+
+miUp('mix','pod')
 
 
 // Create a function called fixStart. It should take a single argument, a string, and return a version where all occurences of its first character have been replaced with '*', except for the first character itself. You can assume that the string is at least one character long. For example:
