@@ -33,6 +33,8 @@ let fixStart = function (str) {
 
 fixStart('babble');
 
+
+
 // Create a function called verbing. It should take a single argument, a string. If its length is at least 3, it should add 'ing' to its end, unless it already ends in 'ing', in which case it should add 'ly' instead. If the string length is less than 3, it should leave it unchanged. For example:
 
 let verbing = function (words) {
@@ -57,11 +59,13 @@ let notBad = function (sentence) {
   let n = sentence.indexOf("not"); // Find the first instance of "not" (i.e. give me the index)
   let b = sentence.indexOf("bad"); // Find the first instance of "bad" (i.e. give me the index)
   if (b > n && sentence.indexOf("not") !== -1) { // If the first instance of "bad" is after the first instance of "not" and the word "not" appears...
-    var sub = sentence.substring(n,b[2]); // Make a substring that extracts everything between n and the last letter of bad ?? This is definitely wrong since it doesn't appear to matter what index I use
-    var subbed = sentence.replace(sub,"good!"); // Something weird happening here too - had to force the exclamation mark to appear - probably related to error in the line above
+var sub = sentence.replace(/not.*bad/, 'good'); // Make a substring that replaces everything between 'not' and 'bad' (including 'not' and 'bad') with 'good'.
+console.log(sub); // Print your new substring
 } else {
   console.log(sentence);
 };
 };
 
 notBad('This movie is not so bad!');
+notBad('This dinner is not that bad!');
+notBad('This dinner is bad!');
