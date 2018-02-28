@@ -89,7 +89,7 @@ const theLetter = ["-","-","-"]
 let guessLetter = function(letter){
   for (var i = 0; i < theWord.length; i++ ) {
       if( letter === theWord[i]){
-        theLetter[i] = letter;
+        theWord[i] = letter;
         letterFound = true;
     }
 console.log(`the current letter ${ i }`);
