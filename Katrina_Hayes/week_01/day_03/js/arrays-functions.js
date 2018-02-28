@@ -4,7 +4,7 @@
 // Write a function that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise.
 // Define a function sumArray and a function multiplyArray that sums and multiplies (respectively) all the numbers in an array of numbers. For example, sumArray([1,2,3,4]) should return 10, and multiplyArray([1,2,3,4]) should return 24.
 
-console.log("EXERCISE 1");
+console.log("EXERCISE 1"); //just to make the breakdown of exercises clearer when testing in the console
 const maxOfTwoNumbers = function(num1, num2) {
   if (num1 > num2) {
     return num1;
@@ -17,7 +17,7 @@ console.log(maxOfTwoNumbers(4,5));
 console.log(maxOfTwoNumbers(7,3));
 console.log(maxOfTwoNumbers(1,1));
 
-console.log("EXERCISE 2");
+console.log("EXERCISE 2"); //just to make the breakdown of exercises clearer when testing in the console
 const maxOfThree = function(num1, num2, num3) {
   if ((num1 > num3) && (num1 > num3)) {
     return num1;
@@ -33,7 +33,7 @@ console.log(maxOfThree(1,7,5));
 console.log(maxOfThree(1,1,4));
 console.log(maxOfThree(1,1,1));
 
-console.log("EXERCISE 3");
+console.log("EXERCISE 3"); //just to make the breakdown of exercises clearer when testing in the console
 const vowelList = ["a","e","i","o","u"];
 const vowelCheck = function(character) {
   for (let i = 0; i < vowelList.length; i++) {
@@ -48,7 +48,7 @@ const vowelCheck = function(character) {
 console.log(vowelCheck("s"));
 console.log(vowelCheck("a"));
 
-console.log("EXERCISE 3 - REGEX");
+console.log("EXERCISE 3 - REGEX"); //just to make the breakdown of exercises clearer when testing in the console
 const vowelChecker = function(character) {
     if (/[aeeiou]/gi.test(character)) {
       return true;
@@ -60,7 +60,7 @@ const vowelChecker = function(character) {
 console.log(vowelChecker("s"));
 console.log(vowelChecker("a"));
 
-console.log("EXERCISE 4");
+console.log("EXERCISE 4"); //just to make the breakdown of exercises clearer when testing in the console
 const numbers = [1,2,3,4,5];
 const sumArray = function() {
   let sum = 0;
