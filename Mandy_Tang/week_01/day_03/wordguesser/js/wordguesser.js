@@ -13,17 +13,20 @@ let guessLetter = function (letter) { // Letter is the argument we're passing in
   if (letter === word[i]) {  // When the letter you guess appears in the word...
     guessedLetters.splice(i, elementsToRemove, letter); // Replace the _ in the guessedLetters array with the correctly guessed letter
     lettersFound = true;
-    console.log(`Good guess! Here's your word so far: ${guessedLetters}`); // Display the letters found so far
   }
-
   if (guessedLetters[i] === '_') { //if there are still blank spaces in the guessWord array
     lettersLeft = true;
   }
-  if (!lettersLeft) { // if there are no more letters left
+
+  if (lettersFound === true) {
+    console.log(`Good guess! Here's your word so far: ${guessedLetters}`); // Display the letters found so far
+}
+  if (lettersLeft === false) { // if there are no more letters left
    console.log('You win!');
  }
 }
 }
+
 
 // function arraysEqual(word, guessedLetters) {
 //   if (word === guessedLetters) return true;
