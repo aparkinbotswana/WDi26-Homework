@@ -28,15 +28,15 @@
 
 
 const theWord = ['F', 'O', 'X'];
-let guessWord = ['-','-','-'];
+let guessWord = ['_','_','_'];
 
-const guessLetter = function(letter) {
+let guessLetter = function(letter) {
   //console.log("is this thing on");
 
   for (var i = 0; i < theWord.length; i++) {
     if (letter === theWord[i]) {
       guessWord.push[letter];
-      console.log('Congratulations');
+      console.log('Congratulations you found a letter');
     }
     if (theWord === guessWord) {
      console.log('You win!!');
