@@ -6,11 +6,8 @@
 //character long. For example:
 
 var fixStart = function(word){
-  var firstLetter = word.slice(0,1);
-  var wordWithoutFirstLetter = word.slice(1);
-  var test = wordWithoutFirstLetter.split("firstLetter");
-  console.log(test);
+
 }
-fixStart('Lollypop')
+fixStart('lollypop')
 
 //Work in Progress
