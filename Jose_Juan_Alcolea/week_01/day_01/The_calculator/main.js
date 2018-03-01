@@ -23,6 +23,7 @@ const squareNumber = function (number) {
   console.log(`The result of squaring the number ${ number } is ${ calSquareNumber }.`);
   return calSquareNumber;
 };
+squareNumber
 
 const halfNumber = function (number) {
   const calHalfNumber = number / 2;
