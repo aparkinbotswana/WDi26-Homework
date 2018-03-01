@@ -29,12 +29,9 @@ Create a function called mixUp. It should take in two strings, and return the co
   mixUp('dog', 'dinner'): 'dig donner'*/
 
 const mixUp = function(string1, string2) {
-  const stringStart1 = string1.slice(0,2); //Extracts first 2 characters of string1
-  const stringStart2 = string2.slice(0,2);//Extracts first 2 characters of string2 (can use split function instead?)
-  const stringEnd1 = //How to get the remainder of the string?
-  const stringEnd2 =
-  const swapStrings = stringStart1 + stringEnd2 + stringStart2 + stringEnd1
-  console.log(swapStrings);
+  const newString1 = string1.replace(string1[0], string2[0]).replace(string1[1], string2[1]); //Extracts first 2 characters of string1
+  const newString2 = string2.replace(string2[0], string1[0]).replace(string2[1], string1[1]);
+  console.log(newString1, newString2);
 
 };
 mixUp('because', 'toothpaste');
@@ -44,8 +41,25 @@ mixUp('because', 'toothpaste');
 Create a function called fixStart. It should take a single argument, a string, and return a version where all occurences of its first character have been replaced with '*', except for the first character itself. You can assume that the string is at least one character long. For example:
 
 fixStart('babble'): 'ba**le'*/
-const fixStart = function(string1) {  //String.prototype.match() & string.prototype.replace()
+// let fixStart = function (string1) {
+//   const firstChar = string1[0]; //Picking out first letter in array by index no.
+//   const noFirst = string1.substring(1); // string.substring(start, end)
+//   const replacedFirst = noFirst.split(firstChar).join("*") // mystring.split("whatImSplitting").join("whatImReplacingItWith ");
 
+// }
+
+let fixStart = function (string1) {
+  let replacedString;
+  const firstChar = string1[0];
+  const withoutFirst = string1.substring(1);
+  const replacedWith = withoutFirst.replace('*');
+  if(string1.includes(string1[0])) {
+    replacedString = `${firstChar}${replacedWith}`
+    return replacedString;
+  }
+};
+
+console.log(fixStart('babble'));
 
 /*Verbing
 Create a function called verbing. It should take a single argument, a string. If its length is at least 3, it should add 'ing' to its end, unless it already ends in 'ing', in which case it should add 'ly' instead. If the string length is less than 3, it should leave it unchanged. For example:
@@ -54,22 +68,22 @@ Create a function called verbing. It should take a single argument, a string. If
   verbing('swimming'): 'swimmingly'
   verbing('go'): 'go'*/
 
-  const verbing = function(string1) {
-    let ending;
-    let ing = 'ing';
-    if(string1.length >= 3) {
-      let ending = `${string1}ing`;
-    } else if(string1.endsWith(ing)) { //either indexOf or .endsWith
-      let ending = `${string1}ly`;
-    } else if(string1.length < 3) {
-      let ending = string1;
-    }
-    console.log(ending);
-  };
-
-  verbing('swim');
-  verbing('swimming');
-  verbing('go');
+  // const verbing = function(string1) {
+  //   let ending;
+  //   let ing = 'ing';
+  //   if(string1.length >= 3) {
+  //     let ending = `${string1}ing`;
+  //   } else if(string1.endsWith(ing)) { //either indexOf or .endsWith
+  //     let ending = `${string1}ly`;
+  //   } else if(string1.length < 3) {
+  //     let ending = string1;
+  //   }
+  //   console.log(ending);
+  // };
+  //
+  // verbing('swim');
+  // verbing('swimming');
+  // verbing('go');
 
 
 // Not Bad
