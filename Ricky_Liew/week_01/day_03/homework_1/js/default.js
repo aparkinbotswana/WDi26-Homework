@@ -6,14 +6,15 @@ Array and Functions Bonus Material
 
 Define a function sumArray and a function multiplyArray that sums and multiplies
 (respectively) all the numbers in an array of numbers. For example,
-sumArray([1,2,3,4]) should return 10, and multiplyArray([1,2,3,4]) should return 24.
+sumArray([1,2,3,4]) should return 10, and multiplyArray([1,2,3,4]) should return
+24.
 
 */
 
+// Initialisation
 let no1;
 let no2;
 let no3;
-
 
 /*
 01 maxOfTwoNumbers
@@ -168,7 +169,7 @@ let complete=false;                      //has user guessed the word?
 
 // Checks array, fills in correct elements
 const checkLetter = function(char){
-  char=char.toLowerCase();                        
+  char=char.toLowerCase();
   //console.log(char);
   for(i=0; i<=word.length-1; i++){
     if((char === word[i])  && (guessWord[i]==='_')){
@@ -184,28 +185,22 @@ const checkLetter = function(char){
   console.log(`${charsLeft} slots to guess`);
   //console.log(charsLeft);
 
-  let s = '';
-  for(i=0; i<guessWord.length; i++){
+  let s = '';                               // yes,  I know this can be turned
+  for(i=0; i<guessWord.length; i++){        //  into a function
     s += guessWord[i];
     s += ' ';
   }
   console.log(s);
-
-
 }
 
 
 while(charsLeft>0){
-  var input = prompt("Give me a letter:");
-  if(input==='*'){
-    break;
+  var input = prompt("Give me a letter:"); // <-- not really necessary - more of
+  if(input==='*'){                         //     a sanity check.  And good for
+    break;                                 //     future reference.
   }
   checkLetter(input);
-
-
 }
-
-
 
 
 /*
