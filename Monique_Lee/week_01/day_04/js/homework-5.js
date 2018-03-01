@@ -12,11 +12,20 @@ const cartForParty = {
   proteinShake: "22.36"
 };
 
-const cashRegister = function(obj){
+const dollars = function(obj){
     Object.keys(obj).forEach(function(key){
       obj[key] = +obj[key]
     });
     return obj;
+};
+
+const cashRegister = function(obj){
+    total = 0
+    prices = dollars();
+    for (let i; i < prices.length, i++){
+      total = total + prices[i];
+      return total;
+    }
 }
 
 // // Output
