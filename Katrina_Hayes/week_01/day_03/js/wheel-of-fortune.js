@@ -33,7 +33,7 @@ const guessLetter = function(guess) {
   if (theWord.toString() === guessedLetters.toString()) {
     console.log("Congratulations, you've won the game.");
   }
-  console.log(`You now have ${rewardAmount} clams in your bucket.`);
+  console.log(`You now have ${rewardAmount} bucks.`);
 }
 
 guessLetter('E');

@@ -14,7 +14,7 @@ const guessedLetters = ['_', '_', '_'];
 const guessLetter = function(guess) {
   for (let i = 0; i < theWord.length; i++) {
     if (guess === theWord[i]){
-      guessedLetters[i] = theWord[i]; //push into guessedLetters array into that same position
+      guessedLetters[i] = theWord[i]; //push into guessedLetters array into that same position. could also have this be guess rather than theWord[i]
       console.log("Congratulations, you found a new letter.");
     }
   }
