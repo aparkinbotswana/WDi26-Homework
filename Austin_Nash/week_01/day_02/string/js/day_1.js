@@ -1,17 +1,21 @@
+// DrEvil
 // Create a function called DrEvil. It should take a single argument, an amount, and return ' dollars', except it will add '(pinky)' at the end if the amount is 1 million. For example:
 //
 //   DrEvil(10): 10 dollars
 //   DrEvil(1000000): 1000000 dollars (pinky)
-const DrEvil=function(amount){
-  if (amount==1000000)
-  {
-    console.log(`${amount} dollars (pinky)`);
+
+const DrEvil = function(dollars){
+
+if (dollars === 1000000) {
+  console.log(dollars + " dollars (pinky)");
+
+} else {
+    console.log(dollars + " dollars");
   }
-  else
-  {
-    console.log(`${amount} dollars`);
-  }
-}
+
+};
+
+};
 DrEvil(1000000);
 
 // MixUp
@@ -20,9 +24,3 @@ DrEvil(1000000);
 //   mixUp('mix', 'pod'): 'pox mid'
 //   mixUp('dog', 'dinner'): 'dig donner'
 // Look up the JavaScript string reference to find methods which may be useful!
-
-
-const mixUp=function(str1,str2){
-const newstr1=console.log(str1.substring(0, 1));
-console.log(anyString.substring(1, 0));
-}
