@@ -19,7 +19,7 @@ const drEvil = function(amount){
 drEvil(10);
 drEvil(1000000);
 
-/*
+
 
 // MixUp
 // Create a function called mixUp. It should take in two strings, and return the concatenation of the two strings (separated by a space) slicing out and swapping the first 2 characters of each. You can assume that the strings are at least 2 characters long. For example:
@@ -29,15 +29,18 @@ drEvil(1000000);
 
 //Array.splice(start_index, number_of_elements_to_remove);
 
-var word1 = "";
-var word2 = "";
+/*
+const word1 = "";
+const word2 = "";
 
-const mixUp =  function(word1, word2){
+const mixUp = function(word1, word2){
+  let word1first = word1.charAt(0);
+  let word2first = word2.charAt(0);
 }
 
 mixUp('mix', 'pod')
 mixUp('dog', 'dinner')
-
+*/
 
 // FixStart
 // Create a function called fixStart. It should take a single argument, a string, and return a version where all occurences of its first character have been replaced with '*', except for the first character itself. You can assume that the string is at least one character long. For example:
@@ -61,7 +64,7 @@ mixUp('dog', 'dinner')
 //   notBad('This movie is not so bad!'): 'This movie is good!'
 //   notBad('This dinner is bad!'): 'This dinner is bad!'
 
-
+/*
 console.log("FixStart RESULTS");
 
 const fixStart = function (){
