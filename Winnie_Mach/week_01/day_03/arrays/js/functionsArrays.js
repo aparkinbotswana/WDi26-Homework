@@ -30,6 +30,16 @@ console.log(maxOfThree(1, 2, 3));
 console.log(maxOfThree(69, 2122, 5));
 console.log(maxOfThree(85, 45, 17));
 
+/* const maxOfThreeNumbers = (a, b, c) => {
+    let largest = a;
+    largest = b > largest ? b : largest;
+    largest = c > largest ? c : largest;
+    return largest;
+  };
+
+console.log(maxOfThreeNumbers(10000, 500, 55)); */
+
+
 // Write a function that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise.
 const vowel = function(character) {
   if(character === 'a' || character === 'e' || character === 'i' || character === 'o' || character === 'u' ) {
@@ -46,6 +56,10 @@ console.log(vowel('o'));
 console.log(vowel('K'));
 console.log(vowel('I'));
 
+/* const isVowel = (str) => {
+  return `${str} ${/[aeiou]/gi.test(str) ? 'is a vowel' : 'is not a vowel'}`;
+  }; */
+
 // Define a function sumArray and a function multiplyArray that sums and multiplies (respectively) all the numbers in an array of numbers. For example, sumArray([1,2,3,4]) should return 10, and multiplyArray([1,2,3,4]) should return 24.
 const myArray = [5, 1, 5, 0]
 const sumArray = function(myArray) {
@@ -59,6 +73,29 @@ const multiplyArray = function(myArray) {
   return multiply;
 }
 console.log(multiplyArray(myArray));
+
+/* const sumArray = (array) => {
++  let sum = 0;
++  for (let i = 0; i < array.length; i++) {
++    sum += array[i];
++  }
++  return sum;
++};
++
++console.log(sumArray([1, 2, 3, 4]));
++
++// -----------------------------------------
++
++const multArray = (array) => {
++  let multSum = array[0];
++  for (let i = 0; i < array.length; i++) {
++    multSum = multSum * array[i];
++  }
++  return multSum;
++};
++
++console.log(multArray([1, 2, 3, 4]));
+*/
 
 
 // Bonus
