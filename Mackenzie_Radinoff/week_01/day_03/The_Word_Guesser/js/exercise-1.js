@@ -20,20 +20,24 @@
 let secretWord = ['V','A','N'];
 let guessedWord = ['_','_','_'];
 let incorrectGuesses = [0,1,2,3,4,5];
-let correctguesses = [];
+let correctGuesses = [];
 let guessing = function(letter){
   var isItThere = secretWord.indexOf(letter)//checks letter guessed against secret word
+  var itsAlreadyThere = correctGuesses.indexOf(letter)
     if (isItThere <0){ //letter is not present
       incorrectGuesses.pop(); //removes a value from "tries"
       console.log(`You have guessed incorrectly, try again, you have ${incorrectGuesses.length} guesses remaining`);
     }
-    if (isItThere>=0) { //letter is present
+    if (itsAlreadyThere>=0){
+      console.log(`You have already guessed this!`)
+    }
+    else{ //letter is present
       guessedWord[isItThere]=letter; //places letter in same array location it sits in secretWord
-      correctguesses.push(letter); //for later win condition check
+      correctGuesses.push(letter); //for later win condition check
       console.log(`You have guessed correctly, so far you have guessed
         ${guessedWord}, you have ${incorrectGuesses.length} guesses remaining`);
     }
-    if(correctguesses.length === secretWord.length)  { //FIND WAY TO DO THIS
+    if(correctGuesses.length === secretWord.length)  { //FIND WAY TO DO THIS
       console.log(`You have guessed the secret word "VAN"`)
     }
     if (incorrectGuesses.length===0){ //checks if any "tries" left
