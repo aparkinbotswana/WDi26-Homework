@@ -45,19 +45,23 @@ const validateCreditCard = function (creditCardNo) {
     console.log('wrong');
     return false;
   }
-    // checks that thers is 2 different numbers
-  else if {
+
+  // checks that thers is 2 different numbers
+  else if  {
     console.log('works');
   }
 
-  // checks last digit is even
 
-  else if (cardNum.length - 1) {
-    console.log('works');
-  }
+// checks sum is greater than 16
 
-  // checks sum is greater than 16
+
+
+// checks last digit is even
+else if (cardNum.slice(15,16)% 2 === 0) {
+  console.log('works');
+}
+
 
 };
 
-validateCreditCard('666a-6666-6666-1666');
+validateCreditCard('6666-6666-6666-1666');
