@@ -29,21 +29,18 @@ const cashRegister = function(c) {
   let prices = Object.values(c); //turn the object values into an array
   let total = 0
   for (let i = 0; i < prices.length; i++) {
-    total = total + Number(prices[i]); // trying to convert strings to number
-    //total = total + parseInt(prices[i]); //doesn't work // aka total += Number(prices[i];)
+    total = total + parseFloat(prices[i]); // aka total += parseFloat(prices[i]); could also use Number(prices[i]) or +prices[i]
   } return total
 }
 
+
+// //joel's demo:
+// const cashRegister = function(c) {
+//   let total = 0;
+//   for (let i in cartForParty) {   // not necessary to turn the object values into an array when using the below type of for loop
+//     total += +cartForParty[i];
+//   } return total;
+// }
+
+
 console.log(cashRegister(cartForParty));
-
-
-
-//joels demo:
-// let total = 0;
-// for (let i in cartForParty) {
-//   total = total + +cartForParty[item];
-// }
-//
-// for (let i in cartForParty) {
-//   total = total + parseFloat(cartForParty[i]);
-// }
