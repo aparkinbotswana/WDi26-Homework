@@ -15,6 +15,7 @@
 // cashRegister(cartForParty)); // 60.55
 
 
+
 const cartForParty = {
   banana: "1.25",
   handkerchief: ".99",
@@ -29,8 +30,20 @@ const cashRegister = function(c) {
   let total = 0
   for (let i = 0; i < prices.length; i++) {
     total = total + Number(prices[i]); // trying to convert strings to number
-    //total = total + parseInt(prices[i]); //doesn't work
+    //total = total + parseInt(prices[i]); //doesn't work // aka total += Number(prices[i];)
   } return total
 }
 
 console.log(cashRegister(cartForParty));
+
+
+
+//joels demo:
+// let total = 0;
+// for (let i in cartForParty) {
+//   total = total + +cartForParty[item];
+// }
+//
+// for (let i in cartForParty) {
+//   total = total + parseFloat(cartForParty[i]);
+// }

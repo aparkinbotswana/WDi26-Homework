@@ -27,10 +27,19 @@
 // { valid: false, number: 'a923-3211-9c01-1112', error: ‘wrong_length’ }
 // Double Bonus: Make your credit card scheme even more advanced! What are the rules, and what are some numbers that pass or fail? Ideas: check expiration date! Check out the Luhn Algorithm for inspiration.
 
+const finalValidation = {
+  valid: "",
+  number: "",
+  error: ""
+}
+
 const validateCreditCard = function(c) {
-  let output = {};
-  let updated = c.replace(/-/g, '');
+
+  let updated = c.replace(/-/g, ''); // could also use c.split("-").join('')
   //console.log(updated); //to check the above line works
+
+  finalValidation.number = c;
+
   if (updated.length === 16) {
     goodLength = true;
   } else {
