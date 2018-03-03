@@ -38,7 +38,7 @@ if(lettersFound) {
   }
 } else {
   console.log('Whoops! Try again!'); // tell user they got it wrong if letterFound is not true
-}
+  }
 /* IF LETTER FOUND IS TRUE END */
 }
 guessLetter('O');
