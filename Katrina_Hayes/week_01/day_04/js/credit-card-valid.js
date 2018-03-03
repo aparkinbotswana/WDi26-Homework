@@ -35,56 +35,87 @@ const finalValidation = {
 
 const validateCreditCard = function(c) {
 
+  finalValidation.number = c;
+
   let updated = c.replace(/-/g, ''); // could also use c.split("-").join('')
   //console.log(updated); //to check the above line works
 
-  finalValidation.number = c;
-
-  if (updated.length === 16) {
-    goodLength = true;
+  if (updated.length !== 16) {
+    finalValidation.valid = "false";
+    finalValidation.error = "wrong_length"
+    return finalValidation;
   } else {
-    goodLength = false;
+    finalValidation.valid = "true";
   }
   if (/[^0-9]/gi.test(updated)) { //don't quite understand how this works but it does
-    goodNumber = false;
+    finalValidation.valid = "false";
+    finalValidation.error = "invalid_characters"
+    return finalValidation;
   } else {
-    goodNumber = true;
+    finalValidation.valid = "true";
   }
-  if (updated.slice(0,7) != updated.slice(8,15)) { //got this from Mac. Could also try the looping and seeing setting a difference found flag when updated[i] !== updated[i+1] FIX THIS TO THE LOOP
-    goodDigits = true;
+
+//below is john's way of checking if all numbers are the same
+  let areTheyAllTheSame = true;
+  for (var i = 0; i < updated.length; i++) {
+    if (updated[i] !== updated[0]) {
+      areTheyAllTheSame = false;
+    }
+  }
+  if (areTheyAllTheSame === true) {
+    finalValidation.valid = "false";
+    finalValidation.error = "all_numbers_can't_be_the_same"
+    return finalValidation;
   } else {
-    goodDigits = false;
+    finalValidation.valid = "true";
   }
+
+//I can't get the below to work as a way to check if all numbers are the same, even though it makes more sense to me...
+  // let differenceFound;
+  // for (let i = 0; i < updated.length; i++) {
+  //   if (updated[i] !== updated[i+1]) {
+  //     differenceFound = "yes";
+  //   }
+  // }
+  // if (differenceFound === "yes") {
+  //   finalValidation.valid = "true";
+  // } else {
+  //   finalValidation.valid = "false";
+  //   finalValidation.error = "all_numbers_can't_be_the_same"
+  //   return finalValidation;
+  // }
+
   if (updated[updated.length-1] % 2 === 0) {
-    goodEven = true;
+    finalValidation.valid = "true";
   } else {
-    goodEven = false;
+    finalValidation.valid = "false";
+    finalValidation.error = "final_number_must_be_even"
+    return finalValidation;
   }
+
   let total = 0
   for (let i = 0; i < updated.length; i++) {
     total = total + Number(updated[i]);
   }
   if (total > 16) {
-    goodSum = true;
+    finalValidation.valid = "true";
   } else {
-    goodSum = false;
+    finalValidation.valid = "false";
+    finalValidation.error = "number_sum_too_small";
+    return finalValidation;
   }
-  if (goodLength === true && goodNumber === true && goodDigits === true && goodEven === true && goodSum === true) {
-    console.log(`Valid: true`);
-    output = {
-      valid: "true",
-      number: c
-    }
-  if (goodLength === false || goodNumber === false || goodDigits === false || goodEven === false || goodSum === false) { //used to just have an else statement here and the code worked, but now I'm trying to add in the object part of the question, and the code no longer works, can't figure out why
-    console.log(`Valid: false`);
-    output = {
-      valid: false,
-      number: c,
-      error: []
-    };
-  } console.log(output);
+
+  if (finalValidation.valid = "true") {
+    delete finalValidation.error; //check this delete method out - don't quite understand it
+  }
+  console.log(finalValidation);
 }
 
 //test this out:
-console.log(validateCreditCard('9999-9999-8888-0000'));
-console.log(validateCreditCard('0000-1111-0000-0000'));
+console.log(validateCreditCard('a923-3211-9c01-111'));
+console.log(validateCreditCard('a923-3211-9c01-1112'));
+console.log(validateCreditCard('4444-4444-4444-4444'));
+console.log(validateCreditCard('1111-1111-1111-1110'));
+console.log(validateCreditCard('6666-6666-6666-6661'));
+console.log(validateCreditCard('6666-6666-6666-6662'));
+//for some reason when i run these in the console, they work and get the right error messages, but when i open the object, the number has changed and they all have the number as 6666-6666-6666-6662. I can't figure out why. 
