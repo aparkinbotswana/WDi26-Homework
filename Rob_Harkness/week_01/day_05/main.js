@@ -4,6 +4,11 @@ const mta = {
   '6': ['Grand Central', '33rd', '28th', '23rd', 'Union Square', 'Astor Place'],
 
   planTrip: function(startLine, startStation, endLine, endStation) {
+    startLine = startLine.toUpperCase();
+    endLine = endLine.toUpperCase();
+    startStation = this.setStationToTitleCase(startStation);
+    endStation = this.setStationToTitleCase(endStation);
+
     let tripOne;
     let tripTwo = '';
 
@@ -18,27 +23,30 @@ const mta = {
     return {
       tripOne: tripOne,
       tripTwo: tripTwo,
+      numberOfStops:
+        tripOne.length - 1 + (tripTwo.length > 0 ? tripTwo.length - 1 : 0),
       lines: [startLine, endLine],
-      starEndStations: [startStation, endStation],
 
       prettyPrintStops: function(trip) {
         let stops = trip[0];
         for (let i = 1; i < trip.length; i++) {
-          stops += `, ${trip[i]}`;
+          stops += ` >> ${trip[i]}`;
         }
         return stops;
       },
 
       showTripPlan: function() {
-        const tripOneText = `You must travel through the following stops on the ${
+        const tripOneText = `Your journey will include the following stops on the ${
           this.lines[0]
         } : ${this.prettyPrintStops(this.tripOne)}.`;
 
-        const tripTwoText = `Change at Union Square. Your journey continues through the following stops on line ${
+        const tripTwoText = `Change at Union Square. Your journey continues with the following stops on line ${
           this.lines[1]
-        }: ${this.prettyPrintStops(this.tripTwo)}`;
+        }: ${this.prettyPrintStops(this.tripTwo)}.`;
 
-        return `${tripOneText} ${this.tripTwo && tripTwoText}`;
+        return `${tripOneText}${this.tripTwo && tripTwoText} Total stops: ${
+          this.numberOfStops
+        }`;
       }
     };
   },
@@ -58,15 +66,25 @@ const mta = {
       }
     }
     return stations;
+  },
+  setStationToTitleCase(station) {
+    if (/\d/g.test(station)) {
+      return station.toLowerCase();
+    } else {
+      return station.replace(/\w\S*/g, (txt) => {
+        return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+      });
+    }
   }
 };
 
-const planOne = mta.planTrip('N', '8th', 'N', 'Times Square');
-const planTwo = mta.planTrip('N', 'Times Square', 'N', '8th');
-const planThree = mta.planTrip('N', 'Times Square', 'L', '1st');
-const planFour = mta.planTrip('6', 'Astor Place', 'L', '8th');
+const planOne = mta.planTrip('n', '8Th', 'N', 'times square');
+const planTwo = mta.planTrip('N', 'TIMES SQUARE', 'n', '8th');
+const planThree = mta.planTrip('n', 'Times SQUARE', 'L', '1ST');
+const planFour = mta.planTrip('6', 'astor pLaCe', 'l', '8th');
 
 console.log(planOne.showTripPlan());
 console.log(planTwo.showTripPlan());
 console.log(planThree.showTripPlan());
 console.log(planFour.showTripPlan());
+
