@@ -174,8 +174,8 @@ const checkLetter = function(char){
   for(i=0; i<=word.length-1; i++){
     if((char === word[i])  && (guessWord[i]==='_')){
 
-      console.log(`word[${i}]:      ${word[i]}`);
-      console.log(`guessWord[${i}]: ${guessWord[i]}`);
+      //console.log(`word[${i}]:      ${word[i]}`);
+      //console.log(`guessWord[${i}]: ${guessWord[i]}`);
 
       //console.log(`Element: ${i}`);
       charsLeft--;
