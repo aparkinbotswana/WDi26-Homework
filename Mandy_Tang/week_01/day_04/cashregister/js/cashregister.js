@@ -19,7 +19,9 @@ let cartValues = Object.values(cartForParty); // Use Object.values to retrieve j
       let total = 0;  // Creating a variable called a total to store the 'total' after each iteration
       for (let i = 0; i < cartValues.length; i++) {
       total += Number(cartValues[i]); // Number() will make whatever's inside it into a number (returns the numerical value). Note you can't use 'let' here
-      // x += y is short for x = x + y, so total = total from the laste iteration + the 'next/relevant' number in the array
+      // x += y is short for x = x + y, so total = total from the last iteration + the 'next/relevant' number in the array
+      // Alternate solution: parseFloat( cartForParty[item] ) you'd need to define item first using 'for ... in'
+      // +stringhere also turns your string into a number
             }
             return total; // The return is here because if you include it inside the for loop, it will stop prematurely
           }
