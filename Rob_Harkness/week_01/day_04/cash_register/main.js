@@ -2,6 +2,10 @@ const cashRegister = (shoppingCart) => {
   return Object.values(shoppingCart).reduce(
     (accumulator, currval) => Number(accumulator) + Number(currval)
   );
+  // for(let key in shoppingCart){
+  //   console.log(shoppingCart[key]);
+    
+  // }
 };
 
 const cartForParty = {

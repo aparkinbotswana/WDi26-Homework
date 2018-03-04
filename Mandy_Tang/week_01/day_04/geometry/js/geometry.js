@@ -25,7 +25,7 @@ area(3,4);
 // perimeter - Returns the perimeter of the rectangle
 
 let perimeter = function (width, length) {
-  console.log((2 * width) + (2 * length));   // Length and width of rectangles the same and perimeter = add up all sides
+  console.log((2 * width) + (2 * length));   // Length and width of rectangles the same. For perimeter, add up all sides
 }
 
 perimeter(2,3);
@@ -37,9 +37,9 @@ perimeter(2,3);
 
 let isEquilateral = function (sideA, sideB, sideC) {
   if (sideA === sideB && sideB === sideC && sideA === sideC) { // Test if all three sides are equal
-    console.log('Your triangle is equilateral');
+    console.log('Your triangle is equilateral.');
   } else {
-    console.log('Your triangle is not equilateral');
+    console.log('Your triangle is not equilateral.');
   }
 }
 
@@ -51,9 +51,9 @@ isEquilateral(1,2,2);
 
 let isIsosceles = function (sideA, sideB, sideC) {
   if (sideA === sideB || sideA === sideC || sideB === sideC) {  // Test if two sides are the same
-    console.log('Your triangle is isosceles');
+    console.log('Your triangle is isosceles.');
   } else {
-    console.log('Your triangle is not isosceles');
+    console.log('Your triangle is not isosceles.');
   }
 }
 isIsosceles(3,2,1);
@@ -77,7 +77,8 @@ formula = p*(p-sideA)*(p-sideB)*(p-sideC);  // Applying Heron's formula
 areaTri(3,5,6);
 
 // isObtuse - Returns whether the triangle is obtuse or not
-// Using Pythagoras' Theorem - we compare the three sides and if the squares of the two shorter sides is smaller than the square of the longest side, then the triangle is obtuse.
+
+// Using Pythagoras' Theorem - we compare the three sides and if the sum of the squares of the two shorter sides is smaller than the square of the longest side, then the triangle is obtuse.
 
 let isObtuse = function(sideA, sideB, sideC) {
   if (sideA*sideA + sideB*sideB < sideC*sideC) {   // Based on maths formula
