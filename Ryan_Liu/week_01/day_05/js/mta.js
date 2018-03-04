@@ -38,11 +38,23 @@ const getStopsOnSameLine = function(line, fromStation, toStation) {
     return element.line === line;
   });
 
+  // If entered line doesn't exist, exit the app with warning message
+  if (lineIndex === -1) {
+    console.log(`No such line!`);
+    return;
+  }
+
   //Get the starting station index from the stops array in the Line object (you are travelling on)
   const fromStaIndex = subWay[lineIndex].stops.indexOf(fromStation);
 
   //Get the destination station index
   const toStaIndex = subWay[lineIndex].stops.indexOf(toStation);
+
+  //Check if the fromStation or toStation exist on the line, if not, exit the app with the warning message
+  if (fromStaIndex === -1 || toStaIndex === -1) {
+    console.log(`No such stop!`);
+    return;
+  }
 
   //Checking the direction you are travelling to (from left to right in the array or the other way around)
   //If travelling from left to right in the stops array
@@ -55,9 +67,8 @@ const getStopsOnSameLine = function(line, fromStation, toStation) {
       `You must travel through the following stops on the ${line} line: ${travelStations.join(", ")}. Total of ${travelStations.length} stops.`
     );
 
-  } else {
+  } else {//If travelling from right to left in the stops array
 
-    //If travelling from right to left in the stops array
     const travelStations = subWay[lineIndex].stops.slice(toStaIndex, fromStaIndex);
 
     //console log the travelStations array in the reverse order
@@ -80,6 +91,11 @@ const getStopsOnDiffLines = function(fromLine, fromStation, toLine, toStation) {
     return element.line === toLine;
   });
 
+  if (fromLineIndex === -1 || toLineIndex === -1) {
+    console.log(`No such line!`);
+    return;
+  }
+
 
   //Get the index of the starting station
   const fromStaIndexOnFromLine = subWay[fromLineIndex].stops.indexOf(fromStation);
@@ -87,27 +103,45 @@ const getStopsOnDiffLines = function(fromLine, fromStation, toLine, toStation) {
   //Get the index of the destination station
   const toStaIndexOnToLine = subWay[toLineIndex].stops.indexOf(toStation);
 
+  if (fromStaIndexOnFromLine === -1 || toStaIndexOnToLine === -1) {
+    console.log(`No such stop!`);
+    return;
+  }
+
   //Get the index of the Union Square station on the line you are from
   const unionStaIndexFromLine = subWay[fromLineIndex].stops.indexOf("Union Square");
 
   //Get the index of the Union Square station on the line you are transferring to
   const unionStaIndexToLine = subWay[toLineIndex].stops.indexOf("Union Square");
 
+  //Stations you are going through on the line you are starting out from
   let travelStationsOnFrom = [];
+
+  //Stations you are going through on the line you transfer to
   let travelStationsOnTo = [];
 
+  //If you are travelling from left to right on the line you are starting out from
   if (fromStaIndexOnFromLine < unionStaIndexFromLine) {
+    //Put the stops in the travelStationOnFrom array
     travelStationsOnFrom = subWay[fromLineIndex].stops.slice(fromStaIndexOnFromLine + 1, unionStaIndexFromLine + 1);
-  } else {
+  } else { //If travelling from right to left, put the stops in reverse order in the travelStationOnFrom array
     travelStationsOnFrom = subWay[fromLineIndex].stops.slice(unionStaIndexFromLine, fromStaIndexOnFromLine).reverse();
   }
 
+  //Apply the same logic from above to the stops on the destination line, and put the stops in the travelStationsOnTo array
   if (toStaIndexOnToLine < unionStaIndexToLine) {
     travelStationsOnTo = subWay[toLineIndex].stops.slice(toStaIndexOnToLine, unionStaIndexToLine).reverse();
   } else {
     travelStationsOnTo = subWay[toLineIndex].stops.slice(unionStaIndexToLine, toStaIndexOnToLine);
   }
 
+  //If the user enters Union Square as the destination stop but on a different line, just exit the app with a waining message
+  if (toStaIndexOnToLine === unionStaIndexToLine) {
+    console.log(`Why would you want to do that?!`);
+    return;
+  }
+
+  //Otherwise, just console.log the message telling user his/her travel information
   console.log(`You must travel through the following stops on the ${fromLine} line: ${travelStationsOnFrom.join(", ")}.`);
   console.log(`Change at Union Square.`);
   console.log(`Your journey continues through the following stops: ${travelStationsOnTo.join(", ")}.`);
@@ -115,6 +149,7 @@ const getStopsOnDiffLines = function(fromLine, fromStation, toLine, toStation) {
 };
 
 const planTrip = function(fromLine, fromStation, toLine, toStation) {
+
   if (fromLine === toLine) {
     getStopsOnSameLine(fromLine, fromStation, toStation);
   } else {
