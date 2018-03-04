@@ -17,7 +17,6 @@ const theWord = ["F", "O", "X"]
 let guessedWord = ["-", "-", "-"]
 let lettersLeft;
 
-
 const guessLetter = function(letter) {
 
     for (let i = 0; i < theWord.length; i++) { //loop through theWord array
@@ -26,13 +25,11 @@ const guessLetter = function(letter) {
         }
       };
 
-
       if (guessedWord.toString() === theWord.toString()) { //convert guessedWord to a string and theWord to a string and see if they match
         lettersLeft = "no more"; //if they match store no more in lettersLeft
       } else {
         lettersLeft =  "more"; // else store more in lettersLeft
       };
-
 
   console.log(`Congratulations you found the letters... ${ guessedWord }. You have ${lettersLeft} letters to guess!`);
 
@@ -40,6 +37,7 @@ const guessLetter = function(letter) {
 
 guessLetter("F");
 guessLetter("M");
+guessLetter("O");
 guessLetter("X");
 
 
