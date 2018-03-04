@@ -51,6 +51,7 @@ const forwardBackwards = function (stop1,stop2) {
     tripLength = firstTrip.length
   }
 // if train is going forwards
+
   if (stop2 > stop1) {
     for (var i = stop1; i <= stop2; i++) {
        firstTrip.push(line1[i]);
@@ -97,7 +98,7 @@ const forwardBackwards = function (stop1,stop2) {
 
 
 
-console.log(`=======================================       SAME LINE BACKWARDS`)
+console.log(`=======================================       same line backwards`)
 planTrip(N,'23rd',N,'Times Square');
 
 console.log(`=======================================        same line forwards`)
