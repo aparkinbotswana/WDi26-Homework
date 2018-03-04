@@ -6,10 +6,10 @@ Bonus: Round the result so there are only two digits after the decimal.*/
 
 const squareNumber = function(num){
     const squareNum = Math.pow(num,2);
-  console.log(`The Result Of Squaring The Number 3 is ${ squareNum } `);
+  console.log(`The Result Of Squaring The Number 3 is ${ squareNum }`);
 return squareNumber;
 };
-squareNumber(3);
+squareNumber(3)
 
 const halfNumber = function(numHalf){
   const halfNum = numHalf/2;
@@ -17,7 +17,7 @@ const halfNumber = function(numHalf){
   return halfNumber;
 
 };
-halfNumber(5);
+halfNumber(5)
 
 const percentOf = function(num1, num2){
   const percentage = num1 % num2;
@@ -25,11 +25,11 @@ const percentOf = function(num1, num2){
   return percentOf;
 };
 
-percentOf(2,4);
+percentOf(2,4)
 
 const areaOfCircle = function(radius){
   const area = (Math.PI * radius * radius);
   console.log(`The area for a circle with radius 2 is ${ area }`);
   return areaOfCircle;
 };
-areaOfCircle(2);
+areaOfCircle(2)

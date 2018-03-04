@@ -4,6 +4,7 @@
 // Write a function called areaOfCircle that will take one argument (the radius), calculate the area based on that, and return the result. It should also log a string like "The area for a circle with radius 2 is 12.566370614359172."
 // Bonus: Round the result so there are only two digits after the decimal.
 
+
 const squareNumber = function(number) {
   const numberSquared = number * number;
   console.log(`The result of squaring the number ${number} is ${numberSquared}.`);
