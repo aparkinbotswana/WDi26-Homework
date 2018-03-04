@@ -36,13 +36,15 @@ const mta = {
       },
 
       showTripPlan: function() {
-        const tripOneText = `Your journey will include the following stops on the ${
+        const tripOneText = `Your journey will include the following stops on line: ${
           this.lines[0]
         } : ${this.prettyPrintStops(this.tripOne)}.`;
 
-        const tripTwoText = `Change at Union Square. Your journey continues with the following stops on line ${
+        const tripTwoText = ` Change at Union Square to line: ${
           this.lines[1]
-        }: ${this.prettyPrintStops(this.tripTwo)}.`;
+        }. Your journey continues with the following stops on line: ${
+          this.lines[1]
+        } : ${this.prettyPrintStops(this.tripTwo)}.`;
 
         return `${tripOneText}${this.tripTwo && tripTwoText} Total stops: ${
           this.numberOfStops
@@ -87,4 +89,3 @@ console.log(planOne.showTripPlan());
 console.log(planTwo.showTripPlan());
 console.log(planThree.showTripPlan());
 console.log(planFour.showTripPlan());
-
