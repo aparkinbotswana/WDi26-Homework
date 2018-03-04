@@ -20,7 +20,7 @@
 // Keep track of the state of the hangman as a number (starting at 0), and subtract or add to that number every time they make a wrong guess.
 // Once the number reaches 6 (a reasonable number of body parts for a hangman), inform the user that they lost and show a hangman on the log.
 
-
+/*1st attempt
 const theWord = ['E', 'A', 'T'];
 const guessWord = ['_','_','_'];
 
@@ -37,6 +37,23 @@ const guessWord = ['_','_','_'];
                   }
                 }
               }
+*/
+
+//reworked after feedback
+const theWord = ['E', 'A', 'T'];
+const guessWord = ['_','_','_'];
+
+      const guessLetter = function(guessedLetter) {
+        for (i=0; i<theWord.length; i++){
+                  if (guessedLetter === theWord[i]) {
+                  guessWord[i] = theWord[i];
+                  console.log(`Congratulations! You got the letter ${guessedLetter} right! The guessed letters are: ${guessWord},`);
+                  }
+                }
+        if (guessWord[0]===theWord[0] && guessWord[1]===theWord[1] && guessWord[2]===theWord[2]){
+                  console.log("You won!");
+                }
+        }
 
 
 guessLetter('S');
