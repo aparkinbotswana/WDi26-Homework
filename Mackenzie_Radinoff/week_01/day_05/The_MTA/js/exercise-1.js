@@ -7,9 +7,9 @@ let offLineStops = [];
 let sameLineStops=[];
 
 let iGlobal = []; //onArray
-let iiGlobal = []; //offArray
-let iiiGlobal = []; //unionArrayOn
-let iiiiGlobal = []; //unionArrayOff
+let kGlobal = []; //offArray
+let lGlobal = []; //unionArrayOn
+let mGlobal = []; //unionArrayOff
 
 let hopOnGlobal = [];
 let hopOffGlobal = [];
@@ -26,89 +26,89 @@ const findOn = function (){
   };
 };
 const findOff = function (){
-  let ii = 0
-  while (ii<6){
-    if (hopOffGlobal[0] === offLineGlobal[ii]){
-      iiGlobal = ii;
+  let k = 0
+  while (k<6){
+    if (hopOffGlobal[0] === offLineGlobal[k]){
+      kGlobal = k;
     };
-    ii++
+    k++
   };
 };
 const findUnionThis = function (){
-  let iii = 0
-  while (iii<6){
-    if ('Union' === onLineGlobal[iii]){
-      iiiGlobal = iii;
+  let l = 0
+  while (l<6){
+    if ('Union' === onLineGlobal[l]){
+      lGlobal = l;
     };
-    iii++;
+    l++;
   };
 };
 const findUnionNotThis = function (){
-  let iiii = 0
-  while (iiii<6){
-    if ('Union' === offLineGlobal[iiii]){
-      iiiiGlobal = iiii;
+  let m = 0
+  while (m<6){
+    if ('Union' === offLineGlobal[m]){
+      mGlobal = m;
     };
-    iiii++;
+    m++;
   };
 };
 const findStopsSameLine = function (){
   let t=iGlobal
-  if (t < iiGlobal){ //If stop is down the line
-    while (t<iiGlobal){
-      if (t === iiGlobal){
+  if (t < kGlobal){ //If stop is down the line
+    while (t<kGlobal){
+      if (t === kGlobal){
       }
       t++;
       sameLineStops.push(onLineGlobal[t])
       }
     }
   else{ //If stop is up the line
-    while (iiGlobal<t){
-      if (iiGlobal === t){
+    while (kGlobal<t){
+      if (kGlobal === t){
       }
-      sameLineStops.unshift(onLineGlobal[iiGlobal]);
-      iiGlobal++;
+      sameLineStops.unshift(onLineGlobal[kGlobal]);
+      kGlobal++;
     };
   };
 };
 
-const findStopsToUnion = function (){ ///iii = union location
+const findStopsToUnion = function (){ ///l = union location
   let t = iGlobal //iGlobal = start station
-  if (t < iiiGlobal){ //If stop is down the line
-    while (t < iiiGlobal){
-      if (t === iiiGlobal){
+  if (t < lGlobal){ //If stop is down the line
+    while (t < lGlobal){
+      if (t === lGlobal){
       }
       t++;
       onLineStops.push(onLineGlobal[t])
       }
     }
   else{ //If stop is up the line
-    while (iiiGlobal < t){
-      if (iiiGlobal === t){
-      onLineStops.unshift(onLineGlobal[iiiGlobal]) //add final stop
+    while (lGlobal < t){
+      if (lGlobal === t){
+      onLineStops.unshift(onLineGlobal[lGlobal]) //add final stop
       }
-      onLineStops.unshift(onLineGlobal[iiiGlobal])
-      iiiGlobal++;
+      onLineStops.unshift(onLineGlobal[lGlobal])
+      lGlobal++;
     };
   };
 };
 const findStopsFromUnion = function(){
-  let t = iiiiGlobal //iiiiGlobal = 2nd line union location
-  if (t < iiGlobal){ //If stop is down the line
-    while (t < iiGlobal){ //iiGlobal = final destination
-      if (t === iiGlobal){
+  let t = mGlobal //mGlobal = 2nd line union location
+  if (t < kGlobal){ //If stop is down the line
+    while (t < kGlobal){ //kGlobal = final destination
+      if (t === kGlobal){
       }
       offLineStops.push(offLineGlobal[t])
       t++;
     }
   }
   else{ //If stop is up the line
-    while (iiGlobal < t){
-      if (iiGlobal === t){
-      offLineStops.unshift(offLineGlobal[iiGlobal]) //adds final stop
+    while (kGlobal < t){
+      if (kGlobal === t){
+      offLineStops.unshift(offLineGlobal[kGlobal]) //adds final stop
       }
-      offLineStops.unshift(offLineGlobal[iiGlobal]);
-      iiGlobal++;
+      offLineStops.unshift(offLineGlobal[kGlobal]);
+      kGlobal++;
     };
   };
 };
@@ -146,10 +146,10 @@ const planTrip = function(onLine,hopOn,offLine,hopOff){
       console.log(`You are already at your destination!`)
     }
     else if (sameLineStops.length >1){
-      console.log(`You are travelling from ${hopOn} station, line ${start} travelling to ${hopOff} station on the ${(finish)} line. On the way you will stop at ${notFinalStop.join(", ")}, and finally ${finalStop} station!`)
+      console.log(`You are travelling from ${hopOn} station, line ${start} travelling to ${hopOff} station on the ${(finish)} line. On the way you will stop at ${notFinalStop.join(", ")}, and finally ${hopOff} station!`)
     }
     else{
-      console.log(`You are travelling from ${hopOn} station, line ${start} travelling to ${hopOff} station on the ${(finish)} line. On the way you will stop at your one and only destination, ${finalStop} station!`)
+      console.log(`You are travelling from ${hopOn} station, line ${start} travelling to ${hopOff} station on the ${(finish)} line. On the way you will stop at your one and only destination, ${hopOff} station!`)
     }
   }
   if (onLine != offLine){
@@ -166,10 +166,10 @@ const planTrip = function(onLine,hopOn,offLine,hopOff){
       console.log(`You are at ${hopOn} station, line ${start} travelling to ${hopOff} station, line ${(finish)}. You are already at your destination! Just the wrong platform...`)
     }
     else if(onLineStops.length === 0 && offLineStops.length > 1){
-      console.log(`You are at ${hopOn} station, line ${start} travelling to ${hopOff} station, line ${(finish)}. Change lines at Union station. On the way you will stop at ${notFinalOffLineStop.join(", ")} and finally ${finalOffLineStop} station!`)
+      console.log(`You are at ${hopOn} station, line ${start} travelling to ${hopOff} station, line ${(finish)}. Change lines at Union station. On the way you will stop at ${notFinalOffLineStop.join(", ")} and finally ${hopOff} station!`)
     }
     else if(onLineStops.length === 0 && offLineStops.length === 1){
-      console.log(`You are at ${hopOn} station, line ${start} travelling to ${hopOff} station, line ${(finish)}. Change lines at Union station. Your next stop is ${finalOffLineStop} station!`)
+      console.log(`You are at ${hopOn} station, line ${start} travelling to ${hopOff} station, line ${(finish)}. Change lines at Union station. Your next stop is ${offLine} station!`)
     }
     else if(onLineStops.length > 1 && offLineStops.length === 0){
       console.log(`You are at ${hopOn} station, line ${start} travelling to ${hopOff} station, line ${(finish)}. On the way you will stop at ${notFinalOnLineStop.join(", ")} and finally Union Station! Now you just have to change platform...`);
@@ -178,16 +178,16 @@ const planTrip = function(onLine,hopOn,offLine,hopOff){
       console.log(`You are at ${hopOn} station, line ${start} travelling to ${hopOff} station, line ${(finish)}. Your one and only stop is Union station! Then you just have to change platform...`);
     }
     else if(onLineStops.length ===1 && offLineStops.length ===1){
-      console.log(`You are at ${hopOn} station, line ${start} travelling to ${hopOff} station, line ${(finish)}. Your next stop is Union Station. Here you will change train lines. Your next and final stop is ${finalOffLineStop}`);
+      console.log(`You are at ${hopOn} station, line ${start} travelling to ${hopOff} station, line ${(finish)}. Your next stop is Union Station. Here you will change train lines. Your next and final stop is ${hopOff}`);
     }
     else if(onLineStops.length >1 && offLineStops.length ===1){
-      console.log(`You are at ${hopOn} station, line ${start} travelling to ${hopOff} station, line ${(finish)}. On the way you will stop at ${notFinalOnLineStop.join(", ")} and change lines at Union Station. Your next and final stop is ${finalOffLineStop}`)
+      console.log(`You are at ${hopOn} station, line ${start} travelling to ${hopOff} station, line ${(finish)}. On the way you will stop at ${notFinalOnLineStop.join(", ")} and change lines at Union Station. Your next and final stop is ${hopOff}`)
     }
     else if(onLineStops.length===1 && offLineStops.length>1){
-      console.log(`You are at ${hopOn} station, line ${start} travelling to ${hopOff} station, line ${(finish)}. On the way you will stop at ${notFinalOffLineStop.join(", ")} and finally ${finalOffLineStop} station!`)
+      console.log(`You are at ${hopOn} station, line ${start} travelling to ${hopOff} station, line ${(finish)}. On the way you will stop at ${notFinalOffLineStop.join(", ")} and finally ${hopOff} station!`)
     }
     else{
-      console.log(`You are at ${hopOn} station, line ${start} travelling to ${hopOff} station, line ${(finish)}. On the way you will stop at ${notFinalOnLineStop.join(", ")} and change lines at Union Station. On the way you will stop at ${notFinalOffLineStop.join(", ")} and finally ${finalOffLineStop} station!`);
+      console.log(`You are at ${hopOn} station, line ${start} travelling to ${hopOff} station, line ${(finish)}. On the way you will stop at ${notFinalOnLineStop.join(", ")} and change lines at Union Station. On the way you will stop at ${notFinalOffLineStop.join(", ")} and finally ${hopOff} station!`);
     }
   }
 };
