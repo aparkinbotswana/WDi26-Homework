@@ -27,10 +27,55 @@
 // { valid: false, number: 'a923-3211-9c01-1112', error: ‘wrong_length’ }
 // Double Bonus: Make your credit card scheme even more advanced! What are the rules, and what are some numbers that pass or fail? Ideas: check expiration date! Check out the Luhn Algorithm for inspiration.
 
-const creditCardNumber = 9999 9999 9999 9999;
+// Note: an array will never be equal.
 
-const validateCreditCard = function {
-  for (var i = 0; i < creditCardNumber.length; i++) {
-    creditCardNumber[i]
+
+const creditCardNumber1 = "88888-8888-0000-8888"; //turn number into string.
+const creditCardNumber2 = "09x0-8888-0000-8888";
+const creditCardNumber3 = "1111-8888-0000-8883";
+const creditCardNumber4 = "0000-0000-0000-1112";
+const creditCardNumber5 = "5546-2113-6753-8898";
+
+const validateCreditCard = function (num) {
+  num = num.replace(/-/g, ""); //get rid of the - inside the string
+  console.log(num);
+
+  if (num.length !== 16) {
+    console.log ("Card is invalid");
+    return false;
   }
-}
+  if (isNaN(num)) {
+    console.log ("Card is invalid");
+    return false;
+  }
+  if (num[15] % 2 !== 0) {
+    console.log ("Card is invalid");
+    return false;
+  }
+  let arr = num.split('');
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) { //finding the sum of all digits.
+    sum = sum + + arr[i];
+  }
+  if (sum < 17) { //can't be 16, has to be greater than 16.
+    console.log ("Card is invalid");
+    return false;
+  }
+  else {
+    console.log("Card is valid");
+    return true;
+  }
+};
+
+validateCreditCard(creditCardNumber1);
+validateCreditCard(creditCardNumber2);
+validateCreditCard(creditCardNumber3);
+validateCreditCard(creditCardNumber4);
+validateCreditCard(creditCardNumber5);
+
+
+
+
+//____
+
+// Create a object as an input. Taryn. You will push the values into an object. Then you will console log the object, the results will show in the key values of the object.
