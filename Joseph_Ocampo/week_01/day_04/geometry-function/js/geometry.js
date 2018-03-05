@@ -78,23 +78,7 @@ console.log(`=====================================================`)
 
 // isIsosceles - Returns whether the triangle is isosceles or not
 
-// const isIsosceles = function (object) {
-//   let sides = Object.values(object);
-//     if(object[0] === object[1] || object[0] === object[2] && )
-//
-// check
 
-
-                      // converts object values to array
-//   const checker = function (currentValue) {          // check if array values ===
-//       return currentValue === sides[0];
-// };
-//     if (sides.every(checker) === true ) {            // return yes or no
-//       console.log('isEq');
-//     } else {
-//       console.log('isNotEq');
-//     }
-// };
 
 // isIsosceles(triangleA);
 
@@ -118,11 +102,10 @@ console.log(`=====================================================`)
 // isObtuse - Returns whether the triangle is obtuse or not
 
 
-
-const isObtuse = function (object) {
-  let largestSide = (object.sizeA,object.sizeB,object.sizeC);
-  // if (Math.pow(largestSide,2) > 5)
-    console.log(largestSide);
-}
+// const isObtuse = function (object) {
+//   let largestSide = (object.sizeA,object.sizeB,object.sizeC);
+//   // if (Math.pow(largestSide,2) > 5)
+//     console.log(largestSide);
+// }
 
 isObtuse(triangleA);
