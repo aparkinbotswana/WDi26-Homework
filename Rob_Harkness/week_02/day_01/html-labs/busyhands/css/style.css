@@ -10,6 +10,8 @@ body {
   width: 960px;
   margin: 0 auto;
 }
+
+/* Navigation */
 nav {
   background: #000;
   color: #fff;
@@ -47,6 +49,8 @@ nav ul li a:hover {
   background: linear-gradient(rgba(41, 149, 213, 0.5), #000);
   color: rgb(204, 235, 255);
 }
+
+/* header */
 header {
   background: url('../images/bg_body_dark.jpg');
   position: absolute;
@@ -65,15 +69,9 @@ header {
   position: relative;
   display: inline-block;
 }
-.jumbo {
-  position: absolute;
-  top: 180px;
-}
-
 .social {
   margin-left: 371px;
 }
-
 .social ul li {
   display: inline-block;
   width: 60px;
@@ -81,7 +79,7 @@ header {
   background: blue;
   text-indent: -9999em;
 }
-
+/* social icons */
 .social ul li.linkedIn {
   background: url(../images/socialNav.png) 0px 64px;
 }
@@ -113,11 +111,17 @@ header {
   background: url(../images/socialNav.png) -180px 0px;
 }
 
+/* photobanner */
+.jumbo {
+  position: absolute;
+  top: 180px;
+}
 .shadow {
   position: relative;
   margin: 470px 0 40px 0;
 }
 
+/* blurb section */
 .blurb {
   border-left: 2px solid #c8c8c8;
   border-top: 2px solid #c8c8c8;
@@ -137,6 +141,7 @@ header {
   margin: 20px;
 }
 
+/* 3 col gallery */
 .gallery div,
 footer .footer-container div {
   width: 30%;
@@ -145,6 +150,7 @@ footer .footer-container div {
   vertical-align: top;
 }
 
+/* footer */
 footer {
   background: #000;
   width: 100%;
@@ -160,7 +166,7 @@ footer p {
   color: rgb(71, 71, 71);
 }
 footer hr {
-  border-color:  rgb(71, 71, 71);
+  border-color: rgb(71, 71, 71);
 }
 footer div ul {
   list-style-type: none;

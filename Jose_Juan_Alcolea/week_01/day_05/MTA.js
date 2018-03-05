@@ -42,7 +42,7 @@ const multitrip = function (startLine, startStation, endLine, endStation) {
     let indexFirstStart = lineStars.indexOf(startStation);
     let indexFirstStop = lineStars.indexOf("Union Square");
         if (indexFirstStart < indexFirstStop) {
-          
+
         }
 
 
@@ -57,4 +57,4 @@ const multitrip = function (startLine, startStation, endLine, endStation) {
 
 
 
-//planTrip('N', 'Times Square', '6', '33rd');
+singleTrip('6', 'Union Square', '6', 'Astor Place');
