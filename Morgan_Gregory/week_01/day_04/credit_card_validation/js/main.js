@@ -24,13 +24,19 @@ console.log('testing tesing one two three');
 
 const validateCreditCard = function (input) {
 
-  if (input !== 16) { // Number must be 16 digits, all of them must be numbers
+  if (input !== 16 || isNaN.input) { // Number must be 16 digits, all of them must be numbers
     return false;
-  } else if (x) { // You must have at least two different digits represented (all of the digits cannot be the same)
+  }
+
+  if () { // You must have at least two different digits represented (all of the digits cannot be the same)
     return false;
-  } else if ((input.length - 1) % 2 === 1) { // The final digit must be even
+  }
+
+  if ((input.length - 1) % 2 === 1) { // The final digit must be even
     return false;
-  }  else if (x) { // The sum of all the digits must be greater than 16
+  }
+
+  if () { // The sum of all the digits must be greater than 16
     return false;
   } else {
     return true;
