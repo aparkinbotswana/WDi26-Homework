@@ -1,0 +1,12 @@
+JS snippets not in use but may be useful to keep:
+const getLineDetails = function(line){
+  let stns = new Array();
+  for(let i=0; i<= stations.length-1; i++){
+    if(stations[i].line === line){
+      stns.push(stations[i]);
+    }
+  }
+  //console.log(stns);
+  //console.log(`outside loop: ${stns}`);    // this doesn't work. Why?
+  return(stns);                              // doesn't work
+}

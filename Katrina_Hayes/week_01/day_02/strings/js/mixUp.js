@@ -5,8 +5,8 @@
 // Look up the JavaScript string reference to find methods which may be useful!
 
 const mixUp = function(string1, string2) {
-  mix1 = string2.substr(0, 2) + string1.slice(2); //couldn't get slice to work for a range of characters eventhough mdn seemed to suggest it would work.
-  mix2 = string1.substr(0,2) + string2.slice(2);
+  mix1 = string2.slice(0, 2) + string1.slice(2);
+  mix2 = string1.slice(0,2) + string2.slice(2);
   console.log(mix1 + " " + mix2);
   return mix1 + mix2
 }
