@@ -48,6 +48,7 @@ const fixStart = function (foo) {
       console.log('not a match');
     }
   }
+  console.log(foo);
 };
 fixStart('babble');
 
