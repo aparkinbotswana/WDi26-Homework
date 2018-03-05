@@ -1,0 +1,61 @@
+
+
+body {
+  font-size: 14px;
+  line-height: 17px;
+  font-family: arial;
+}
+
+h1 {
+	text-indent: -99999em; /* hides the H1 tag from the page, while semantically keeping it present in your HTML */
+}
+
+nav {
+  background-color: black;
+  color: white;
+}
+
+.socialMedia  li {
+  list-style: none;
+}
+
+.container {
+	width: 950px;
+	margin: 0 auto; /*centers our container on the page */
+}
+
+.readMoreLink {
+  color: #33ccff;
+}
+
+.three-col {
+  display: inline-block;
+}
+
+.smallImages {
+  border: 5px solid #CCC;
+}
+
+.home-box1 {
+  float: left;
+  width: 30%;
+  padding: 10px;
+}
+
+.home-box2 {
+  float: left;
+  width: 30%;
+  padding: 10px;
+}
+
+.home-box3 {
+  float: left;
+  width: 30%;
+  padding: 10px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding-top: 20px;
+}
