@@ -32,14 +32,17 @@ const cashRegister = function (input) {
 
     // valuesSum = valuesSum + parseFloat(cartValues[i]);
 
-    // line below uses the += operator to simply add valueSum value to itself thru the loop - pointed out by Theo
-    valuesSum += parseFloat(cartValues[i]);
+    // ** THEO ** line below uses the += operator to simply add valueSum value to itself thru the loop - pointed out by Theo
+    // valuesSum += parseFloat(cartValues[i]);
+
+    // ** JOEL ** Joel's suggestion can just put a '+' next to the variable that contains strings and it will turn that string into numbers
+    valuesSum += +cartValues[i];
   }
   return valuesSum;
 };
-// putting the restult stored in the return valuesSum variable into a global variable 'x' means i can then access this result anywhere else in the program
+// putting the restult stored in the return valuesSum variable into a global variable 'egisterTotal' means i can then access this result anywhere else in the program
 
-let x = cashRegister(cartForParty); // Output cashRegister(cartForParty)); // 60.55
+let registerTotal = cashRegister(cartForParty); // Output cashRegister(cartForParty)); // 60.55
 
 //** checks data type below - I thought the original output was an array it turned out (using typeOf) to be a single number printed to console 6 times as per the loop conditons: **
 // console.log(typeof valuesToNumbers);

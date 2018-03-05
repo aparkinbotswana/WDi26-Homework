@@ -46,13 +46,18 @@ const validateCreditCard = function (number) {
     console.log(finalCardValidator);
   }
 
-  else if (newNum.slice(0,8) == newNum.slice(7,15)) { //this doesn't work
+  const arr = newNum.split(' ') {
+    let sum = 0;
+    for (var i = 0; i < newNum.length; i++) {
+     sum = sum + newNum[i]
+  }
+  else if (sum < 17) { //this doesn't work
     finalCardValidator.valid = "false";
     finalCardValidator.error = "error: all_numbers_match";
     console.log(finalCardValidator);
   }
 
-  else if (newNum[newNum.length-1] % 2 !== 0) { // if last character is even
+  else if (newNum[15] % 2 !== 0) { // if last character is even
     finalCardValidator.valid = "false";
     finalCardValidator.error = "error: last_number_must_be_even";
     console.log(finalCardValidator);

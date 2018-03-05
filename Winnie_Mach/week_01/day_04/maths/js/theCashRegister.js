@@ -25,8 +25,20 @@ const shoppingCart = {
 console.log(shoppingCart);
 
 const cashRegister = function(cart) {
-  const totalCost = cart.shoes + cart.banana + cart.milo + cart.chocolateBar + cart.toiletPaper; //Object.values(cart)? sumOf()? Object.entries(cart)? What if it's for other objects? This function won't work.
+  const totalCost = cart.shoes + cart.banana + cart.milo + cart.chocolateBar + cart.toiletPaper; //Object.values(cart)? Object.key(cart)
+  // key = banana etc values = 45.59, 1.99
   return totalCost.toFixed(2);
 }
 
 console.log(cashRegister(shoppingCart));
+
+/* ______
+
+for (let item in cartForParty) {
+  total = toal + +cartForParty[item]
+}
+
+total  = 0;
+for(let i = 0; i <prices.length; i++) {
+  total += +prices [i]
+} */
