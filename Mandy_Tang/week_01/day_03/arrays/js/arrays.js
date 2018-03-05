@@ -58,3 +58,44 @@ let multiplyArray = function (numbers) {
   console.log(`${result}`);
 }
 multiplyArray(numbers);
+
+
+// Bonus
+// Define a function reverseString that computes the reversal of a string. For example, reverseString("jag testar") should return the string "ratset gaj".
+
+let reverseString = function (str) {
+// Use the split() method to make the string into an array
+    let splitString = str.split("");
+    console.log(splitString); // var splitString = "hello".split("");
+    // ["h", "e", "l", "l", "o"]
+
+    // Step 2. Use the reverse() method to reverse the new created array
+    let reverseArray = splitString.reverse(); // var reverseArray = ["h", "e", "l", "l", "o"].reverse();
+    console.log(reverseArray);
+    // ["o", "l", "l", "e", "h"]
+
+    // Step 3. Use the join() method to join all elements of the array into a string
+    let joinArray = reverseArray.join(""); // var joinArray = ["o", "l", "l", "e", "h"].join("");
+    console.log(joinArray);
+    // "olleh"
+    // Return the reversed string
+    return joinArray; // "olleh"
+}
+
+reverseString("hello");
+
+// Write a function findLongestWord that takes an array of words and returns the length of the longest one.
+
+let wordArray = ['hey','farm','peanuts'];
+let lgth = 0; // Making a place to store the temporary length of the words that your function will use to compare lengths
+let findLongestWord = function (wordArray) {
+  for (var i = 0; i < wordArray.length; i++) { // Loop syntax
+      if (wordArray[i].length > lgth) { // The first time you run through: if the length of the first element > 0...
+          let lgth = wordArray[i].length; // Store the length of the first element
+          longest = wordArray[i]; // Make the length of the first element = longest
+          // This will then loop - so it will compare length of the second word to the first word
+}
+}
+console.log(longest);
+}
+findLongestWord(wordArray);
