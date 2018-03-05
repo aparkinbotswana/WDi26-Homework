@@ -12,10 +12,10 @@ const shoppingTrolley = {
 };
 
 const cashRegister = function(){
-  let total = 0
+  let total = 0;
   for (let item in shoppingTrolley){
     total = total + +shoppingTrolley[item];
   }
   console.log(total);
-}
+};
 cashRegister();
