@@ -1,0 +1,8 @@
+{
+    "javascript.validate.enable": true,
+    "workbench.colorCustomizations": {
+            "editorError.foreground":   "#00000000",
+            "editorWarning.foreground": "#00000000",
+            "editorInfo.foreground":    "#00000000"
+    }
+}

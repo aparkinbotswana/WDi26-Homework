@@ -21,4 +21,4 @@ const halfNum4 = num1 % num2;
 console.log(` ${ num1 } is 50% of ${ num2 }`);
 
 };
-oneNum(8);
+oneNum(8)
