@@ -86,16 +86,15 @@ console.log(areat1);
 areat();
 
 const isObtuse = function(){
-const Obtuse1 = (triangle.sideA*triangle.sideA  + triangle.sideB*triangle.sideB - triangle.sideC* triangle.sideC)/2*
-triangle.sideA*triangle.sideB;
-if(Obtuse1)
+//const Obtuse1 = (triangle.sideB*triangle.sideB  > triangle.sideA*triangle.sideA + triangle.sideC* triangle.sideC);
+if(triangle.sideB*triangle.sideB  > triangle.sideA*triangle.sideA + triangle.sideC* triangle.sideC)
 {
   console.log(`Obtuse angle`);
 }
 else {
   console.log(`Not an Obtuse`);
 }
-}
+};
 isObtuse();
 
 /*
@@ -140,7 +139,9 @@ const cashRegister = function(cartForParty){
 let items= 0;//initialize a variable
 for(let itemPrice in cartForParty)//for loop to read through an object.for every value in the object,display the object
 {
-  items=items + parseFloat(cartForParty[itemPrice]);
+  //items=items + parseFloat(cartForParty[itemPrice]);
+  //items=items item + +cartForParty[itemPrice];
+
   console.log(cartForParty[itemPrice]);
 }
 console.log(items);
