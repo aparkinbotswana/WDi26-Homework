@@ -1,0 +1,240 @@
+body {
+  background-color: #000;
+  font-size: 15px;
+}
+
+nav {
+  margin: 0px 130px;
+}
+
+nav ul {
+  margin: 0px 40px;
+}
+nav li {
+  display: inline-block;
+  padding: 20px;
+  margin: 0px -5px;
+}
+
+nav li a:hover {
+  color: #00B7FF;
+  background-image: url("images/bg_nav_rollover.png");
+}
+
+nav li a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+h3 {
+  color: #CCC;
+  padding: 0 0 15px 0;
+  border-bottom: solid 1px #505050;
+  margin: 30px 0px 0px 0px;;
+}
+
+
+footer {
+  width: 70%;
+  margin: 0 auto;
+  color: #505050;
+}
+
+footer p {
+  line-height: 1.2em;
+}
+footer a {
+  color: #505050;
+  text-decoration: none;
+}
+
+footer ul {
+  padding: 0px 10px 10px 10px;
+}
+
+footer li {
+  padding: 10px 0 10px 0;
+  border-bottom: solid 1px #505050;
+  margin: 0px -10px;
+  list-style: none;
+}
+
+footer li:first-child {
+  padding: 0px 0 10px 0;
+}
+
+.maincontent {
+  margin: auto;
+  /* background-image: url("images/bg_wrapper.png"); */
+}
+.wrapper {
+
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container {
+  background-color: #F1F1F1;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.photobanner {
+  width: 100%;
+}
+.photobanner img {
+  display: block;
+  max-width: 960px;
+  margin: -2px auto;
+  padding: 0;
+}
+
+.logodiv {
+  display: inline-block;
+  width: 65%;
+  vertical-align: top;
+}
+
+.logo {
+  max-width: 291px;
+  margin: 20px 40px 20px 40px;
+  padding: 10px 40px 0px 40px;
+}
+
+.socialMedia {
+	display: inline-block;
+  width: 30%;
+  vertical-align: top;
+}
+
+.socialMedia ul li {
+	 display:inline-block;
+	 width:60px;
+	 height:60px;
+	 background:blue;
+	 text-indent:-9999em;
+}
+
+.socialMedia ul li.linkedIn {
+	background:url(../images/socialNav.png) 0px 64px;
+}
+.socialMedia ul li.twitter {
+	background:url(../images/socialNav.png) -60px 64px;
+}
+
+.socialMedia ul li.facebook {
+	background:url(../images/socialNav.png) -120px 64px;
+}
+
+.socialMedia ul li.rss {
+	background:url(../images/socialNav.png) -180px 64px;
+}
+
+
+
+.socialMedia ul li.linkedIn:hover {
+	background:url(../images/socialNav.png) 0px 0px;
+}
+
+.socialMedia ul li.twitter:hover {
+	background:url(../images/socialNav.png) -60px 0px;
+}
+
+.socialMedia ul li.facebook:hover {
+	background:url(../images/socialNav.png) -120px 0px;
+}
+
+.socialMedia ul li.rss:hover {
+	background:url(../images/socialNav.png) -180px 0px;
+}
+
+.blurb {
+  width: 80%;
+  margin: 0 auto;
+  border-top: solid 1px #BDBDBD;
+  border-right: solid 1px #FFF;
+  border-bottom: solid 1px #FFF;
+  border-left: solid 1px #BDBDBD;
+}
+
+.blurb-p {
+  width: 65%;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0px 20px 0px 20px;
+}
+
+.blurb-img {
+  width: 20%;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0;
+  margin: 0;
+}
+
+.blurb-img img {
+  width: 100%;
+  margin: 10px 10px 10px 0px;
+}
+
+.home-boxes {
+  width: 80%;
+  margin: 0px auto;
+  padding: 15px 0px;
+}
+
+.home-box {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 274px;
+  margin: 10px 9px;
+}
+
+.home-box a {
+  color: #00B7FF;
+  text-decoration: none;
+}
+
+.home-box img {
+  padding: 1px;
+  border: solid 5px #E2E2E2;
+}
+
+.blogroll {
+width: 20%;
+}
+
+.textwidget {
+width: 45%;
+}
+
+.metawidget {
+width: 20%;
+}
+.boxfooter {
+  display: inline-block;
+  vertical-align: top;
+  padding: 20px;
+}
+
+.finalinfo {
+width: 100%;
+display: inline-block;
+}
+
+.copyright {
+  width: 40%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.companybottom {
+  width: 40%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.companybottom a {
+  color: #00B7FF;
+  text-decoration: none;
+}
