@@ -10,21 +10,43 @@ NandL: ["Times Square", "34th", "28th", "23rd", "Union Square", "3rd", "1st"],
 Land6: ["8th", "6th", "Union Square", "Astor Place"],
 Nand6: ["Times Square", "34th", "28th", "23rd", "Union Square", "Astor Place"]
 };
+// rules
+// if source and destination are on the same line,
+// if source and destination are not on the same line, travel via intersection
+// if different line, count to the intersection
+// if same line, count to the end
 
-//let planTrip = function (startLine, startStation, endLine, endStation) {
+
+//Lines in object
+//let stopsL1;
+//const planTrip = function(line1, start, line2, end);
+//  const indexStart = trainLines[line1].indexOf(start);
+// let indexSwitch // if you switch,
+// if (line1 === line1) no switch
+  //indexSwitch = trainLines[line1].endOf()
+// let indexStart = trainLines[line1].indexOf(start);
+//let tripDetails;
+//if (line1 === line2)
+//indexSwitch = trainLines[line1].indexOf(end);
+//else {
+  //indexSwitch = trainLines[line1].indexOf(unionsquare) using Math.abs you don't need an if statement for negative numbers
+//}
+//if indexstart < indexswitch (they're going forwards). if so, then slice array
+//startline+1 and end slice at where they get off + 1 (to include the last stop)
+//stopsL1 = trainLines[line1].slice(indexSwitch, indexStart)
+//when calling tripDetails, stopsL1.join
+let planTrip = function (startLine, startStation, endLine, endStation) {
 
   let findIndex = function (startLine, startStation) {
     let index = lines.N.indexOf(startStation); {
     console.log(index);
     return index;
-
-
 }
-findIndex(N, "Times Square")
+
 // We know "Times Square" = N[0]
 // We need to return the index based on the string input, which we can do using a function
 }
-
+findIndex(N, "TimesSquare")
 //planTrip(lines.N, "Times Square", lines.N, "23rd");
 
     // Take text input and return the index. In this case, index of "Times Square" is 0

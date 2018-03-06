@@ -16,11 +16,11 @@
 // letters to check that your program works.
 
 const theWord = ["F", "O", "X"]
-let guessWord = ["-", "-", "-"]
+let guessWord = ['_', '_', '_']
 
 const guessLetter = function(letter) {
 
-  for (var i = 0; i < theWord.length; i++) {
+  for (let i = 0; i < theWord.length; i++) {
     //if letter === theWord[i] {
     guessWord[i] = letter
     letterFound = true
