@@ -16,9 +16,11 @@ const cartForParty = {
 // cashRegister(cartForParty)); // 60.55
 
 
-function cashRegister () {
-  console.log(cartForParty.banana + cartForParty.handkerchief);
-};
+for (let item in cartForParty) {
+  total = total + +cartForParty[item];
+}
 
-
-cashRegister();
+//another way
+for (let item in cartForParty) {
+  total = total + parseFloat(cartForParty[item]);
+}
