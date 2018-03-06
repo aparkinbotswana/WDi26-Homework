@@ -11,7 +11,8 @@ Link Hover Color = #20222a
 
 */
 
-.container {
+
+#container {
   max-width: 1000px;
   margin: 0 auto;
 }
