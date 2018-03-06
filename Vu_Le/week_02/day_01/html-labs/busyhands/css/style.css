@@ -1,0 +1,91 @@
+.container {
+  max-width: 960px;
+  margin: 20px auto;
+}
+
+nav {
+  background-color: black ;
+  width: 100%;
+  height: 85px;
+}
+
+nav ul {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+nav ul li {
+  font-size: 16px;
+  color: white;
+  font-family: "Arial", sans-serif;
+  display: inline;
+  padding-right: 40px;
+  height: 85px;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.hero-image {
+  position: relative;
+}
+
+.banner {
+  margin-top: 20px;
+}
+
+.shadow {
+  top: 390px;
+  margin-top: 0;
+  position: absolute;
+}
+
+
+#socialMedia {
+	float: right;
+}
+
+#socialMedia ul li {
+	 display:inline-block;
+	 width:60px;
+	 height:60px;
+	 background:blue;
+	 text-indent:-9999em;
+}
+
+#socialMedia ul li.linkedIn {
+	background:url(../images/socialNav.png) 0px 64px;
+}
+#socialMedia ul li.twitter {
+	background:url(../images/socialNav.png) -60px 64px;
+}
+
+#socialMedia ul li.facebook {
+	background:url(../images/socialNav.png) -120px 64px;
+}
+
+#socialMedia ul li.rss {
+	background:url(../images/socialNav.png) -180px 64px;
+}
+
+#blurb {
+}
+
+#homeBox {
+}
+
+.home-box {
+
+}
+.home-box {
+
+}
+.home-box {
+
+}
+
+box-footer {
+
+}
+.blogroll
+.box-footer
+.textwidget
