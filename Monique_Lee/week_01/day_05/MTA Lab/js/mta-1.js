@@ -121,4 +121,6 @@ const planTrip = function(startLine, firstStop, endLine, lastStop){
 
   }
 
-planTrip('N', '34th', '6', '33rd');
+// planTrip('N', '34th', '6', '33rd');
+planTrip('N', '8th', 'N', 'Times Square');
+planTrip('N', 'Times Square', 'N', '8th');
