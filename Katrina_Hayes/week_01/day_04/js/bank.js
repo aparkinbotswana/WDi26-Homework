@@ -16,23 +16,153 @@
 // Tips
 // Don't overthink this. Shorter code is probably the answer.
 
-const bankAccounts = [ //array of accounts that the bank has
-  {
-    current balance: 12,
-    owner: Joe Blow
-  },
-  {},
-  {},
-];
+// const accountFactoy = function(b,n) {
+//   return {
+//     balance: b,
+//     name: n
+//   };
+// };
 
-const bankFunctions = { //object of bank functions where i put the methods, but I'm confused about why the methods would go in this object, I'm just doing it because if they're called methods, they must be in an object
-  sum: function(a) {
-    let sum = 0;
-    for (let i = 0; i < bankAccounts.length; i++) {
-      sum = sum + bankAccounts[i];
-    } return sum;
+const bank = [ //array of objects (accounts) that the bank has generated via the accountFactory function
+  {
+    amount: 12,
+    name: "Colonel Sanders",
+    deposit: function(amount) {
+      this.balance = this.balance + amount;
+    },
+    withdraw: function(amount) {
+      this.balance = this.balance - amount;
+    }
   },
-  addAccount: function(b) { //I'm getting very lost and it's very late so I'm stopping here for now.
-    b.push
+  {
+    amount: 1000,
+    name: "Max Power",
+    deposit: function(amount) {
+      this.balance = this.balance + amount;
+    },
+    withdraw: function(amount) {
+      this.balance = this.balance - amount;
+    }
+  },
+  {
+    amount: 50000,
+    name: "Clippity Clop",
+    deposit: function(amount) {
+      this.balance = this.balance + amount;
+    },
+    withdraw: function(amount) {
+      this.balance = this.balance - amount;
+    }
+  }
+];
+//check it's working:
+console.log(bank);
+
+// const bankFeatures = { //bit confused about why the bank features need to be methods (functions) inside an object
+//   sum: function() {
+//     let sum = 0;
+//     for (let i = 0; i < bankAccounts.length; i++) {
+//       sum = sum + bankAccounts[i].balance;
+//     } return sum;
+//   },
+//   addAccount: function(b, n) {
+//     let newAccount = {
+//       balance: b,
+//       name: n
+//     }
+//     bankAccounts.push(newAccount);
+//     return bankAccounts;
+//   },
+//   deposit: function(a, n) {
+//     //need to use the name (n) to find the relevant account, then add the new amount (a) to the existing balance
+//     const depositIndex = bankAccounts.indexOf() //trying to get the index in the array of the account that has the name given but I don't know how.
+//     }
+//
+//   },
+//   withdraw: function() {
+//
+//   }
+// };
+//
+// console.log(bankFeatures.sum());
+// bankFeatures.addAccount(50, "Mary Poppins");
+// console.log(bankAccounts);
+
+const showBalance = function() {
+  for (var i = 0; i < bank.length; i++) {
+    console.log(bank[i].name)
+    console.log(bank[i].amount);
   }
 }
+
+const newAccount = function() {
+  let name = prompt("enter a name");
+  newAccount.name = name;
+  newAccount.balance = 0;
+  newAccount.deposit = function(amount)
+
+  newAccount.withdraw = function(amount)
+  bank.push(newAccount);
+}
+
+const deposit = function() {
+  let name = prompt("enter a name");
+  let amount = prompt("enter an amount");
+  amount = +amount;
+  console.log(name, amount); //check
+
+  for (let i = 0; i < bank.length; i++) {
+    if (bank[i].name === name) {
+      bank[i].deposit(amount);
+    }
+  }
+
+  showBalance();
+}
+
+const withdraw = function () {
+  let name = prompt("enter a name");
+  let amount = prompt("enter an amount");
+  amount = +amount;
+
+  for (var i = 0; i < bank.length; i++) {
+    if (bank[i].name === name) {
+      if (bank[i].balance < amount) {
+        console.log("you don't have enough money");
+      } else {
+        bank[i].balance(amount);
+      }
+    }
+  }
+}
+
+const transfer = function() {
+  let name1 = prompt("enter a name to transfer FROM");
+  let name2 = prompt("enter a name to transfer TO");
+  let amount = prompt("enter an amount");
+  amount = +amount;
+
+  for (var i = 0; i < bank.length; i++) {
+    if (bank[i].name === name1) {
+      if (bank[i].balance < amount) {
+        console.log("not enough money");
+      } else {
+        bank[i].balance = bank[i].balance - amount;
+      }
+    }
+  }
+
+  for (var i = 0; i < bank.length; i++) {
+    if (bank[i].name === name2) {
+      bank[i].balance = bank[i].balance + amount;
+    }
+  }
+
+  showBalance();
+
+}
+
+
+
+
+console.log(bank);
