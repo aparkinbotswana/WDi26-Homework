@@ -1,0 +1,49 @@
+/*
+
+## Style Hints:
+
+Body Font Size = 12px
+	 Line Height = 17px
+	 Font Family = "Times New Roman", serif
+	 Font Color = #656565
+
+Link Hover Color = #20222a
+
+*/
+
+body {
+  font-size: 12px;
+  line-height: 17px;
+  font-family: "Times New Roman", serif;
+  color: #656565;
+}
+
+a {
+  color: 	#87CEFA;
+  text-decoration: none;
+}
+
+a.hover {
+  color: #20222a;
+}
+
+h1 {
+	text-indent: -99999em; /* hides the H1 tag from the page, while semantically keeping it present in your HTML */
+}
+
+h3 {
+  color: 	#87CEFA;
+}
+
+#logo {
+  padding-bottom: 10px;
+}
+
+#container {
+	width: 950px;
+	margin: 0 auto; /*centers our container on the page */
+}
+
+.samllImages {
+  border: 5px solid #CCC;
+}
