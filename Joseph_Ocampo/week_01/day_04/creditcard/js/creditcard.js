@@ -41,13 +41,24 @@ const validateCreditCard = function (creditCardNo) {
     return false;
   }
     // checks if letter present
-  else if (regex1.test(cardNum)) {
+
+  if (regex1.test(cardNum)) {
     console.log('wrong');
     return false;
   }
 
+  // checks last digit is even
+  if (cardNum(15,16) % 2 === 0) {
+    console.log('works');
+    return false;
+  }
+
+
+  if(NaN(cardNum)) 
+
+
   // checks that thers is 2 different numbers
-  else if  {
+  if  {
     console.log('works');
   }
 
@@ -56,10 +67,6 @@ const validateCreditCard = function (creditCardNo) {
 
 
 
-// checks last digit is even
-else if (cardNum.slice(15,16)% 2 === 0) {
-  console.log('works');
-}
 
 
 };
