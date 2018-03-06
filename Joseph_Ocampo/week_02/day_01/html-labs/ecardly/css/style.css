@@ -60,9 +60,11 @@ main {
 
 .ecard p {
   width: 300px;
+  display: inline-block;
   margin: 0;
-  margin-left: 5px;
-  float: right;
+  margin-left: 15px;
+  line-height: 1.5;
+  /* float: right; */
 }
 
 .ecard img {

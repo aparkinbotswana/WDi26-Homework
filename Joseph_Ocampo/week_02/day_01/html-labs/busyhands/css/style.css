@@ -18,6 +18,10 @@ Version: 0.00001
   box-sizing: border-box;
 }
 
+/* ul {
+  margin: 0;
+} */
+
 /*-----------------------------------------------------------------------------
 =01 BODY
 -----------------------------------------------------------------------------*/
@@ -181,6 +185,70 @@ main h1 {
 
 footer {
   background: black;
-  height: 20px;
-  margin-top: 20px;
+  color: aliceblue;
+  font-size: 12px;
+  margin-top: 40px;
+}
+
+footer h2 {
+  font-weight: 600;
+  color: white;
+}
+
+
+footer p {
+  display: inline-block;
+  color: grey;
+}
+
+footer div {
+  vertical-align: top;
+  margin-right: 30px;
+}
+
+.footerContainer {
+  width: 960px;
+  margin: 0 auto;
+  /* border: 2px solid yellow; */
+}
+
+.textWidget {
+  width: 40%;
+  display: inline-block;
+  padding-top: 15px;
+
+}
+
+.textWidget p {
+  margin-top: 8px;
+}
+
+.blogroll {
+  width: 25%;
+  display: inline-block;
+}
+
+.meta {
+  width: 20%;
+  display: inline-block;
+
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer li {
+  border-bottom: 1px solid grey;
+  padding: 8px;
+  color: grey;
+}
+
+.theme {
+  margin-left: 537px;
+}
+
+.footerBottom {
+  margin-top: 40px;
 }

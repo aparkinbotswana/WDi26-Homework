@@ -3,6 +3,7 @@
 //
 // // Input
 
+/* ME: 1st attempt
 const cartForParty = {
   banana: "1.25",
   handkerchief: ".99",
@@ -22,8 +23,30 @@ const dollars = function(obj){
 const cashRegister = function(obj){
     total = 0
     prices = dollars();
-    for (let i; i < prices.length, i++){
+    for (let i; i < prices.length; i++){
       total = total + prices[i];
+      return total;
+    }
+}
+*/
+
+//ME: 2nd attempt is returning undefined
+
+const cartForParty = {
+  banana: "1.25",
+  handkerchief: ".99",
+  Tshirt: "25.01",
+  apple: "0.60",
+  nalgene: "10.34",
+  proteinShake: "22.36"
+};
+
+const cashRegister = function(obj){
+    total = 0
+    for (let i; i < obj.length; i++){
+      total += Object.keys(obj).forEach(function(key){
+            obj[key] = +obj[key]
+          });
       return total;
     }
 }
@@ -31,18 +54,24 @@ const cashRegister = function(obj){
 // // Output
 // cashRegister(cartForParty)); // 60.55
 
-cashRegister(cartForParty);
+let registerval = cashRegister(cartForParty);
+console.log(registerval);
 
 
-/* check:
-        function sum(obj) {
-          var sum = 0;
-          for(var el in obj) {
-            if( obj.hasOwnProperty( el ) ) {
-              sum += parseInt( obj[el] );
-            }
-          }
-          return sum;
-        }
-      }
+//JOEL: for in loop: not recommended!!! recommend to turn object into list instead
+/*
+let total = 0;
+for (let item in (cartForParty)){
+  total = total + parseFloat(cartForParty[i]);
+  // total = total + +(cartForParty[i]);
+}
+*/
+
+//JOEL - this one is a winner!
+/*
+const prices = Object.values(cartForParty);
+  let total = 0;
+  for (let i; i < prices.length, i++){
+    total += +prices[i];
+  }
 */
