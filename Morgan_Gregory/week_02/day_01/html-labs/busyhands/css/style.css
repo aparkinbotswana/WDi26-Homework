@@ -15,21 +15,43 @@ nav {
   color: white;
 }
 
-.socialMedia  li {
-  list-style: none;
-}
-
 .container {
 	width: 950px;
 	margin: 0 auto; /*centers our container on the page */
 }
 
-.readMoreLink {
-  color: #33ccff;
+.logo_social_box {
+  display: inline-block;
+}
+
+.logo {
+  width: 60%;
+  display: inline-block;
+}
+
+.socialMedia li {
+  width: 30%;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.button {
+  margin-top: 20px;
+}
+
+.button_text {
+  width: 70%;
+  margin-right: 70px;
+  display: inline-block;
+}
+
+.button_image {
+  width: 30%;
+  display: inline-block;
 }
 
 .three-col {
-  display: inline-block;
+  margin-bottom: 50px;
 }
 
 .smallImages {
@@ -37,21 +59,22 @@ nav {
 }
 
 .home-box1 {
-  float: left;
-  width: 30%;
-  padding: 10px;
+  width: 33%;
+  display: inline-block; /* this will display neatly side by side */
 }
 
 .home-box2 {
-  float: left;
-  width: 30%;
-  padding: 10px;
+  width: 33%;
+  display: inline-block; /* this will display neatly side by side */
 }
 
 .home-box3 {
-  float: left;
-  width: 30%;
-  padding: 10px;
+  width: 33%;
+  display: inline-block; /* this will display neatly side by side */
+}
+
+.readMoreLink {
+  color: #33ccff;
 }
 
 footer {
