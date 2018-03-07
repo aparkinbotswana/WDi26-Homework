@@ -1,0 +1,4 @@
+References:
+https://bitsofco.de/alternatives-to-floating/
+https://stackoverflow.com/questions/14725854/css-float-alternative
+  http://jsbin.com/uyemub/1/edit?html,css,output

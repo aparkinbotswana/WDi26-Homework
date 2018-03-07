@@ -11,7 +11,8 @@ Link Hover Color = #20222a
 
 */
 
-.container {
+
+#container {
   max-width: 1000px;
   margin: 0 auto;
 }
@@ -31,7 +32,6 @@ body {
 
 p {
   line-height: 17px;
-  max-width: 1000px;
 }
 
 time {
@@ -40,6 +40,10 @@ time {
 
 a{
   text-decoration: none;
+}
+
+a:hover {
+  color: #20222a;
 }
 
 #logo{
