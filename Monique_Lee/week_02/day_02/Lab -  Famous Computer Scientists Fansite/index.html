@@ -1,0 +1,75 @@
+<!-- Requirements
+At least 3 pages (example: biography, trivia, hometown)
+At least 1 Google Font
+Whatever HTML and CSS you desire
+Keep your code clean and DRY
+Start working with semantic elements: http://html5doctor.com/lets-talk-about-semantics/
+No Javascript! Even if you know how to use jQuery, see how far you can push this with pure HTML + CSS
+Don't worry about responsiveness - desktop resolution is fine
+Your research should aim to reveal at least two things about each person:
+Why Joel admires them
+Something Joel doesn't already know about them
+Optional extras
+Experiment with http://fortawesome.github.io/Font-Awesome/
+Record and embed a short podcast or vlog about your favourite scientist
+Try embedding other media (YouTube or Vimeo video, Soundcloud)
+Try embedding a Google map (for their hometown and/or alma mater) -->
+
+
+<!doctype html>
+<html lang="en">
+<head>
+    	<meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    	<meta name="description" content="Famous computer scientists fansite">
+    	<meta name="keywords" content="Yukihiro Matsumoto">
+
+		<title>Yukihiro Matsumoto Fansite</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="container">
+    <header>
+      <h1>Yukihiro Matsumoto Fansite</h1>
+      <nav>
+        <a href="#">Biography</a>
+        <a href="hometown.html" target="_blank">Hometown</a>
+        <a href="trivia.html" target="_blank">Trivia</a>
+      </nav>
+    </header>
+
+    <main>
+      <time datetime="2012-05-6">Created March 6th, 2018</time>
+      <header>
+        <h2>Biography</h2>
+      </header>
+      <article>
+        <p>Yukihiro Matsumoto is a super famous computer scientst from Japan. He was born <time datetime="1965-04-14">14 April 1965</time> and is best known for his work as the chief designer of the Ruby programming language, which he named on <time datetime="1993-02-24">24 February 1993</time> and released to the internet on <time datetime="1995-12-21">21 December 1995.</time><br />
+        Matsumoto has an information science degree from the University of Tukuba. Matsumoto worked at Heroku in San Francisco, which was one of the first cloud platforms. He is a fellow of the NaCl - Open Source Frontier - and also of the Rakuten Institute of Technology.</p>
+          source:<a href="https://en.wikipedia.org/wiki/Yukihiro_Matsumoto" target="_blank">Wikipedia</a>
+        <figure>
+          <img id="profileimg" src="images/yukihiro_matsumoto.jpg" alt="image of Yukihiro Matsumoto " />
+          <figcaption>まつもとゆきひろの写真</figcaption>
+        </figure>
+
+      </article>
+
+
+    </main>
+
+    <aside>
+      <p>Not to be confused with Ruby on Rails, Ruby is a dynamic, object-oriented open source programming language.<a href="http://www.ruby-lang.org/en/"> Find out more about Ruby here.</a></p>
+      <figure>
+        <img id="ruby_logo" src="images/ruby_logo.png" alt="image used to identify the Ruby programming language" />
+        <figcaption>Ruby logo</figcaption>
+      </figure>
+    </aside>
+
+    <footer>2018</footer>
+    </div><!-- #container -->
+</body>
+</html>

@@ -1,0 +1,12 @@
+https://gist.github.com/wofockham/c828b69346440f421c09
+
+# Hell is other people's HTML
+
+- Understand: separation of concerns
+- Complete: https://flukeout.github.io/
+- Read: http://learnlayout.com/
+- Memorise: http://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048
+- Work through: http://discover-devtools.codeschool.com/ - Chapters 1 and 2
+- Complete: Brook & Lyn
+- Complete: Busy Hands
+- Complete: eCardly
