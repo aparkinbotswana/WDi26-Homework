@@ -87,12 +87,12 @@ isObtuse(triangleA);
 // The function should return the total price of the shopping cart. Example
 
 const cartForParty = {
-  banana: 1.25,
-  handkerchief: .99,
-  Tshirt: 25.01,
-  apple: 0.60,
-  pomerganate: 10.34,
-  proteinShake: 22.36
+  banana: "1.25",
+  handkerchief: ".99",
+  Tshirt: "25.01",
+  apple: "0.60",
+  pomerganate: "10.34",
+  proteinShake: "22.36"
 };
 
 let cashRegister = function(c){
@@ -101,6 +101,11 @@ let cashRegister = function(c){
 }
 }
 cashRegister(cartForParty);
+
+// let total = 0;
+//  for (let item in cartForParty) {
+//    // total = total + +cartForParty[item]; (or you can use parseFloat)
+//  }
 
 //
 // You're starting your own credit card business. You've come up with a new way to validate credit cards with a simple function called validateCreditCard that returns true or false.
@@ -172,6 +177,42 @@ const obj = {};
   }
 };
 
+
+// Class correction
+
+const validator = function (cardNum) {
+  console.log(cardNum);
+
+  cardNum = cardNum.replace(/-/g, "")
+  console.log(cardNum);
+
+  if (cardNum.lenth !== 16) {
+    return false
+  }
+
+  if (isNan(cardNum)) {
+    return false
+  }
+
+  if cardNum[15] % 2 !== 0) {
+    return false
+  }
+
+  const arr = cardNum.split('')
+  let sum = 0;
+  for (var i = 0; i < arr.length; i++) {
+    sum = sum + +arr[i]
+  }
+
+  if (sum < 17) {
+    return false
+  }
+  return true
+}
+
+
+const passFail = validator("2222-2222-2222-2222")
+console.log(passFail);
 
 // In this homework, you'll create a basic bank in Javascript.
 // The bank has many accounts and the following capabilities that you need to write.

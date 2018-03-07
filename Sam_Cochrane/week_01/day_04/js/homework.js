@@ -114,8 +114,6 @@ cashRegister (cartForParty);
 //
 // Here are the rules for a valid number:
 //
-// Number must be 16 digits, all of them must be numbers
-// You must have at least two different digits represented (all of the digits cannot be the same)
 // The final digit must be even
 // The sum of all the digits must be greater than 16
 // The following credit card numbers are valid:
@@ -137,77 +135,143 @@ cashRegister (cartForParty);
 // { valid: true, number: 'a923-3211-9c01-1112' }
 // { valid: false, number: 'a923-3211-9c01-1112', error: ‘wrong_length’ }
 // Double Bonus: Make your credit card scheme even more advanced! What are the rules, and what are some numbers that pass or fail? Ideas: check expiration date! Check out the Luhn Algorithm for inspiration.
-//
-//
-//
 
-I didn't complete this i got help with this
+const vaildCreditCard = function ( cardNumber ) {
+  //console.log( CardNumber );
+  // Number must be 16 digits, all of them must be numbers
 
-const myCard = {
-  number: '9999-9999-8888-00a0',
-  expiryMonth: 02,
-  expiryYear: 20
+  cardNumber = cardNumber.replace (/-/g, '')
+  console.log(cardNumber);
+  if (cardNumber.length !== 16){
+    //console.log('false');
+    return false
+  }
+  if (isNaN (cardNumber) ){
+    return false
+  }
+
+  return true 
 }
 
-function validateCreditCard(card) {
-  const actualCardNumber = card.number.replace(/-/g, "");
 
-  // make sure it only has numbers
-  function check(arr) {
-   for(var i=0; i<arr.length; i++){
-     if(typeof arr[i] != "string") {
-        return false;
-      }
-   }
+console.log(vaildCreditCard ('1111-1111-1111-1111'))
 
-   return true;
-  }
+// You must have at least two different digits represented (all of the digits cannot be the same)
 
 
-  const hasOnlyNumbers = /^\d+$/.test(actualCardNumber);
 
-  if (!hasOnlyNumbers) {
-    const error = {
-      valid: false,
-      number: card.number,
-      error: 'invalid characters'
-    }
-    return error;
-  }
 
-  // final number is odd
-  const lastNumberIsOdd = actualCardNumber[actualCardNumber.length-1] % 2 === 0 ? false : true;
-  console.log('lastNumberIsOdd', lastNumberIsOdd)
-  if (lastNumberIsOdd) {
-    const error = {
-      valid: false,
-      number: card.number,
-      error: 'last number is odd'
-    }
-    return error;
-  }
 
-  // check card length
-  if (actualCardNumber.length !== 16) {
 
-    const error = {
-      valid: false,
-      number: card.number,
-      error: 'wrong_length'
-    }
 
-    return error;
-    a}
 
-  const validCard = {
-    valid: true,
-    number: card.number,
-    error: 'Card is valid'
-  }
 
-  return validCard
-}
 
-const myValidCard = validateCreditCard(myCard);
 
-console.log('my valid card is: ', myValidCard)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
+//
+
+//I didn't complete this i got help with this
+
+// const myCard = {
+//   number: '9999-9999-8888-00a0',
+//   expiryMonth: 02,
+//   expiryYear: 20
+// }
+//
+// function validateCreditCard(card) {
+//   const actualCardNumber = card.number.replace(/-/g, "");
+//
+//   // make sure it only has numbers
+//   function check(arr) {
+//    for(var i=0; i<arr.length; i++){
+//      if(typeof arr[i] != "string") {
+//         return false;
+//       }
+//    }
+//
+//    return true;
+//   }
+//
+//
+//   const hasOnlyNumbers = /^\d+$/.test(actualCardNumber);
+//
+//   if (!hasOnlyNumbers) {
+//     const error = {
+//       valid: false,
+//       number: card.number,
+//       error: 'invalid characters'
+//     }
+//     return error;
+//   }
+//
+//   // final number is odd
+//   const lastNumberIsOdd = actualCardNumber[actualCardNumber.length-1] % 2 === 0 ? false : true;
+//   console.log('lastNumberIsOdd', lastNumberIsOdd)
+//   if (lastNumberIsOdd) {
+//     const error = {
+//       valid: false,
+//       number: card.number,
+//       error: 'last number is odd'
+//     }
+//     return error;
+//   }
+//
+//   // check card length
+//   if (actualCardNumber.length !== 16) {
+//
+//     const error = {
+//       valid: false,
+//       number: card.number,
+//       error: 'wrong_length'
+//     }
+//
+//     return error;
+//     a}
+//
+//   const validCard = {
+//     valid: true,
+//     number: card.number,
+//     error: 'Card is valid'
+//   }
+//
+//   return validCard
+// }
+//
+// const myValidCard = validateCreditCard(myCard);
+//
+// console.log('my valid card is: ', myValidCard)
