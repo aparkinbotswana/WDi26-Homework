@@ -1,0 +1,18 @@
+
+@import url('https://fonts.googleapis.com/css?family=Karma');
+
+body{
+  background: #8e9094;
+  font-family: 'Karma', sans-serif;
+}
+
+p{
+  font-size: 14px;
+}
+
+.container{
+  max-width: 960px;
+  margin:auto;
+  background-color: #e3e6e8;
+  padding: 1em;
+}

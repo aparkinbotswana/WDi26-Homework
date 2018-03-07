@@ -6,11 +6,7 @@ body{
 
 nav a:link{
   color: white;
-  display: inline-block;
-}
-
-.navlink{
-  color: white;
+  /* display: inline-block; */
 }
 
 #main-content{
@@ -34,4 +30,8 @@ nav a:link{
 .logo{
   position: absolute;
   left:0;
+}
+
+.blurb{
+  
 }
