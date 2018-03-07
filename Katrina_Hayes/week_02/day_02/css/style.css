@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: white;
+  background-color: #e5e4df;
   margin: 0; /* to turn off default margin */
   padding: 0; /* to turn off default padding */
   font-family: 'Dosis', sans-serif;
@@ -29,7 +29,6 @@ h1 {
 
 nav {
   text-align: center;
-/*  background-color: rgba(232, 255, 0, 1); */
 }
 
 nav a {
@@ -46,6 +45,7 @@ nav a {
   color: #e5e4df;
   text-decoration: underline;
 }
+
 nav a:hover {
   color: #e5e4df;
   text-decoration: underline;
@@ -63,10 +63,34 @@ main {
   padding: 16px;
 }
 
+main.quirks {
+  width: 44%;
+}
+
+main.perl {
+  width: 48%;
+}
+
 aside {
   display: inline-block;
   width: 39%;
   padding: 16px;
+}
+
+aside.quirks {
+  width: 55%;
+}
+
+aside.perl {
+  width: 48%;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+p {
+  font-size: 17px;
 }
 
 img {
@@ -75,5 +99,6 @@ img {
 
 footer {
   text-align: center;
-  margin: 50px auto 0 auto;
+  margin: 100px auto 0 auto;
+  font-size: 12px;
 }
