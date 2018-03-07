@@ -14,7 +14,7 @@ img.style.left = '0px';
 //
 //   if (newTop === 0 ) {
 //     window.clearInterval(timer2);
-//     console.log('hello');
+//
 //
 //
 //  }  // window.clearInterval(timer);
@@ -32,8 +32,6 @@ const watchKittyWalk = function() {
   if (newTop === innerWidth-296) {
     window.clearInterval(timer);
 
-
-      // window.clearInterval(timer);
     }
 };
 
