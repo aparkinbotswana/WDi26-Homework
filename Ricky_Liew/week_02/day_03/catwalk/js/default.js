@@ -14,7 +14,6 @@ cat.style.position = 'absolute';
 cat.style.left = '0px';
 
 var makeCatWalk = function(){
-  console.log("test");
   let oldPosition = parseInt(cat.style.left);
   let newPosition = oldPosition + 10;
   cat.style.left = newPosition + 'px';

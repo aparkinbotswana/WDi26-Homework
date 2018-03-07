@@ -10,11 +10,6 @@ nav a:link{
 }
 
 #main-content{
-  width: 750px;
-  margin: 0 auto;
-}
-
-#main-content{
   background-color: white;
   width: 1000px;
   margin: 0 auto;
@@ -33,5 +28,5 @@ nav a:link{
 }
 
 .blurb{
-  
+
 }
