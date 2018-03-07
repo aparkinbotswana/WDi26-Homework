@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #F0F5F8;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+header {
+  margin: 1em auto 3em auto;
+}
+
+nav {
+  text-align: center;
+  margin: 1em auto 8em auto;
+  border-bottom: 2px solid #0F0F0F;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  padding: 40px;
+  margin: 0px -5px;
+}
+
+nav a:hover {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #716969;
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
+  text-align: left;
+}
+
+h1 {
+  font-size: 3em;
+  line-height: 1.1em;
+}
+
+h2 {
+  font-size: 1.3em;
+}
+
+h3 {
+  margin: .5em auto;
+}
+
+a {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #0F0F0F;
+  text-decoration: none;
+}
+
+section {
+  letter-spacing: .1em;
+  margin: 6em auto;
+}
+
+section h2 {
+  font-size: 3em;
+}
+
+section p {
+  width: 80%;
+  text-align: justify;
+}
+
+section.who {
+  margin: 6em auto 10em auto;
+}
+section.why {
+  margin: 6em auto 10em auto;
+}
+
+section.why h2 {
+  text-align: right;
+}
+
+section.why p {
+  margin: 1em 0 1em 12em;
+}
+
+footer {
+  font-size: .75em;
+  text-align: center;
+}
+
+.container {
+  /* background-color: pink; */
+  width: 960px;
+  margin: auto;
+}
+
+.headertext {
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+  padding: 1em 2em 2em 2em;
+}
+
+.headerimage {
+  display: inline-block;
+  width: 40%;
+  font-size: 0.8em;
+}
+
+.headerimage img {
+  border-radius: 1000px;
+  max-width: 400px;
+  display: block;
+  margin: 0px auto;
+}
+
+.born {
+  display: inline-block;
+  width: 350px;
+  height: 160px;
+  margin: 6em 3em;
+  padding: 1em 1em 1em 3em;
+  background-color: #FFF;
+  vertical-align: top;
+  border: 2px solid #e0dede;
+}
+
+.died {
+  display: inline-block;
+  width: 350px;
+  height: 160px;
+  margin: 6em 3em;
+  padding: 1em 1em 1em 3em;
+  background-color: #FFF;
+  vertical-align: top;
+  border: 2px solid #e0dede;
+}
+
+.infobox {
+  display: inline-block;
+  vertical-align: top;
+  padding: 1em 0 1em 0;
+  margin: 0 1.4em;
+  background-color: #FFF;
+  border: 2px solid #e0dede;
+  height: 280px;
+}
+
+div.infobox.medium {
+  width: 45%;
+}
+
+div.infobox.village {
+  width: 45%;
+}
+
+div.infobox.www {
+  display: block;
+  width: 95.2%;
+  height: 330px;
+  margin: 3em auto 6em auto;
+}
+.infobox h3 {
+  text-align: center;
+}
+.infobox p {
+  letter-spacing: 0;
+  margin: 2em auto;
+
+}
+
+.returnToTop {
+    margin: 1em auto 3em;
+}
+
+.returnToTop a {
+  font-size: 2em;
+  border-bottom: 2px solid #000;
+}
+
+.returnToTop a:hover {
+  color: #716969;
+  font-size: 2em;
+  border-bottom: 2px solid #716969;
+}
+
+
+/* PAGE SPECIFIC */
+
+.pagesheader {
+  margin: -5em auto 1em auto;
+  text-align: center;
+}
+
+.pagesheader h1 {
+  font-size: 2em;
+  margin: 1em auto 3em;
+}
+
+.pagesheader h2 {
+  text-align: center;
+}
+
+.video {
+  display: block;
+  margin: 3em auto;
+}
+
+iframe {
+  display: block;
+  margin: 0 auto;
+}
+
+div.map {
+  margin: 2em auto 6em;
+}
+
+div.video {
+    margin: 2em auto 6em;
+}

@@ -1,0 +1,99 @@
+/* this will allow you to see all the elements on your page to check latouts etc
+* {
+  border: 1px solid red;
+}
+*/
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Nunito|Titillium+Web');
+
+body {
+  background-image: url("../img/moth.jpg");
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito', sans-serif;
+}
+
+.container {
+  background-color: white;
+  max-width: 960px; /* 960px is a reliable full sized window */
+  margin: auto; /* this pushes all content within the container to the center */
+  padding: 1em;
+  z-index: 1;
+}
+
+nav {
+  text-align: left;
+  margin-left: 15px;
+}
+
+nav a { /* a tag within the nav tag is a decendent selector */
+  list-style-type: none;
+  text-decoration: none;
+  padding-left: 15px;
+  color: black;
+  padding-right: 40px;
+}
+
+nav a:hover {
+  color: blue;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+h1 {
+  text-align: left;
+  margin-left: 30px;
+}
+
+h3 {
+  font-style: italic; /* had trouble getting an h2 to sit at top of second image on archive page ? */
+}
+
+main {
+  display: inline-block;
+  width: 75%;
+  padding-top: 20px;
+  padding-left: 30px;
+}
+
+main img {
+  margin-top: 20px;
+  float: left;
+  width: 400px;
+  height: auto;
+}
+
+main p {
+  float: right;
+  width: 300px;
+  margin-left: 20px;
+}
+
+.above_map main h2 {
+  color: red;
+}
+
+footer {
+  padding-top: 50px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.video-paragraph {
+  width: 500px;
+  text-align: left;
+  margin-right: 220px;
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ccc;
+}
+.google_map { /* had real trouble trying to put an h2 in above the map re: layout*/
+  margin-top: 50px;
+}
