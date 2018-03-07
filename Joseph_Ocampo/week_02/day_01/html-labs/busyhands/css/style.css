@@ -1,0 +1,254 @@
+/*
+Theme Name: Busy Hands
+Author: Big Square
+Version: 0.00001
+
+[Table Of Contents]
+
+	01- BODY
+	02- HEADERS
+	03- GLOBAL STYLES
+	04- MAIN CONTENT
+	05- SOCIAL MEDIA
+	06- MISC
+
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+/* ul {
+  margin: 0;
+} */
+
+/*-----------------------------------------------------------------------------
+=01 BODY
+-----------------------------------------------------------------------------*/
+
+body {
+  color: black;
+  font-family: "Arial", serif;
+  background: url(../images/bg_body.jpg);
+  margin: 0 auto;
+}
+
+.bg_wrapper {
+  background: url(../images/bg_wrapper.png);
+  background-repeat: repeat-x;
+}
+
+
+/*-----------------------------------------------------------------------------
+=01 HEADERS
+-----------------------------------------------------------------------------*/
+
+nav {
+  /* background: black; */
+  padding: 30px 0px;
+}
+
+nav a {
+  color: white;
+  padding: 30px 15px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background: url(../images/bg_nav_rollover.png);
+}
+
+nav a:nth-child(1) {
+  padding-left: 0;
+}
+
+header {
+  width: 960px;
+  margin: 0 auto;
+}
+
+
+.socialLinks ul li {
+	 display:inline-block;
+	 width:60px;
+	 height:60px;
+	 text-indent:-9999em;
+}
+
+.socialLinks ul li.linkedIn {
+	background:url(../images/socialNav.png) 0px 64px;
+}
+.socialLinks ul li.twitter {
+	background:url(../images/socialNav.png) -60px 64px;
+}
+
+.socialLinks ul li.facebook {
+	background:url(../images/socialNav.png) -120px 64px;
+}
+
+.socialLinks ul li.rss {
+	background:url(../images/socialNav.png) -180px 64px;
+}
+
+
+
+.socialLinks ul li.linkedIn:hover {
+	background:url(../images/socialNav.png) 0px 0px;
+}
+
+.socialLinks ul li.twitter:hover {
+	background:url(../images/socialNav.png) -60px 0px;
+}
+
+.socialLinks ul li.facebook:hover {
+	background:url(../images/socialNav.png) -120px 0px;
+}
+
+.socialLinks ul li.rss:hover {
+	background:url(../images/socialNav.png) -180px 0px;
+}
+
+/*-----------------------------------------------------------------------------
+=01 Global
+-----------------------------------------------------------------------------*/
+
+h2 {
+  font-weight: 400;
+}
+
+a {
+  color: #3baff7;
+}
+
+
+/*-----------------------------------------------------------------------------
+=02 MAIN
+-----------------------------------------------------------------------------*/
+
+main {
+  margin: 0 auto;
+  background: url(images/bg_body.jpg);
+  width: 960px;
+}
+
+main h1 {
+  margin: 16px 0;
+}
+
+.logo_social {
+  display: flex;
+  justify-content: space-between;
+}
+
+.shadow {
+  position: relative;
+  top: -4px;
+}
+
+.ctaBox {
+  padding: 15px;
+  border: 2px solid grey;
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
+  /* box-shadow: inset 1px 1px 3px grey; */
+}
+
+.ctaBox p {
+  display: inline-block;
+  width: 600px;
+  margin-left: 20px;
+}
+
+.ctaBox img {
+  position: relative;
+  top: 15px;
+  left: 80px;
+}
+
+.box {
+  display: inline-block;
+  width: 310px;
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+.box img {
+  border: 5px solid #d3d3d3;
+  padding: 2px;
+}
+
+
+/*-----------------------------------------------------------------------------
+=02 FOOTER
+-----------------------------------------------------------------------------*/
+
+footer {
+  background: black;
+  color: aliceblue;
+  font-size: 12px;
+  margin-top: 40px;
+}
+
+footer h2 {
+  font-weight: 600;
+  color: white;
+}
+
+
+footer p {
+  display: inline-block;
+  color: grey;
+}
+
+footer div {
+  vertical-align: top;
+  margin-right: 30px;
+}
+
+.footerContainer {
+  width: 960px;
+  margin: 0 auto;
+  /* border: 2px solid yellow; */
+}
+
+.textWidget {
+  width: 40%;
+  display: inline-block;
+  padding-top: 15px;
+
+}
+
+.textWidget p {
+  margin-top: 8px;
+}
+
+.blogroll {
+  width: 25%;
+  display: inline-block;
+}
+
+.meta {
+  width: 20%;
+  display: inline-block;
+
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer li {
+  border-bottom: 1px solid grey;
+  padding: 8px;
+  color: grey;
+}
+
+.theme {
+  margin-left: 537px;
+}
+
+.footerBottom {
+  margin-top: 40px;
+}
