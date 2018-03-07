@@ -20,6 +20,8 @@ const cat = document.querySelector('img');
 cat.style.position = "absolute";
 cat.style.left = "0px";
 
+//>>>>>>>>>>> SIMPLE: Cat walks across screen L to R and stops <<<<<<<<<<<<<<<<<<<<
+
 // let catWalk = function() {
 //   let oldPos = parseInt(cat.style.left);
 //   let newPos = oldPos + 10;
@@ -31,18 +33,39 @@ cat.style.left = "0px";
 //
 // const stopWalk = window.setInterval(catWalk, 50);
 
+//>>>>>>>>>>> NEXT: Cat loops back to start and goes again in infinite loop <<<<<<<<<<<<<
 
+// let catWalk = function() {
+//   let oldPos = parseInt(cat.style.left);
+//   let newPos = oldPos + 10;
+//   cat.style.left = `${newPos}px`;
+//   if (newPos === 1500) {
+//     cat.style.left = '0px';
+//     }
+//   }
+//
+// window.setInterval(catWalk, 50);
 
-let catWalk = function() {
+//>>>>>>>>>> NEXT: Cat goes L to R then R to L when gets to end <<<<<<<<<<<<<<<<<
+
+let catWalkLR = function() {
   let oldPos = parseInt(cat.style.left);
   let newPos = oldPos + 10;
   cat.style.left = `${newPos}px`;
-  // while (oldPos < 1500) {
-  //   let newPos = oldPos + 10;
-  //   cat.style.left = `${newPos}px`;
-  if (newPos === 1500) {
-    cat.style.left = '0px';
+  if (newPos === 1200) {
+    window.clearInterval(switchPoint);
+    switchPoint = setInterval(catWalkRL, 50);
     }
-  }
+}
 
-window.setInterval(catWalk, 50);
+const catWalkRL = function() {
+  let oldPos = parseInt(cat.style.left);
+  let newPos = oldPos - 10;
+  cat.style.left = `${newPos}px`;
+  if (newPos === 0) {
+    window.clearInterval(switchPoint);
+    switchPoint = setInterval(catWalkLR, 50);
+  }
+}
+
+var switchPoint = window.setInterval(catWalkLR, 50);
