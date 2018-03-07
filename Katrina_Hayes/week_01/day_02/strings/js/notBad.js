@@ -10,24 +10,25 @@
 //   notBad('This dinner is bad!'): 'This dinner is bad!'
 
 const notBad = function(string1) {
-  const indexNot = string1.indexOf("not") //how to make not case sensitive?
-  //console.log(indexNot);
+  //string1 = string1.toLowerCase(); //could try something like this to fix the capital letter issue but wouldneed more code to deal with the output at the end being still with a capital.
+  console.log(string1);
+  const indexNot = string1.indexOf("not") //how to make 'not' case insensitive?
   const indexBad = string1.indexOf("bad"); //how to make not case sensitive?
-  //console.log(indexBad);
-  if (indexBad === -1) { //trying to first deal with if one/both don't exist, in which case they'd get -1 as a value
+  if (indexBad === -1 || indexNot === -1) { //trying to first deal with if one/both don't exist, in which case they'd get -1 as a value
     return string1;
-  } else if (indexNot < indexBad) {
-    const newString = string1.replace(/not.*bad/, "good"); //don't think this is quite right yet.
-    console.log(newString);
+  }
+  if (indexNot > indexBad) {
+    return string1;
+  } else  {
+    const subStr = string1.substring(indexNot, indexBad + 3);
+    const newString = string1.split(subStr).join("good");
     return newString;
-  } else {
-    console.log(string1);
-    return string1
   }
 }
-
-notBad("Oh come on it's not that bad.");
-notBad("That pudding was bad....not.");
-notBad("This situation is very very bad.");
-notBad("Not bad, seriously not bad."); //this one not working - maybe an issue with regex?
-notBad("not that bad, seriously not that bad."); //also not working properly, even after fixing capital N to n.
+console.log(notBad("Oh come on, it's great!"));
+console.log(notBad("Oh come on it's not that bad."));
+console.log(notBad("That pudding was bad....not."));
+console.log(notBad("This situation is very very bad."));
+console.log(notBad("Oh look it's not all that bad, really."));
+console.log(notBad("Not bad, seriously not bad.")); //this one not working - issue is with the capital N - how to deal with that using the indexOf() method?
+console.log(notBad("not that bad, seriously not that bad.")); //this one has a problem with the repeated 'not that bad' - it replaces them both with good.

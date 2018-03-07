@@ -7,6 +7,9 @@
 
 // Assuming num = credit card number
 
+// To check for duplicate values, can turn into string, then use slice to compare first x numbers to the last x numbers  --> but since 0001-0001 are the same, you could use rotate to move last digit into first place, then compare the first 4 digits to the last 4 
+// Note that arrays are never equal, even if the content of the arrays is the same
+//
 
 let valid;
 let differenceFound;

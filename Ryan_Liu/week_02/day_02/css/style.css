@@ -1,0 +1,217 @@
+/* * {
+    border: 1px solid green;
+} */
+
+@import url('https://fonts.googleapis.com/css?family=Oxygen');
+
+body {
+    background-color: #395b90;
+    margin: 0;
+    padding: 0;
+    font-family: 'Oxygen', sans-serif;
+}
+
+.container {
+    position: relative;
+    box-sizing: border-box;
+    max-width: 960px;
+    margin: auto;
+    background-color: blanchedalmond;
+    padding: 1em;
+}
+
+iframe {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+}
+
+main {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.title {
+    text-align: center;
+    font-size: 38px;
+    font-weight: 600;
+    color: #395b90;
+}
+
+h1 {
+    text-align: center;
+    background-color: #395b90;
+    color: blanchedalmond;
+    padding: 1em;
+}
+
+h2 {
+    border-bottom: 1px solid black;
+}
+
+.fas {
+    margin: 5px;
+}
+
+
+.sections {
+    width: 100%;
+    margin: 20px;
+
+}
+
+section {
+    display: inline-block;
+    margin-right: 10px;
+    width: 30%;
+    position: relative;
+}
+
+section img {
+    width: 100%;
+    height: 390px;
+}
+
+img:hover {
+    transition: 2s;
+    opacity: 0.5;
+}
+
+section:hover div {
+    transition: 2s;
+    visibility: visible;
+    color: #395b90;
+}
+
+section div {
+    position: absolute;
+    color: white;
+    top: 165px;
+    left: 105px;
+    visibility: hidden;
+}
+
+section:hover i {
+    transition: 2s;
+    visibility: visible;
+    color: #395b90;
+}
+
+
+section i {
+    position: absolute;
+    color: white;
+    top: 145px;
+    left: 125px;
+    visibility: hidden;
+}
+
+/*   Biography page  */
+
+
+.main-bio {
+    display: inline-block;
+    width: 75%;
+}
+
+.aside-bio {
+    display: inline-block;
+    width: 18%;
+    vertical-align: top;
+    background-color: blanchedalmond;
+    padding: 1em;
+    margin-top: 0px;
+    height: 800px;
+    margin-left: 10px;
+    border-left-width: 1px;
+    border-left-color: #395b90;
+}
+
+.aside-bio li {
+    color: #395b90;
+}
+
+.aside-bio ul {
+    padding-left: 10px;
+    list-style-type: none;
+}
+
+.note {
+    font-style: italic;
+    font-size: 14px;
+}
+
+/*   Trivia page   */
+
+.read-more-state {
+    display: none;
+  }
+  
+  .read-more-target {
+    opacity: 0;
+    max-height: 0;
+    font-size: 0;
+    transition: .25s ease;
+  }
+  
+  .read-more-state:checked ~ .read-more-wrap .read-more-target {
+    opacity: 1;
+    font-size: inherit;
+    max-height: 999em;
+  }
+  
+  .read-more-state ~ .read-more-trigger:before {
+    content: 'Show more';
+  }
+  
+  .read-more-state:checked ~ .read-more-trigger:before {
+    content: 'Show less';
+  }
+  
+  .read-more-trigger {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 .5em;
+    color: #666;
+    font-size: .9em;
+    line-height: 2;
+    border: 1px solid #ddd;
+    border-radius: .25em;
+  }
+
+
+/*  Footer   */
+
+footer {
+    width: 100%;
+    height: 50px;
+    background-color: #395b90;
+    text-align: center;
+    line-height: 50px;
+    margin-top: 20px;
+}
+
+footer div {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+footer div {
+    display: inline-block;
+}
+
+
+/* aside {
+    display: inline-block;
+    width: 18%;
+    vertical-align: top;
+    background-color: #395b90;
+    padding: 1em;
+    margin-top: 81px;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px #acacac;
+} */
+
