@@ -46,6 +46,9 @@ article
 a{
   color: red;
 }
-header{
-  background:url("/Users/meena/projects/wdi26-classwork/02-html-css/html-labs/ecardly/images/background.jpg");
+.imgone{
+  background-repeat: repeat;
 }
+/* header{
+  background:url("/Users/meena/projects/wdi26-classwork/02-html-css/html-labs/ecardly/images/background.jpg");
+} */
