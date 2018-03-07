@@ -1,0 +1,93 @@
+/** {
+  border: 1px solid green;
+}
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+body{
+  background-color: #6b0d0dc2; /*#222222*/
+  margin: 0;
+  padding: 0;
+  font-family: 'Lobster', cursive;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  background-color: #ccc;
+  padding: 1em;
+  border-radius: 0 0 1em 1em;
+}
+
+nav {
+  text-align: center;
+  word-spacing: 50px;
+  font-size: 18px
+}
+
+nav a{
+  color: #164a79c2;
+}
+
+h1{
+  font-size: 40px;
+  text-align: center;
+  background-color: black;
+  color: #555;
+  padding: 1em;
+}
+
+main {
+  display: inline-block;
+  width: 100%;
+}
+
+main img {
+  display: block;
+  margin: 0 auto;
+}
+
+p {
+  font-family: sans-serif;
+  width: 600px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  padding-top: 15px;
+}
+
+ul {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  padding-top: 15px;
+}
+
+iframe {
+  display: block;
+  margin: 0 auto;
+}
+
+div {
+  display: block;
+  margin: 0 auto;
+  padding-top: 15px;
+}
+
+/*
+aside {
+  display: inline-block;
+  width: 21%; /*approximately 100% *//*
+  vertical-align: top;
+  background-color: #eaec73;
+  padding: 1em;
+  margin-top: 63px;
+  border-radius: 0.5em;
+  box-shadow: 0 0 15px #222;
+}
+*/
+/*aside ul{
+  padding-left: 17px;
+}
+*/
