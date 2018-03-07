@@ -1,0 +1,80 @@
+html{
+  background-color: green;
+}
+nav{
+  text-align: right;
+}
+ul{
+
+  margin: 0;
+  padding: 0;
+  height: 100px;
+
+}
+li{
+  display: inline;
+  list-style-type: none;
+  font-size: 30px;
+  padding: 20px 20px 20px 20px;
+  font-family: @import url('https://fonts.googleapis.com/css?family=Noto+Serif');
+  margin-top: 80px;
+}
+header{
+
+  background-color: yellow;
+  height: 60px;
+  width: 100%;
+  border-radius: 1em;
+}
+.text{
+  background-color: orange;
+  height: 200px;
+  width: 770px;
+  margin-top: 20px;
+  margin-left: 60px;
+  display: relative;
+  border-radius: 1em;
+  overflow-x: scroll;
+  text-align: justify;
+  
+
+}
+h3{
+  color: red;
+  text-decoration: underline;
+  margin-left: 20px;
+}
+p{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.work{
+  background-color: white;
+  height: 200px;
+  width: 770px;
+  margin-top: 60px;
+  margin-left: 60px;
+  display: relative;
+  border-radius: 1em;
+  overflow-x: scroll;
+  text-align: justify;
+}
+.major{
+  background-color: pink;
+  height: 200px;
+  width: 770px;
+  margin-top: 70px;
+  margin-left: 60px;
+  display: relative;
+  border-radius: 1em;
+  overflow-x: scroll;
+  text-align: justify;
+}
+
+footer{
+  background-color: yellow;
+  height: 20px;
+  width: 100%;
+  border-radius: 0.5em;
+  margin-top: 100px;
+}

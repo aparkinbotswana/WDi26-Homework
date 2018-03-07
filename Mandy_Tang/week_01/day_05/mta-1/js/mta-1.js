@@ -8,6 +8,12 @@ let N = [ "Times Square", "34th", "28th", "23rd", "Union Square", "8th - N Line"
 // We need to return the index based on the string input, which we can do using a function
 
 
+// rules
+// if source and destination are on the same line,
+// if source and destination are not on the same line, travel via intersection
+// if different line, count to the intersection
+// if same line, count to the end
+
 let findIndex = function (stationName) {
   let index = N.indexOf(stationName); {
 //  console.log(index);
