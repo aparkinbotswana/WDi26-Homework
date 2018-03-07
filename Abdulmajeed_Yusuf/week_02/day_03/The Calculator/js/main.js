@@ -21,12 +21,22 @@
 
 console.log("connected");
 
-let square = +document.getElementById('square-input').value;
+// let square = +document.getElementById('square-input').value;
+// This doesn't work when this code is here
 
 let squared = function () {
-  let result =  Math.pow(square, 2);
-  console.log(result);
-  return result
+
+
+  console.log("hi - this button works");
+  let square = +document.getElementById('square-input').value;
+  // but it works fine here.
+  
+  console.log(square);
+
+    let result =  Math.pow(square, 2);
+    console.log(result);
+    return result
+
 };
 
 // console.log(squared);
