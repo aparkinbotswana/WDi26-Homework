@@ -1,5 +1,9 @@
-html{
-  background-color: green;
+body{
+  background-image: url('https://metrouk2.files.wordpress.com/2013/10/ay95895977ada-lovelace-engl.jpg?quality=80&strip=all');
+  background-repeat: no-repeat;
+  background-size: 90% 90%;
+  background-position: center;
+
 }
 nav{
   text-align: right;
@@ -27,7 +31,7 @@ header{
   border-radius: 1em;
 }
 .text{
-  background-color: orange;
+  /* background-color: orange; */
   height: 200px;
   width: 770px;
   margin-top: 20px;
@@ -36,7 +40,7 @@ header{
   border-radius: 1em;
   overflow-x: scroll;
   text-align: justify;
-  
+
 
 }
 h3{
@@ -49,18 +53,21 @@ p{
   margin-right: 20px;
 }
 .work{
-  background-color: white;
+  /* background-color: white; */
   height: 200px;
   width: 770px;
   margin-top: 60px;
   margin-left: 60px;
-  display: relative;
+  display:relative;
   border-radius: 1em;
   overflow-x: scroll;
   text-align: justify;
 }
-.major{
+p:hover{
   background-color: pink;
+}
+.major{
+  /* background-color: pink; */
   height: 200px;
   width: 770px;
   margin-top: 70px;

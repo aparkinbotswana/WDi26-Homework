@@ -1,0 +1,33 @@
+
+@import url('https://fonts.googleapis.com/css?family=Mina');
+
+body {
+  background-color: #f2f2f2;;
+  border: 20px solid #ffd000;
+  font-family: 'Mina', sans-serif;
+  height: 100%;
+}
+
+h1 {
+  background-color: #11a792;
+  text-align: center;
+}
+img {
+display: block;
+margin: 0 auto;
+
+}
+p {
+  width: 960px;
+  text-align: center;
+}
+nav
+{
+  font-size: 20px;
+}
+iframe {
+  display: block;
+}
+ul li {
+  width: 600px;
+}
