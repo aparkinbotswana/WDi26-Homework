@@ -27,7 +27,7 @@
 // { valid: false, number: 'a923-3211-9c01-1112', error: ‘wrong_length’ }
 // Double Bonus: Make your credit card scheme even more advanced! What are the rules, and what are some numbers that pass or fail? Ideas: check expiration date! Check out the Luhn Algorithm for inspiration.
 
-
+/* ME:
 const validateCreditCard = function(cardNumber) {
   const numbers = /^[0-9]+$/;
   let Message = "";
@@ -44,7 +44,7 @@ const validateCreditCard = function(cardNumber) {
       //} else if (){
           //two different digits aren't represented
           //errorMessage = "There must be at least two different digits represented in the card number";
-      } else if ((cardNumber.length-1) % 2 !=0) {
+      } else if ((cardNumber.length-1) % 2 !==0) {
           Message = "Credit card invalid - The final digit must be even.";
           console.log (Message);
         //} else if {
@@ -68,6 +68,51 @@ validateCreditCard(6666666666666661);
 
 //tips:
 //check that more than one digit was used:
-//array.slice(0,8)!= array.slice(7,18)
+//array.slice(0,8)!= array.slice(7)
+//Joel recommended: use rotation to check whether the numbers are the same
+//or you could loop through the string and return true/set a `differenceFound` flag to true as soon as you find that `str[i] !== str[i + 1]`
 
-//you could loop through the string and return true/set a `differenceFound` flag to true as soon as you find that `str[i] !== str[i + 1]`
+
+//Demo:
+// if (typeof(digits)==='number')
+//let stringDigits=JSON.stringify(digits);
+*/
+
+const validateCreditCard = function(cardNum) {
+
+  console.log(cardNum);
+
+  cardNum = cardNum.replace(/-/g, "");
+  console.log(cardNum);
+
+  const numbers = /^[0-9]+$/;
+  let Message = "";
+
+  if (cardNum.length !== 16) {
+    return false;
+  }
+
+  if (isNAN(cardNum)) {
+    return false;
+  }
+
+  if (cardNum[15] % 2 !==0) {
+    return false;
+  }
+
+  const arr = cardNum.split('');
+  let sum = 0;
+  for (let i=0;i<arr.length; i++){
+    sum = sum + +arr[i];
+  }
+
+  if (sum < 17) {
+    return false;
+  }
+
+  return true;
+
+};
+
+const passFail = validateCreditCard('a923-3211-9c01-1112');
+console.log(passFail);

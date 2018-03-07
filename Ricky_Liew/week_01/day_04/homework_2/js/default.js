@@ -129,20 +129,6 @@ https://stackoverflow.com/questions/1133770/how-do-i-convert-a-string-into-an-in
 
 */
 
-
-let CreditCard = {
-  number:'',
-  validity:false
-};
-
-// Checks # of digits
-
-
-
-
-
-
-
 console.log('');
 console.log('Credit Card Validation');
 console.log('----------------------');
@@ -296,8 +282,3 @@ let accounts = {
   balance: 0,
   //transfer: function(){/* xfer $$ to someone's account */}
 };
-
-const createAccount = function(){
-  this.owner = owner;
-  this.balance = balance;
-}
