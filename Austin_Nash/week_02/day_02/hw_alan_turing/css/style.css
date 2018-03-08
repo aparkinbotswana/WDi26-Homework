@@ -55,6 +55,12 @@ main img {
   vertical-align: top; /* block required to center image */
   padding: 17px;
 }
+
+.video{
+  margin: 0, auto)
+  display: block;
+  text-align: center;
+}
 .big {
   margin: 0;
   border: 5px solid #1F272D;
@@ -132,4 +138,8 @@ h5 {
 
 main .hollywood {
   width: 100%
+}
+.fun_facts{
+  padding-left: 15px;
+  padding-right: 15px;
 }
