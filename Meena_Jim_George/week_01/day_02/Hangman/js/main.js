@@ -40,4 +40,6 @@ let checker=0;
   }
 
 }
-guessLetter('A');
+guessLetter('w');
+guessLetter('O');
+guessLetter('k');

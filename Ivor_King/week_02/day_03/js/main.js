@@ -1,15 +1,12 @@
-console.log("here");
+var catMargin = 20;
 
-let a = document.getElementsByTagName("img")
+var catPos = document.getElementById("catpic");
+catPos.style.marginLeft = "0";
 
-console.log(a)
+var moveCat = function() {
+    catMargin = catMargin + 20;
+    catPos.style.marginLeft = catMargin.toString() + "px";
+    console.log(catMargin);
+}
 
-// const catRef = document.getElementsByTagName('img');
-
-// const catWalk = function() {
-//  window.setInterval(catRef,5);
-document.getElementsByTagName("img").style.left = "200px";
-// }  
-
-// catWalk();
-// change to check git
+window.setInterval(moveCat, 500);

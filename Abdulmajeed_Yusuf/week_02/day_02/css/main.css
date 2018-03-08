@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Cookie');
+
+
+body {
+  background-color: #598ba5;
+  font-family: 'Cookie', sans-serif;
+}
+
+main img {
+  display: block;
+  margin: 0 auto;
+  height: 50%;
+}
