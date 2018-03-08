@@ -1,0 +1,32 @@
+body{
+  background-color: black;
+
+}
+
+
+nav a:link{
+  color: white;
+  /* display: inline-block; */
+}
+
+#main-content{
+  background-color: white;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+#social-media{
+  text-align: right;
+  position: relative;
+}
+.social{
+}
+
+.logo{
+  position: absolute;
+  left:0;
+}
+
+.blurb{
+
+}

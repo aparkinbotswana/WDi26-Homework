@@ -1,0 +1,113 @@
+<<<<<<< HEAD
+html{
+  background-color: green;
+=======
+body{
+  background-image: url('https://metrouk2.files.wordpress.com/2013/10/ay95895977ada-lovelace-engl.jpg?quality=80&strip=all');
+  background-repeat: no-repeat;
+  background-size: 90% 90%;
+  background-position: center;
+
+>>>>>>> 4f0d2c2776705dbc085e7b7d2f7e3cde1df244a2
+}
+nav{
+  text-align: right;
+}
+ul{
+
+  margin: 0;
+  padding: 0;
+  height: 100px;
+
+}
+li{
+  display: inline;
+  list-style-type: none;
+  font-size: 30px;
+  padding: 20px 20px 20px 20px;
+  font-family: @import url('https://fonts.googleapis.com/css?family=Noto+Serif');
+  margin-top: 80px;
+}
+header{
+
+  background-color: yellow;
+  height: 60px;
+  width: 100%;
+  border-radius: 1em;
+}
+.text{
+<<<<<<< HEAD
+  background-color: orange;
+=======
+  /* background-color: orange; */
+>>>>>>> 4f0d2c2776705dbc085e7b7d2f7e3cde1df244a2
+  height: 200px;
+  width: 770px;
+  margin-top: 20px;
+  margin-left: 60px;
+  display: relative;
+  border-radius: 1em;
+  overflow-x: scroll;
+  text-align: justify;
+<<<<<<< HEAD
+  
+=======
+
+>>>>>>> 4f0d2c2776705dbc085e7b7d2f7e3cde1df244a2
+
+}
+h3{
+  color: red;
+  text-decoration: underline;
+  margin-left: 20px;
+}
+p{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.work{
+<<<<<<< HEAD
+  background-color: white;
+=======
+  /* background-color: white; */
+>>>>>>> 4f0d2c2776705dbc085e7b7d2f7e3cde1df244a2
+  height: 200px;
+  width: 770px;
+  margin-top: 60px;
+  margin-left: 60px;
+<<<<<<< HEAD
+  display: relative;
+=======
+  display:relative;
+>>>>>>> 4f0d2c2776705dbc085e7b7d2f7e3cde1df244a2
+  border-radius: 1em;
+  overflow-x: scroll;
+  text-align: justify;
+}
+<<<<<<< HEAD
+.major{
+  background-color: pink;
+=======
+p:hover{
+  background-color: pink;
+}
+.major{
+  /* background-color: pink; */
+>>>>>>> 4f0d2c2776705dbc085e7b7d2f7e3cde1df244a2
+  height: 200px;
+  width: 770px;
+  margin-top: 70px;
+  margin-left: 60px;
+  display: relative;
+  border-radius: 1em;
+  overflow-x: scroll;
+  text-align: justify;
+}
+
+footer{
+  background-color: yellow;
+  height: 20px;
+  width: 100%;
+  border-radius: 0.5em;
+  margin-top: 100px;
+}
