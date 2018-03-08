@@ -19,7 +19,7 @@ const animate = () => {
   // update cat left and top
   catLeft = parseFloat(catLeft) + mult;
   catTop = parseFloat(catTop) + 0.5;
-  // if cat goes off screen wrap cat by reseting left pos
+  // if cat goes off screen wrap and reset cat by reseting position and scale
   if (catLeft > cWidth -50) {
     catLeft = -150;
     catScale = 0.1;
