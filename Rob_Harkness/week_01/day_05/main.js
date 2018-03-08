@@ -99,3 +99,4 @@ console.log(planOne.showTripPlan());
 console.log(planTwo.showTripPlan());
 console.log(planThree.showTripPlan());
 console.log(planFour.showTripPlan());
+

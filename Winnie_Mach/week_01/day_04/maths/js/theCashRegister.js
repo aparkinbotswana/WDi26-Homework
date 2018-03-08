@@ -16,7 +16,7 @@
 
 
 const shoppingCart = {
-  shoes: 45.59,
+  shoes: 45.59, //key value pair
   banana: 1.99,
   milo: 2.50,
   chocolateBar: 5.10,
@@ -31,6 +31,8 @@ const cashRegister = function(cart) {
 }
 
 console.log(cashRegister(shoppingCart));
+
+// array01 = Object.values(shoppingCart);
 
 /* ______
 
