@@ -17,15 +17,59 @@ console.log("connected");
 // Neptune (orbital period 164.79132 Earth years)
 // An Earth year is roughly 365.25 days, or 31557600 seconds.
 
+// First - flat - not in an object
+let planetAges = {
+  "Earth": 1,
+  "Mercury": 0.2408467,
+  "Venus": 0.61519726,
+  "Mars": 1.8808158,
+  "Jupiter": 11.862615,
+  "Saturn": 29.447498,
+  "Uranus": 84.016846,
+  "Neptune": 164.79132
+};
+
+
+let planetAge = function (planet, seconds) {
+  // console.log(planet, seconds);
+  conversionRate = planetAges[planet]
+  return (seconds / 31557600 / conversionRate)
+}
+
+const showAllAges = function () {
+  for (let [key, value] of Object.entries(planetAges)) {
+    // console.log(key, value);
+    console.log( planetAge( key, ( 1031 * 1000000)))
+  }
+}
+
+// console.log( planetAge( "Neptune", ( 1031 * 1000000 ) ) )
+
+// showAllAges()
 
 
 
-
-
-
-
-
-
+let spacey = {
+  planetAges: {
+    "Earth": 1,
+    "Mercury": 0.2408467,
+    "Venus": 0.61519726,
+    "Mars": 1.8808158,
+    "Jupiter": 11.862615,
+    "Saturn": 29.447498,
+    "Uranus": 84.016846,
+    "Neptune": 164.79132
+  },
+  showAge: function (planet, seconds) {
+    conversionRate = this.planetAges[planet]
+    return (seconds / 31557600 / conversionRate)
+  },
+  showAllAges: function () {
+    for (let key in this.planetAges ) {
+      console.log(key, this.showAge( key, (1032 * 1000000)));
+    }
+  }
+}
 
 
 
