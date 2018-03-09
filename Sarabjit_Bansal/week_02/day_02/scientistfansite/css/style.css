@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css?family=Mina');
+
+
+
+body {
+  background-color: #222 /*#222222;*/
+  margin:0;
+  padding: 0;
+  font-family: 'Mina', sans-serif;
+  /*background-color: #3D406E; */
+}
+
+
+
+.full {
+
+      width: 100%;
+}
+
+.Process {
+  font-style: italic;
+  font-size: 20px;
+
+}
+.hover {
+  color:#f36981;
+  font-weight: bold;
+}
+
+.container  {
+  width:960px;
+  margin: 0 auto;
+  padding: 1em;
+  /*background-color: #3D406E; */
+  font-family: 'Mina', sans-serif;
+}
+
+
+
+header {
+  padding: 10px;
+  background-color: #ccc;
+/*background-color: #5C60A1; */
+}
+
+footer {
+  margin-top: 10px;
+  padding: 10px;
+  background-color:#ccc;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+footer p {
+  color:#d49a0c;
+  text-align: center;
+}
+
+nav {
+  background-color: #ccc;
+  font: Helvetica;
+  font-size: 18px;
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+nav li a {
+  color:#d49a0c;
+  text-decoration:none;
+  margin-right: 40px;
+}
+h1 {
+  text-align: center;
+
+  color: #f36981;
+}
+h2 {
+  text-align: center;
+  font-size: 16px;
+  color: #ccc;
+}
+main {
+  display: inline-block;
+  width: 60%;
+  /* text-align:center;
+      width:100 % */
+}
+
+.framesH {
+  text-align: center;
+  width:100%;
+}
+.frames1 {
+  width:60%;
+
+  text-align: left;
+}
+.frames2 {
+  display: inline-block;
+  text-align: right;
+  width:35%;
+  vertical-align: top;
+  padding-left: 40px;
+}
+.Sframes1 {
+  margin-top: 50px;
+  width:60%;
+  text-align: right;
+}
+.Sframes2 {
+  margin-top: 50px;
+  display: inline-block;
+  text-align: left;
+  width:35%;
+  vertical-align: top;
+  padding-right: 40px;
+}
+.achieve {
+  display: inline-block;
+}
+.achieve p {
+  display: inline-block;
+  vertical-align: top;
+  text-align: right;
+  width:60%;
+}
+
+aside {
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+  padding: 20px;
+  padding-left: 10px;
+  margin-top: 20px;
+  margin-left: 50px;
+  border: 1px solid #d49a0c;
+
+
+}
+main img {
+  /* margin: 0 auto; */
+  padding-left: 30px;
+  padding-top: 30px;
+  width:30%
+  /* by default images are inline - cant set margin for inline*/
+}
+main p {
+  color:;
+  width:60%;
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+table {
+  color: pink;
+}
+
+table th {
+text-align: left;
+padding-right: 20px;
+}
+table td {
+  padding: 10px;
+}
+
+
+@media (max-width: 960px) {
+  main {
+    display: block;
+
+  }
+  aside {
+    display: block;
+    text-align: left;
+    margin:0;
+  }
+  p {
+    display: block;
+  }
+  main p {
+    display: block;
+  }
+  h1 {
+    display: block;
+    text-align: left;
+  }
+  h2 {
+      display: block;
+      text-align: left;
+    }
+  .container {
+    display: block;
+  }
+
+  .achieve {
+        display: block;
+  }
+  .achieve p {
+    text-align: left;
+    display: block;
+  }
+  nav {
+    text-align: left;
+    display: block;
+  }
+}
