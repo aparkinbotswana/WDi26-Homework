@@ -22,11 +22,19 @@ var moveCat = function() {
             catPos.style.transform = "scaleX(-1)";
         }
     }
-    // if (catMargin === 120) {
-    //     console.log("freezer");
-    //     catPos.src = "https://media.giphy.com/media/BK1EfIsdkKZMY/giphy.gif";
-    //     window.clearInterval(moveCat);
-    // }
+    if (catMargin === 120) {
+        console.log("freezer");
+        catPos.src = "https://media.giphy.com/media/BK1EfIsdkKZMY/giphy.gif";
+        window.clearInterval(timerDone);
+
+        // window. setTimeout ( arguments )
+
+        // call  more code here after the pause
+
+
+    }
 };
 
-window.setInterval(moveCat, timeVar);
+const timerDone = window.setInterval(moveCat, timeVar);
+
+console.log("do you see me");
