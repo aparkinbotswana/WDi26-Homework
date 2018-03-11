@@ -1,0 +1,51 @@
+
+body {
+  background-color: #B1A3B7;
+}
+
+.container{
+  background-color: #7F677C;
+}
+
+header {
+  background-color: #171717;
+}
+
+nav {
+  background-color: #171717;
+
+}
+
+h1 {
+  display: inline-block;
+  color: #7F677C;
+
+}
+
+
+
+h1 a {
+  color: #7F677C;
+  display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+ #171717 //eerie black
+#D3B0B0 // pale chestnut
+#7F677C // old lavender
+#B1A3B7 // pastel purple
+#FAF7F7 // white smoke */
