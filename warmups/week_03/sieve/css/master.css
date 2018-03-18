@@ -1,0 +1,119 @@
+* {
+  background-color: pink;
+  border: red solid 1px;;
+};
+
+html {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: lightblue;;
+  text-align: center;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+
+a {
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  /* width: 75vw; */
+  width: calc(100% - 40px);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.card {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.card:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+
+
+
+.flex-center-space {
+  display: flex;
+  /* justify-content: space-between; */
+  justify-content: space-around;
+}
+
+.flex-center-space p {
+  max-width: 10em;
+  /* This is really to make sure there is space around  */
+  /* for the flex-center-space class above */
+}
+
+
+.parralaxer {
+   background-image: url("http://fillmurray.com/800/600");
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   height: 100vh;
+}
+
+
+.spaced-items {
+  padding: 1em;
+}
+
+.spaced-items > :first-child {
+  margin-top: 2em;
+}
+
+.spaced-items > :last-child {
+  margin-bottom: 2em;
+}
+
+.spaced-items > * + * {
+  margin-top: 1em;
+}
+
+
+.shy  {
+ opacity: 0;
+ visibility: hidden;
+ transition: opacity 500ms, visibility 500ms;
+}
+
+.shy.is-active {
+ opacity: 1;
+ visibility: visible;
+}
+
+.truncated {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.fullscreen {
+    min-height: 100vh;
+}
