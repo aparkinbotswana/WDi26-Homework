@@ -55,8 +55,16 @@ def square_root(a)
 end
 
 # Mortgage Function
-def mortgage()
-  
+ ## Formula: m = p (r(1+r)^ n / (1+r) ^n - 1))
+   # p = loan_amount
+def mortgage(loan_amount, r, n)
+  v = addition(1, r) # (1 + r)
+  w = exponent(v, n) #(1+ r)^n
+  x = multiplication(r, w) # r(1+r)^n
+  y = subtraction(w, 1) # (1+r)^n - 1
+  z = division(x, y) # r(1+r)^n / (1+r)^n -1
+  m = multiplication(loan_amount, z) # p * (r(1+r)^n / (1+r)^n -1 ))
+  m.round(2) #rounding to 2 decimal places
 end
 
 # BMI Function  weight/height^2
@@ -78,6 +86,7 @@ end
     step1 = division(distance, 100)
     step2 = multiplication(step1, litres_per_km)
     step3 = multiplication(step2, cost_per_litre)
+    step3.round(2)
   end
 
 
@@ -127,7 +136,14 @@ when 'sr'
   a = gets.to_i
   puts "The square root of #{a} is #{square_root a}"
 when 'mortgage'
-  print "I don't fucking know find the answer on google"
+  print "What is the total amount of your loan? :"
+  loan_amount = gets.to_i
+  print "What is your monthly interest rate? :"
+  r = gets.to_f
+  print "What is the total number of payments you are going to make? (number of months you'll be paying the loan for) :"
+  n = gets.to_i
+  puts "For a loan of #{loan_amount}, paying over #{n} months with an interest rate of #{r}%, you'll be required to pay $#{mortgage loan_amount, r, n} every month."
+
 when 'bmi'
   print "What is your weight in kg? :"
   weight = gets.to_i
