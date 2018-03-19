@@ -30,7 +30,6 @@ def show_menu
   puts "[q] - Quit"
   puts "\n"
   print "Enter your menu selection: "
-  # puts "\n"
 end
 
 show_menu
@@ -40,7 +39,6 @@ show_menu
 user_selection = gets.chomp.downcase
 
 until user_selection == "q"
-  # Process the selection (i.e. if they say they want addition, do it)
   case user_selection
   when 'a'
     puts "Addition"
@@ -116,4 +114,79 @@ until user_selection == "q"
   user_selection = gets.chomp.downcase
 end
 
-puts "Thank you for using crappy calculator."
+puts "Thank you for using this crappy calculator."
+
+# Bonus
+# Mortgage Calculator
+# Calculate the monthly required payment given the other variables as input (look up the necessary variables)
+
+def calculate_repayment
+  puts "\n"
+  puts "Mortgage Calculator"
+  puts "-" * 15
+  print "Enter loan amount in AUD: $"
+  loan_amount = gets.to_f
+  print "Enter loan period in years: "
+  loan_period = gets.to_i * 12
+  print "Enter the interest rate in percentage per annum: "
+  interest_rate = gets.to_f/100
+  total_interest = interest_rate * loan_amount
+  total_payment = total_interest + loan_amount
+  monthly_payment = total_payment / loan_period
+  puts "Monthly interest repayments are $#{monthly_payment}, assuming you only get charged interest once at the start of the loan life."
+end
+
+calculate_repayment
+
+# BMI Calculator
+# Calculate the body mass index (BMI) for an individual, given their height and weight
+
+def calculate_bmi
+  puts "\n"
+  puts "BMI Calculator"
+  puts "-" * 15
+  print "Enter height in metres: "
+  height = gets.to_f
+  print "Enter weight in kg: "
+  weight = gets.to_f
+  bmi = (weight/height)/height
+  puts "Your bmi is #{bmi}."
+  if bmi < 20
+    puts "Your bmi is lower than the healthy range of 20-25, indicating you may be underweight."
+  elsif bmi > 25
+    puts "Your bmi is higher than the healthy range of 20-25, indicating you may be overweight."
+  else
+    puts "Your bmi is in the healthy range of 20-25, indicating you are a healthy weight."
+  end
+end
+
+calculate_bmi
+
+# Trip Calculator
+# Calculate a trip time and cost given inputs for
+#
+# distance
+# miles per gallon
+# price per gallon
+# speed in miles per hour
+
+def calculate_trip_details
+  puts "\n"
+  puts "Trip Calculator"
+  puts "-" * 15
+  print "Enter distance of trip in kilometres: "
+  distance = gets.to_f
+  print "Enter distance you can travel per litre of petrol in kilometres: "
+  fuel_use = gets.to_f
+  print "Enter cost of petrol in $ per litre: $"
+  petrol_cost = gets.to_f
+  print "Enter average speed you'll drive in kilometres per hour: "
+  speed = gets.to_f
+  trip_time = distance/speed
+  puts "Your trip will take #{trip_time} hours."
+  litres_needed = distance/fuel_use
+  cost = litres_needed * petrol_cost
+  puts "Your trip will cost $#{cost}."
+end
+
+  calculate_trip_details
