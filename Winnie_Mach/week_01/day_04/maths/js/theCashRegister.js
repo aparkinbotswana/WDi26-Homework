@@ -16,7 +16,11 @@
 
 
 const shoppingCart = {
+<<<<<<< HEAD
+  shoes: 45.59,
+=======
   shoes: 45.59, //key value pair
+>>>>>>> 4f0d2c2776705dbc085e7b7d2f7e3cde1df244a2
   banana: 1.99,
   milo: 2.50,
   chocolateBar: 5.10,
@@ -32,8 +36,11 @@ const cashRegister = function(cart) {
 
 console.log(cashRegister(shoppingCart));
 
+<<<<<<< HEAD
+=======
 // array01 = Object.values(shoppingCart);
 
+>>>>>>> 4f0d2c2776705dbc085e7b7d2f7e3cde1df244a2
 /* ______
 
 for (let item in cartForParty) {
