@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+html{
+=======
 body{
+>>>>>>> 4f0d2c2776705dbc085e7b7d2f7e3cde1df244a2
   background-color: green;
 }
 nav{
@@ -26,6 +30,8 @@ header{
   width: 100%;
   border-radius: 1em;
 }
+<<<<<<< HEAD
+=======
 iframe{
   margin-left: 200px;
   margin-top: 80px;
@@ -38,3 +44,4 @@ footer{
   border-radius: 1em;
   margin-top: 300px;
 }
+>>>>>>> 4f0d2c2776705dbc085e7b7d2f7e3cde1df244a2
