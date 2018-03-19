@@ -1,16 +1,18 @@
 
-const catWalk = document.getElementById('cat')[0];
-cat.style.position = 'absolute';
+const catWalk = document.getElementsByTagName('img')[0];
+catWalk.style.position = 'absolute';
 //catWalk.style.paddingLeft = '0px';
-cat.style.left = '0px';
+catWalk.style.left = '0px';
 
 const watchKittyMove = function() {
-  const oldTop = parseInt(cat.style.left);
+  const oldTop = parseInt(catWalk.style.left);
   const newTop = oldTop + 1;
-  cat.style.left = newTop + 'px';
-  if (cat.style.rigth === 1440) {
-    window.clearInterval(watchKittyMove);
+  catWalk.style.left = newTop + 'px';
 
+
+  if (newTop > 1440) {
+    window.clearInterval(catStop);
+    console.log('helo');
   }
 };
-window.setInterval(watchKittyMove, 20);
+const catStop = window.setInterval(watchKittyMove, 20);

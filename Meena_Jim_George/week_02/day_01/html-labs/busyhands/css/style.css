@@ -1,0 +1,46 @@
+body{
+  text-align:justify;
+  padding-left: 10%;
+  padding-right: 22%;
+  width :960px;
+  /* padding:20px; */
+  /* margin:0 60px; */
+}
+
+li{
+  display: inline;
+
+  font-size:20px;
+  font-family: Arial;
+  color:white;
+  margin : 10px;
+}
+ul {
+  width:100%;
+  background-color: black;
+  padding:20px;
+
+}
+
+
+a.rollover:hover {
+	background-color:blue;
+	}
+
+.box {
+    display: inline-block;
+    width: 225px;
+    height: 100px;
+
+  }
+.box2 {
+      display: inline-block;
+      width: 225px;
+      height: 500px;
+      background-color: black;
+      color:white;
+    }
+/*.column{
+  display: inline;
+}
+*/
