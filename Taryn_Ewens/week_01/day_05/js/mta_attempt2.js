@@ -2,7 +2,7 @@
 
 //Global Object with Arrays of Stations on each Line
 let lines = {
-  nLine: ["Times Square", "34th", "28th", "23rd", "Union Square", "8th"], //North
+  nLine: ["Times Square", "34th", "28th", "23rd", "Union Square", "8th"],
   lLine: ["8th", "6th", "Union Square", "3rd", "1st"],
   sixLine: ["Grand Central", "33rd", "28th", "23rd", "Union Square", "Astor Place"]
 };
@@ -142,3 +142,8 @@ const planTrip = function(startLine, startStation, endLine, endStation) {
 };
 
 planTrip('6', 'Astor Place', 'N', 'Times Square');
+console.log("--------");
+planTrip('N', '8th', 'N', 'Times Square');
+console.log("--------");
+planTrip('6', 'Grand Central', 'N', 'Times Square');
+console.log("--------");
