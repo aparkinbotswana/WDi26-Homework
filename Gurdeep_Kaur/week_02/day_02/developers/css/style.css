@@ -1,0 +1,102 @@
+html{
+  background-color: green;
+}
+nav{
+  text-align: right;
+}
+ul{
+
+  margin: 0;
+  padding: 0;
+  height: 100px;
+
+}
+li{
+  display: inline;
+  list-style-type: none;
+  font-size: 30px;
+  padding: 20px 20px 20px 20px;
+  font-family: @import url('https://fonts.googleapis.com/css?family=Noto+Serif');
+  margin-top: 80px;
+}
+header{
+
+  background-color: yellow;
+  height: 60px;
+  width: 100%;
+  border-radius: 1em;
+}
+.biography{
+  background-color: white;
+  height: 450px;
+  width: 700px;
+<<<<<<< HEAD
+  display: relative;
+  margin-left: 105px;
+  border-radius: 2em;
+  box-shadow: 0 0 20px blue;
+=======
+   display: relative;
+   margin-left: 190px;
+  border-radius: 2em;
+  box-shadow: 0 0 20px blue;
+
+>>>>>>> 4f0d2c2776705dbc085e7b7d2f7e3cde1df244a2
+}
+h3{
+  text-align: top;
+  margin-left: 10px;
+  padding: 20px;
+}
+<<<<<<< HEAD
+=======
+main{
+  text-align: center;
+}
+>>>>>>> 4f0d2c2776705dbc085e7b7d2f7e3cde1df244a2
+main img{
+  height: 200px;
+  width: 200px;
+  margin-top: -20px;
+  margin-left: 20px;
+}
+p{
+  text-align: justify;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+h2{
+  background-color: violet;
+  border-radius: 0.5em;
+  display: inline-block;
+  margin-top: 70px;
+  width: 50%;
+}
+
+.day{
+  background-image: url('https://images-na.ssl-images-amazon.com/images/I/51zX880OCBL._SR600%2C315_PIWhiteStrip%2CBottomLeft%2C0%2C35_PIStarRatingTHREEANDHALF%2CBottomLeft%2C360%2C-6_SR600%2C315_ZA(10%20Reviews)%2C445%2C286%2C400%2C400%2Carial%2C12%2C4%2C0%2C0%2C5_SCLZZZZZZZ_.jpg');
+  background-size: auto;
+  height: 140px;
+  width: 100%;
+  overflow-x: scroll;
+  margin-right: 20px;
+  display: inline-block;
+  border-radius: 1em;
+  border: 1px solid blue;
+  margin-left: 3px;
+}
+<<<<<<< HEAD
+=======
+ p:hover{
+  background-color: grey;
+  border-radius: 0.2em;
+}
+>>>>>>> 4f0d2c2776705dbc085e7b7d2f7e3cde1df244a2
+footer{
+  background-color: yellow;
+  height: 20px;
+  width: 100%;
+  border-radius: 0.5em;
+  margin-top: 250px;
+
+}

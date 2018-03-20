@@ -1,0 +1,54 @@
+
+ul{
+
+  margin: 0;
+  padding: 0;
+  height: 70px;
+
+}
+li{
+  display: inline;
+  list-style-type: none;
+
+}
+.img{
+  height:200px;
+  width:200px;
+}
+
+header{
+  background-color: black;
+  margin-top: 0;
+  margin-bottom: 200px;
+}
+.logo{
+
+  margin-top: -200px;
+}
+
+footer{
+  background-color: black;
+  margin-top: 200px;
+  height: 40px;
+}
+.slider{
+  margin-top: 200px;
+}
+.nav{
+  text-align: right;
+  margin-top: -50px;
+}
+.img1{
+  display: inline;
+
+}
+.p1{
+  text-align: left;
+  margin-top: -100px;
+}
+.img2{
+  display: inline;
+}
+.img3{
+  display: inline;
+}

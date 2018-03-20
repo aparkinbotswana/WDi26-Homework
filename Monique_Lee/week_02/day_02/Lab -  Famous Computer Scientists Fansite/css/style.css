@@ -1,0 +1,167 @@
+<style>
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+</style>
+
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 1em;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+  }
+    
+/* background: url('images/backgroundImage.jpg');
+   background-size: cover;*/
+    
+
+body {
+  background-color: #ccc;
+  font-family: font-family: 'Dosis', sans-serif;
+  color: #656565;
+  font-size: 15px;
+  margin-left: 70px;
+  margin-bottom: 70px;
+  padding: 0;
+
+}
+
+nav {
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #222;
+}
+
+ /*  margin-left: 0;
+    margin-right: 0; */
+
+nav a {
+
+  color: #F62217;
+  font-weight: bold;
+  font-size: 200%;
+  padding: 50px;
+  text-decoration: none;
+}
+
+main {
+  display: inline-block;
+  width: 75%;
+}
+
+aside {
+  text-align: center;
+  display: inline-block;
+  width: 15%; /* does not use exact % to add to 100% due to margins/padding*/
+  vertical-align: top;
+  background-color: #16EAF5;
+  padding: 1em;
+  margin-top: 50px;
+  border-radius: 1em;
+  box-shadow: 0 0 15px #222; /* 0 0 makes the light come from the top */
+}
+
+footer {
+  font-family: font-family: 'Dosis', sans-serif;
+  color: #656565;
+  font-size: 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 40px;
+  background-color: white;
+  width: 100%;
+}
+
+h1{
+  text-align: center;
+  background-color: #F62217;
+  color: white;
+  margin: 0;
+  padding: 1em;
+}
+
+iframe{
+  display: inline-block;
+}
+
+
+p {
+  line-height: 20px;
+  max-width: 500px;
+  padding: 10px;
+  margin: 20px;
+  text-align: center;
+}
+
+ul {
+  max-width: 550px;
+}
+
+time {
+  font-style: italic;
+}
+
+span {
+  font-weight: bold;
+}
+
+a{
+  text-decoration: underline;
+  color: blue;
+}
+
+figure {
+  display: block;
+ }
+
+/* margin: 0 auto; */
+
+figcaption{
+    font-weight: bold;
+    text-align: left;
+}
+
+img{
+  padding: 1px;
+  border: solid #D3D3D3 5px;
+  margin: 10px;
+  max-width: 400px;
+  height: 400px;
+}
+
+#profileimg {
+    margin-left: 150px;
+    transition: all 1s;            
+}
+              
+#profileimg:hover {
+    border-radius: 50%;
+    transform: rotate(360deg);
+}   
+
+#ruby_logo{
+  padding: 1px;
+  border: #8B0000;
+  max-width: 100px;
+  height: 100px;
+}
+
+  /* Always set the map height explicitly to define the size of the div
+   * element that contains the map. */
+  #map {
+    height: 100%;
+  }
+
+    
+     

@@ -1,0 +1,47 @@
+<<<<<<< HEAD
+html{
+=======
+body{
+>>>>>>> 4f0d2c2776705dbc085e7b7d2f7e3cde1df244a2
+  background-color: green;
+}
+nav{
+  text-align: right;
+}
+ul{
+
+  margin: 0;
+  padding: 0;
+  height: 100px;
+
+}
+li{
+  display: inline;
+  list-style-type: none;
+  font-size: 30px;
+  padding: 20px 20px 20px 20px;
+  font-family: @import url('https://fonts.googleapis.com/css?family=Noto+Serif');
+  margin-top: 80px;
+}
+header{
+
+  background-color: yellow;
+  height: 60px;
+  width: 100%;
+  border-radius: 1em;
+}
+<<<<<<< HEAD
+=======
+iframe{
+  margin-left: 200px;
+  margin-top: 80px;
+}
+footer{
+
+  background-color: yellow;
+  height: 30px;
+  width: 100%;
+  border-radius: 1em;
+  margin-top: 300px;
+}
+>>>>>>> 4f0d2c2776705dbc085e7b7d2f7e3cde1df244a2
