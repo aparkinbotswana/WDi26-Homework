@@ -111,7 +111,7 @@ until user_selection == "q"
       (distance/100) * litres * cost_per_litre
     end
     puts "Your trip cost is $#{trip_cost(distance, litres, cost_per_litre)}."
-   
+
 
   else
     puts "Invalid selection"
