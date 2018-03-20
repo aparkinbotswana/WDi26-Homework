@@ -1,9 +1,4 @@
- # 
- # trainLines = { # This had to go inside the function, otherwise indexStart wouldn't trigger properly
- #  "L" => ["8th", "6th", "Union Square", "3rd", "1st"],
- #  "6" => ["Grand Central", "33rd", "28th", "23rd", "Union Square", "Astor Place"],
- #  "N" => ["Times Square", "34th", "28th", "23rd", "Union Square", "8th"]
- # }
+begin
 
 puts "Which station are you getting on at?"
 start = gets.chomp.split.map(&:capitalize).join(' ') # Capitalise each word in user's input so if they are lazy and type 'times square', it will still work
@@ -13,14 +8,6 @@ puts "Which station are you getting off at?"
 finish = gets.chomp.split.map(&:capitalize).join(' ')
 puts "What line is #{finish} on?"
 finishLine = gets.chomp.upcase
-# Attempt at error handling - does not work
-# until trainLines[startLine].include? "#{start}"
-#   puts "Sorry, we don't have a station called #{start} on the #{startLine} line. Please try again."
-#   puts "Which station are you getting on at?"
-#   start = gets.chomp.split.map(&:capitalize).join(' ') # Capitalise each word in user's input so if they are lazy and type 'times square', it will still work
-#   puts "What line is #{start} on?" # Reminding user what station they entered
-#   startLine = gets.chomp.upcase
-# end
 
 
 def planTrip (startLine, start, finishLine, finish)
@@ -85,4 +72,20 @@ def planTrip (startLine, start, finishLine, finish)
 end
 
  planTrip(startLine, start, finishLine, finish)
+
+ rescue
+   # Error handling - if the user's input isn't correct, they are told their selection is invalid and prompted for input again
+     puts "Sorry, we can't find your station or line. Please try again."
+     puts "Which station are you getting on at?"
+     start = gets.chomp.split.map(&:capitalize).join(' ') # Capitalise each word in user's input so if they are lazy and type 'times square', it will still work
+     puts "What line is #{start} on?" # Reminding user what station they entered
+     startLine = gets.chomp.upcase
+     puts "Which station are you getting off at?"
+     finish = gets.chomp.split.map(&:capitalize).join(' ')
+     puts "What line is #{finish} on?"
+     finishLine = gets.chomp.upcase
+
+     planTrip(startLine, start, finishLine, finish)
+end
+
 # planTrip("L", "3rd", "N", "34th")
