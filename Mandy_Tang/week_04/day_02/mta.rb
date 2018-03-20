@@ -1,9 +1,3 @@
-trainLines = {
-  "L" => ["8th", "6th", "Union Square", "3rd", "1st"],
-  "6" => ["Grand Central", "33rd", "28th", "23rd", "Union Square", "Astor Place"],
-  "N" => ["Times Square", "34th", "28th", "23rd", "Union Square", "8th"]
- }
-
 puts "Which station are you getting on at?"
 start = gets.chomp.split.map(&:capitalize).join(' ') # Capitalise each word in user's input so if they are lazy and type 'times square', it will still work
 puts "What line is #{start} on?" # Reminding user what station they entered
