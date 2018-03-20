@@ -1,5 +1,6 @@
-# TODO: make so can reverse trips, make method to pretty print directions
-
+# TODO: make method to pretty print directions,
+# TODO: work out how to route across multiple lines if first line does not intersect with last line
+require('pry')
 # MTA class
 class MTA
   def initialize
@@ -11,26 +12,32 @@ class MTA
     }
   end
 
-  def get_lines
-    @lines.each { |k, v| [k, v] }
-  end
-
   def trip(l_one, start, l_two, stop)
     l_one = l_one.to_sym
     l_two = l_two.to_sym
     start_index = @lines[l_one].index(start)
     end_index = @lines[l_two].index(stop)
     change_stop = stop
-    continue_stop_index = false
+    continue_stop_index = -1
+
     unless l_one == l_two
       change_stop = (@lines[l_one] & @lines[l_two]).join('')
       continue_stop_index = @lines[l_two].index(change_stop)
     end
     change_stop_index = @lines[l_one].index(change_stop)
 
-    [@lines[l_one][start_index..change_stop_index], continue_stop_index && @lines[l_two][continue_stop_index..end_index]]
+    part_one = if start_index > change_stop_index
+                 @lines[l_one][change_stop_index..start_index].reverse!
+               else
+                 @lines[l_one][start_index..change_stop_index]
+               end
+
+    part_two = if continue_stop_index > end_index
+                 @lines[l_two][end_index..continue_stop_index].reverse!
+               else
+                 @lines[l_two][continue_stop_index..end_index]
+               end
+
+    part_one | part_two
   end
 end
-
-new_trip = MTA.new
-p new_trip.trip('SIX', 'Grand Central', 'L', '1st')
