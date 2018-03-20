@@ -1,3 +1,4 @@
+require 'pry'
 input = ''
 until input == 'exit' || input == 'quit'
 
