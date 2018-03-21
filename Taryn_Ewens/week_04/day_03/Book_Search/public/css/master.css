@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,700');
+
+* {
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+}
+
+body {
+  font-size: 16px;
+}
+
+header {
+  width: 47%;
+  display: inline-block;
+  margin: 2em 1em
+}
+
+aside {
+  width: 47%;
+  display: inline-block;
+  vertical-align: top;
+  margin: 2em 0 2em 0;
+}
+
+h1, #title {
+  font-family: "Oswald", "Helvetica", Arial, sans-serif;
+  font-size: 2.6em;
+  margin: 0;
+  color: #FF4362;
+  text-transform: uppercase;
+  line-height: 1.2em;
+}
+
+h2, h3 {
+  font-family: "Roboto", "Helvetica", Arial, sans-serif;
+  font-weight: 300;
+}
+
+h3 {
+  color: #FF4362;
+  font-size: 1.5em;
+  margin: 0;
+  padding: 0.4em;
+}
+
+h2 {
+  color: #6DA7E8;
+  font-size: 2em;
+  margin: 2.5em 0 0 0;
+}
+
+p {
+  font-family: "Roboto", "Helvetica", Arial, sans-serif;
+  color: #4b4c4c;
+}
+
+a {
+  text-decoration: none;
+}
+
+label {
+  font-family: "Roboto", "Helvetica", Arial, sans-serif;
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.5em;
+  color: #4b4c4c;
+  display: block;
+  margin: 4em auto 1em auto;
+  max-width: 12em;
+}
+
+input {
+  font-family: "Roboto", "Helvetica", Arial, sans-serif;
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.5em;
+  color: #4b4c4c;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 2px solid #777676;
+  display: block;
+  margin: 2em auto;
+  width: 15em;
+}
+
+button {
+  font-family: "Oswald", "Helvetica", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 1.5em;
+  color: #717272;
+  text-align: center;
+  background-color: #FFF;
+  border-radius: 50%;
+  border: 4px solid #FF4362;
+  display: block;
+  margin: 2em auto;
+  width: 150px;
+  height: 150px;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background-color: #f4f4f4;
+}
+
+span.strong {
+  font-weight: 700;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+#yield {
+  width: 70%;
+  margin: 2.2em auto;
+}
+
+#pageheading {
+  margin: 1em 0;
+  font-size: 2em;
+  text-align: center;
+}
+
+#date {
+  text-align: center;
+  margin: 0 auto 1em;
+}
+
+.container {
+  width: 90%;
+  margin: 2em auto;
+}
+
+.subheadings {
+  text-align: center;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: rgba(119,118,118,0.5);
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: rgba(119,118,118,0.5);
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: rgba(119,118,118,0.5);
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: rgba(119,118,118,0.5);
+}
