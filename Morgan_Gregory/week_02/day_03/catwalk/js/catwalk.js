@@ -14,13 +14,18 @@ img.style.position = 'absolute';
 img.style.right = '0px';
 img.style.left = '0px';
 var watchKittyWalk = function() {
-  const oldX = parseInt(img.style.left); // x axis take the string '0px' set as interger
+  // walking cat
+  const oldX = parseInt(img.style.right); // x axis take the string '0px' set as interger
   const newX = oldX + 10; // x axis cat walk along x axis by adding interger to 0px
-  img.style.left = newX + 'px'; // x axis
+  img.style.right = newX + 'px'; // x axis
+
+  // reverse the cat
   console.log(document.documentElement.clientWidth);
-  if ( img.style.left >= document.documentElement.clientWidth ) {
+  if ( img.style.right >= document.documentElement.clientWidth ) {
+    console.log("I am here, are you");
+    console.log(document.documentElement.clientWidth, img.style.right);
     const oldX = parseInt(img.style.right); // x axis
-    const newX = oldX + -10;
+    const newX = oldX - 10;
     img.style.right = newX + 'px';
   }
 };
