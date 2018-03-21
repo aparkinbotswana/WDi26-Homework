@@ -1,0 +1,18 @@
+body {
+  background-color: rgba(130, 143, 215, 0.5);
+}
+
+h1 {
+  text-align: justify;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+}
+
+span {
+  font-style: italic;
+  font-size: 30px;
+  text-align: justify;
+}
