@@ -10,7 +10,7 @@
 //   notBad('This dinner is bad!'): 'This dinner is bad!'
 
 const notBad = function(string1) {
-  //string1 = string1.toLowerCase(); //could try something like this to fix the capital letter issue but wouldneed more code to deal with the output at the end being still with a capital.
+  //string1 = string1.toLowerCase(); //could try something like this to fix the capital letter issue but would need more code to deal with the output at the end being still with a capital.
   console.log(string1);
   const indexNot = string1.indexOf("not") //how to make 'not' case insensitive?
   const indexBad = string1.indexOf("bad"); //how to make not case sensitive?
