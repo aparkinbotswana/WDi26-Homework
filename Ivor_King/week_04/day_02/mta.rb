@@ -1,10 +1,12 @@
 require 'pry'
 
 $lines = {
-    "N" => ["Times", "34th", "28th", "23rd", "Union Square", "8th"],
+    N: ["Times", "34th", "28th", "23rd", "Union Square", "8th"],
     "L" => ["8th", "6th", "Union Square", "3rd", "1st"],
     "6" => ["Grand Central", "33rd", "28th", "23rd", "Union Square", "Astor Place"]
 }
+
+binding.pry
 
 def single_trip ( line, start_station, finish_station )
     current_line = $lines[line]
@@ -21,13 +23,14 @@ end
 
 print "Enter your start line: "
 line = gets.chomp
-stations = lines[ line.to_sym ]
+stations = $lines[ line.to_sym ]
+
 while stations.empty?
   print "No such line! Try again: "
   line = gets.chomp
-  stations = lines[ line.to_sym ]
+  stations = line[ line.to_sym ]
 end
 
-binding.pry
+
 
 
