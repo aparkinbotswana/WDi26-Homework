@@ -53,7 +53,7 @@ def tripcalc
 
   puts "Trip time is #{dist/speed}"
 
-  gallons = dist *
+  gallons = dist * 1
   puts "cost is #{(ppg/mpg)*dist}"
 
 end
