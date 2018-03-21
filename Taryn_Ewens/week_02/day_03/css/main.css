@@ -1,0 +1,15 @@
+body {
+background-image: url("../images/cats_pattern_5.png");
+background-color: pink;
+}
+
+.reversecat {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  width: 296px;
+}
+
+.cat {
+  bottom: 0px;
+  width: 296px;
+}
