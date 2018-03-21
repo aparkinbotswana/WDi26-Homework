@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Mina');
+
+
+body{
+  background-color: #256;
+  font-family: 'Mina', sans-serif;
+}
+.btn.btn-primary.btn-lg{
+  margin-top: 20px;
+}
+
+.contianer{
+  display: block;
+  width: 75%;
+  margin: 0px 80px 150px 230px;
+  padding: 20px 20px 20px 20px;
+  background-color: #ccc;
+  text-align: justify;
+}
+.contianer2{
+  display: block;
+  width: 75%;
+  margin: auto;
+  background-color: #ccc;
+  text-align: justify;
+}
+
+h1{
+  line-height: 60px;
+  margin: 0 auto;
+  display: block;
+  width: 940px;
+  text-align:center;
+  color: #ccc;
+}
+
+h2{
+  line-height: 60px;
+  margin: 0 auto;
+  display: block;
+  width: 940px;
+  text-align:center;
+  color: white;
+}
+
+.absoulte {
+  position: absolute;
+  top:   94px;
+  left: 10px;
+}
+
+aside{
+  text-align: center;
+  font-size: 20px;
+  margin: 0 auto;
+
+}
+.currentLink{
+  color: orange;
+}

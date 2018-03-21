@@ -61,7 +61,6 @@ main img {
   margin-right: 80px;
   box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.4);
   border-radius: 3px;
-  /* border: 18px solid rgb(212, 232, 253); */
 }
 
 aside {
@@ -71,13 +70,12 @@ aside {
   margin: 0;
   font-size: 20px;
   height: 50%;
-  /* border: 18px solid rgb(212, 232, 253); */
   border-radius: 5px;
-  transition: all 0.3s;
+  transition: all 0.3s ease-in-out;
 }
+/* hover magnify, color change effect */
 aside:hover, .main-text:hover {
   transform: scale(1.2);
-  /* border-color: rgb(133, 194, 255); */
   background: rgba(34, 34, 34, 0.8);
   color: white;
 }
@@ -98,7 +96,7 @@ aside p {
   flex-direction: column;
   width: 70%;
   font-size: 21px;
-  transition: all .3s;
+  transition: all .3s ease-in-out;
 }
 
 .main-text hr{
