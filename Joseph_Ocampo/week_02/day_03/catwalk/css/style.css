@@ -1,0 +1,11 @@
+body {
+  background-color: lightsalmon;
+}
+
+.listitem {
+  color: red;
+}
+
+.read {
+  opacity: 0.5;
+}

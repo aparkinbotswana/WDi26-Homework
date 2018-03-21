@@ -30,16 +30,30 @@ header{
   background-color: white;
   height: 450px;
   width: 700px;
+<<<<<<< HEAD
   display: relative;
   margin-left: 105px;
   border-radius: 2em;
   box-shadow: 0 0 20px blue;
+=======
+   display: relative;
+   margin-left: 190px;
+  border-radius: 2em;
+  box-shadow: 0 0 20px blue;
+
+>>>>>>> 4f0d2c2776705dbc085e7b7d2f7e3cde1df244a2
 }
 h3{
   text-align: top;
   margin-left: 10px;
   padding: 20px;
 }
+<<<<<<< HEAD
+=======
+main{
+  text-align: center;
+}
+>>>>>>> 4f0d2c2776705dbc085e7b7d2f7e3cde1df244a2
 main img{
   height: 200px;
   width: 200px;
@@ -71,6 +85,13 @@ h2{
   border: 1px solid blue;
   margin-left: 3px;
 }
+<<<<<<< HEAD
+=======
+ p:hover{
+  background-color: grey;
+  border-radius: 0.2em;
+}
+>>>>>>> 4f0d2c2776705dbc085e7b7d2f7e3cde1df244a2
 footer{
   background-color: yellow;
   height: 20px;
