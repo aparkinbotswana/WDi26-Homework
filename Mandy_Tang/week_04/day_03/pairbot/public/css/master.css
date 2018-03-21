@@ -1,0 +1,39 @@
+body {
+  font-family: sans-serif;
+  width: 80%;
+  margin: 10% auto;
+}
+
+button {
+  display: inline;
+  font-size: 1em;
+}
+
+form { /* Floats are bad, but needed to get buttons inline */
+  float: left;
+  width: auto;
+}
+
+button[name="y"] {
+    background-color: green;
+    border-radius: 10%;
+    color: white;
+}
+
+button[name="n"] {
+    background-color: red;
+    border-radius: 10%;
+    color: white;
+}
+
+button[name="done"] {
+    background-color: blue;
+    border-radius: 10%;
+    color: white;
+}
+
+button[name="continue"] {
+    background-color: blue;
+    border-radius: 10%;
+    color: white;
+}
