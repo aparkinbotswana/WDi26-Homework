@@ -32,5 +32,5 @@ def scrabble word
 
   score
 end
-
+# somethin
 p scrabble "cabbage"
