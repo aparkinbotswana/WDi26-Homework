@@ -1,0 +1,14 @@
+<h2>Edit board game</h2>
+
+<form method="post" action="/board_games/<%= @board_game['id'] %>">
+  <label>Name:</label>
+  <input type="text" name="gname" placeholder="Game name" value="<%= @board_game['gname'] %>">
+  <label>Type:</label>
+  <input type="text" name="gtype" placeholder="Game type" value="<%= @board_game['gtype'] %>">
+  <label>Score:</label>
+  <input type="integer" name="gscore" placeholder="Rating out of 10" value="<%= @board_game['gscore'] %>">
+  <label>Image:</label>
+  <input type="url" name="gimage" placeholder="http://..." value="<%= @board_game['gimage'] %>">
+
+  <button>Update board game</button>
+</form>
