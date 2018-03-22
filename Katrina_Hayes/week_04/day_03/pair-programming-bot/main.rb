@@ -7,7 +7,7 @@ get '/' do
 end
 
 get '/pass' do
-  @book_title = params[:book_title]
+  # @book_title = params[:book_title]
 
   erb :pass
 end

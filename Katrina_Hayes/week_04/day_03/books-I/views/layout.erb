@@ -6,12 +6,16 @@
     <link rel="stylesheet" href="/css/master.css">
   </head>
   <body>
-    <header>
-      <h1>
-        <a href="/">Book Finder</a></h1>
-    </header>
+    <!-- <div class="overlay">      </div> -->
     <div class="container">
-      <%= yield %> <!-- your content here -->
+      <header>
+        <h1>
+          <a href="/">Book Finder</a></h1>
+      </header>
+      <div class="main">
+        <%= yield %> <!-- your content here -->
+      </div>
+
     </div>
   </body>
 </html>
