@@ -1,0 +1,79 @@
+
+.container{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #f2f2f2;
+    width: 650px;
+    padding: 30px, 60px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 25px;
+}
+
+nav{
+    display: table;
+    width: inherit;
+    background-color: #a5a3a3;
+    padding: 5px;
+    font-size: 12px;
+    
+}
+
+header{
+    width: inherit;
+    padding: 5px;
+    background-color: rgb(47, 50, 51);
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    /* font-weight: bold; */
+    font-family: 'Fredoka One';
+}
+
+div.title{
+    width: inherit;
+    padding: 5px;
+    background-color: rgb(96, 104, 107);
+    text-align: center;
+    color: white;
+}
+
+.quote{
+    /* padding: 5px; */
+    width: 500px;
+    text-align: center;
+    background-color: #a5a3a3;
+    font-style:italic;
+    margin: auto;
+}
+
+div.quote > p{
+    padding: 10px;
+}
+
+nav a{
+    display:table-cell;
+    text-align: center;
+    color: black;
+}
+
+.paragraph{
+    padding-bottom: 20px;
+    
+}
+
+.year{
+    width: 20%;
+    text-align: center;
+}
+
+.storytitle{
+
+}
+
+.video{
+    margin: auto;
+    padding-top: 20px;
+    text-align: center;
+}

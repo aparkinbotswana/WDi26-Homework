@@ -4,7 +4,7 @@ puts "At anytime press ctrl C to quit"
 loop do
   print "What command would you like to run: "
   command = gets.chomp
-  puts "#{eval(command)}"
+  puts eval(command)
 end
 
 # end
