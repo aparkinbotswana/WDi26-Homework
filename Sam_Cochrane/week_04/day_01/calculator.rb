@@ -16,7 +16,6 @@ user_selection =gets.chomp.downcase
 puts user_selection
 
 until user_selection == "q"
-  print "Thanks for using crappy calculator"
 
   case user_selection
     when "a"

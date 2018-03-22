@@ -7,7 +7,7 @@
         <a href=<%= book['infoLink'] %> target="_blank">
             <div class="book">
                 <h2><%= book['title'] %></h2>
-                <h3><%= book['authors'].join(', ') %></h3>#fix for books without authors
+                <h3><%= book['authors'].join(', ') unless book['authors'].nil? %></h3>
                 <img src=<%= book['imageLinks']['smallThumbnail'] %></img>
             </div>
         </a>
