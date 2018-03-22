@@ -1,0 +1,12 @@
+body {
+  background-color: lightpink;
+  color: blue;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: blue; 
+}
