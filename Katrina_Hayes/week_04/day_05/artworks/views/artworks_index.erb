@@ -3,7 +3,9 @@
 <div class="gallery">
   <% @artworks.each do |artwork| %>
     <a href="/artworks/<%= artwork.id %>">
-      <img src="<%= artwork.image %>" alt="<%= artwork.name %>">
+      <div class="art-box">
+        <img class="mini" src="<%= artwork.image %>" alt="<%= artwork.name %>">
+      </div>
     </a>
   <% end %>
 </div>

@@ -55,8 +55,28 @@ a {
   flex-wrap: wrap;
   width: 75%;
   height: 100vh;
+  justify-content: center;
+  margin: 0 auto;
 }
 
-.gallery a {
+.art-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  background-color: black;
+  margin: 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 10px;
+  overflow: hidden;
+}
 
+img .mini {
+  width: 90%;
+  height: auto;
 }
