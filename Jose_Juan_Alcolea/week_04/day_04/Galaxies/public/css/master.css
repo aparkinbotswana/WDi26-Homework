@@ -1,0 +1,36 @@
+body {
+  background-image: url('https://wallpapercave.com/wp/XXn6DrQ.jpg');
+  color: white;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+
+}
+p {
+  text-align: center;
+  padding-top: 50px;
+  font-size: 80px;
+}
+
+a {
+  color: inherit;
+  font-size: 22px;
+  text-align: center;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+img.feature {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  border: 1px solid white;
+}
+nav {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 30px;
+}
