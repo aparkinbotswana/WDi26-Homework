@@ -1,0 +1,8 @@
+<h3>Edit Trainer</h3>
+
+<form action="/trainers/<%= @trainer.id %>" method="post">
+Name: <input type="text" name="name" value="<%= @trainer.name %>">
+Image: <input type="url" name="image" value="<%= @trainer.image %>">
+
+<button>Submit</button>
+</form>

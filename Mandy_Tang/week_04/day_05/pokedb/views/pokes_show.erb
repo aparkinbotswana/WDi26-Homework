@@ -1,0 +1,8 @@
+<h2>You chose <%= @poke.name %></h2>
+
+<img src="<%= @poke.image %>">
+
+<div class="controls">
+<a href="/pokes/<%= @poke.id %>/delete">Delete</a>
+<a href="/pokes/<%= @poke.id %>/edit">Edit</a>
+</div>
