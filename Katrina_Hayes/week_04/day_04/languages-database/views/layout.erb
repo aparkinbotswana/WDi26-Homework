@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Languages</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="/css/master.css">
+    <style>
+    @import url('https://fonts.googleapis.com/css?family=Dosis|Macondo');
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Language Searcher</h1>
+        <nav>
+          <a href="/">Home</a>
+          <a href="/languages">Index</a>
+          <a href="/languages/new">Add language</a>
+        </nav>
+      </header>
+      <div class="main">
+        <%= yield %>
+      </div>
+    </div>
+  </body>
+</html>
