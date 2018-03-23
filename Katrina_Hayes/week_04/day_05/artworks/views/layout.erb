@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Artworks Database</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/master.css">
+    <style>
+    @import url('https://fonts.googleapis.com/css?family=Dosis|Macondo');
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="top">
+          <h1>Artwork Database</h1>
+        </div>
+        <div class="top">
+          <nav>
+            <ul>
+              <a href="/">Home</a>
+              <a href="/artworks">All artworks</a>
+              <a href="/artists">All artists</a>
+              <a href="/artworks/new">Add artwork</a>
+              <a href="/artists/new">Add artist</a>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div class="main">
+        <%= yield %>
+      </div>
+    </div>
+  </body>
+</html>

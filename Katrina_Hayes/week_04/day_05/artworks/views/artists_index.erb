@@ -1,0 +1,14 @@
+<h2>Artist Index</h2>
+
+<div class="gallery">
+  <div class="artist">
+    <% @artists.each do |artist| %>
+      <a href="/artists/<%= artist.id %>">
+      <h4><%= artist.name %></h4>
+      <% unless artist.image.nil? %>
+        <img src="<%= artist.image %>" alt="<%= artist.name %>">
+      <% end %>
+      </a>
+    <% end %>
+  </div>
+</div>
