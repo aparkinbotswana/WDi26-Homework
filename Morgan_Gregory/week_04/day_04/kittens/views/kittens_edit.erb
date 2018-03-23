@@ -1,0 +1,11 @@
+<h2>Edit kitten records</h2>
+
+<form method="post" action="/kittens/<%= @kitten['id'] %>" >
+  <label>Name:</label>
+  <input type="text" name="name" placeholder="Kitten name" value="<%= @kitten['name'] %>">
+  <label>Age:</label>
+  <input type="number" name="age" placeholder="Kitten age" value="<%= @kitten['age'] %>">
+  <label>Image:</label>
+  <input type="url" name="image" placeholder="http//..." value="<%= @kitten['image'] %>">
+
+  <button>Edit Kitten record</button>

@@ -1,0 +1,10 @@
+body {
+  width: 80%;
+  margin: 0 auto;
+}
+
+img.feature {
+  max-width: 50%;
+  margin: 0 auto;
+  display: block;
+}

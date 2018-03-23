@@ -1,0 +1,19 @@
+<h2>Edit Synth</h2>
+<form action="/<%=@synth['id']%>" method="post">
+    <label for="">Model:</label>
+    <input type="text" placeholder="Enter synthesiser model here" value='<%= @synth['model'] %>' name="model">
+
+    <label for="">Make:</label>
+    <input type="text" placeholder="Enter synthesiser manufacturer here" value='<%= @synth['make'] %>' name="make">
+
+    <label for="">Type:</label>
+    <input type="text" placeholder="Analog/digital/FM/etc" value='<%= @synth['type'] %>' name="type">
+
+    <label for="">Year:</label>
+    <input type="number" min="1970" max="2099" step="1" placeholder="1980" value='<%= @synth['year'] %>' name="year">
+
+    <label for="">Image:</label>
+    <input type="url" placeholder="http://(image.url.jpg)" value='<%= @synth['image'] %>' name="image">
+
+    <button>Update</button>
+</form>
