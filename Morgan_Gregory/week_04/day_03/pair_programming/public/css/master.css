@@ -1,0 +1,74 @@
+body {
+	background-color: black;
+  font-family: "Tahoma", "Verdana", "Helvetica", "Arial", sans-serif;
+  color: white;
+}
+
+h1 {
+  font-size: 3em;
+  padding-top: 70px;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+.container {
+	text-align:center;
+  margin: 0 auto;
+}
+
+span.credit {
+	color: gray;
+}
+p {
+	font-size: 1.53em;
+}
+
+a {
+	text-decoration: none;
+	color: green;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: blue;
+}
+
+button {
+  margin: 100px 40px 0px 40px;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 2em;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  color: white;
+	background-color: blue;
+}
+
+.button_yes {
+  background-color: green;
+}
+
+.button_no {
+  background-color: red;
+}
+
+#reference {
+	color: green;
+}
+
+#parentheses {
+	color: green;
+}
+
+#beck_link {
+	padding-top:  100px;
+}
+
+#test_link {
+	color: #998033;
+	font-size: 0.75em;
+	margin-left: 960px;
+}

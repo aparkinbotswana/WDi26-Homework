@@ -1,0 +1,10 @@
+<h2>Whisky List</h2>
+
+<ul>
+  <% @whiskys.each do |whisky| %>
+  <li>
+    <a href="whiskys/<%= whisky['id'] %>">
+    <%= whisky["name"] %>
+  </li>
+  <% end %>
+</ul>
