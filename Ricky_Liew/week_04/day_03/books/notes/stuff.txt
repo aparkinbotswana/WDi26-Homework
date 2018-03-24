@@ -1,0 +1,814 @@
+{
+ "kind": "books#volumes",
+ "totalItems": 2058,
+ "items": [
+    {
+     "kind": "books#volume",
+     "id"  : "pyfvAgAAQBAJ",
+     "etag": "U2hp1oAXFOA",
+     "selfLink": "https://www.googleapis.com/books/v1/volumes/pyfvAgAAQBAJ",
+     "volumeInfo": {
+                    "title": "Jaws",
+                    "authors": [
+                    "Peter Benchley"],
+    "publisher": "Pan",
+    "publishedDate": "2000-01-01",
+    "description": "It's never safe to go back in the water... It was just another day in the life of a small Atlantic resort until the terror from the deep came to prey on unwary holiday makers. The first sign of trouble - a warning of what was to come - took the form of a young woman's body, or what was left of it, washed up on the long, white stretch of beach... A summer of terror has begun. Peter Benchley's Jaws first appeared in 1974, creating a legend that refuses to die. For a new generation, the ultimate holiday nightmare is about to begin all over again...",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9781743287682"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "1743287682"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 336,
+    "printType": "BOOK",
+    "categories": [
+     "Fiction"
+    ],
+    "averageRating": 3.5,
+    "ratingsCount": 67,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": true,
+    "contentVersion": "1.3.3.0.preview.3",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=pyfvAgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=pyfvAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com.au/books?id=pyfvAgAAQBAJ&printsec=frontcover&dq=title:jaws&hl=&cd=1&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=pyfvAgAAQBAJ&source=gbs_api",
+    "canonicalVolumeLink": "https://market.android.com/details?id=book-pyfvAgAAQBAJ"
+   },
+   "saleInfo": {
+    "country": "AU",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 12.99,
+     "currencyCode": "AUD"
+    },
+    "retailPrice": {
+     "amount": 12.99,
+     "currencyCode": "AUD"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=pyfvAgAAQBAJ&rdid=book-pyfvAgAAQBAJ&rdot=1&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 1.299E7,
+       "currencyCode": "AUD"
+      },
+      "retailPrice": {
+       "amountInMicros": 1.299E7,
+       "currencyCode": "AUD"
+      },
+      "giftable": true
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "AU",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.com.au/books/download/Jaws-sample-epub.acsm?id=pyfvAgAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.com.au/books/download/Jaws-sample-pdf.acsm?id=pyfvAgAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=pyfvAgAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "A summer of terror has begun. Peter Benchley&#39;s Jaws first appeared in 1974, creating a legend that refuses to die. For a new generation, the ultimate holiday nightmare is about to begin all over again."
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "6s1x45DO63IC",
+   "etag": "QmPzbNdEfMQ",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/6s1x45DO63IC",
+   "volumeInfo": {
+    "title": "Scalable Uncertainty Management",
+    "subtitle": "First International Conference, SUM 2007, Washington, DC, USA, October 10-12, 2007, Proceedings",
+    "authors": [
+     "Henri Prade",
+     "V.S. Subrahmanian"
+    ],
+    "publisher": "Springer Science & Business Media",
+    "publishedDate": "2007-09-27",
+    "description": "This book constitutes the refereed proceedings of the First International Conference on Scalable Uncertainty Management, SUM 2007, held in Washington, DC, USA, in October 2007. The 20 revised full papers presented were carefully reviewed and selected from numerous submissions for inclusion in the book. The papers address artificial intelligence researchers, database researchers and practitioners.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9783540754077"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "3540754075"
+     }
+    ],
+    "readingModes": {
+     "text": false,
+     "image": true
+    },
+    "pageCount": 280,
+    "printType": "BOOK",
+    "categories": [
+     "Business & Economics"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=6s1x45DO63IC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=6s1x45DO63IC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com.au/books?id=6s1x45DO63IC&pg=PA113&dq=title:jaws&hl=&cd=2&source=gbs_api",
+    "infoLink": "http://books.google.com.au/books?id=6s1x45DO63IC&dq=title:jaws&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Scalable_Uncertainty_Management.html?hl=&id=6s1x45DO63IC"
+   },
+   "saleInfo": {
+    "country": "AU",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "AU",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+    "epub": {
+     "isAvailable": false
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.com.au/books/download/Scalable_Uncertainty_Management-sample-pdf.acsm?id=6s1x45DO63IC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=6s1x45DO63IC&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "//genre=&quot;Horror&quot; ] /title (All horror movies) (b) Query 2: //movie [. /year=&quot; 1995&quot;] /\u003cbr\u003e\ntitle (All movies produced in 1995) (c) Query 3: //movie [. /\u003cb\u003etitle\u003c/b\u003e=&quot; \u003cb\u003eJaws\u003c/b\u003e 2&quot;]/year (\u003cbr\u003e\nWhen has Jaws 2 been produced?) in the graph. Most importantly, the \u003cbr\u003e\ndecisiveness measure can be Quality Measures in Uncertain Data Management \u003cbr\u003e\n113. Poll. P(a) Answer Prec Rec 2 79.4% &quot;Jaws&quot; 79.4% &quot;Jaws 2&quot; 79.4% 79.4% 5 \u003cbr\u003e\n77.4% &quot;Jaws&quot; 77.4% &quot;Jaws 2&quot; 69.5% 77.4% 22.6% X &quot;MaOing of Steven \u003cbr\u003e\nSpielberg&#39;s &#39;Jaws&#39;, The&quot;&nbsp;..."
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "jKnGc0PG0SEC",
+   "etag": "B7erRAK56VM",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/jKnGc0PG0SEC",
+   "volumeInfo": {
+    "title": "Jaws of Death",
+    "authors": [
+     "Paul Adam"
+    ],
+    "publisher": "Random House",
+    "publishedDate": "2011",
+    "description": "\"The eagerly anticipated sequel to Escape from Shadow Island. Now that teenage escapologist, Max Cassidy, knows his father's alive he's not going to rest until he's found him. But not everyone wants Max to find his dad and some people are determined to stop him, no matter what the cost. Forced off the road and abducted. With hit-men on his trail, racing through the streets of Stockholm, Max must use all of his escapology skills to get away. Vital information leads Max to Borneo. Deep in the rainforest the half-pint Houdini must use all of his ingenuity and courage to survive.\"",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9780552560337"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "0552560332"
+     }
+    ],
+    "readingModes": {
+     "text": false,
+     "image": false
+    },
+    "pageCount": 360,
+    "printType": "BOOK",
+    "categories": [
+     "Children's stories"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.12.4.0.preview.0",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=jKnGc0PG0SEC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=jKnGc0PG0SEC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com.au/books?id=jKnGc0PG0SEC&printsec=frontcover&dq=title:jaws&hl=&cd=3&source=gbs_api",
+    "infoLink": "http://books.google.com.au/books?id=jKnGc0PG0SEC&dq=title:jaws&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Jaws_of_Death.html?hl=&id=jKnGc0PG0SEC"
+   },
+   "saleInfo": {
+    "country": "AU",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "AU",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+    "epub": {
+     "isAvailable": false
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=jKnGc0PG0SEC&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "Now that teenage escapologist, Max Cassidy, knows his father&#39;s alive he&#39;s not going to rest until he&#39;s found him."
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "VT3hAAAAQBAJ",
+   "etag": "neX5cC/YdYw",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/VT3hAAAAQBAJ",
+   "volumeInfo": {
+    "title": "SQL Success",
+    "subtitle": "",
+    "authors": [
+     "Stéphane Faroult"
+    ],
+    "publisher": "RoughSea Ltd",
+    "publishedDate": "2013-09-18",
+    "description": "\"SQL Success\" is about problem-solving in SQL. It bridges the gap between dry and dull database theory books, and developer books that focus on giving recipes without explaining sufficiently the reasons behind the recipes or discussing alternative solutions. Many developers struggle with SQL due to the contrast between the top-down logic of most programming languages and SQL's set-based approach. \"SQL Success\" aims to be different. This book is more than syntax examples. \"SQL Success\" explains how to use SQL to solve problems, and covers syntax in the process-not as the focus, but as a tool toward accomplishing the objective. \"SQL Success\" also shows something that most other books do not: the pitfalls and traps of SQL, a deceptively simple language, and how easy it is to get a query wrong. Written in a conversational way, \"SQL Success\" talks about logic more than theory, avoids jargon, and refers to common-sense more than rules. It ignores features that are rarely used and tries to avoid information overload. The intention of \"SQL Success\" is not to cover every aspect of all variants of SQL. The goal is to cover everything that is of practical use. That goal is informed by the author's many years of practical experience leading an understanding of what professional developers need to know, the common mistakes that are made, and how those mistakes can be avoided. * Focuses on the practical implications of theory. * Emphasizes accuracy and efficiency. * Teaches how to \"think SQL\", not merely the syntax. * Applies to Oracle, SQL Server, MySQL, PostgreSQL, DB2, and SQLite. * Suitable for college-level database courses, SQL certification preparation, and professionals who want to take their database skills to the next level. * Bolstered by downloadable files and online database with practice exercises at edu.konagora.com. * Includes resources for instructors.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9781909765016"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "1909765015"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": false
+    },
+    "pageCount": 592,
+    "printType": "BOOK",
+    "categories": [
+     "Computers"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": true,
+    "contentVersion": "preview-1.0.0",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=VT3hAAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=VT3hAAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com.au/books?id=VT3hAAAAQBAJ&pg=PT114&dq=title:jaws&hl=&cd=4&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=VT3hAAAAQBAJ&source=gbs_api",
+    "canonicalVolumeLink": "https://market.android.com/details?id=book-VT3hAAAAQBAJ"
+   },
+   "saleInfo": {
+    "country": "AU",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 46.71,
+     "currencyCode": "AUD"
+    },
+    "retailPrice": {
+     "amount": 30.27,
+     "currencyCode": "AUD"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=VT3hAAAAQBAJ&rdid=book-VT3hAAAAQBAJ&rdot=1&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 4.671E7,
+       "currencyCode": "AUD"
+      },
+      "retailPrice": {
+       "amountInMicros": 3.027E7,
+       "currencyCode": "AUD"
+      },
+      "giftable": true
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "AU",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.com.au/books/download/SQL_Success-sample-epub.acsm?id=VT3hAAAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=VT3hAAAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "If I write where title = Title I am checking if the contents of column title is equal to \u003cbr\u003e\nthe contents of column Title, which is exactly the same since column names are \u003cbr\u003e\nnot case-sensitive — title, Title, TITLE and TiTle all refer to the same column. \u003cbr\u003e\nThere is always a title, it&#39;s always equal to itself, and the condition is always true \u003cbr\u003e\nand satisfied by ALL movies, whatever their title is. If I write where \u003cb\u003etitle\u003c/b\u003e = \u003cb\u003eJaws\u003c/b\u003e \u003cbr\u003e\nthen the SQL engine will think that the unquoted Jaws is a column name, try to \u003cbr\u003e\ncompare the&nbsp;..."
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "WuHurwjZ1i8C",
+   "etag": "sCxi1ldj8x0",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/WuHurwjZ1i8C",
+   "volumeInfo": {
+    "title": "Power SAS",
+    "subtitle": "A Survival Guide",
+    "authors": [
+     "Darlynn Lafler"
+    ],
+    "publisher": "Apress",
+    "publishedDate": "2002-09-20",
+    "description": "Lafler's book provides SAS users (Version 8.2) with a wonderful collection of tips, undocumented or hard-to-find tidbits of information, and other useful techniques in more than 1,000 entries.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9781430211556"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "1430211555"
+     }
+    ],
+    "readingModes": {
+     "text": false,
+     "image": true
+    },
+    "pageCount": 336,
+    "printType": "BOOK",
+    "categories": [
+     "Computers"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "1.4.1.0.preview.1",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=WuHurwjZ1i8C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=WuHurwjZ1i8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com.au/books?id=WuHurwjZ1i8C&pg=PA47&dq=title:jaws&hl=&cd=5&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=WuHurwjZ1i8C&source=gbs_api",
+    "canonicalVolumeLink": "https://market.android.com/details?id=book-WuHurwjZ1i8C"
+   },
+   "saleInfo": {
+    "country": "AU",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 87.99,
+     "currencyCode": "AUD"
+    },
+    "retailPrice": {
+     "amount": 61.07,
+     "currencyCode": "AUD"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=WuHurwjZ1i8C&rdid=book-WuHurwjZ1i8C&rdot=1&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 8.799E7,
+       "currencyCode": "AUD"
+      },
+      "retailPrice": {
+       "amountInMicros": 6.107E7,
+       "currencyCode": "AUD"
+      },
+      "giftable": true
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "AU",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": false
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.com.au/books/download/Power_SAS-sample-pdf.acsm?id=WuHurwjZ1i8C&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=WuHurwjZ1i8C&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "The following in-stream tab-delimited input is read using a list-style of INPUT \u003cbr\u003e\nstatement with the DSD, DLM=, and TRUNCOVER options specified in the \u003cbr\u003e\nINFILE statement. 2. DATALINES may be substituted for the CARDS input \u003cbr\u003e\ndesignation on the INFILE Statement and the CARDS Statement. Code: DATA \u003cbr\u003e\nMOVIES; INFILE CARDS DSD DLM=&#39;09&quot;x TRUNCOVER; INPUT \u003cb\u003eTITLE\u003c/b\u003e $ \u003cbr\u003e\nRATING $; CARDS; \u003cb\u003eJaws\u003c/b\u003e PG Rocky PG Titanic PG-13 RUN; PROC PRINT; RUN; \u003cbr\u003e\nResults: Obs \u003cb\u003eTITLE\u003c/b\u003e&nbsp;..."
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "Y6bE_fhaBIwC",
+   "etag": "Jhojm2PSyTY",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/Y6bE_fhaBIwC",
+   "volumeInfo": {
+    "title": "The Jaws Log",
+    "subtitle": "30th Anniversary Edition",
+    "authors": [
+     "Carl Gottlieb",
+     "Peter Benchley"
+    ],
+    "publisher": "ReadHowYouWant.com",
+    "publishedDate": "2010-10-19",
+    "description": "Winner of 3 Oscars and the highest grossing film of its time, Jaws was a phenomenon, and this is the only book on how 26-year-old Steven Spielberg transformed Peter Benchley's best-selling novel into the classic film it became. Hired by Spielberg as a screenwriter to work with him on the set while the movie was being made, Carl Gottlieb, and actor and writer, was there throughout the production that starred Roy Scheider, Robert Shaw, and Richard Dreyfuss. After filming was over, with Spielberg's cooperation, Gottlieb chronicled the extraordinary year-long adventure in The Jaws Log, which was first published in 1975, generating 17 printings and selling more than 2 million copies. This paperback edition includes an introduction by Carl Gottlieb, an introduction by Peter Benchley, and 36 black and white photos.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9781458720009"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "1458720004"
+     }
+    ],
+    "readingModes": {
+     "text": false,
+     "image": true
+    },
+    "pageCount": 288,
+    "printType": "BOOK",
+    "averageRating": 4.0,
+    "ratingsCount": 2,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.0.1.0.preview.1",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=Y6bE_fhaBIwC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=Y6bE_fhaBIwC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com.au/books?id=Y6bE_fhaBIwC&pg=PA3&dq=title:jaws&hl=&cd=6&source=gbs_api",
+    "infoLink": "http://books.google.com.au/books?id=Y6bE_fhaBIwC&dq=title:jaws&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/The_Jaws_Log.html?hl=&id=Y6bE_fhaBIwC"
+   },
+   "saleInfo": {
+    "country": "AU",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "AU",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+    "epub": {
+     "isAvailable": false
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=Y6bE_fhaBIwC&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "The contract, according to The New York Times, called for delivery of the first four \u003cbr\u003e\nchapters by April 15, 1972. It also called for a payment of $1,000 to Peter for his \u003cbr\u003e\nefforts, and the promise of a regular, larger advance if Doubleday decided to go \u003cbr\u003e\nahead and do the whole book. After revisions, rewrites, deadlines, and rewrites, \u003cbr\u003e\nPeter&#39;s book was finished and the final draft delivered in January 1973. During \u003cbr\u003e\nthis period of internal preparation, the book about a shark got its \u003cb\u003etitle\u003c/b\u003e, \u003cb\u003eJaws\u003c/b\u003e, and a\u003cbr\u003e\n&nbsp;..."
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "MtJh00OCBA8C",
+   "etag": "h0X0GB2+QeI",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/MtJh00OCBA8C",
+   "volumeInfo": {
+    "title": "Jaws of the Lion",
+    "subtitle": "Rhodesia Before Zimbabwe",
+    "authors": [
+     "Angus Hyslop"
+    ],
+    "publisher": "Lulu.com",
+    "publishedDate": "1997",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9780646379593"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "0646379593"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 356,
+    "printType": "BOOK",
+    "categories": [
+     "Zimbabwe"
+    ],
+    "averageRating": 3.0,
+    "ratingsCount": 2,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.1.2.0.preview.3",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=MtJh00OCBA8C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=MtJh00OCBA8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com.au/books?id=MtJh00OCBA8C&printsec=frontcover&dq=title:jaws&hl=&cd=7&source=gbs_api",
+    "infoLink": "http://books.google.com.au/books?id=MtJh00OCBA8C&dq=title:jaws&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Jaws_of_the_Lion.html?hl=&id=MtJh00OCBA8C"
+   },
+   "saleInfo": {
+    "country": "AU",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "AU",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.com.au/books/download/Jaws_of_the_Lion-sample-epub.acsm?id=MtJh00OCBA8C&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=MtJh00OCBA8C&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "UKz0qamJCFIC",
+   "etag": "G0Hl+piCN+s",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/UKz0qamJCFIC",
+   "volumeInfo": {
+    "title": "Jaws from Heaven",
+    "authors": [
+     "Bruce B. Woods"
+    ],
+    "publisher": "Dorrance Publishing",
+    "publishedDate": "2008-08-06",
+    "description": "\"This is the story of the unheard of black Military Police K9 officer who endures racial barriers to elevate his knowledge to become a true professional K9 trainer. The one who gets trapped in life and death situations and meets the Grim Reaper on a nightly basis, but is sent a helper from up above that protects and shows his knowledge that becomes so threatening to his racial rivals that they set out to kill him or the Jaws from Heaven.\" -- From back cover.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9780805997750"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "080599775X"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 96,
+    "printType": "BOOK",
+    "categories": [
+     "Biography & Autobiography"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.0.1.0.preview.3",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=UKz0qamJCFIC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=UKz0qamJCFIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com.au/books?id=UKz0qamJCFIC&printsec=frontcover&dq=title:jaws&hl=&cd=8&source=gbs_api",
+    "infoLink": "http://books.google.com.au/books?id=UKz0qamJCFIC&dq=title:jaws&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Jaws_from_Heaven.html?hl=&id=UKz0qamJCFIC"
+   },
+   "saleInfo": {
+    "country": "AU",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "AU",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=UKz0qamJCFIC&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "&quot;This is the story of the unheard of black Military Police K9 officer who endures racial barriers to elevate his knowledge to become a true professional K9 trainer."
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "eqY-DwAAQBAJ",
+   "etag": "7uX18trk52g",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/eqY-DwAAQBAJ",
+   "volumeInfo": {
+    "title": "Just When You Thought It Was Safe: A Jaws Companion",
+    "subtitle": "",
+    "authors": [
+     "Patrick Jankiewicz"
+    ],
+    "publisher": "BearManor Media",
+    "publishedDate": "2013-06-09",
+    "description": "Did you used to hate the water, but can't imagine why? Do you feel a constant need for a bigger boat? Do you want the Mayor to close the beaches? If the answer is “yes” to these questions, you are a Jaws fanatic. Just When You Thought It Was Safe: A Jaws Companion by Patrick Jankiewicz splashes into the terrifying yet true stories behind the making of Jaws (1975) starring Roy Scheider, Robert Shaw, and Richard Dreyfuss, the film director Steven Spielberg based on Peter Benchley’s 1974 runaway best selling novel of the same name. The equally stupendous success of Spielberg’s suspense film spawned a string of sequels. Author Patrick Jankiewicz fishes out the production back stories, such as how \"Smile, You sonnuva—” and “We need a bigger boat!” were created. He reels in all the shark's victims, including John Hancock, Lance Guest, and Dorothy Tristan, for exclusive interviews, and he harpoons of the sequels, Jaws 2 (1978), Jaws 3-D (1983), Jaws: The Revenge (1987). 235 pages.",
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "printType": "BOOK",
+    "categories": [
+     "Performing Arts"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "1.1.1.0.preview.3",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=eqY-DwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=eqY-DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com.au/books?id=eqY-DwAAQBAJ&pg=PT174&dq=title:jaws&hl=&cd=9&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=eqY-DwAAQBAJ&source=gbs_api",
+    "canonicalVolumeLink": "https://market.android.com/details?id=book-eqY-DwAAQBAJ"
+   },
+   "saleInfo": {
+    "country": "AU",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 10.61,
+     "currencyCode": "AUD"
+    },
+    "retailPrice": {
+     "amount": 6.88,
+     "currencyCode": "AUD"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=eqY-DwAAQBAJ&rdid=book-eqY-DwAAQBAJ&rdot=1&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 1.061E7,
+       "currencyCode": "AUD"
+      },
+      "retailPrice": {
+       "amountInMicros": 6880000.0,
+       "currencyCode": "AUD"
+      },
+      "giftable": true
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "AU",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.com.au/books/download/Just_When_You_Thought_It_Was_Safe_A_Jaws-sample-epub.acsm?id=eqY-DwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.com.au/books/download/Just_When_You_Thought_It_Was_Safe_A_Jaws-sample-pdf.acsm?id=eqY-DwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=eqY-DwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "“Joe made a drawing of the shark coming out of the water with its big mouth \u003cbr\u003e\nopening and the words JAWS 3-D, which he thought of. It was such an obvious \u003cbr\u003e\n\u003cb\u003etitle\u003c/b\u003e — “\u003cb\u003eJAWS\u003c/b\u003e 3 in 3-D”! Periodically in the script, I would try to indicate where I \u003cbr\u003e\nthought the 3-D should be used, writing something like, &#39;The shark rushes right at \u003cbr\u003e\nyou.&#39;” JAWS 3-D is also the goriest sequel in the series, with severed arms, rotting \u003cbr\u003e\nheads and other limbs, all coming at you in three dimensions. The gimmick is \u003cbr\u003e\nused most&nbsp;..."
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "KF0tAgAAQBAJ",
+   "etag": "FuV/4Vivt8o",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/KF0tAgAAQBAJ",
+   "volumeInfo": {
+    "title": "The Jaws of Death",
+    "subtitle": "Sharks as Predator, Man as Prey",
+    "authors": [
+     "Xavier Maniguet"
+    ],
+    "publisher": "Skyhorse Publishing, Inc.",
+    "publishedDate": "2013-12-13",
+    "description": "Biggest of all fish and the best equipped for hunting, sharks live in every ocean. No natural predator except the killer whale threatens them, and they possess an extraordinary physiology...including those unrivaled jaws. They have become the stuff of movies, books, and nightmares, but some of what we commonly believe is fiction, not fact. Through the examination of case histories, including gruesome attacks on man, The Jaws of Death documents the truth. It discusses why sharks are essential to the equilibrium of the marine biotope and what benefit they have provided to science and medicine. In addition to sharks, other \"jaws of death\" receive attention, including piranhas, crocodiles, and barracudas.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9781628730616"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "1628730617"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 352,
+    "printType": "BOOK",
+    "categories": [
+     "Nature"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": true,
+    "contentVersion": "2.2.2.0.preview.3",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=KF0tAgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=KF0tAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com.au/books?id=KF0tAgAAQBAJ&printsec=frontcover&dq=title:jaws&hl=&cd=10&source=gbs_api",
+    "infoLink": "http://books.google.com.au/books?id=KF0tAgAAQBAJ&dq=title:jaws&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/The_Jaws_of_Death.html?hl=&id=KF0tAgAAQBAJ"
+   },
+   "saleInfo": {
+    "country": "AU",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "AU",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.com.au/books/download/The_Jaws_of_Death-sample-epub.acsm?id=KF0tAgAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.com.au/books/download/The_Jaws_of_Death-sample-pdf.acsm?id=KF0tAgAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=KF0tAgAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "They have become the stuff of movies, books, and nightmares, but some of what we commonly believe is fiction, not fact. Through the examination of case histories, including gruesome attacks on man, The Jaws of Death documents the truth."
+   }
+  }
+ ]
+}

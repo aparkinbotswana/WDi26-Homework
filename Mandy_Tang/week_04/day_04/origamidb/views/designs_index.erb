@@ -1,0 +1,15 @@
+<h3>All Designs</h2>
+
+<ul>
+
+<% @origami.each do |design| %>
+
+  <li>
+<a href="/designs/<%= design['id'] %>">
+  <%= design["name"] %>
+</a>
+  </li>
+
+<% end %>
+
+</ul>

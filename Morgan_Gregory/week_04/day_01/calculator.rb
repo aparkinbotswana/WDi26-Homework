@@ -12,14 +12,14 @@ def show_menu
   print "Enter your menu selection: "
 end
 
-show_menu
+show_menu # calling the method
 user_selection = gets.chomp.downcase
 
 # loop until user hits 'q'
 until user_selection == 'q'
   # process the user_selection
-  case user_selection # addition
-  when 'a'
+  case user_selection
+  when 'a' # Addition
     print "first number?: "
     first_num = gets.to_i
 
@@ -30,7 +30,7 @@ until user_selection == 'q'
 
     puts "Result: #{ result }"
 
-  when 's'
+  when 's' # Subtraction
     print "first number?: "
     first_num = gets.to_i
 
@@ -41,7 +41,7 @@ until user_selection == 'q'
 
     puts "Result: #{ result }"
 
-  when 'm'
+  when 'm' # Multiplication
     print "first number?: "
     first_num = gets.to_i
 
@@ -52,7 +52,7 @@ until user_selection == 'q'
 
     puts "Result: #{ result }"
 
-  when 'd'
+  when 'd' # Division
     print "first number?: "
     first_num = gets.to_f
 
@@ -63,14 +63,14 @@ until user_selection == 'q'
 
     puts "Result: #{ result }"
 
-  when 'sq'
+  when 'sq' # Square root
     print "what number do you wish to square?: "
     sq_num = gets.to_i
 
     result = sq_num * sq_num
     puts "Result: #{ result }"
 
-  when 'ex'
+  when 'ex' # Exponent
     print "what's the number?: "
     num = gets.to_i
 
@@ -86,7 +86,7 @@ until user_selection == 'q'
 
   # show the show_menu
   # Read the next user selection
-  show_menu
+  show_menu # calling the method
   user_selection = gets.chomp.downcase
 end
 
