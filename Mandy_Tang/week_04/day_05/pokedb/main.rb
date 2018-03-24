@@ -12,11 +12,11 @@ ActiveRecord::Base.establish_connection(
 )
 
 class Trainer < ActiveRecord::Base
-  has_many :pokes
+  belongs_to :poke  # Let's never get this mixed up again
 end
 
 class Poke < ActiveRecord::Base
-  belongs_to :trainer
+  has_many :trainers
 end
 
 get '/' do
@@ -37,6 +37,7 @@ post '/trainers' do
     trainer = Trainer.new
     trainer.name = params[:name]
     trainer.image = params[:image]
+    trainer.poke_id = params[:poke_id]
     trainer.save
     redirect ('/trainers')
 end
@@ -59,9 +60,10 @@ post '/trainers/:id' do
   @trainer = Trainer.find params[:id]
   @trainer.name = params[:name]
   @trainer.image = params[:image]
+  @trainer.poke_id = params[:poke_id]
   @trainer.save
 
-  redirect to("/trainers/#{params[:id]}") #TODO Redirect to the edited page
+  redirect to("/trainers/#{params[:id]}")
 end
 
 get '/trainers/:id' do
@@ -82,7 +84,7 @@ post '/pokes' do
   @poke = Poke.new
   @poke.name = params[:name]
   @poke.image = params[:image]
-  @poke.pokemon_type = params[:type]
+  @poke.pokemon_type = params[:pokemon_type]
   @poke.save
 
   redirect to('/pokes')
@@ -90,7 +92,6 @@ end
 
 get '/pokes/:id' do
   @poke = Poke.find params[:id]
-
   erb :pokes_show
 end
 
@@ -109,7 +110,7 @@ post '/pokes/:id' do
   @poke = Poke.find params[:id]
   @poke.name = params[:name]
   @poke.image = params[:image]
-  @poke.pokemon_type = params[:type]
+  @poke.pokemon_type = params[:pokemon_type]
   @poke.save
   redirect to("/pokes/#{params[:id]}")
 end

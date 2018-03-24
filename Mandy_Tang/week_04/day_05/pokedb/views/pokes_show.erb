@@ -1,7 +1,16 @@
-<h2>You chose <%= @poke.name %></h2>
+<h2>You chose <%= @poke.name %>!</h2>
 
 <img src="<%= @poke.image %>">
 
+<br>
+<% unless @poke.trainers.nil? || @poke.trainers.empty? %>
+  <h3>Associated Trainers:</h3>
+  <ul>
+  <% @poke.trainers.each do |trainer| %>
+    <li><a href="/trainers/<%= trainer.id %>"><%= trainer.name %></a></li>
+  <%end%>
+  </ul>
+<%end%>
 <div class="controls">
 <a href="/pokes/<%= @poke.id %>/delete">Delete</a>
 <a href="/pokes/<%= @poke.id %>/edit">Edit</a>

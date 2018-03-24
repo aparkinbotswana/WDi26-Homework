@@ -1,6 +1,11 @@
-<h2>Trainer <%= @trainer.name %></h2>
+<h2>Trainer: <%= @trainer.name %></h2>
 
 <img src="<%= @trainer.image %>">
+
+<% unless @trainer.poke.nil? %>
+  <br><h4>Associated Pokemon:</h4>
+  <a href="/pokes/<%= @trainer.poke.id %>"><%= @trainer.poke.name %></a>
+<% end %>
 
 <div class="controls">
 <a href="/trainers/<%= @trainer.id %>/delete">Delete</a>
