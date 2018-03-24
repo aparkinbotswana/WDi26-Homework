@@ -21,6 +21,7 @@ end
 
 # Home
 get '/' do
+  @artworks = Artwork.all
   erb :home
 end
 

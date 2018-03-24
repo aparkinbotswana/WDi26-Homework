@@ -1,21 +1,30 @@
-<h2><%= @artist.name %>, b.<%= @artist.year_of_birth %></h2>
+<h2><%= @artist.name %></h2>
 
-<% unless @artist.artworks.empty? %>
-<h3>Artworks:</h3>
-<ul>
-  <% @artist.artworks.each do |artwork| %>
-  <li>
-    <a href="/artworks/<%= artwork.id %>"><%= artwork.name %></a>
-  </li>
-  <% end %>
-</ul>
-<% end %>
-
-<% unless @artist.image.nil? || @artist.image.empty? %>
-<img clss="feature" src="<%= @artist.image %>" alt="<%= @artist.name %>">
-<% end %>
-
-<div class="controls">
-  <a href="/artists/<%= @artist.id %>/edit">Edit</a>
-  <a href="/artists/<%= @artist.id %>/delete">Delete</a>
+<div class="artist-show">
+  <div class="artist-pic">
+    <% unless @artist.image.nil? || @artist.image.empty? %>
+    <img class="feature" src="<%= @artist.image %>" alt="<%= @artist.name %>">
+    <% end %>
+  </div>
+  <div class="artist-deets">
+    <h3>b.<%= @artist.year_of_birth %></h3>
+    <% unless @artist.artworks.empty? %>
+    <h3>Artworks:</h3>
+    <ul>
+      <% @artist.artworks.each do |artwork| %>
+      <li>
+        <a href="/artworks/<%= artwork.id %>"><%= artwork.name %></a>
+      </li>
+      <% end %>
+    </ul>
+    <% end %>
+  </div>
 </div>
+
+
+<nav class="controls">
+  <ul>
+    <a href="/artists/<%= @artist.id %>/edit">Edit</a>
+    <a href="/artists/<%= @artist.id %>/delete">Delete</a>
+  </ul>
+</nav>

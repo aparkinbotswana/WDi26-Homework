@@ -2,10 +2,10 @@
 
 <div class="gallery">
   <% @artworks.each do |artwork| %>
-    <a href="/artworks/<%= artwork.id %>">
-      <div class="art-box">
-        <img class="mini" src="<%= artwork.image %>" alt="<%= artwork.name %>">
-      </div>
-    </a>
+    <div class="art-box">
+      <a href="/artworks/<%= artwork.id %>">
+        <img src="<%= artwork.image %>" alt="<%= artwork.name %>">
+      </a>
+    </div>
   <% end %>
 </div>
