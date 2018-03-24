@@ -8,9 +8,9 @@
     <label>Age</label>
     <input type="integer" name="age" placeholder="e.g. 42">
     <select name="comic_id">
-        <option></option>
-        <% Comic.all.each do |comic| %>
-            <option value="<%= comic.id %>"><%= comic.name %></option>
+        <option selected="true" disabled="disabled">Select style</option>
+        <% Style.all.each do |style| %>
+            <option value="<%= style.id %>"><%= style.name %></option>
         <% end %>
     </select>
     <button>Create comic</button>

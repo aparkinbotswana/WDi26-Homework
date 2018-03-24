@@ -26,9 +26,13 @@ end
 #### ------------------------------------------------COMICS
 
 # Comics - index
-get '/comics' do
-    @comics = Comics.all
+get '/comics/' do
+    @comics = Comic.all
     erb :comics_index
+end
+
+get '/lost/' do
+    erb :lost
 end
 
 # Comics - new
@@ -44,7 +48,7 @@ post '/comics' do
     comic.age = params[:age]
     comic.style_id = params[:style_id]
     comic.save
-    redirect to('/comics')
+    redirect to('/comics/')
 end
 
 # Comics - show
@@ -55,16 +59,17 @@ end
 
 # Comics - edit
 get '/comics/:id/edit' do
-    @style = Style.find params[:id]
-    erb :styles_edit
+    @comic = Comic.find params[:id]
+    erb :comics_edit
 end
 
 # Comics - update
-post '/styles/:id' do
+post '/comics/:id' do
     comic = Comic.find params[:id]
     comic.name = params[:name]
     comic.nationality = params[:nationality]
     comic.age = params[:age]
+    comic.image = params[:image]
     comic.style_id = params[:style_id]
     comic.save
     redirect to("/comics/#{ params[:id] }")
@@ -74,20 +79,20 @@ end
 get '/comics/:id/delete' do
     comic = Comic.find params[:id]
     comic.destroy
-    redirect to('/comics')
+    redirect to('/comics/')
 end
 
 #### -------------------------------------------------STYLES
 
 # Styles - index
-get '/styles' do
-    @styles = Styles.all
+get '/styles/' do
+    @styles = Style.all
     erb :styles_index
 end
 
 # Styles - new
 get '/styles/new' do
-    erb :comics_new
+    erb :styles_new
 end
 
 # Styles - create
@@ -119,14 +124,14 @@ post '/styles/:id' do
     style.origin = params[:origin]
     style.popularity = params[:popularity]
     style.save
-    redirect to ("/styles/#{ style.id }")
+    redirect to ('/styles/#{ style.id }')
 end
 
 # Styles - delete
 get '/styles/:id/delete' do
     style = Style.find params[:id]
     style.destroy
-    redirect to("/styles")
+    redirect to('/styles/')
 end
 
 #### ------------------------------------------------END

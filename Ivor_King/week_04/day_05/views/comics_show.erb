@@ -1,10 +1,10 @@
 <h2><%= @comic['name'] %></h2>
-<h3>Style: <%= @comic['styyle'] %></h3>
+<h3>Nationality: <%= @comic['nationality'] %></h3>
 
-<% unless @comic.style.nil? %>
+<% unless @comic.styles.nil? %>
     <h3>
         Related style:
-        <a href="/styles/<%= @comic.plant.id %>"><%= @style.comic.name %></a>
+        <a href="/styles/<%= @comic.style.id %>"><%= @style.comic.name %></a>
     </h3>
 <% end %>
 
@@ -13,6 +13,6 @@
 <% end %>
 
 <div class="controls">
-    <a href="/comics/<%= @comic['id'] %>/edit">Edit</a>
-    <a href="/comics/<%= @comic['id'] %>/delete">Delete</a>
+    <a href="/comics/<%= @comic.id %>/edit">Edit</a>
+    <a href="/comics/<%= @comic.id %>/delete">Delete</a>
 </div>
