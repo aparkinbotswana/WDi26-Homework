@@ -1,0 +1,18 @@
+<h1>Search Results</h1>
+<h3><a href="/">Back</a></h3>
+
+<div class="container">
+
+    <% @books_info.each_with_index do |book, index| %>
+        <a href=<%= book['infoLink'] %> target="_blank">
+            <div class="book">
+                <h2><%= book['title'] %></h2>
+                <h3><%= book['authors'].join(', ') unless book['authors'].nil? %></h3>
+                <img src=<%= book['imageLinks']['smallThumbnail'] %></img>
+            </div>
+        </a>
+    <% end %>
+
+
+
+</div>
