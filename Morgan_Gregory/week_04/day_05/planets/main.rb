@@ -27,7 +27,7 @@ end
 #### MOONS #################################################
 # moons index page display
 get '/moons' do
-  @moons = Moon.all
+  @moons = Moon.all.order('name asc')
   erb :moons_index
 end
 
@@ -80,7 +80,7 @@ end
 #### PLANETS #################################################
 # planets index page display
 get '/planets' do
-  @planets = Planet.all
+  @planets = Planet.all.order('period2 asc')
   erb :planets_index
 end
 
