@@ -71,14 +71,14 @@ end
 
 def attack_check white_index, black_index
   if white_index.keys.first == black_index.keys.first # checks to see if there is an attack in the same row by checking if both keys are identical
-    puts 'ITS A TRAP! You can attack in the same row.'
-    puts "White Queen #{white_index} can attack Black Queen #{black_index}."
+    puts 'ITS A TRAP! You can be attacked in the same row.'
+    puts "Black Queen #{black_index} can attack White Queen #{white_index}"
   elsif white_index.values.first == black_index.values.first # checks to see if there is an attack in the same column buy comparing if values in each hash are identical
-    puts 'ITS A TRAP! You can attack in the same column.'
-    puts "White Queen #{white_index} can attack Black Queen #{black_index}."
+    puts 'ITS A TRAP! You can be attacked in the same column.'
+    puts "Black Queen #{black_index} can attack White Queen #{white_index}"
   elsif check_diagonal white_index, black_index # call function to check mulitple diagonal vectors. Returns true or false.
-    puts 'ITS A TRAP! You can attack diagonally.'
-    puts "White Queen #{white_index} can attack Black Queen #{black_index}."
+    puts 'ITS A TRAP! You can be attacked diagonally.'
+    puts "Black Queen #{black_index} can attack White Queen #{white_index}"
   else
     puts 'These are not the droids you are looking for.'
   end
