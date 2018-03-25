@@ -2,17 +2,17 @@
 
 <form action="/artworks/<%= @artwork.id %>" method="post">
   <label>Name:</label>
-  <input type="text" name="name" value="<%= @artwork.name %>" placeholder="e.g. The Kiss">
+  <input type="text" name="name" value="<%= @artwork.name %>" placeholder="e.g. The Kiss"><br>
   <label>Year:</label>
-  <input type="integer" name="year" value="<%= @artwork.year %>" placeholder="e.g. 1908">
+  <input type="integer" name="year" value="<%= @artwork.year %>" placeholder="e.g. 1908"><br>
   <label>Image:</label>
-  <input type="url" name="image" value="<%= @artwork.image %>" placeholder="http://...">
+  <input type="url" name="image" value="<%= @artwork.image %>" placeholder="http://..."><br>
   <label>Artist:</label>
   <select name="artist_id">
     <option></option>
     <% Artist.all.each do |artist| %>
       <option value="<%= artist.id %>" <%= "selected" if artist.id == @artwork.artist_id %>><%= artist.name %></option>
     <% end %>
-  </select>
+  </select><br>
   <button>Update</button>
 </form>
