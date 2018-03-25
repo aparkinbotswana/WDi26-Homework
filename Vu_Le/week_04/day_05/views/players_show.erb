@@ -1,0 +1,18 @@
+<h2><%= @player['name'] %></h2>
+<h3>Position: <%= @player['position'] %></h3>
+
+<% unless @player.team.nil? %>
+  <h3>
+    Player team:
+    <a href="/teams/<%= @player.team.id %>"><%= @player.team.name %></a>
+  </h3>
+<% end %>
+
+<% unless @player['image'].nil? || @player['image'].empty? %>
+  <img class="feature" src="<%= @player['image'] %>" alt="<%= @player['name'] %>">
+<% end %>
+
+<div class="controls">
+  <a href="/players/<%= @player['id'] %>/edit">Edit</a>
+  <a href="/players/<%= @player['id'] %>/delete">Delete</a>
+</div>
