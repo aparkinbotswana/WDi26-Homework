@@ -1,0 +1,13 @@
+<h3><%= @design["name"] %></h3>
+
+by <%= @design["creator"] %>
+
+<% unless @design["image"].nil? || @design["image"].empty? %>
+  <img class="feature" src="<%= @design["image"] %>">
+<% end %>
+
+<div class="controls">
+  <a href="/designs/<%= @design['id'] %>/delete">Delete</a>
+
+  <a href="/designs/<%= @design['id'] %>/edit">Edit</a>
+</div>

@@ -1,0 +1,14 @@
+<h3>Edit a Design</h3>
+
+<form action="/designs/<%= @design['id']%>" method="post">
+  <label>Name of Design</label>
+  <input type="text" name="name" value="<%= @design['name']%>">
+
+  <label>Creator</label>
+  <input type="text" name="creator" value="<%= @design['creator']%>">
+
+  <label>Image</label>
+  <input type="url" name="image" placeholder="http://">
+
+  <button>Submit</button>
+</form>

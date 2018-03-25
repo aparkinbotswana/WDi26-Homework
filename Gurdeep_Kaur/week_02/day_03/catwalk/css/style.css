@@ -1,0 +1,17 @@
+body{
+  background-image: url('https://www.global-carpet.de/portals/0/hochflor/hochflor-teppich-chamonix-hellgrau-interieur.jpg');
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+
+}
+
+.reversecat{
+  transform: scaleX(-1);
+  
+
+}
+
+/* .dancingcat{
+ image: url('https://slack-imgs.com/?c=1&url=https%3A%2F%2Fmedia3.giphy.com%2Fmedia%2FtkjfU5IIjbqbm%2Fgiphy-downsized.gif');
+} */
