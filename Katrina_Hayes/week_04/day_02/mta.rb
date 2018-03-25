@@ -25,17 +25,11 @@ def plan_trip  #line1, on_at, line2, off_at
   print "Enter the station you're getting off at: "
   off_at = gets.chomp
 
-  train_lines = {
-    "N" => ["Times Square", "34th", "28th on the N", "23rd on the N", "Union Square on the N", "8th on the N"],
-    "L" => ["8th on the L", "6th", "Union Square on the L", "3rd", "1st"],
-    "6" => ["Grand Central", "33rd", "28th on the 6", "23rd on the 6", "Union Square on the 6", "Astor Place"]
-  }
-
   ### Indices of stations on, off, switch_l1, switch_l2
-  index_on_at = train_lines[line1].index(on_at)
-  index_off_at = train_lines[line2].index(off_at)
-  index_switch_l1 = train_lines[line1].index("Union Square on the #{line1}")
-  index_switch_l2 = train_lines[line2].index("Union Square on the #{line2}")
+  index_on_at = $train_lines[line1].index(on_at)
+  index_off_at = $train_lines[line2].index(off_at)
+  index_switch_l1 = $train_lines[line1].index("Union Square on the #{line1}")
+  index_switch_l2 = $train_lines[line2].index("Union Square on the #{line2}")
 
   ### Give name to the station to get off at for first_leg & deal with single_line trips so they can be dealt with in 'first_leg'
   if line1 == line2

@@ -1,0 +1,11 @@
+<h2>Kitten index</h2>
+
+<ul>
+  <% @kittens.each do |kitten| %>
+  <li>
+    <a href="/kittens/<%= kitten['id'] %>">
+      <%= kitten["name"] %>
+    </a>
+  </li>
+  <% end %>
+</ul>
