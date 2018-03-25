@@ -1,0 +1,10 @@
+<h1><%= @synth['model'] %></h1>
+<h2>Made by: <%= @synth['make'] %></h2>
+<h3>Type: <%= @synth['type'] %></h3>
+<h3>Released: <%= @synth['year'] %></h3>
+<img src=<%= @synth['image'] %> alt=<%= @synth['model'] %>>
+
+<div class="controls">
+    <a href="/<%= @synth['id'] %>/edit">Edit Synth</a>
+    <a href="/<%= @synth['id'] %>/delete">Delete Synth</a>
+</div>
