@@ -1,0 +1,11 @@
+<h2>Confectioneries</h2>
+
+<ul>
+  <% @confectioneries.each do |confectionery| %>
+  <li class="index">
+    <a href="/confectioneries/<%= confectionery.id %>">
+      <%= confectionery.name %>
+    </a>
+  </li>
+  <% end %>
+</ul>
