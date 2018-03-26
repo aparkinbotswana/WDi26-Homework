@@ -4,12 +4,15 @@
   <div class="artist-pic">
     <% unless @artist.image.nil? || @artist.image.empty? %>
     <img class="feature" src="<%= @artist.image %>" alt="<%= @artist.name %>">
+    <% else %>
+    <div class="empty-artist-image">Artist picture to come</div>
     <% end %>
   </div>
   <div class="artist-deets">
-    <h3>b.<%= @artist.year_of_birth %></h3>
+    <h4>Born: <%= @artist.year_of_birth %></h4>
+    <h4>Nationality: <%= @artist.nationality %></h4>
     <% unless @artist.artworks.empty? %>
-    <h3>Artworks:</h3>
+    <h4>Artworks:</h4>
     <ul>
       <% @artist.artworks.each do |artwork| %>
       <li>
@@ -20,8 +23,6 @@
     <% end %>
   </div>
 </div>
-
-
 <nav class="controls">
   <ul>
     <a href="/artists/<%= @artist.id %>/edit">Edit</a>
