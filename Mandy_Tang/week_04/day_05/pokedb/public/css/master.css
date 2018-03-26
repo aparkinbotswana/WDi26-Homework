@@ -1,0 +1,32 @@
+body {
+  background-color: sandybrown;
+  margin: 3% auto;
+  width: 70%;
+  height: 100%;
+  font-family: "Courier New"
+}
+
+nav {
+  margin-bottom: 5%;
+}
+
+nav a {
+  font-weight: bold;
+}
+
+nav a:visited {
+  color: darkred;
+}
+
+img {
+  max-width: 33%;
+  margin-bottom: 2%;
+}
+
+.controls {
+ padding-top: 5%;
+}
+
+.controls a {
+  display: inline-block;
+}
