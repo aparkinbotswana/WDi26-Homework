@@ -1,0 +1,10 @@
+<h2>Art Index</h2>
+
+<ul>
+<% @artstyles.each do |art| %>
+<li>
+  <a class="Allindex"href="/art/<%=art["id"]%>">
+  <%= art["art_type"]%></a>
+</li>
+<% end %>
+</ul>
