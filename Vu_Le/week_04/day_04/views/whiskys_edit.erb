@@ -1,0 +1,12 @@
+<h2>Edit whisky</h2>
+
+<form method="post" action="/whiskys/<%= @whisky['id'] %>">
+  <label>Name:</label>
+  <input type="text" name="name" placeholder="Whisky name" value="<%= @whisky['name'] %>">
+  <label>"Origin:"</label>
+  <input type="text" name="origin" placeholder="Whisky Origin" value="<%= @whisky['origin'] %>">
+  <label>"Image:"</label>
+  <input type="url" name="image" name="http://..." value="<%= @origin['image'] %>">
+
+  <button>Update whisky</button>
+</form>

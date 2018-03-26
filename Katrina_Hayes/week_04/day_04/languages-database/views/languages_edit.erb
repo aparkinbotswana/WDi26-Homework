@@ -1,0 +1,17 @@
+<h2>Edit entry for <%=@language['name']%></h2>
+
+<form method="post" action="/languages/<%= @language['id']%>">
+  # <!-- include the id in the path so that it knows we're updating and replacing existing entry -->
+  <label>Name:</label>
+  <input type="text" name="name" value="<%=@language['name']%>" placeholder="e.g. Spanish">
+  <label>Name in native language:</label>
+  <input type="text" name="nativeName" value="<%=@language['nativeName']%>" placeholder="e.g. español">
+  <label>Family:</label>
+  <input type="text" name="family" value="<%=@language['family']%>" placeholder="e.g. Indo-European">
+  <label>Living or extinct:</label>
+  <input type="text" name="livingDead" value="<%=@language['livingDead']%>" placeholder="e.g. living">
+  <label>Linguasphere:</label>
+  <input type="url" name="map" value="<%=@language['map']%>" placeholder="http://...">
+  # <!-- value would be if we already know current value and user will change it -->
+  <button>Update language</button>
+</form>

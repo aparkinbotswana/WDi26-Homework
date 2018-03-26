@@ -1,0 +1,77 @@
+/* *{
+  border: 1px solid DarkSeaGreen;
+} */
+a{
+  color: inherit;
+  text-decoration: inherit;
+}
+
+body{
+  background-color: #eff5f5;
+}
+
+main{
+  box-shadow: 0 0 20px #e0ebeb;
+  background-color: #e4ecec;
+  /* background-color: #e0ebeb; */
+  margin: auto;
+  width: 660px;
+}
+
+h3{
+  font-family: 'Clicker Script', cursive;
+  font-size: 63px;
+  margin: auto;
+  text-align: center;
+}
+
+h4{
+  /* font-family: 'Amatic SC', cursive; */
+  color: #545050;
+  font-family: 'EB Garamond', serif;
+  font-size: 16px;
+  margin: auto;
+  margin-bottom: 2px;
+  text-align: center;
+}
+
+form{
+  font-family: 'Arvo', serif;
+  margin: auto;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  width: 480px;
+}
+
+input{
+  width: 300px;
+}
+
+label{
+  font-size: 12px ;
+  padding-right: 31px;
+}
+
+.book-result{
+  font-family: 'EB Garamond', serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.title{
+  font-size: 20px;
+  text-align: center;
+}
+
+.blurb{
+  color: #444242;
+  margin: auto;
+  text-align: justify;
+  width: 550px;
+}
+
+.cover{
+  padding-top: 5px;
+  padding-bottom: 10px;
+  text-align: center;
+}

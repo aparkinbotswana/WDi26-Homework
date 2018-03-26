@@ -1,0 +1,21 @@
+body {
+  background-image: url('https://i.imgur.com/oPFc9aS.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-weight: bold;
+  }
+
+.container, figure {
+  margin: auto 0;
+  max-width: 960px;
+  background-color: rgba(0,255,255,0.1);
+  padding-bottom: 1em;
+}
+
+h1, h2, p, figure, {
+  text-align: center;
+}
+
+button {
+  color: red;
+}
