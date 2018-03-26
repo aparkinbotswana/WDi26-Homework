@@ -1,0 +1,99 @@
+CRUD Steps:
+01 Create database
+   ===============
+  - ... and seed data > create moviesbyk.sql
+  - in bash, type:
+    sqlite3 kmovies.sqlite3 < moviesbyk.sql
+    ... where kmovies.sqlite3 is the name of the database
+
+  check database:
+  --------------
+  sqlite3 kmovies.sqlite3
+  .schema                        > should display your sql file
+  SELECT * FROM movies_by_keanu; > displays all contents of table movies_by_keanu
+  ctrl-d to exit
+
+  test in pry:
+  -----------
+  pry
+  require 'sqlite3'
+  SQLite3
+  db = SQLite3::Database.new 'kmovies.sqlite3'
+  results = db.execute "SELECT * FROM movies_by_keanu"
+  results.class                                           > array
+  db.results_as_hash = true
+  results = db.execute "SELECT * FROM movies_by_keanu"
+  results                                                 > hash
+
+
+02 Create Ruby structure
+   =====================
+  Create the following:
+  - main.rb
+    add:
+    require 'sinatra'
+    require 'sinatra/reloader'
+    require 'sqlite3'
+    require 'pry'
+
+    get '/' do
+      erb :home
+    end
+
+  - views/home.erb
+    stick something like <h2>Home</h2> to indicate the page.
+
+  - views/layout.erb
+    Connect to css
+    Set up navigation at top of <body>
+    Put the following at bottom of <body>:
+      <%= yield %>
+
+
+  - public/css/master.css
+
+  Test to see that the pages work.
+  Make sure all links in layout.rb has a corresponding route in main.rb
+
+03 Create INDEX
+   ============
+  - main.rb
+    refer INDEX section
+
+  - movies_index.erb
+    views/movies_index.erb
+    refer entire file
+
+
+04 Create SHOW
+   ===========
+   - main.rb
+     refer SHOW section
+
+   - movies_show.erb
+     views/movies_show.erb
+     refer entire file
+
+05 Create NEW and CREATE
+   =====================
+   - main.rb
+     refer NEW and CREATE sections
+     #New section brings user to /movies/new which contains a form
+
+   - movies_new.erb
+     views/movies_new.erb
+     Form sends completed data to /movies (#Create section in main.rb), which
+       has a function to post the data to the DB.
+
+
+06 Create EDIT and UPDATE
+   ======================
+   
+
+
+
+
+
+
+
+    #
