@@ -1,0 +1,17 @@
+<h2>Edit character</h2>
+<div class="form">
+  <form method="post" action="/profiles/<%= @character['id'] %>">
+    <label>Name: </label>
+    <input type="text" name="name" placeholder="Luke Skywalker" value="<%= @character['name'] %>">
+    <label>Home World: </label>
+    <input type="text" name="home_world" placeholder="Tatooine" value="<%= @character['home_world'] %>">
+    <label>Film: </label>
+    <input type="text" name="film" placeholder="The Empire Strikes Back" value="<%= @character['film'] %>">
+    <label>Height: </label>
+    <input type="number" name="height" placeholder=172 value="<%= @character['height'] %>">
+    <label>Film poster: </label>
+    <input type="url" name="film_url" placeholder="https://..." value="<%= @character['film_url'] %>">
+
+    <button>Update character</button>
+  </form>
+</div>

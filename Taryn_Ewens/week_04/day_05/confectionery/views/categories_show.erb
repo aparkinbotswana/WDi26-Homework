@@ -1,0 +1,26 @@
+<h2><%= @category.name %></h2>
+
+<% unless @category.image.nil? || @category.image.empty? %>
+  <img class="feature" src="<%= @category.image %>" alt="<%= @category.name%>">
+<% end %>
+
+<% unless @category.description.nil? || @category.description.empty? %>
+  <h4>Description:</h4>
+  <p><%= @category.description %></p>
+<% end %>
+
+<% unless @category.confectioneries.empty? %>
+<h4>Examples:</h4>
+  <ul>
+    <% @category.confectioneries.each do |confectionery| %>
+      <li class="index">
+        <a href="/confectioneries/<%= confectionery.id %>"><%= confectionery.name %></a>
+      </li>
+    <% end %>
+</ul>
+<% end %>
+
+<div class="controls">
+  <a href="/categories/<%= @category['id'] %>/edit">Edit</a>
+  <a href="/categories/<%= @category['id'] %>/delete">Delete</a>
+</div>

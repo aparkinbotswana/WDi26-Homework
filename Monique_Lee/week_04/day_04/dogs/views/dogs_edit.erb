@@ -1,0 +1,16 @@
+<h2>Edit Dog</h2>
+
+<form method="post" action="/dogs/<%= @dog['id'] %>">
+
+  <label>Breed:</label>
+  <input type="text" name="breed" placeholder="Dog breed" value="<%= @dog['breed'] %>">
+  <label>Origin:</label>
+  <input type="text" name="origin" placeholder="Dog origin" value="<%= @dog['origin'] %>">
+  <label>Temperament:</label>
+  <input type="text" name="temperament" placeholder="Dog temperament" value="<%= @dog['temperament'] %>">
+  <label>Image:</label>
+  <input type="url" name="image" placeholder="http://..." value="<%= @dog['image'] %>">
+
+  <button>Update Dog</button>
+
+</form>

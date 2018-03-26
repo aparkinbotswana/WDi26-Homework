@@ -1,0 +1,19 @@
+body {
+  background-color: rgba(239, 255, 255, 1);
+  color: rgba(57, 51, 67, 0.8);
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+nav, a {
+  color: inherit;
+}
+
+img.feature {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}

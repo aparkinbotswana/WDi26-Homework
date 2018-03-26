@@ -1,0 +1,20 @@
+<h2>New Artist</h2>
+
+<form method="post" action="/artists">
+  <label>Name:</label>
+  <input type="text" name="name" placeholder="Artist Name">
+  <label>Website:</label>
+  <input type="url" name="website" placeholder="http://...">
+  <label>Image:</label>
+  <input type="url" name="image" placeholder="http://...">
+
+  <label>Song:</label>
+  <select name="song_id">
+    <option></option>
+    <% Song.all.each do |song| %>
+      <option value="<%= song.id %>"><%= song.name %></option>
+    <% end %>
+  </select>
+
+  <button>Create Artist</button>
+</form>

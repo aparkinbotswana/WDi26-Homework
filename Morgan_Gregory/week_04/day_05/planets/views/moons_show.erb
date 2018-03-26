@@ -1,0 +1,14 @@
+<h2><%= @moon['name'] %></h2>
+
+<% unless @moon.planet.nil? %>
+  <p>Orbits <a href="/planets/<%= @moon.planet.id %>"><%= @moon.planet.name %></a></p>
+<% end %>
+
+<% unless @moon['image'].nil? || @moon['image'].empty? %>
+  <img style="clip-path: circle(<%= @moon.clip %>%at 50% 50%);-webkit-clip-path: circle(<%= @moon.clip %>% at 50% 50%)" src="<%= @moon['image'] %>" alt="<%= @moon['name'] %>">
+<% end %>
+
+<div class="controls">
+  <a href="/moons/<%= @moon['id'] %>/edit">Edit</a>
+  <a href="/moons/<%= @moon['id'] %>/delete">Delete</a>
+</div>
