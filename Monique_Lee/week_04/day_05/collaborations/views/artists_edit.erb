@@ -1,0 +1,20 @@
+<h2>Edit Artist</h2>
+
+<form method="post" action="/artists/<%= @artist.id %>">
+  <label>Name:</label>
+  <input type="text" name="name" placeholder="Artist Name" value="<%= @artist.name %>">
+  <label>Website:</label>
+  <input type="url" name="website" placeholder="http://..." value="<%= @artist.website %>">
+  <label>Image:</label>
+  <input type="url" name="image" placeholder="http://..." value="<%= @artist.image %>">
+
+  <label>Song:</label>
+  <select name="song_id">
+    <option></option>
+    <% Song.all.each do |song| %>
+      <option value="<%= song.id %>" <%= "selected" if song.id == @artist.song_id %> ><%= song.name %></option>
+    <% end %>
+  </select>
+
+  <button>Update Artist</button>
+</form>

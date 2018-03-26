@@ -1,0 +1,11 @@
+<h2>Complete list of Fluffy Dogs</h2>
+
+<ul class="index">
+  <% @fluffy_dogs.each do |fluffy_dog| %>
+    <li>
+      <a href="/fluffy_dogs/<%=fluffy_dog['id'] %>">
+        <%= fluffy_dog["breed"]%>
+      </a>
+    </li>
+  <% end %>
+</ul>

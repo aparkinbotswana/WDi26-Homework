@@ -1,0 +1,17 @@
+<h2>Edit Planet</h2>
+
+<form  method="post" action="/planets/<%= @planet.id %>">
+  <label>Name</label>
+  <input type="text" name="name" placeholder="Planet name" value="<%= @planet.name %>">
+  <label>Radius (km)</label>
+  <input type="integer" name="radius" placeholder="Planet radius" value="<%= @planet.radius %>">
+  <label>Years to orbit the sun</label>
+  <input type="number" step="0.01"  name="period2" placeholder="Planet period" value="<%= @planet.period2 %>">
+  <label>Image</label>
+  <input type="url" name="image" placeholder="https://..." value="<%= @planet.image %>">
+  <label>Clip</label>
+  <input type="integer" name="clip" placeholder="%" value="<%= @planet.clip %>">
+
+
+  <button>Update planet</button>
+</form>
