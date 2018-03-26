@@ -1,0 +1,11 @@
+<h2>Edit Applications</h2>
+
+<form method="post" action="/applications/<%= @application.id %>">
+  <label>Name: </label>
+  <input type="text" name="name" placeholder="application name" value="<%= @application.name %>">
+  <label>Image: </label>
+  <input type="url" name="image" placeholder="https://..." value="<%= @application.image %>" >
+
+  <button>Update Application</button>
+
+</form>
