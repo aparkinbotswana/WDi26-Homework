@@ -1,0 +1,12 @@
+<h2>Edit Fluffy Dog</h2>
+
+<form method="post" action="/fluffy_dogs/<%= @fluffy_dog['id']%>">
+  <label>Breed:</label>
+  <input type="text" name="breed" placeholder="Breed name" value="<%= @fluffy_dog['breed']%>"/><BR/>
+  <label>Origin:</label>
+  <input type="text" name="origin" placeholder="Country of origin" value="<%= @fluffy_dog['origin']%>"/><BR/>
+  <label>Image:</label>
+  <input type="url" name="image" placeholder="http://..." value="<%= @fluffy_dog['image']%>"/><BR/>
+
+  <button>Edit floof</button>
+</form>

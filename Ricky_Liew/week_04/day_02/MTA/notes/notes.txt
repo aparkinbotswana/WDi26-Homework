@@ -1,0 +1,28 @@
+                                                              |                  |
+  N Line:    [ Time Square ] [  34th  ] [  28th  ] [  23rd  ] | [ Union Square ] | [     8th     ]
+               1  "N1"         2 "N2"     3 "N3"     4 "N4"   |   5 "N5"         |   6 "N6"
+                                                              |                  |
+  L Line:                               [  8th   ] [  6th   ] | [ Union Square ] | [     3rd     ] [    1st    ]
+                                          1 "L1"     2 "L2"   |   3 "L3"         |   4 "L4"          5 "L5"
+                                                              |                  |
+  6 Line:  [ Grand Central ] [  33rd  ] [  28th  ] [  23rd  ] | [ Union Square ] | [ Astor Place ]
+             1  "61"           2 "62"     3 "63"     4 "64"   |   5 "65"         |   6 "66"
+                                                              |                  |
+                                                              |  <intersection>  |
+
+
+Station:
+--------
+line      - str?
+name      - str
+stopNo    - int
+intersect - <station name>
+lastStop  - bool
+
+
+Rules:
+1 If source and destination are on the same line,  then travel up or down
+  depending on which stop number is larger.
+2 If source and destination are on different lines, then traveller must travel
+  via an intersection.
+3 All journeys are treated as either one or a series of legs.
