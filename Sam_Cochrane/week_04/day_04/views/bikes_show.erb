@@ -1,0 +1,14 @@
+<h2>  <%= bike['name']%> </h2>
+<h3> Family: <% bike['family']%> </h3>
+
+  <% unless @bike ["image"].nil? || @bike['image'].empty?%>
+
+<img class="feature" src="<%= @bike['image']%>" alt="<% @bike['name']%> ">
+  <%end%>
+
+
+<div class="controls">
+  <a href="/bikes/<%=@bikes['id']%>/edit">Edit</a>
+  <br>
+  <a href="/bikes/<%=@bikes['id']%>/delete">Delete</a>
+</div>

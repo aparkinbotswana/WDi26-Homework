@@ -1,0 +1,22 @@
+<h2>New Confectionery</h2>
+
+<form method="post" action="/confectioneries">
+  <label>Name:</label>
+  <input type="text" name="name" placeholder="Confectionery name"/><BR/>
+  <label>Description:</label>
+  <input type="text" name="description" placeholder="Description of confectionery"/><BR/>
+  <label>Ingredients:</label>
+  <input type="text" name="ingredients" placeholder="Ingredients eg. Sugar, Glucose..."/><BR/>
+  <label>Image:</label>
+  <input type="url" name="image" placeholder="http://..."/><BR/>
+
+  <label>Category:</label>
+  <select name="category_id">
+    <option></option>
+    <% Category.all.each do |category| %>
+    <option value="<%= category.id %>"><%= category.name %></option>
+    <% end %>
+  </select><BR/>
+
+  <button>Create confectionery</button>
+</form>

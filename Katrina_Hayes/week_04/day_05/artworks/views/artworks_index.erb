@@ -1,0 +1,11 @@
+<h2>Artworks Index</h2>
+
+<div class="gallery">
+  <% @artworks.each do |artwork| %>
+    <div class="art-box">
+      <a href="/artworks/<%= artwork.id %>">
+        <img src="<%= artwork.image %>" alt="<%= artwork.name %>">
+      </a>
+    </div>
+  <% end %>
+</div>

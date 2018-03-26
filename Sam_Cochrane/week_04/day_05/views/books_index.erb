@@ -1,0 +1,12 @@
+<h2>Books Index</h2>
+
+<ul>
+  <!-- non-echoing ERB -->
+  <% @books.each do |book| %>
+    <li>
+      <a href="/books/<%= book['id'] %>">
+        <%= book["title"] %>
+      </a>
+    </li>
+  <% end %>
+</ul>
