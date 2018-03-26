@@ -1,0 +1,10 @@
+<h2>Player Index</h2>
+
+<ul>
+  <% @players.each do |player| %>
+    <li>
+      <a href="players/<%= player['id'] %>">
+        <%= player["name"] %>
+      </li>
+  <% end %>   
+</ul>

@@ -1,0 +1,20 @@
+<h2>New moon</h2>
+
+<form method="post" action="/moons">
+  <label>Name</label>
+  <input type="text" name="name" placeholder="Moon name">
+  <label>Image</label>
+  <input type="url" name="image" placeholder="https://...">
+  <label>Clip</label>
+  <input type="integer" name="clip" placeholder="%">
+
+  <label>Orbits</label>
+  <select name="planet_id">
+    <option></option>
+    <% Planet.all.each do |planet| %>
+      <option value="<%= planet.id %>"><%= planet.name %></option>
+    <% end %>
+  </select>
+
+  <button>Create moon</button>
+</form>
