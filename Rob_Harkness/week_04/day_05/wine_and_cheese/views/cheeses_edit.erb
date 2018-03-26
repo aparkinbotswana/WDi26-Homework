@@ -1,0 +1,30 @@
+<h2>Edit Cheese</h2>
+
+<form method="post" action="/cheeses/<%= @cheese.id %>">
+    <label>Name:</label>
+    <input type="text" name="name" placeholder="Cheese name" value="<%= @cheese.name %>">
+
+    <label>Age:</label>
+    <input type="text" name="age" placeholder="age" value="<%= @cheese.age %>">
+
+    <label>Firmness:</label>
+    <input type="text" name="firmness" placeholder="firmness" value="<%= @cheese.firmness %>">
+
+    <label>Origin:</label>
+    <input type="text" name="origin" placeholder="eg: Italy" value="<%= @cheese.origin %>">
+
+
+    <label>Image:</label>
+    <input type="url" name="image" placeholder="http://(image.url)" value="<%= @cheese.image %>">
+
+    <label>Larval wine:</label>
+    <select name="wine_id">
+        <option></option>
+        <% Wine.all.each do |wine| %>
+            <option value="<%= wine.id %>" <%= "selected" if wine.id == @cheese.wine_id %> ><%= wine.variety %></option>
+        <% end %>
+    </select>
+
+
+    <button>Update cheese</button>
+</form>
