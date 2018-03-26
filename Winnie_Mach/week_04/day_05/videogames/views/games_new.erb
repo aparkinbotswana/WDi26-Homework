@@ -1,0 +1,20 @@
+<h2>Create your own game!</h2>
+
+<form action="/games" method="post">
+  <label>Name:</label>
+  <input type="text" name="name" placeholder="GTA V">
+  <label>Company:</label>
+  <input type="text" name="company" placeholder="Activision">
+  <label>Year Released:</label>
+  <input type="number" name="year" placeholder="2010">
+  <label>Image:</label>
+  <input type="url" name="image" placeholder="http://...">
+  <label>Available on:</label>
+  <select name="console_id">
+    <option></option>
+    <% Console.all.each do |console| %>
+    <option value="<%= console.id%>"><%= console.name %></option>
+    <% end %>
+  </select>
+  <button>Create</button>
+</form>
