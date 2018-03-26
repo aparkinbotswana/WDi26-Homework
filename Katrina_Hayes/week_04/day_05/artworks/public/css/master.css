@@ -145,6 +145,7 @@ img.feature {
   text-align: center;
   /* flex-basis: 200px; */ /* not clear on when to use this */
   width: 200px;
+  height: 220px;
   /* max-height: 200px; */ /* can't seem to get them to shrink width as needed to fit the height so have to let them grow in height for now. */
   background-color: #dbd1d1;
   border: 5px solid #161515;
@@ -155,16 +156,16 @@ img.feature {
 
 .art-box img {
   max-width: 100%;
-  /* max-height: 100%; */
+  max-height: 100%;
   padding: 12px;
 }
 
 .empty-artwork-image.medium {
   border: 2px solid #cba1a1;
-  width: 150px;
-  height: 200px;
+  max-width: 90%;
+  max-height: 90%;
   line-height: 188px;
-  padding: 12px;
+  /* padding: 16px; */
   margin: 12px auto;
 }
 
