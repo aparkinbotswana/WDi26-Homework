@@ -1,0 +1,22 @@
+<h2>New Virtual Reality</h2>
+
+<div id="bgcolor">
+<form method="post" action="/virtuals">
+  <label>Name:</label>
+  <input type="text" name="name" placeholder="virtual reality name" required>
+  <label>Gadgets:</label>
+  <input type="text" name="gadgets" placeholder="gadgets name" required>
+  <label>Image:</label>
+  <input type="url" name="image" placeholder="https://..." required>
+
+<label> Virtual Application:</label>
+<select name="application_id">
+  <option></option>
+  <% Application.all.each do |application| %>
+  <option value="<%= application.id %>"><%= application.name %></option>
+<% end %>
+</select>
+
+  <button>Create Virtual Reality</button>
+</form>
+</div>
