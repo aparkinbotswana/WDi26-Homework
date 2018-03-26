@@ -1,0 +1,18 @@
+<h2>Edit Todo Item</h2>
+
+<form method="post" action="/todoitems/<%=@todoitem.id%>">
+  <label>Item Name: </label>
+  <input type="text" name="item_name" placeholder="Plan US trip" value="<%= @todoitem.item_name%>">
+
+
+  <label>TodoList: </label>
+  <select name="todolist_id">
+    <option></option>
+
+    <% Todolist.all.each do |todolist| %>
+    <option value="<%= todolist.id %>" <%= "selected" if todolist.id == @todoitem.todolist_id%>><%= todolist.list_name %></option>
+    <%end%>
+  </select>
+
+  <button>Update Todo Item</button>
+</form>
