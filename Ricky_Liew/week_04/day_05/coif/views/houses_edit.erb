@@ -1,0 +1,20 @@
+<h2>Edit House</h2>
+
+<form method="post" action="/houses/<%= @house['id'] %>">
+  <label>House Name</label>
+  <Input type="text" name="name" placeholder="House name" value="<%= @house['name'] %>"></input>
+
+  <label>Seat</label>
+  <Input type="text" name="seat" placeholder="Seat" value="<%= @house['seat'] %>"></input>
+
+  <label>Current Status</label>
+  <Input type="text" name="house_type" placeholder="Status" value="<%= @house['house_type'] %>"></input>
+
+  <label>Words</label>
+  <Input type="text" name="words" placeholder="words" value="<%= @house['words'] %>"></input>
+
+  <label>Sigil</label>
+  <Input type="url" name="sigil_url" placeholder="http://..." value="<%= @house['sigil_url'] %>"></input>
+
+  <button>Save</button>
+</form>

@@ -1,0 +1,28 @@
+<h2>Edit Character</h2>
+
+<form method="post" action="/characters/<%= @character['id'] %>">
+  <label>Character Name</label>
+  <Input type="text" name="name" placeholder="Character name" value="<%= @character['name'] %>"></input>
+
+  <label>When did this character die?</label>
+  <Input type="number" name="death_season" placeholder="season" value="<%= @character['death_season'] %>"></input>
+  <Input type="number" name="death_ep" placeholder="episode no."value="<%= @character['death_ep'] %>"></input>
+
+
+  <label>How did this character die?</label>
+  <Input type="text" name="death_how" placeholder="Method of death" value="<%= @character['death_how'] %>"></input>
+
+  <label>Thumbnail</label>
+  <Input type="url" name="thumbnail_url" placeholder="http://..."  value="<%= @character['thumbnail_url'] %>"></input>
+
+  <label>House</label>
+  <select name="house_id">
+    <option></option>
+    <% House.all.each do |house| %>
+      <option value = "<%= house.id %>" <%= "selected" if house.id == @character.house_id %> > <%= house.name %> </option>
+    <%end%>
+  </select>
+
+
+  <button>Save</button>
+</form>

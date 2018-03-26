@@ -1,0 +1,27 @@
+<h2><%= @house['name'] %> of <%= @house['seat'] %></h2>
+
+<% unless @house.characters.empty? %>
+  <h3>Members of this house</h3>
+  <ul>
+    <% @house.characters.each do |character| %>
+      <li>
+        <a href="/characters/<%= character.id %>"><%= character.name %></a>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+
+<% unless @house['sigil_url'].nil? || @house['sigil_url'].empty? %>
+ <img class="feature" src="<%= @house['sigil_url'] %>" alt=" <%= @house['name'] %>">
+<% end %>
+
+
+<div class = "controls">
+
+  <a href="/houses/<%= @house['id'] %>/edit">Edit</a>
+  <a href="/houses/<%= @house['id'] %>/delete">Delete</a>
+
+
+
+<div>

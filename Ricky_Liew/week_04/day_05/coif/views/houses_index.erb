@@ -1,0 +1,10 @@
+<h2>Houses Index</h2>
+
+<ul>
+  <% @houses.each do |house| %>
+    <li>
+      <a href="houses/<%= house['id'] %>">
+        <%= house['name'] %>
+    </li>
+  <% end %>
+</ul>
