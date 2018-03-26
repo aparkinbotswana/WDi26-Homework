@@ -1,15 +1,133 @@
-require 'pry'
+# require 'pry'
+#
+#
+# def chess_board #Setting up our chess board hash to be passed around through our functions. This helps to get around scope. SCREW YOU SCOPE!
+#   {
+#   1 => ['_', '_', '_', '_', '_', '_', '_', '_'],
+#   2 => ['_', '_', '_', '_', '_', '_', '_', '_'],
+#   3 => ['_', '_', '_', '_', '_', '_', '_', '_'],
+#   4 => ['_', '_', '_', 'W', '_', '_', '_', '_'],
+#   5 => ['_', '_', '_', '_', '_', '_', '_', '_'],
+#   6 => ['_', '_', '_', '_', '_', '_', '_', '_'],
+#   7 => ['_', '_', '_', '_', '_', '_', '_', '_'],
+#   8 => ['B', '_', '_', '_', '_', '_', '_', '_']
+#   }
+# end
+#
+#
+# def find_index letter
+#   index = {}
+#   chess_board.each do | key, row|
+#     row.each do | value |
+#       if value == letter
+#         index = {key => row.index(value)}
+#       end
+#     end
+#   end
+#   index
+# end
+#
+#
+# white_index = find_index "W"
+# black_index = find_index "B"
+#
+#
+# def check_diagonal white_index, black_index
+#   attack = false
+#   key = white_index.keys.first
+#   value = white_index.values.first
+#   index = 0
+#   if attack == false
+#     while key < chess_board.count + 1
+#       if chess_board[key][value + index] == "B"
+#         p chess_board[key]
+#         attack = true
+#       elsif chess_board[key][value - index] == "B"
+#         p chess_board[key]
+#         attack = true
+#       end
+#       index += 1
+#       key += 1
+#     end
+#   end
+#   if attack == false
+#     key = white_index.keys.first
+#     index = 0
+#     while key > 0
+#       if chess_board[key][value + index] == "B"
+#         p chess_board[key]
+#         attack = true
+#       elsif chess_board[key][value - index] == "B"
+#         p chess_board[key]
+#         attack = true
+#       end
+#       key -= 1
+#       index += 1
+#     end
+#   end
+#   attack
+# end
+#
+#
+# def attack_check black_index, white_index
+#   if white_index.keys.first == black_index.keys.first
+#     puts 'ITS A TRAP! You can be attacked in the same row'
+#     puts "Black Queen #{black_index} can attack White Queen #{white_index}"
+#   elsif white_index.values.first == black_index.values.first
+#     puts 'ITS A TRAP! You can be attacked in the same column'
+#     puts "Black Queen #{black_index} can attack White Queen #{white_index}"
+#   elsif check_diagonal white_index, black_index
+#     puts 'ITS A TRAP! You can be attacked in a diagonal'
+#     puts "Black Queen #{black_index} can attack White Queen #{white_index}"
+#   else
+#     puts 'These are not the droids you are looking for. Move along.'
+#   end
+#
+# end
+#
+#
+# attack_check black_index, white_index
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 def chess_board #Setting up our chess board hash to be passed around through our functions. This helps to get around scope. SCREW YOU SCOPE!
   {
-  1 => ['_', '_', '_', 'B', '_', '_', '_', '_'],
+  1 => ['_', '_', '_', '_', '_', '_', '_', '_'],
   2 => ['_', '_', '_', '_', '_', '_', '_', '_'],
   3 => ['_', '_', '_', '_', '_', '_', '_', '_'],
-  4 => ['_', '_', '_', '_', '_', '_', '_', '_'],
+  4 => ['_', '_', '_', '_', '_', '_', 'W', '_'],
   5 => ['_', '_', '_', '_', '_', '_', '_', '_'],
   6 => ['_', '_', '_', '_', '_', '_', '_', '_'],
-  7 => ['_', '_', '_', '_', '_', '_', '_', '_'],
-  8 => ['_', '_', '_', 'W', '_', '_', '_', '_']
+  7 => ['_', '_', '_', 'B', '_', '_', '_', '_'],
+  8 => ['_', '_', '_', '_', '_', '_', '_', '_']
   }
 end
 
