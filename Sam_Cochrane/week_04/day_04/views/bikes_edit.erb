@@ -1,0 +1,14 @@
+<h2>Edit bike</h2>
+
+<form method="post" action="/bikes/<%= @bike['id']%>">
+    <label> Name: </label>
+      <input type="text" name="name" placeholder="bike name" value="<%= @bike['name'] %>">
+
+    <label> Family: </label>
+      <input type="text" name="Family" placeholder="bike family" value="<%= @bike['family'] %>">
+
+    <label> Image: <label>
+      <input type="url" name="image" placeholder="http://..." value="<%= @bike['image'] %>">
+
+      <button> Update bike</button>
+</form>

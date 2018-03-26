@@ -1,0 +1,10 @@
+<h2>Team Index</h2>
+
+<ul>
+  <% @teams.each do |team| %>
+    <li>
+      <a href="teams/<%= team.id %>">
+        <%= team.name %>
+      </li>
+  <% end %>
+</ul>

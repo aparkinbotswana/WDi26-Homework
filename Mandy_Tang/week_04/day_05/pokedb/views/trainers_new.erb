@@ -1,0 +1,14 @@
+<h3>Add Trainer</h3>
+
+<form action="/trainers" method="post">
+Name: <input type="text" name="name" placeholder="Ash">
+Image: <input type="url" name="image" placeholder="http://...">
+Pokemon: <select name="poke_id">
+  <option></option>
+  <% Poke.all.each do |poke| %>
+    <option value="<%= poke.id %>"><%= poke.name %></option>
+  <% end %>
+</select>
+
+<button>Submit</button>
+</form>
