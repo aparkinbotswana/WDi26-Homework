@@ -1,0 +1,12 @@
+<h2> <%=@dog['breed'] %> </h2>
+<h3>Origin: <%=@dog['origin'] %> </h3>
+<h3>Temperament: <%=@dog['temperament'] %> </h3>
+
+<% unless @dog['image'].nil? || @dog['image'].empty?  %>
+  <img class="feature" src="<%=@dog['image'] %>" alt="<%=@dog['breed'] %>">
+<% end %>
+
+<div class="controls">
+  <a href="/dogs/<%=@dog['id']%>/edit">Edit</a>
+  <a href="/dogs/<%=@dog['id']%>/delete">Delete</a>
+</div>

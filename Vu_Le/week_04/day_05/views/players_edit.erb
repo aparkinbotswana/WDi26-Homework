@@ -1,0 +1,12 @@
+<h2>Edit player</h2>
+
+<form method="post" action="/players/<%= @player['id'] %>">
+  <label>Name:</label>
+  <input type="text" name="name" placeholder="Player name" value="<%= @player['name'] %>">
+  <label>"Position:"</label>
+  <input type="text" name="position" placeholder="Player position" value="<%= @player['position'] %>">
+  <label>"Image:"</label>
+  <input type="url" name="image" name="http://..." value="<%= @player['image'] %>">
+
+  <button>Update player</button>
+</form>

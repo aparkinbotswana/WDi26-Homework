@@ -7,6 +7,7 @@ body {
   margin:0;
   padding: 0;
   font-family: 'Mina', sans-serif;
+
   /*background-color: #3D406E; */
 }
 
@@ -33,14 +34,33 @@ body {
   padding: 1em;
   /*background-color: #3D406E; */
   font-family: 'Mina', sans-serif;
+
+
 }
-
-
+.element {
+  /* clip-path: polygon(50% 0, 0 100%, 100% 100%); */
+  overflow: hidden;
+  position: relative;
+	width: 100%;
+	min-height: 100vh;
+	margin: 0 auto;
+	overflow: hidden;
+}
+	.element:after {
+		content: '';
+		position: absolute;
+		background-color: #ffc1cc54;
+		padding-bottom: 120%;
+		width: 100%;
+		bottom: 0;
+		left: 0;
+		transform: rotate(75deg);
+		transform-origin: left bottom;
+}
 
 header {
   padding: 10px;
   background-color: #ccc;
-/*background-color: #5C60A1; */
 }
 
 footer {
@@ -62,6 +82,7 @@ nav {
   font-size: 18px;
   text-align: center;
 }
+
 nav ul li {
   display: inline-block;
   margin-right: 20px;
@@ -105,12 +126,12 @@ main {
   padding-left: 40px;
 }
 .Sframes1 {
-  margin-top: 50px;
+  margin-top: 80px;
   width:60%;
   text-align: right;
 }
 .Sframes2 {
-  margin-top: 50px;
+  margin-top: 80px;
   display: inline-block;
   text-align: left;
   width:35%;
@@ -167,7 +188,20 @@ table td {
   padding: 10px;
 }
 
+.p1{
+  text-align: left;
+  padding-top: 40px;
 
+}
+.p2 {
+    text-align: left;
+
+}
+.p3 {
+    text-align: center;
+    font-size: 30px;
+    padding-top: 30px;
+}
 @media (max-width: 960px) {
   main {
     display: block;
@@ -184,6 +218,7 @@ table td {
   main p {
     display: block;
   }
+
   h1 {
     display: block;
     text-align: left;

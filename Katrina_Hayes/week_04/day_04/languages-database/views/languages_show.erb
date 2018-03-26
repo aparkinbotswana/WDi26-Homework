@@ -1,0 +1,13 @@
+<h2><%=@language['name']%></h2>
+<h4>Name in <%=@language['name']%>: <%=@language['nativeName']%></h4>
+<h4>Family: <%=@language['family']%></h4>
+<h4>Living or Extinct: <%=@language['livingDead']%></h4>
+
+<% unless @language['map'].nil? || @language['map'].empty? %>
+  <img class="map" src="<%= @language['map'] %>" alt="<%= @language['name']%>">
+<% end %>
+
+<div class="controls">
+  <a href="/languages/<%=@language['id']%>/edit">Edit</a>
+  <a href="/languages/<%= @language['id'] %>/delete">Delete</a>
+</div>

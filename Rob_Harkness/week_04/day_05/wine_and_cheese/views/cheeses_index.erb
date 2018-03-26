@@ -1,0 +1,17 @@
+    <h2>Cheese index</h2>
+    <div class="container">
+
+
+
+    <ul>
+        <% @cheeses.each do |cheese| %>
+            <div class="item">
+            <li>
+                <a href=/cheeses/<%= cheese.id %>>
+                    <%= cheese.name %>
+                </a>
+            </li>
+            </div>
+        <% end %>
+    </ul>
+</div>

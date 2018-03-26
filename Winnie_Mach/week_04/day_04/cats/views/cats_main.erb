@@ -1,0 +1,10 @@
+<h2>I am the main page that shows all the cats</h2>
+
+
+<% @cats_list.each do |cats| %>
+<li>
+  <a href="/cats/<%= cats["id"]%>">
+    <%= cats["name"]%>
+  </a>
+</li>
+<% end %>

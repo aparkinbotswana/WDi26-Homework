@@ -1,0 +1,18 @@
+<div class="home-page">
+  <div class="home">
+    <h2>Greetings</h2>
+    <div class="msg">
+      <p>Explore all the artworks & their artists.</p>
+      <p>Help make the database grow.</p>
+    </div>
+  </div>
+  <div class="gallery">
+    <% @artworks.each do |artwork| %>
+      <% unless artwork.image.nil? || artwork.image.empty? %>
+        <div class="mini-box">
+          <img src="<%= artwork.image %>" alt="<%= artwork.name %>">
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+</div>

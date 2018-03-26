@@ -1,0 +1,13 @@
+<h2>Edit Cat</h2>
+
+<form action="/cats/<%= @cat['id'] %>" method="post">
+  <label>Name:</label>
+  <input type="text" name="name" placeholder="George" value="<%= @cat['name'] %>">
+  <label>Breed:</label>
+  <input type="text" name="breed" placeholder="Persian" value="<%= @cat['breed'] %>">
+  <label>Date Of Birth:</label>
+  <input type="text" name="dob" placeholder="7th Jan" value="<%= @cat['dob'] %>">
+  <label>Photo of Cat:</label>
+  <input type="url" name="image" placeholder="http://..." value="<%= @cat['image'] %>">
+  <button>Edit Cat!</button>
+</form>

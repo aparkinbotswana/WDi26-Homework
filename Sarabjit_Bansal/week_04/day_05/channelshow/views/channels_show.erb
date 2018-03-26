@@ -1,0 +1,26 @@
+
+<h2><%= @channel['name'] %></h2>
+
+
+<% unless @channel.shows.empty? %>
+<h3>Associated Shows</h3>
+<ul>
+  <% @channel.shows.each do |show| %>
+  <li>
+    <a href="/shows/<%= show.id %>"><%= show.name %></a>
+  </li>
+  <% end %>
+</ul>
+
+<% end %>
+
+<% unless @channel['image'].nil? || @channel['image'].empty? %>
+<img class = "feature" src="<%= @channel['image'] %>" alt="<%= @channel['name'] %>">
+<% end %>
+
+
+
+<div class="controls">
+  <a href="/channels/<%= @channel['id'] %>/edit">EDIT</a>
+  <a href="/channels/<%= @channel['id'] %>/delete">DELETE</a>
+</div>

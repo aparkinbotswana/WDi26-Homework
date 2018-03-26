@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Share+Tech');
+
+body {
+  background-color: #e8e8e8;
+  color: blue;
+  font-family: 'Share Tech', sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a {
+  color: inherit;
+}
+
+nav {
+  width: 100%
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+form {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+input, select {
+  margin-top: -20px;
+}
+
+
+.todolists {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-left: -20px;
+}
+
+.todolist {
+  margin-left: -40px;
+}
+
+.todoitems {
+  margin-top: 20px;
+}
+
+.controls {
+  margin-left: 20px;
+}
