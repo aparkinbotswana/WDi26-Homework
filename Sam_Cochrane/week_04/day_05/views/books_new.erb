@@ -1,0 +1,20 @@
+<h2>New book</h2>
+
+<form method="post" action="/books">
+  <label>Title:</label>
+  <input type="text" name="title" placeholder="Book title">
+  <label>Author:</label>
+  <input type="text" name="author" placeholder="Book author">
+  <label>Image:</label>
+  <input type="url" name="image" placeholder="http://...">
+
+  <label>Category:</label>
+  <select name="category_id">
+    <option></option>
+    <% Category.all.each do |category| %>
+      <option value="<%= category.id %>"><%= category.name %></option>
+    <% end %>
+  </select>
+
+  <button>Create book</button>
+</form>
