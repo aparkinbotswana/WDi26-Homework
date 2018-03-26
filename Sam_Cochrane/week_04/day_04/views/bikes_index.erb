@@ -1,0 +1,11 @@
+<h2>Bikes Index</h2>
+
+<ul>
+  <% @bikes.each do |bike| %>
+  <li>
+    <a href="/bikes/bike['id']">
+      <%= bike ['name']%>
+    </a>
+  </li>
+  <%end%>
+</ul>

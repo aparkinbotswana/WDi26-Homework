@@ -1,0 +1,187 @@
+/* * {
+  border: 1px solid green;
+} */
+
+* {
+  box-sizing: border-box;
+  /* display: flex; */
+}
+
+body {
+  background-color: #232323;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+header {
+  text-align: center;
+}
+
+h1 {
+  color: rgba(152,255,152,1);
+  font-size: 100px;
+  font-family: 'Macondo', cursive;
+  padding: 0 20px;
+  margin: 0;
+}
+
+header nav {
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+nav ul {
+  text-align: center;
+  padding: 0px;
+}
+
+nav ul a {
+  padding: 0 20px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.main {
+
+}
+
+.artworks-show {
+  text-align: center;
+}
+
+h2 {
+  font-size: 50px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+.gallery {
+  display: flex;
+  /* flex-direction: row; /* this is the default so no need to include */ */
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  width: 100%;
+  /* height: 100vh; */
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.mini-box {
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  /* border: 5px solid white; */
+  background-color: inherit;
+  margin: 5px;
+}
+
+.mini-box img {
+  max-width: 100%;
+  max-height: 100%;
+  padding: 10px;
+}
+
+.art-box {
+  text-align: center;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  background-color: #dbd1d1;
+  border: 5px solid #161515;
+  margin: 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.art-box img {
+  max-width: 100%;
+  max-height: 100%;
+  padding: 12px;
+}
+
+.home-page .gallery {
+  flex-shrink: 0;
+}
+
+.list-index {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.list-index .column {
+  flex-basis: 50%;
+  text-align: center;
+}
+
+img.feature {
+  display: block;
+  margin: 0 auto;
+}
+
+.home {
+  padding-left: 200px;
+  font-size: 40px;
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+  /* height: 90vh; */
+}
+
+.home h2 {
+  text-align: left;
+}
+
+.home .msg {
+  padding-left: 100px;
+  margin-right: 100px;
+}
+
+.artist-show {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.artist-pic {
+  flex-basis: 50%;
+  /* margin-right: 0; */
+  /* padding-right: 20px; */
+}
+
+.artist-pic img {
+  display: block;
+  margin-right: 0;
+  padding-right: 20px;
+}
+
+.artist-deets {
+  flex-basis: 50%;
+  margin-left: 0;
+  padding-left: 20px;
+  text-align: left;
+}

@@ -1,0 +1,11 @@
+<h2>Categories of Confectionery</h2>
+
+<ul>
+  <% @categories.each do |category| %>
+    <li class="index">
+      <a href="/categories/<%= category['id'] %>">
+        <%= category["name"]%>
+      </a>
+    </li>
+  <% end %>
+</ul>

@@ -1,0 +1,33 @@
+body {
+  font-family: monospace;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: green;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: white;
+  padding: 50px;
+}
+
+button {
+  margin-top: 20px;
+  border-radius: 10px;
+  padding: 10px;
+  outline: none;
+  font-family: monospace;
+}
+
+button:hover {
+  background-color: #ccebff;
+}

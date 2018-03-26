@@ -1,0 +1,8 @@
+<div class="container">
+    <h1>Synth Index</h1>
+    <ul>
+        <% @synths.each do |synth| %>
+            <li><a href="/<%=synth['id']%>"><%= synth['model'] %></a></li>
+        <% end %>
+    </ul>
+</div>
