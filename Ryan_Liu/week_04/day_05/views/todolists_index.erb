@@ -1,0 +1,14 @@
+<h2>Todo Lists</h2>
+<ul>
+  <% @todolists.each do |todolist| %>
+  <div class="todolists">
+    <li>
+      <a href="/todolists/<%= todolist.id %>"><%= todolist.list_name %></a>
+    </li>
+    <div class="controls">
+      <a href="/todolists/<%= todolist.id%>/edit">Edit</a>
+      <a href="/todolists/<%= todolist.id%>/delete">Delete</a>
+    </div>
+  </div>
+  <% end %>
+</ul>
