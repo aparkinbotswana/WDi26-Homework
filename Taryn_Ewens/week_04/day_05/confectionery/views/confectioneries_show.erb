@@ -1,0 +1,24 @@
+<h2><%= @confectionery.name %></h2>
+
+<div class="details">
+  <% unless @confectionery.category.nil? %>
+    <h4>Category:</h4>
+      <p><a href="/categories/<%= @confectionery.category.id %>"><%= @confectionery.category.name %></a>
+    </p>
+  <% end %>
+</div>
+<div class="details">
+  <% unless @confectionery.ingredients.nil? || @confectionery.ingredients.empty?%>
+    <h4>Ingredients:</h4>
+      <p><%= @confectionery.ingredients %></p>
+  <% end %>
+</div>
+
+<% unless @confectionery.image.nil? || @confectionery.image.empty? %>
+  <img class="feature" src="<%= @confectionery.image %>" alt="<%= @confectionery.name %>">
+<% end %>
+
+<div class="controls">
+  <a href="/confectioneries/<%= @confectionery.id %>/edit">Edit</a>
+  <a href="/confectioneries/<%= @confectionery.id %>/delete">Delete</a>
+</div>
