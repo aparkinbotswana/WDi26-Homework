@@ -2502,3 +2502,85 @@ Processing by RockpaperController#form as HTML
 Completed 200 OK in 21ms (Views: 17.8ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-03-27 12:36:23 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 415ms (Views: 273.5ms)
+
+
+Started GET "/magicball" for 127.0.0.1 at 2018-03-27 12:36:25 +1100
+Processing by MagicballController#form as HTML
+  Rendering magicball/form.html.erb within layouts/application
+  Rendered magicball/form.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 27ms (Views: 22.8ms)
+
+
+Started GET "/magicball/lookup?quest=d" for 127.0.0.1 at 2018-03-27 12:36:29 +1100
+Processing by MagicballController#lookup as HTML
+  Parameters: {"quest"=>"d"}
+  Rendering magicball/lookup.html.erb within layouts/application
+  Rendered magicball/lookup.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 24ms (Views: 19.2ms)
+
+
+Started GET "/magicball/lookup?quest=d" for 127.0.0.1 at 2018-03-27 12:36:32 +1100
+Processing by MagicballController#lookup as HTML
+  Parameters: {"quest"=>"d"}
+  Rendering magicball/lookup.html.erb within layouts/application
+  Rendered magicball/lookup.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 22ms (Views: 18.7ms)
+
+
+Started GET "/magicball/lookup?quest=d" for 127.0.0.1 at 2018-03-27 12:36:33 +1100
+Processing by MagicballController#lookup as HTML
+  Parameters: {"quest"=>"d"}
+  Rendering magicball/lookup.html.erb within layouts/application
+  Rendered magicball/lookup.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 23ms (Views: 19.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-27 12:36:37 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 22ms (Views: 21.2ms)
+
+
+Started GET "/secretno" for 127.0.0.1 at 2018-03-27 12:36:39 +1100
+Processing by SecretnoController#form as HTML
+  Rendering secretno/form.html.erb within layouts/application
+  Rendered secretno/form.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 25ms (Views: 20.8ms)
+
+
+Started GET "/secretno/lookup?secretno=6" for 127.0.0.1 at 2018-03-27 12:36:42 +1100
+Processing by SecretnoController#lookup as HTML
+  Parameters: {"secretno"=>"6"}
+  Rendering secretno/lookup.html.erb within layouts/application
+  Rendered secretno/lookup.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 28ms (Views: 18.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-27 12:36:45 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 21ms (Views: 20.4ms)
+
+
+Started GET "/rockpaper" for 127.0.0.1 at 2018-03-27 12:37:20 +1100
+Processing by RockpaperController#form as HTML
+  Rendering rockpaper/form.html.erb within layouts/application
+  Rendered rockpaper/form.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 24ms (Views: 19.9ms)
+
+
+Started GET "/rockpaper/lookup?throw=Paper" for 127.0.0.1 at 2018-03-27 12:37:24 +1100
+Processing by RockpaperController#lookup as HTML
+  Parameters: {"throw"=>"Paper"}
+  Rendering rockpaper/lookup.html.erb within layouts/application
+  Rendered rockpaper/lookup.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 28ms (Views: 18.9ms)
+
+

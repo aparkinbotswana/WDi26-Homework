@@ -858,3 +858,127 @@ Processing by MagicController#lookup as HTML
 Completed 200 OK in 1444ms (Views: 1383.7ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-03-27 12:09:27 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 382ms (Views: 213.6ms)
+
+
+Started GET "/magic" for 127.0.0.1 at 2018-03-27 12:10:07 +1100
+Processing by MagicController#form as HTML
+  Rendering magic/form.html.erb within layouts/application
+  Rendered magic/form.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 23ms (Views: 20.2ms)
+
+
+Started GET "/magic/lookup?magic=hi+there" for 127.0.0.1 at 2018-03-27 12:10:12 +1100
+Processing by MagicController#lookup as HTML
+  Parameters: {"magic"=>"hi there"}
+  Rendering magic/lookup.html.erb within layouts/application
+  Rendered magic/lookup.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 39ms (Views: 34.7ms)
+
+
+Started GET "/magic/lookup?magic=hi+there" for 127.0.0.1 at 2018-03-27 12:10:15 +1100
+Processing by MagicController#lookup as HTML
+  Parameters: {"magic"=>"hi there"}
+  Rendering magic/lookup.html.erb within layouts/application
+  Rendered magic/lookup.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 22ms (Views: 18.9ms)
+
+
+Started GET "/magic/lookup?magic=hi+there" for 127.0.0.1 at 2018-03-27 12:10:16 +1100
+Processing by MagicController#lookup as HTML
+  Parameters: {"magic"=>"hi there"}
+  Rendering magic/lookup.html.erb within layouts/application
+  Rendered magic/lookup.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 23ms (Views: 19.6ms)
+
+
+Started GET "/magic/lookup?magic=hi+there" for 127.0.0.1 at 2018-03-27 12:10:18 +1100
+Processing by MagicController#lookup as HTML
+  Parameters: {"magic"=>"hi there"}
+  Rendering magic/lookup.html.erb within layouts/application
+  Rendered magic/lookup.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 23ms (Views: 20.0ms)
+
+
+Started GET "/secret" for 127.0.0.1 at 2018-03-27 12:10:20 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/secret"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/magic/lookup?magic=hi+there" for 127.0.0.1 at 2018-03-27 12:10:26 +1100
+Processing by MagicController#lookup as HTML
+  Parameters: {"magic"=>"hi there"}
+  Rendering magic/lookup.html.erb within layouts/application
+  Rendered magic/lookup.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 24ms (Views: 21.2ms)
+
+
+Started GET "/rps" for 127.0.0.1 at 2018-03-27 12:10:27 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/rps"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/magic/lookup?magic=hi+there" for 127.0.0.1 at 2018-03-27 12:10:30 +1100
+Processing by MagicController#lookup as HTML
+  Parameters: {"magic"=>"hi there"}
+  Rendering magic/lookup.html.erb within layouts/application
+  Rendered magic/lookup.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 20ms (Views: 17.5ms)
+
+

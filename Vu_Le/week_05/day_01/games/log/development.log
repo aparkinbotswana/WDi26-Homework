@@ -1835,3 +1835,40 @@ Processing by PagesController#home as HTML
 Completed 200 OK in 30ms (Views: 28.1ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-03-27 11:41:06 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 413ms (Views: 248.4ms)
+
+
+Started GET "/magic8" for 127.0.0.1 at 2018-03-27 11:41:09 +1100
+Processing by Magic8Controller#magic8_question as HTML
+  Rendering magic8/magic8_question.html.erb within layouts/application
+  Rendered magic8/magic8_question.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 36ms (Views: 31.7ms)
+
+
+Started GET "/magic8/answer?question=hello" for 127.0.0.1 at 2018-03-27 11:41:15 +1100
+Processing by Magic8Controller#magic8_answer as HTML
+  Parameters: {"question"=>"hello"}
+  Rendering magic8/magic8_answer.html.erb within layouts/application
+  Rendered magic8/magic8_answer.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 29ms (Views: 25.7ms)
+
+
+Started GET "/secret" for 127.0.0.1 at 2018-03-27 11:41:19 +1100
+Processing by SecretController#secret_question as HTML
+  Rendering secret/secret_question.html.erb within layouts/application
+  Rendered secret/secret_question.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 34ms (Views: 29.1ms)
+
+
+Started GET "/secret/answer?guess=44" for 127.0.0.1 at 2018-03-27 11:41:22 +1100
+Processing by SecretController#secret_answer as HTML
+  Parameters: {"guess"=>"44"}
+  Rendering secret/secret_answer.html.erb within layouts/application
+  Rendered secret/secret_answer.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 22ms (Views: 19.0ms)
+
+
