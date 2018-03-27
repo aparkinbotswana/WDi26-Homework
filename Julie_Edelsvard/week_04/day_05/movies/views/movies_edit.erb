@@ -1,0 +1,20 @@
+<h2>Edit movie</h2>
+
+<form method="post" action="/movies/<%= @movie['id'] %>">
+  <label>Name:</label>
+  <input type="text" name="name" placeholder="Movie name" value="<%= @movie['name'] %>">
+  <label>Year:</label>
+  <input type="integer" name="year" placeholder="Release year" value="<%= @movie['year'] %>">
+  <label>Image:</label>
+  <input type="text" name="image" value="http://..." value="<%= @movie['image'] %>">
+
+  <label>Movie actor:</label>
+  <select name="actor_id">
+    <option></option>
+      <% Actor.all.each do |actor| %>
+        <option value="<%= actor.id %>" <%= "selected" if actor.id == @movie.actor %> ><%= actor.name %></option>
+      <% end %>
+  </select>
+
+  <button>Update movie</button>
+</form>
