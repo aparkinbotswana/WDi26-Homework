@@ -10,12 +10,14 @@
 
   <body>
     <div class="container">
-      <h1>Earth's oceans and seas</h1>
-      <nav>
-        <%= link_to 'Index', oceans_path %>
-        <%= link_to 'Add', oceans_new_path %>
-      </nav>
-    </div>
+      <header>
+        <h1>Earth's oceans and seas</h1>
+        <nav>
+          <%= link_to 'Index', oceans_path %>
+          <%= link_to 'Add', oceans_new_path %>
+        </nav>
+      </header>
     <%= yield %>
+    </div>
   </body>
 </html>

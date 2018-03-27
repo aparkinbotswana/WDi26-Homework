@@ -8,3 +8,8 @@
 <% if @ocean.image.present? %>
   <%= image_tag @ocean.image, :alt => @ocean.name, :class => 'feature' %>
 <% end %>
+
+<div class="controls">
+  <div><%= link_to 'Edit', oceans_edit_path(@ocean.id) %></div>
+  <%= button_to 'Delete', ocean_path(@ocean.id), :method => 'delete' %>
+</div>
