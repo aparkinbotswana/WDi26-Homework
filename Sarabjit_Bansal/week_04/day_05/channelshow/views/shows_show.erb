@@ -1,0 +1,20 @@
+
+<h2><%= @show['name'] %></h2>
+<h3>Type: <%= @show['showtype'] %></h3>
+
+<% unless @show.channel.nil? %>
+  <h3>
+    Channel:
+    <a href="/channels/<%= @show.channel.id %>"><%= @show.channel.name %></a>
+  </h3>
+<% end %>
+
+
+<% unless @show['image'].nil? || @show['image'].empty? %>
+<img class = "feature" src="<%= @show['image'] %>" alt="<%= @show['name'] %>">
+<% end %>
+
+<div class="controls">
+  <a href="/shows/<%= @show['id'] %>/edit">EDIT</a>
+  <a href="/shows/<%= @show['id'] %>/delete">DELETE</a>
+</div>

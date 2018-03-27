@@ -1,0 +1,8 @@
+<h2>Todo Items</h2>
+<ul>
+  <% @todoitems.each do |todoitem| %>
+    <li class="todoitems">
+      <a href="/todoitems/<%= todoitem.id %>"><%= todoitem.item_name %></a>
+  </li>
+  <% end %>
+</ul>

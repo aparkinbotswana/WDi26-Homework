@@ -1,18 +1,20 @@
 <h2>New artwork</h2>
 
 <form action="/artworks" method="post">
-  <label>Name:</label>
-  <input type="text" name="name" placeholder="e.g. The Kiss">
-  <label>Year:</label>
-  <input type="integer" name="year" placeholder="1908">
-  <label>Image:</label>
-  <input type="url" name="image" placeholder="http://...">
-  <label>Artist:</label>
-  <select name="artist_id">
-    <option></option>
-    <% Artist.all.each do |artist| %>
-      <option value="<%= artist.id %>"><%= artist.name %></option>
-    <% end %>
-  </select>
-  <button>Add</button>
+
+    <label>Name</label>
+    <input type="text" name="name" placeholder="e.g. The Kiss"><br>
+    <label>Year</label>
+    <input type="integer" name="year" placeholder="1908"><br>
+    <label>Image</label>
+    <input type="url" name="image" placeholder="http://..."><br>
+    <label>Artist</label>
+    <select name="artist_id">
+      <option></option>
+      <% Artist.all.each do |artist| %>
+        <option value="<%= artist.id %>"><%= artist.name %></option>
+      <% end %>
+    </select><br>
+    <button>Add</button>
+
 </form>

@@ -8,9 +8,11 @@
   </div>
   <div class="gallery">
     <% @artworks.each do |artwork| %>
-      <div class="mini-box">
-        <img src="<%= artwork.image %>" alt="<%= artwork.name %>">
-      </div>
+      <% unless artwork.image.nil? || artwork.image.empty? %>
+        <div class="mini-box">
+          <img src="<%= artwork.image %>" alt="<%= artwork.name %>">
+        </div>
+      <% end %>
     <% end %>
   </div>
 </div>

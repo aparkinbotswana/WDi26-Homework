@@ -1,0 +1,13 @@
+
+<h2>Virtuals Index</h2>
+<div id="img">
+<ul>
+<% @virtuals.each do |virtual| %>
+<li>
+  <a href="/virtuals/<%= virtual['id'] %>">
+    <%= virtual["name"] %>
+  </a>
+  </li>
+  <% end %>
+</ul>
+</div>

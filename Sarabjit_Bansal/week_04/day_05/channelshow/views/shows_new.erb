@@ -1,0 +1,20 @@
+<h2>New Show</h2>
+<form action="/shows" method="post">
+  <label>Name:</label>
+  <input type="text" name="name" placeholder="MKR">
+  <label>Type:</label>
+  <input type="text" name="showtype" placeholder="Drama">
+  <label>Image:</label>
+  <input type="text" name="image" placeholder="http://.....">
+
+  <label>Channel Name</label>
+
+  <select name="channel_id">
+    <option></option>
+    <% Channel.all.each do |channel| %>
+      <option value="<% channel.id %>"><%= channel.name %></option>
+    <% end %>
+  </select>
+
+  <button>Create Show</button>
+</form>

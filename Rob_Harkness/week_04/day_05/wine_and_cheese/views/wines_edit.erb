@@ -1,0 +1,15 @@
+<h2>Edit Wine</h2>
+
+<form method="post" action="/wines/<%= @wine.id %>">
+
+    <label>Variety:</label>
+    <input type="text" name="variety" placeholder="wine variety" value="<%= @wine.variety%>">
+
+    <label>Color:</label>
+    <input type="text" name="color" placeholder="red/white/rose?" value="<%= @wine.color%>">
+
+    <label for="">image:</label>
+    <input type="url" name="image" placeholder="http://(image url)" value="<%= @wine.image%>">
+
+    <button>Update Wine</button>
+</form>

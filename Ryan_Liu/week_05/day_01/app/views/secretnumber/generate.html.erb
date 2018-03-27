@@ -1,0 +1,10 @@
+<% unless @randNum.nil? %>
+<label>Pick a number </label>
+<form action="result">
+  <% (1..@randNum).each do |number| %>
+      <input type="radio" name="selected_num" value="<%= number %>"><%= number %></input>
+  <% end %>
+  <button>Guess</button>
+</form>
+
+<% end %>
