@@ -1,11 +1,20 @@
 <h2>Artworks Index</h2>
 
 <div class="gallery">
-  <% @artworks.each do |artwork| %>
-    <div class="art-box">
-      <a href="/artworks/<%= artwork.id %>">
-        <img src="<%= artwork.image %>" alt="<%= artwork.name %>">
-      </a>
-    </div>
-  <% end %>
+    <% @artworks.each do |artwork| %>
+      <div class="art-box">
+        <a href="/artworks/<%= artwork.id %>">
+          <% unless artwork.image.nil? || artwork.image.empty? %>
+            <img src="<%= artwork.image %>" alt="<%= artwork.name %>">
+          <% else %>
+            <div class="empty-artwork-image medium">Image to come</div>
+          <% end %>
+          <% unless artwork.artist_id.nil? %>
+            <div class="artwork-hidden-artist">
+              <%= artwork.artist.name %>
+            </div>
+          <% end %>
+        </a>
+      </div>
+    <% end %>
 </div>

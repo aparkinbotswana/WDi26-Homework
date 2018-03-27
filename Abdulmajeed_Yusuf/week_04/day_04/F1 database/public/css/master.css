@@ -1,0 +1,22 @@
+body {
+  background-image: url("http://magazine.promomarketing.com/thumb/?src=/wp-content/uploads/sites/12/2017/11/F1-Logos.jpg&w=750");
+  /* background-color: rgba(100, 215, 90, 0.7); */
+  color: rgba(121, 215, 128, 0.5);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+a {
+  color: inherit;
+}
+
+img.feature {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}

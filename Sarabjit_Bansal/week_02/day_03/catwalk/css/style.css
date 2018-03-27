@@ -2,3 +2,21 @@
     transform: scaleX(-1);
 
 }
+
+body {
+
+  background: url("https://media.giphy.com/media/3o6Mbmx4k4D0xwSRDa/giphy.gif") no-repeat;
+  background-size: 100%;
+
+}
+
+/* .backChange {
+  background: url("https://media.giphy.com/media/n23plFQQ55zGw/giphy.gif") no-repeat;
+  background-size: 100%;
+} */
+
+img {
+
+  height:200px;
+  width:200px;
+}

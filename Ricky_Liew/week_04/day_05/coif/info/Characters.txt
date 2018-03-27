@@ -1,0 +1,240 @@
+Characters
+==========
+name: 	     Waymar Royce
+house:
+season_died: 1
+ep_died:     1
+how_died:    Killed by White Walker
+time:	       05:52
+char_url:    http://gameofthrones.wikia.com/wiki/Waymar_Royce
+thumbnail_url: https://vignette.wikia.nocookie.net/gameofthrones/images/9/97/WaymarRoyceHD1x01.jpg/revision/latest?cb=20160710183336
+
+name: 	     Jon Arryn
+house:       House Arryn
+season_died: 1
+ep_died:     1
+how_died:    Poison
+time:	       18:34
+char_url:    http://gameofthrones.wikia.com/wiki/Jon_Arryn
+thumbnail_url: https://vignette.wikia.nocookie.net/gameofthrones/images/7/7a/Jon_Arryn_funeral_bier.jpg/revision/latest/scale-to-width-down/350?cb=20120520000749
+https://pre00.deviantart.net/4811/th/pre/i/2015/178/7/d/lord_jon_arryn_sketch_by_rodrimafio-d8yygte.jpg
+
+
+name: 	     Ser Hugh  of the Vale
+house:       House Arryn
+season_died: 1
+ep_died:     4
+how_died:    Killed by the Mountain
+time:	       47:41
+char_url:    http://gameofthrones.wikia.com/wiki/Hugh
+thumbnail_url: https://vignette.wikia.nocookie.net/gameofthrones/images/d/df/Hugh_profile.jpg/revision/latest?cb=20130111183816
+
+
+name: 	     Viserys Targaryen
+house:
+season_died: 1
+ep_died:     6
+how_died:    Molten gold on head
+time:	     51:04
+char_url:    http://gameofthrones.wikia.com/wiki/Viserys_Targaryen
+thumbnail_url: https://vignette.wikia.nocookie.net/gameofthrones/images/4/46/Viseryspromoheadshot.jpg/revision/latest/scale-to-width-down/700?cb=20160730184148
+
+
+name: 	     Robert Baratheon
+house:       Baratheon
+season_died: 1
+ep_died:     7
+how_died:    Killed by a boar
+time:	       52:09
+char_url:    http://gameofthrones.wikia.com/wiki/Robert_Baratheon
+thumbnail_url: https://vignette.wikia.nocookie.net/gameofthrones/images/d/d4/RobertBaratheon.jpg/revision/latest?cb=20141119000127
+
+
+name: 	     Eddard Stark
+house:       House Stark
+season_died: 1
+ep_died:     9
+how_died:    Execution
+time:	     54:56
+char_url:    http://gameofthrones.wikia.com/wiki/Eddard_Stark
+thumbnail_url:
+
+
+name: 	     Khal Drogo
+house:
+season_died: 1
+ep_died:     10
+how_died:    Killed by Danerys
+time:	     33:39
+char_url:    http://gameofthrones.wikia.com/wiki/Khal_Drogo
+thumbnail_url:
+
+
+name: 	     Renly Baratheon
+house:
+season_died: 2
+ep_died:     5
+how_died:    Killed by shadow creature
+time:	     03:38
+char_url:    http://gameofthrones.wikia.com/wiki/Renly_Baratheon
+thumbnail_url:
+
+
+name: 	     Pyat Pree
+house:
+season_died: 2
+ep_died:     10
+how_died:    Roasted by dragon
+time:	     51:08
+char_url:    http://gameofthrones.wikia.com/wiki/Pyat_Pree
+thumbnail_url:
+
+
+name: 	     Talisa Stark
+house:       House Stark
+season_died: 3
+ep_died:     9
+how_died:    Red Wedding
+time:	     44:15
+char_url:    http://gameofthrones.wikia.com/wiki/Talisa_Stark
+thumbnail_url:
+
+
+name: 	     Robb Stark
+house:       House Stark
+season_died: 3
+ep_died:     9
+how_died:    Red Wedding
+time:	     48:37
+char_url:    http://gameofthrones.wikia.com/wiki/Robb_Stark
+thumbnail_url:
+
+
+name: 	     Catelyn Stark
+house:       House Stark
+season_died: 3
+ep_died:     9
+how_died:    Red Wedding
+time:	     49:05
+char_url:    http://gameofthrones.wikia.com/wiki/Catelyn_Stark
+thumbnail_url:
+
+
+name: 	     Joffrey Baratheon
+house:
+season_died: 4
+ep_died:     2
+how_died:    Poison
+time:	     47:46
+char_url:    http://gameofthrones.wikia.com/wiki/Joffrey_Baratheon
+thumbnail_url:
+
+
+name: 	     Lysa Arryn
+house:
+season_died: 4
+ep_died:     7
+how_died:    Killed by Littlefinger
+time:	     49:19
+char_url:    http://gameofthrones.wikia.com/wiki/Lysa_Arryn
+thumbnail_url:
+
+
+name: 	     Oberyn Martell
+house:
+season_died: 4
+ep_died:     8
+how_died:    Killed by the Mountain
+time:	     50:05
+char_url:    http://gameofthrones.wikia.com/wiki/Oberyn_Martell
+thumbnail_url:
+
+
+name: 	     Shae
+house:
+season_died: 4
+ep_died:     10
+how_died:    Killed by Tyrion Lannister
+time:	     54:47
+char_url:    http://gameofthrones.wikia.com/wiki/Shae
+thumbnail_url:
+
+
+name: 	     Tywin Lannister
+house:
+season_died: 4
+ep_died:     10
+how_died:    Killed by Tyrion Lannister
+time:	     58:45
+char_url:    http://gameofthrones.wikia.com/wiki/Tywin_Lannister
+thumbnail_url:
+
+
+name: 	     Mance Rayder
+house:
+season_died: 5
+ep_died:     1
+how_died:    Killed by Jon Snow
+time:	     49:18
+char_url:    http://gameofthrones.wikia.com/wiki/Mance_Rayder
+thumbnail_url:
+
+
+name: 	     Shrine Baratheon
+house:
+season_died: 6
+ep_died:     9
+how_died:    Sacrifice
+time:	     32:28
+char_url:    http://gameofthrones.wikia.com/wiki/Shireen_Baratheon
+thumbnail_url:
+
+
+name: 	     Stannis Baratheon
+house:
+season_died: 5
+ep_died:     10
+how_died:    Killed by Brienne of Tarth
+time:	     15:23
+char_url:    http://gameofthrones.wikia.com/wiki/Stannis_Baratheon
+thumbnail_url:
+
+
+name: 	     Myrcella Baratheon
+house:
+season_died: 5
+ep_died:     10
+how_died:    Poison
+time:	     29:25
+char_url:    http://gameofthrones.wikia.com/wiki/Myrcella_Baratheon
+thumbnail_url:
+
+
+name: 	     Jon Snow
+house:       House Stark
+season_died: 5
+ep_died:     10
+how_died:    Killed by Black Brothers
+time:	     56:20
+char_url:    http://gameofthrones.wikia.com/wiki/Jon_Snow
+thumbnail_url:
+
+
+name:
+house:
+season_died:
+ep_died:
+how_died:
+time:
+char_url:
+thumbnail_url:
+
+
+name:
+house:
+season_died:
+ep_died:
+how_died:
+time:
+char_url:
+thumbnail_url:
