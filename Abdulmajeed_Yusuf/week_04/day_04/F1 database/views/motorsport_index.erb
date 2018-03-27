@@ -1,0 +1,12 @@
+<h2>Drivers' List</h2>
+
+<ul>
+  <% @motorsport.each do |driver|%>
+  <li>
+    <a href="/motorsport/<%= driver['id'] %>">
+      <%= driver["name"] %>
+    </a>
+  </li>
+
+  <% end %>
+</ul>
