@@ -41,6 +41,24 @@ h2 {
   margin: 1em auto;
 }
 
+input {
+  margin: 10px;
+}
+
+button {
+  margin: 30px;
+}
+
+div.controls {
+  text-align: center;
+  margin: 1em auto;
+}
+
+.controls a {
+  border-bottom: 1px solid #353535;
+}
+
+
 .feature {
   max-width: 800px;
   display: inline-block;
@@ -102,22 +120,6 @@ h2 {
   animation: moveInRight 1s ease-out;
 }
 
-input {
-  margin: 10px;
-}
-
-button {
-  margin: 30px;
-}
-
-div.controls {
-  text-align: center;
-  margin: 1em auto;
-}
-
-.controls a {
-  border-bottom: 1px solid #353535;
-}
 
 @keyframes moveInLeft {
   0% {
