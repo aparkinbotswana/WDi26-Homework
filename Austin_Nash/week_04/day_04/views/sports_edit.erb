@@ -1,0 +1,12 @@
+<h2>Edit</h2>
+
+<form action="/sports/<%= @sports['id'] %>" method="post">
+  <label>Sport</label>
+  <input type="text" name="sport" placeholder="Football" value="<%= @sports['sport'] %>">
+  <label>Players</label>
+  <input type="text" name="Players" placeholder="11" value="<%= @sports['players'] %>" >
+  <label>Image</label>
+  <input type="text" name="Image" placeholder="Image URL" value="<%= @sports['Image'] %>">
+  <button>Add Sport</button>
+
+</form>
