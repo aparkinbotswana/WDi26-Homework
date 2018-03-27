@@ -1,0 +1,13 @@
+<h2><%= @mountain.name %></h2>
+
+<p><%= pluralize(@mountain.height, 'metre') %></p>
+<p><%= @mountain.country %></p>
+
+<% if @mountain.image.present? %>
+<%= image_tag @mountain.image, :alt => @mountain.name %>
+<% end %>
+
+<div class="controls">
+  <%= link_to 'Edit Mountain', mountains_edit_path(@mountain.id) %>
+    <%= button_to 'Delete Mountain', mountain_path(@mountain.id), :method => 'delete' %>
+</div>
