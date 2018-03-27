@@ -1,0 +1,22 @@
+<div class="container">
+  <h2>Edit <%= @mountain.name %></h2>
+
+  <form action="/mountains/<%= @mountain.id %>" method="post">
+  <label>Name:</label>
+  <input type="text" name="mountain[name]" placeholder="Mount..." value="<%= @mountain.name %>"><BR/>
+  <label>State in Australia:</label>
+  <input type="text" name="mountain[state]" placeholder="South Australia" value="<%= @mountain.state %>"><BR/>
+  <label>Elevation:</label>
+  <input type="text" name="mountain[elevation]" placeholder="2,228 m (7,310 ft)" value="<%= @mountain.elevation %>"><BR/>
+  <label>Prominence:</label>
+  <input type="text" name="mountain[prominence]" placeholder="2,228 m (7,310 ft)" value="<%= @mountain.prominence %>"><BR/>
+  <label>Isolation:</label>
+  <input type="text" name="mountain[isolation]" placeholder="1,894.26 km (1,177.04 mi)" value="<%= @mountain.isolation %>"><BR/>
+  <label>Image (URL):</label>
+  <input type="text" name="mountain[image]" placeholder="http://..." value="<%= @mountain.image %>"><BR/>
+
+  <button>Update Mountain</button>
+
+  </form>
+
+</div>
