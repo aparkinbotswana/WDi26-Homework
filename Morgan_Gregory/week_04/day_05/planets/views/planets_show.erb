@@ -1,0 +1,28 @@
+<h2><%= @planet.name %></h2>
+
+<% unless @planet.image.nil? || @planet.image.empty? %>
+  <% unless @planet.name != "Saturn" %>
+    <img style="border-radius: 50%;" src="<%= @planet.image %>" alt="<%= @planet.name %>">
+  <% end %>
+  <% unless @planet.name == "Saturn" %>
+    <img style="clip-path: circle(<%= @planet.clip %>% at 50% 50%);-webkit-clip-path: circle(<%= @planet.clip %>% at 50% 50%)" src="<%= @planet.image %>" alt="<%= @planet.name %>">
+  <% end %>
+<% end %>
+
+<p> <%= @planet.name %>'s radius is <%= @planet.radius %> km. It takes <%= @planet.period2 %> years to orbit the sun.</p>
+
+<% unless @planet.moons.empty? %><!-- for this planet show it's orbiting moon or moons -->
+  <h3>Associated Moons</h3>
+  <ul>
+    <% @planet.moons.each do |moon| %>
+      <li>
+        <a href="/moons/<%= moon.id %>"><%= moon.name %></a>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<div class="controls">
+  <a href="/planets/<%= @planet.id %>/edit">Edit</a>
+  <a href="/planets/<%= @planet.id %>/delete">Delete</a>
+</div>

@@ -1,0 +1,59 @@
+body {
+  /* background-color: rgba(47,79,79, 1); */
+  color: white;
+  background-image: url(https://c.pxhere.com/photos/f3/73/ferris_wheel_long_exposure_night_photograph_year_market_lights_ride_illuminated-608679.jpg!d);
+}
+
+h1 {
+  font-size: 4em;
+  color: white;
+  /* -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+  animation: neon1 1.5s ease-in-out infinite alternate; */
+}
+
+button {
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 1em;
+}
+
+.container {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.secret_buttons button {
+  font-size: 2em;
+  padding: 20px;
+  outline: none;
+}
+
+/* *glow for webkit */
+/* @-webkit-keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px yellow, 0 0 70px yellow, 0 0 80px yellow, 0 0 100px yellow, 0 0 150px yellow;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px yellow, 0 0 35px yellow, 0 0 40px yellow, 0 0 50px #yellow, 0 0 75px yellow;
+  }
+}
+
+@-moz-keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px yellow, 0 0 70px yellow, 0 0 80px yellow, 0 0 100px yellow, 0 0 150px yellow;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px yellow, 0 0 35px yellow, 0 0 40px yellow, 0 0 50px yellow, 0 0 75px yellow;
+  }
+} */
+
+/* glow */
+/* @keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px yellow, 0 0 70px yellow, 0 0 80px yellow, 0 0 100px yellow, 0 0 150px yellow;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px yellow, 0 0 35px yellow, 0 0 40px yellow, 0 0 50px yellow, 0 0 75px yellow;
+  }
+} */

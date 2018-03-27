@@ -1,0 +1,11 @@
+<h2>Comics index</h2>
+
+<ul>
+    <% @comics.each do |comic| %>
+        <li>
+            <a href="/comics/<%= comic['id'] %>">
+                <%= comic.name %>
+            </a>
+        </li>
+    <% end %>
+</ul>

@@ -1,0 +1,18 @@
+<h2><%= @comic['name'] %></h2>
+<h3>Nationality: <%= @comic['nationality'] %></h3>
+
+<% unless @comic.styles.nil? %>
+    <h3>
+        Related style:
+        <a href="/styles/<%= @comic.style.id %>"><%= @style.comic.name %></a>
+    </h3>
+<% end %>
+
+<% unless @comic['image'].nil? || @comic['image'].empty? %>
+    <img class="feature" src="<%= @comic['image'] %>" alt="<%= @comic['name'] %>">
+<% end %>
+
+<div class="controls">
+    <a href="/comics/<%= @comic.id %>/edit">Edit</a>
+    <a href="/comics/<%= @comic.id %>/delete">Delete</a>
+</div>

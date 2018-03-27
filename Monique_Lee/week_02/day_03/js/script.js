@@ -49,3 +49,23 @@ const catWalk = function(){
   let move = window.setInterval(catWalk, 50);
 
   //   to clear it window.clearInterval(move);
+
+/* Sam
+declare var currentDirections - left & right
+
+  const width = window.innerWidth;
+  const img = document.getElementsByTagName('img');
+  const currentPosition = parseInt(img.style.left);
+  nextPosition = currentPosition + 1
+  else -1
+
+  window.innerWidth - img.clientWidth
+  direction going left
+  img.style.transform(scaleX-1)
+  direction going right
+  img.style.transform(scaleX+1)
+
+*/
+
+//use css to make it flip
+//document.documentElement.clientWidth

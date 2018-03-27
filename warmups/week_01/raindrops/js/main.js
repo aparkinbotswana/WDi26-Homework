@@ -27,7 +27,7 @@ console.log("Connected");
 const raindrops = function(num) {
   let result = ""
 
-  if (num %3 === 0) { result = result + "Pling"}
+  if (num %3 === 0) { /result = result + "Pling"} //did this so plingplang will show in one line. And not separate lines. 
   if (num %5 === 0) { result = result + "Plang"}
   if (num %7 === 0) { result = result + "Plong"}
 
@@ -42,4 +42,3 @@ const raindrops = function(num) {
 raindrops(28)
 raindrops(1755)
 raindrops(34)
-

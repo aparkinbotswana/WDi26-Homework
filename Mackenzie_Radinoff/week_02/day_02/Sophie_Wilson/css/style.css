@@ -1,0 +1,48 @@
+
+*{
+  max-width: 783;
+}
+body{
+  background-color: #656565;
+  max-width: 800px;
+  max-height: 600px;
+}
+
+.MainImage{
+  background-color: #D1FFD7;
+  text-align: left;
+  display: inline-block;
+  height: 300px;
+  width: 367px;
+  margin-top: auto;
+
+
+}
+.MainText{
+  text-align: left;
+  display: inline-block;
+  background-color: #A6D3A0;
+  height: 300px;
+  width: 376px;
+  margin-top: 180px;
+  margin-left: 10px;
+  margin-right: 10px;
+  z-index: 300;
+
+
+
+}
+.Background{
+  background-color: #808782;
+  position: absolute;
+  display: inline-block;
+  background-color: #A6D3A0;
+  height: 400px;
+  width: 800px;
+  margin-top: 130px;
+  margin-left: 10px;
+  margin-right: 10px;
+  left: 0
+  z-index:100;
+
+}

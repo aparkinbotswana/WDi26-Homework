@@ -1,0 +1,12 @@
+<h2>Edit your console!</h2>
+
+<form action="/consoles/<%= @console.id %>" method="post">
+  <label>Name:</label>
+  <input type="text" name="name" placeholder="Playstation 5" value="<%= @console.name %>">
+  <label>Company:</label>
+  <input type="text" name="company" placeholder="Nintendo" value="<%= @console.company %>">
+  <label>Image:</label>
+  <input type="url" name="image" placeholder="http://..." value="<%= @console.image %>">
+
+  <button>Edit</button>
+</form>

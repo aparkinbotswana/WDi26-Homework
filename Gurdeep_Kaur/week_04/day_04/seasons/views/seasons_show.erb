@@ -1,0 +1,11 @@
+<h2><%=@season['name'] %></h2>
+<h3>month: <%= @season['month'] %></h3>
+
+<% unless @season['image'].nil? || @season['image'].empty? %>
+<img class="feature" src="<% @season['image'] %>" alt="<%= @season['name'] %>">
+<% end %>
+
+<div class="controls">
+  <a href="/seasons/<%= @season['id'] %>/edit">EDIT</a>
+  <a href="/seasons/<%= @season['id'] %>/delete">delete</a>
+</div>

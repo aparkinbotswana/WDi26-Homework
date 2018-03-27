@@ -1,0 +1,10 @@
+<h2><%= @kitten['name'] %></h2>
+<h3>Age: <%= @kitten['age'] %></h3>
+<% unless @kitten['image'].nil? || @kitten['image'].empty? %>
+  <img class="feature" src="<%= @kitten['image'] %>" alt="<%= @kitten['name'] %>">
+<% end %>
+
+<div class="controls">
+  <a href="/kittens/<%= @kitten['id'] %>/edit">Edit</a>
+  <a href="/kittens/<%= @kitten['id'] %>/delete">Delete</a>
+</div>

@@ -1,0 +1,26 @@
+<div class="container">
+
+    <div class="item-show">
+        <h2><%= @wine.variety %></h2>
+        <h3><%= @wine.color %></h3>
+
+        <% unless @wine.cheeses.empty? %>
+            <h3>Cheese Pairings</h3>
+            <ul>
+                <% @wine.cheeses.each do |cheese| %>
+                    <li>
+                        <a href="/cheeses/<%= cheese.id %>"><%= cheese.name %></a>
+                    </li>
+                <% end %>
+            </ul>
+        <% end %>
+
+        <% unless @wine.image.nil? || @wine.image.empty? %>
+            <img class="feature" src=<%= @wine.image %> alt=<%= @wine.variety %>>
+        <% end %>
+        <div class="controls">
+            <a href="/wines/<%= @wine.id %>/edit">Edit Wine</a>
+            <a href="/wines/<%= @wine.id %>/delete">Delete Wine</a>
+        </div>
+    </div>
+</div>
