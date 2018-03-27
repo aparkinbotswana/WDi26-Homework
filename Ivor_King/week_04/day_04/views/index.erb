@@ -1,0 +1,12 @@
+<h2>List of games</h2>
+
+<ul>
+  <!-- non-echoing ERB -->
+  <% @board_games.each do |board_game| %>
+    <li>
+      <a href="/board_games/<%= board_game['id'] %>">
+        <%= board_game['gname'] %>
+      </a>
+    </li>
+  <% end %>
+</ul>

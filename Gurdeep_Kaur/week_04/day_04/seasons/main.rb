@@ -29,6 +29,7 @@ end
 get '/seasons/:id' do
   @season = query_db "SELECT * FROM seasons WHERE id = #{ params[:id] }"
   @season = @season.first # Stripping away the outer array
+  binding.pry
   erb :seasons_show
 end
 

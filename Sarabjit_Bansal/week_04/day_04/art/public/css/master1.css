@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Lora');
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text|Lora|Titillium+Web');
+h1 {
+color: #6F8498;
+text-align: center;
+font-family: 'Lora', serif;
+
+}
+
+h2 , h3 {
+color: black;
+font-family: 'Titillium Web', sans-serif;
+}
+label {
+
+/* font-size: 20px */
+  /* color: white; */
+  color: black;
+  font-size: 16px;
+  font-family: 'Titillium Web', sans-serif;
+
+}
+
+a {
+  color: #B89595;
+  font-size: 22px;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: bold;
+  padding: 20px;
+}
+.container {
+  width: 960px;
+  margin: 0 auto;
+  background-color:white;
+  height: 800px;
+  padding: 20px;
+  overflow: auto;
+
+
+}
+
+body {
+  background-size: 100%;
+  background-image: url("https://cdn.stocksnap.io/img-thumbs/960w/6U6EAPKKD7.jpg")
+
+}
+
+
+img.feature {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+
+}
+
+.Allindex {
+
+  color:black;
+  font-size: 16px;
+}
+button {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: bold;
+  background-color: #6F8498;
+  color: white;
+  font-size: 14px;
+}
+.controls a {
+  color: black;
+}

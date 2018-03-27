@@ -1,0 +1,11 @@
+<h2>Application Index</h2>
+
+<ul>
+  <% @applications.each do |application| %>
+  <li>
+    <a href="/applications/<%= application.id %>">
+      <%= application.name %>
+    </a>
+  </li>
+  <% end %>
+</ul>

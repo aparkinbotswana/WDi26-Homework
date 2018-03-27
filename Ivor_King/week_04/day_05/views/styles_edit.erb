@@ -1,0 +1,11 @@
+<h2>Edit style</h2>
+
+<form method="post" action="/styles/<%= @style.id %>">
+    <label>Name:</label>
+    <input type="text" name="name" placeholder="e.g. dark" value="<% @style.name %>">
+    <label>Origin:</label>
+    <input type="text" name="origin" placeholder="e.g. English" value="<% @style.origin %>">
+    <label>Popularity:</label>
+    <input type="text" name="popularity" placeholder="e.g. very popular" value="<% @style.popularity %>">
+    <button>Update style</button>
+</form>

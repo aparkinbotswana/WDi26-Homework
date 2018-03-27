@@ -1,0 +1,11 @@
+<h2>Butterfly Index</h2>
+
+<ul>
+  <% @butterflies.each do |butterfly|%> <!-- non-echoing erb, which means it doesn't show the output -->
+    <li>
+      <a href="/butterflies/<%=butterfly['id'] %>">
+    <%= butterfly["name"]%>
+  </a>
+    </li>
+  <% end %>
+</ul>
