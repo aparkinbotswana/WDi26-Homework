@@ -1,0 +1,21 @@
+<h2>Edit Book</h2>
+
+<form method="post" action="/books/<%= @book['id'] %>">
+  <label>Title:</label>
+  <input type="text" name="title" placeholder="Book title" value="<%= @book['title'] %>">
+  <label>Author:</label>
+  <input type="text" name="author" placeholder="Book author" value="<%= @book['author'] %>">
+  <label>Image:</label>
+  <input type="url" name="image" placeholder="http://..." value="<%= @book['image'] %>">
+
+  <label>Category:</label>
+  <select name="category_id">
+    <option></option>
+    <% Category.all.each do |category| %>
+      <option value="<%= category.id %>" <%= "selected" if category.id == @book.category_id %> ><%= category.name %></option>
+    <% end %>
+  </select>
+
+
+  <button>Update book</button>
+</form>

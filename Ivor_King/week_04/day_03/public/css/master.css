@@ -1,0 +1,13 @@
+body {
+    background-color: lightyellow
+}
+
+h1 {
+    text-align: center;
+}
+
+img {
+    margin-top: 200px;
+    margin-left: 200px;
+    transform: scale(2);
+}

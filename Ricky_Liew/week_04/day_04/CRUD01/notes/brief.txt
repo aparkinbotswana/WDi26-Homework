@@ -1,0 +1,1 @@
+homework brief for people who need things in writing: create a sinatra CRUD app backed by an SQLIte3 database for the "butterfly" in your life (cars, beers, whiskeys, mid-century modern designers, popes, etc)

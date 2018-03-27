@@ -1,0 +1,17 @@
+<h2>Edit Song</h2>
+
+<form method="post" action="/songs/<%= @song.id %>">
+  <label>Name:</label>
+  <input type="text" name="name" placeholder="Song Name" value="<%= @song.name %>">
+  <label>Genre:</label>
+  <input type="text" name="genre" placeholder="Genre" value="<%= @song.genre %>">
+  <label>Year Released:</label>
+  <input type="integer" name="released" placeholder="YYYY" value="<%= @song.released %>">
+  <label>Record Label:</label>
+  <input type="text" name="company" placeholder="Record Label" value="<%= @song.company %>">
+  <!-- <br> -->
+  <label>Video clip:</label>
+  <input type="url" name="clip" placeholder="http://..." value="<%= @song.clip %>">
+
+  <button>Update Song</button>
+</form>

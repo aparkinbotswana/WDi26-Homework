@@ -1,0 +1,17 @@
+<h2>New Todo Item</h2>
+
+<form method="post" action="/todoitems">
+  <label>Item Name: </label>
+  <input type="text" name="item_name" placeholder="Plan US trip">
+
+
+  <label>Add to a TodoList: </label>
+  <select name="todolist_id">
+    <option></option>
+    <% Todolist.all.each do |todolist| %>
+    <option value="<%= todolist.id %>"><%= todolist.list_name %></option>
+    <%end%>
+  </select>
+
+  <button>Create Todo Item</button>
+</form>

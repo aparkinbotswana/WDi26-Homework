@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Simple Todo List</title>
+    <link rel="stylesheet" href="/css/master.css">
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <a href="/">Home</a>
+        <a href="/todolists">All Todo Lists</a>
+        <a href="/todolists/new">New Todo List</a>
+        |
+        <a href="/todoitems">All Todo Items</a>
+        <a href="/todoitems/new">New Todo Item</a>
+      </nav>
+
+      <%= yield %>
+
+    </div>
+
+  </body>
+</html>

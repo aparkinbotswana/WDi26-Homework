@@ -1,0 +1,19 @@
+<h2>Edit comic</h2>
+
+<form method="post" action="/comics/<%= @comic.id %>">
+    <label>Name:</label>
+    <input type="text" name="name" placeholder="e.g. Jim Jeffries" value="<%= @comic['name'] %>">
+    <label>Nationality:</label>
+    <input type="text" name="nationality" placeholder="e.g. Australia" value="<%= @comic['nationality'] %>">
+    <label>Age:</label>
+    <input type="integer" name="age" placeholder="e.g. 42" value="<%= @comic['age'] %>">
+    <label>Image:</label>
+    <input type="URL" name="image" placeholder="URL" value="<%= @comic['image'] %>">
+    <select name="style_id">
+        <option selected="true" disabled="disabled">Select style</option>
+        <% Style.all.each do |style| %>
+            <option value="<%= style.id %>" <%= "selected" if style.id == @comic.style_id %> ><%= style.name %></option>
+        <% end %>
+    </select>
+    <button>Update comic</button>
+</form>        

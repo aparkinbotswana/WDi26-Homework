@@ -1,0 +1,8 @@
+<h2>Star Wars Character Profiles Index</h2>
+<ul>
+  <% @characters.each do |character| %>
+    <li>
+      <a href="/profiles/<%= character['id'] %>"><%= character["name"] %></a>
+  </li>
+  <% end %>
+</ul>

@@ -1,0 +1,33 @@
+<% if @throw == @server %>
+<h1>The user wins!</h1>
+<% elsif @throw == 'rock' && @server == 'scissors' %>
+<h1>The user wins!</h1>
+<% elsif @throw == 'rock' && @server == 'paper' %>
+<h1>The server wins!</h1>
+<% elsif @throw == 'rock' && @server == 'rock' %>
+<h1>The user wins!</h1>
+<% elsif @throw == 'paper' && @server == 'scissors' %>
+<h1>The server wins!</h1>
+<% elsif @throw == 'paper' && @server == 'rock' %>
+<h1>The user wins!</h1>
+<% elsif @throw == 'paper' && @server == 'paper' %>
+<h1>The user wins!</h1>
+<% elsif @throw == 'scissors' && @server == 'scissors' %>
+<h1>The user wins!</h1>
+<% elsif @throw == 'scissors' && @server == 'paper' %>
+<h1>The user wins!</h1>
+<% elsif @throw == 'scissors' && @server == 'rock' %>
+<h1>The server wins!</h1>
+<% end %>
+
+<div class="games">
+  <div>
+    The User:
+    <img src="/assets/<%= @throw %>" alt="throw">
+  </div>
+
+  <div>
+    The Server:
+    <img src="/assets/<%= @server %>" alt="server">
+  </div>
+</div>

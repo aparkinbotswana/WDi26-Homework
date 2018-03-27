@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #ccc;
+  color: crimson;
+  font-family: sans-serif;
+  height: 100vh;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  font-size: 60px;
+  border-bottom: 4px solid crimson;
+  text-align: center;
+}
+
+.magic-8-ball, .secret-number, .scissors-paper-rock {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+/* .magic-8-ball {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 0 auto;
+} */
+
+.magic-8-ball {
+  color: #f79a04;
+}
+
+.magic-8-ball h2 {
+  font-size: 40px;
+}
+
+.left-div, .right-div {
+  display: inline-block;
+  width: 45%;
+  text-align: center;
+  height: 100%;
+}
+
+.left-div {
+  margin-right: 0;
+}
+
+.right-div {
+  margin-left: 0;
+}
+
+form {
+  text-align: center;
+}
+
+label {
+  font-size: 24px;
+}
+
+input {
+  background-color: white;
+  color: #232323;
+  margin-top: 20px;
+  padding: 5px;
+}
+
+.magic-8-ball button {
+  margin-top: 20px;
+  font-size: 24px;
+  color: orange;
+  padding: 10px;
+  border-radius: 50%;
+  border: 3px solid orange;
+  width: 100px;
+  height: 100px;
+}
+
+.card {
+  width: 150px;
+  height: 150px;
+  border: 3px solid white;
+  background-color: teal;
+  font-size: 36px;
+  color: white;
+  display: inline-block;
+}
+.secret-number-box {
+  width: 300px;
+  height: 300px;
+  background-color: orange;
+  background: linear-gradient(40, orange, white, 40%)
+  text-align: center;
+  margin: 0 auto;
+  line-height: 300px;
+  font-size: 50px;
+}
+
+.row .box {
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
+  display: inline-block;
+  border: 3px solid crimson;
+  text-align: center;
+}

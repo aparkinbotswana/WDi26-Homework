@@ -1,0 +1,21 @@
+<h2>Edit moon record</h2>
+
+<form method="post" action="/moons/<%= @moon[:id] %>">
+  <label>Name</label>
+  <input type="text" name="name" placeholder="Moon name" value="<%= @moon['name'] %>">
+  <label>Image</label>
+  <input type="url" name="image" placeholder="http://..." value="<%= @moon['image'] %>">
+  <label>Clip</label>
+  <input type="integer" name="clip" placeholder="%" value="<%= @moon.clip %>">
+
+  <label>Orbits</label>
+  <select name="planet_id">
+    <option></option>
+    <% Planet.all.each do |planet| %>
+      <option value="<%= planet.id %>" <%= "selected" if planet.id == @moon.planet_id %> >
+        <%= planet.name %>
+      </option>
+    <% end %>
+  </select>
+  <button>Update moon record</button>
+</form>

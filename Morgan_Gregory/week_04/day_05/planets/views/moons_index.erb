@@ -1,0 +1,12 @@
+<h2>Moon Index</h2>
+<div class="index_list">
+  <ul>
+    <% @moons.each do |moon| %>
+    <li>
+      <a href="/moons/<%= moon['id'] %>">
+        <%= moon["name"] %>
+      </a>
+    </li>
+    <% end %>
+  </ul>
+</div>
