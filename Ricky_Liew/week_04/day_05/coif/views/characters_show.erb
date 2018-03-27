@@ -1,0 +1,19 @@
+
+  <h2><%= @character['name'] %></h2>
+
+
+  <% unless @character.house.nil? %>
+    <h3>
+      <a href="/house/<%= @character.house.id %>"><%= @character.house.name %></a>
+    </h3>
+  <% end %>
+
+
+  <% unless @character['thumbnail_url'].nil? || @character['thumbnail_url'].empty? %>
+   <img class="feature" src="<%= @character['thumbnail_url'] %>" alt=" <%= @character['name'] %>">
+  <% end %>
+
+  <div class = "controls">
+    <a href="/characters/<%= @character['id'] %>/edit">Edit</a>
+    <a href="/characters/<%= @character['id'] %>/delete">Delete</a>
+  <div>

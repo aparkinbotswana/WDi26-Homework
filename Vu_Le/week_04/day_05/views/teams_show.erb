@@ -1,0 +1,21 @@
+<h2><%= @team.name %></h2>
+
+<% unless @team.players.empty? %>
+  <h3>Team Players</h3>
+  <ul>
+    <% @team.players.each do |player| %>
+      <li>
+        <a href="/players/<%= player.id %>"><%= player.name %></a>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<% unless @team.image.nil? || @team.image.empty? %>
+  <img class="feature" src="<%= @team.image %>" alt="<%= @team.name %>">
+<% end %>
+
+<div class="controls">
+  <a href="/teams/<%= @team.id %>/edit">Edit</a>
+  <a href="/teams/<%= @team.id %>/delete">Delete</a>
+</div>

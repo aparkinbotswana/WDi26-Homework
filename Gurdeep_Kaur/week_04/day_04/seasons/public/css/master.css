@@ -1,0 +1,22 @@
+body{
+  background-color: darkblue;
+  color: white;
+}
+.container{
+  max-width: 960;
+  margin: 0 auto;
+}
+a{
+  color: inherit;
+  font-size: 20px;
+  padding: 30px;
+}
+a:hover{
+  color: green;
+}
+h2{
+  text-align: center;
+}
+p{
+  font-size: 20px;
+}

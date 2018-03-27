@@ -1,0 +1,59 @@
+name
+seat
+sigil_url
+words
+house_type
+
+
+
+
+House Baratheon
+House Baratheon of Storm's End
+http://awoiaf.westeros.org/images/thumb/2/2d/House_Baratheon.svg/545px-House_Baratheon.svg.png
+Ours is the Fury
+greAt
+
+House Targaryen
+House Targaryen of King's Landing
+http://awoiaf.westeros.org/images/thumb/1/1e/House_Targaryen.svg/545px-House_Targaryen.svg.png
+Fire and Blood
+exiled
+
+House Stark
+Winterfell
+http://awoiaf.westeros.org/images/thumb/7/7e/House_Stark.svg/545px-House_Stark.svg.png
+Winter is Coming
+great
+
+House Mormont
+Bear Island
+http://awoiaf.westeros.org/images/thumb/c/c9/House_Mormont.PNG/477px-House_Mormont.PNG
+Here We Stand
+noble
+
+House Arryn
+Eyrie
+http://awoiaf.westeros.org/images/thumb/b/b4/House_Arryn.svg/545px-House_Arryn.svg.png
+As High as Honour
+great
+
+
+House Tully
+Riverrun
+http://awoiaf.westeros.org/images/thumb/6/61/House_Tully.svg/545px-House_Tully.svg.png
+Family, Duty, Honor
+great
+
+
+House Greyjoy
+Pyke
+http://awoiaf.westeros.org/images/f/f3/Greyjoy_coat_sigil.png
+We Do Not Sow
+great
+
+
+House Tyrell
+Highgarden
+http://awoiaf.westeros.org/images/thumb/3/31/House_Tyrell.svg/545px-House_Tyrell.svg.png
+Growing Strong
+great

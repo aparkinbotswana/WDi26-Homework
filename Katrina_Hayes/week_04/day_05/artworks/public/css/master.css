@@ -1,0 +1,286 @@
+/* * {
+  border: 1px solid green;
+} */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #232323;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  color: white;
+  height: 100vh;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+header {
+  text-align: center;
+}
+
+h1 {
+  color: rgba(152,255,152,1);
+  font-size: 100px;
+  font-family: 'Macondo', cursive;
+  padding: 0 20px;
+  margin: 0;
+}
+
+header nav {
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+nav ul {
+  text-align: center;
+  padding: 0;
+}
+
+nav a {
+  padding: 0 20px;
+}
+
+nav.controls a {
+  border: 3px solid #141313;
+  background-color: #d1dfd5;
+  color: #141313;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 50px;
+  text-align: center;
+  margin: 30px 0;
+}
+
+h3 {
+  font-size: 22px;
+  margin: 0 0 25px 0;
+  text-align: center;
+}
+
+h4 {
+  font-size: 22px;
+  margin: 0 0 25px 0;
+}
+
+img.feature {
+  display: block;
+  margin: 0 auto;
+}
+
+.artist-index {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.artist-index .column {
+  flex-basis: 50%;
+  text-align: center;
+}
+
+.artist-index h4 {
+  margin-top: 20px;
+}
+
+.empty-artwork-image {
+  color: #cba1a1;
+  margin: 0 auto;
+}
+
+.large {
+  border: 8px solid #cba1a1;
+  width: 450px;
+  height: 350px;
+  line-height: 350px;
+}
+
+/* ####### ALL CSS RELATED TO THE DIFFERENT IMAGE GALLERIES ######### */
+
+.gallery {
+  display: flex;
+  flex-direction: row; /* DO seem to need this even though it's the default (?) */
+  flex-wrap: wrap;
+  max-width: 100%;
+  max-height: 100%;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.mini-box {
+  text-align: center;
+  max-width: 100px;
+  margin: 5px;
+}
+
+.mini-box img {
+  max-width: 100%;
+  max-height: 100%;
+  padding: 10px;
+}
+
+.art-box {
+  /* justify-content: center; */ /* vertically center - don't need in this project */
+  text-align: center;
+  /* flex-basis: 200px; */ /* not clear on when to use this */
+  width: 200px;
+  height: 220px;
+  /* max-height: 200px; */ /* can't seem to get them to shrink width as needed to fit the height so have to let them grow in height for now. */
+  background-color: #dbd1d1;
+  border: 5px solid #161515;
+  margin: 10px;
+  padding: 10px;
+  position: relative;
+}
+
+.art-box img {
+  max-width: 100%;
+  max-height: 100%;
+  padding: 12px;
+}
+
+.empty-artwork-image.medium {
+  border: 2px solid #cba1a1;
+  max-width: 90%;
+  max-height: 90%;
+  line-height: 188px;
+  /* padding: 16px; */
+  margin: 12px auto;
+}
+
+.artwork-hidden-artist {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  line-height: 200px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: #fff;
+  background-color: rgba(0,0,0,.7);
+  z-index: 2;
+}
+
+.art-box:hover .artwork-hidden-artist {
+  opacity: 1;
+}
+
+/* ############## ARTIST SHOW PAGE ################## */
+
+.artist-show  {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.artist-pic {
+  flex-basis: 50%;
+  margin-right: 0;
+  padding-right: 20px;
+  text-align: right;
+}
+
+.artist-pic img, .empty-artist-image {
+  margin-right: 0;
+  padding-right: 7px;
+}
+
+.empty-artist-image {
+  border: 8px solid #cba1a1;
+  color: #cba1a1;
+  margin: 0 0 0 auto;
+  text-align: center;
+  width: 280px;
+  height: 380px;
+  line-height: 380px;
+}
+.artist-deets {
+  flex-basis: 50%;
+  margin-left: 0;
+  text-align: left;
+  padding-left: 7px;
+}
+
+li {
+  list-style-type: square;
+  list-style-position: inside;
+  font-size: 18px;
+}
+
+/* ########  CSS RELATED TO THE FORMS FOR NEW/EDIT ARTWORK/ARTIST ####### */
+
+form {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+label, input, select {
+  margin-bottom: 20px;
+  font-size: 18px;
+  padding: 5px;
+}
+
+label {
+  text-align: right;
+}
+input, select {
+  background-color: #f6d0d0;
+  color: #232323;
+}
+
+button {
+  margin-top: 20px;
+  font-size: 24px;
+  color: crimson;
+  padding: 10px;
+  border-radius: 50%;
+  border: 3px solid crimson;
+  width: 100px;
+  height: 100px;
+}
+
+/* ################ HOME PAGE SPECIFIC STUFF ############## */
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+  height: 75vh;
+}
+
+.home {
+  width: 58%;
+  margin: 0 auto;
+  font-size: 40px;
+  flex: 1 0 auto; /* flex-grow, flex-shrink, flex-basis */
+}
+
+.home-page .gallery {
+  flex-shrink: 0;
+}
+
+.home h2 {
+  text-align: left;
+}

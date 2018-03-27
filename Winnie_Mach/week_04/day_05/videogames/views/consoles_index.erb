@@ -1,0 +1,11 @@
+<h1>Hi I am a list of consoles</h1>
+
+<ul>
+  <% @console.each do |console| %>
+  <li>
+    <a href="/consoles/<%= console.id %>">
+    <%= console.name %>
+    </a>
+  </li>
+  <%end%>
+</ul>

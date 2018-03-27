@@ -1,0 +1,13 @@
+
+<h2><%= @artstyle['art_type'] %></h2>
+<h3>Defination: <%= @artstyle['art_defi'] %></h3>
+<h3>Famous Artist: <%= @artstyle['fam_artist']%></h3>
+
+<% unless @artstyle['art_image'].nil? || @artstyle['art_image'].empty? %>
+  <img class = "feature" src="<%= @artstyle['art_image'] %>" alt="<%= @artstyle['art_type'] %>">
+<% end %>
+
+<div class="controls">
+  <a href="/art/<%= @artstyle['id'] %>/edit">EDIT</a>
+  <a href="/art/<%= @artstyle['id'] %>/delete">DELETE</a>
+</div>

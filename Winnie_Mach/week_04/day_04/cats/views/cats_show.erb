@@ -1,0 +1,17 @@
+<h2>Name: <%= @cat["name"]%></h2>
+<div class="profileContainer">
+  <p>Breed: <%= @cat["breed"]%></p>
+  <p>Date Of Birth: <%= @cat["dob"]%></p>
+
+  <% unless @cat['image'].nil? || @cat['image'].empty? %>
+
+<img src="<%= @cat['image'] %>" alt="<%= @cat['name'] %>">
+<%end%>
+
+</div>
+
+<div class="controls">
+  <a href="/cats/<%= @cat['id']%>/edit">Edit</a> 
+  <a href="/cats/<%= @cat['id']%>/delete">Delete</a>
+
+</div>

@@ -21,6 +21,8 @@
 // Write a 'transfer' on the bank that allows you to transfer amounts between two accounts.
 // Additional
 // Begin exploring the JavaScript Koans: https://github.com/liammclennan/JavaScript-Koans. Fork, clone and start trying them.
+<<<<<<< HEAD
+=======
 
 const bank = [
   { name: "John",
@@ -138,3 +140,4 @@ const newAccount = function () {
 
   bank.push(newAccount);
 }
+>>>>>>> 4f0d2c2776705dbc085e7b7d2f7e3cde1df244a2

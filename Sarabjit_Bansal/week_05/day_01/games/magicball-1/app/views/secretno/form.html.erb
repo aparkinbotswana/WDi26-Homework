@@ -1,0 +1,15 @@
+
+<h1>Select a Secret No</h1>
+
+<form action="/secretno/lookup">
+
+  <select name="secretno">
+    <option></option>
+
+    <% 10.times do |i| %>
+      <option value="<%= i+1 %>"><%= i+1 %></option>
+    <% end %>
+
+  </select>
+  <button>GO</button>
+</form>

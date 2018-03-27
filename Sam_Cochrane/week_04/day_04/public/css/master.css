@@ -1,0 +1,18 @@
+body{
+  background-color: rgba(250,200,100,0.5);
+  text-align: center;
+}
+.containter{
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+a {
+color: inherit;
+}
+
+img.feature {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}

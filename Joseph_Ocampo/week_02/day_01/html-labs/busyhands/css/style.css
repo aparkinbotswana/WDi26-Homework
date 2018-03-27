@@ -213,7 +213,11 @@ footer div {
 }
 
 .textWidget {
+<<<<<<< HEAD
   width: 40%;
+=======
+  width: 35%;
+>>>>>>> 4f0d2c2776705dbc085e7b7d2f7e3cde1df244a2
   display: inline-block;
   padding-top: 15px;
 
@@ -246,7 +250,11 @@ footer li {
 }
 
 .theme {
+<<<<<<< HEAD
   margin-left: 537px;
+=======
+  margin-left: 492px;
+>>>>>>> 4f0d2c2776705dbc085e7b7d2f7e3cde1df244a2
 }
 
 .footerBottom {

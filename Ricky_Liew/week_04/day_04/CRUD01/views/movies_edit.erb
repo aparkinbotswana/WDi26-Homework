@@ -1,0 +1,17 @@
+<h2>Edit Movie</h2>
+
+<form method-"post" action="/movies/<%= @movie['id'] %>">
+  <label>Movie title:</label>
+  <input type="text" name="title" placeholder="Movie name" value="<%= @movie['title']%>"
+
+  <label>Year released:</label>
+  <input type="text" name="release_year" placeholder="Release year" value="<%= @movie['release_year']%>"
+
+  <label>Rotten tomatoes rating:</label>
+  <input type="number" name="rating" placeholder="Rating" value="<%= @movie['rating']%>"
+
+  <label>Movie poster:</label>
+  <input type="url" name="poster" placeholder="http://..." value="<%= @movie['poster']%>">
+
+  <button>Update movie</button>
+</form>
