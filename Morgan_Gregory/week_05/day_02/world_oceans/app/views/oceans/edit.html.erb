@@ -1,0 +1,19 @@
+<h2>Edit ocean record</h2>
+<form action="/oceans/<%= @ocean.id %>" method="post">
+  <label>Ocean name</label>
+  <input type="text" name="ocean[name]" placeholder="name" value="<%= @ocean.name %>">
+
+  <label>Maximum depth (m)</label>
+  <input type="number" name="ocean[max_depth]" placeholder="maxium depth" value="<%= @ocean.max_depth %>">
+
+  <label>Average depth (m)</label>
+  <input type="number" name="ocean[average_depth]" placeholder="average depth" value="<%= @ocean.average_depth%>">
+
+  <label>Surface area (km&sup2)</label>
+  <input type="number" name="ocean[surface_area]" placeholder="surface area" value="<%= @ocean.surface_area %>">
+
+  <label>Map</label>
+  <input type="url" name="ocean[map_ocean]" placeholder="http://..." value="<%= @ocean.map_ocean %>">
+
+<button>Update ocean record</button>
+</form>
