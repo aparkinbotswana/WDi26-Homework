@@ -1,0 +1,31 @@
+<header>
+  <h1><%= @font_family.name %></h1>
+</header>
+
+<div class="main">
+  <div class="description">
+    <% if @font_family.description.present? %>
+      <p><%= font_family.description %></p>
+    <% else %>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <% end %>
+  </div>
+
+  <div class="famous-examples">
+    <h2><%= @font_family.famous_examples %></h2>
+  </div>
+
+
+  <% unless @font_family.fonts.empty? %>
+    <p><strong>In the database:</strong></p>
+    <% @font_family.fonts.each do |font| %>
+      <li><%= link_to font.name %></li>
+    <% end %>
+  <% end %>
+
+</div>
+
+<div class="controls">
+  <%= link_to 'Edit', edit_font_family_path(@font_family) %>
+  <%= link_to "Delete", @font_family, :method => 'delete', :data => {:confirm => 'Are you sure'} %>
+</div>

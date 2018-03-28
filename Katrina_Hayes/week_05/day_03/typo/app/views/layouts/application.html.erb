@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Typo</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <style>
+    @import url('https://fonts.googleapis.com/css?family=Amatic+SC|IBM+Plex+Sans+Condensed|IBM+Plex+Serif|Macondo');
+    </style>
+  </head>
+
+  <body>
+    <div class="side-panel">
+      <nav>
+        <%= link_to 'Fonts', fonts_path %>
+        <%= link_to 'Families', font_families_path %>
+        <%= link_to 'New', new_font_path %>
+      </nav>
+    </div>
+    <div class="major-panel">
+      <div class="container">
+        <%= yield %>
+      </div>
+    </div>
+  </body>
+</html>
