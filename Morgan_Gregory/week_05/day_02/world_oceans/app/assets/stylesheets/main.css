@@ -1,0 +1,52 @@
+body {
+  background-color: green;
+  color: white;
+  font-family: monospace;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+a {
+  color: white;
+}
+
+.feature {
+  max-width: 100%;
+}
+
+.ocean_images {
+  max-width: 100%;
+  display: flex;
+}
+
+h2 {
+  margin-left: 50px;
+  color: pink;
+}
+
+h3 {
+  margin-left: 100px;
+  color: blue;
+}
+
+h4 {
+  margin-left: 150px;
+  color: aqua;
+}
+
+h5 {
+  margin-left: 200px;
+  color: gold;
+}
+
+h6 {
+  margin-left: 250px;
+  color: red;
+}
+
+a {
+  font-size: 2em;
+}

@@ -1,0 +1,24 @@
+<h2><%= @actor.name %></h2>
+<h3>Born: <%= @actor.born %></h3>
+
+
+<% unless @actor.movies.empty? %>
+  <h3>Associated Movies</h3>
+   <ul>
+     <% @actor.movies.each do |movie| %>
+      <li>
+        <a href="/movies/<%= movie.id %>"><%= movie.name %></a>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+
+<% unless @actor.image.nil? || @actor.image.empty? %>
+  <img class="feature" src="<%= @actor.image %>" alt="<%= @actor.name %>">
+<% end %>
+
+<div class="controls">
+  <a href="actors/<%= @actor['id'] %>/edit">Edit</a>
+  <a href="actors/<%= @actor['id'] %>/delete">Delete</a>
+</div>

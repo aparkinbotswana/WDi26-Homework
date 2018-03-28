@@ -1,0 +1,2785 @@
+Started GET "/" for 127.0.0.1 at 2018-03-26 15:54:31 +1100
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/moniquelee/.rvm/gems/ruby-2.4.1/gems/railties-5.1.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/moniquelee/.rvm/gems/ruby-2.4.1/gems/railties-5.1.5/lib/rails/templates/rails/welcome/index.html.erb (2.9ms)
+Completed 200 OK in 122ms (Views: 6.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-26 16:29:38 +1100
+  
+ActionController::RoutingError (uninitialized constant PagesController):
+  
+activesupport (5.1.5) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.5) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.5) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.5) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.5) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.5) lib/action_dispatch/http/request.rb:85:in `controller_class_for'
+actionpack (5.1.5) lib/action_dispatch/http/request.rb:78:in `controller_class'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.5) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.5) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-03-26 16:37:44 +1100
+  
+TypeError (superclass must be a Class (Module given)):
+  
+app/controllers/pages_controller.rb:1:in `<top (required)>'
+Started GET "/" for 127.0.0.1 at 2018-03-26 16:39:48 +1100
+  
+TypeError (superclass must be a Class (Module given)):
+  
+app/controllers/pages_controller.rb:1:in `<top (required)>'
+Started GET "/" for 127.0.0.1 at 2018-03-26 16:42:44 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 195ms (Views: 194.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-26 16:43:22 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 16ms (Views: 15.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-26 16:44:14 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 15ms (Views: 15.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-26 16:45:11 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 15ms (Views: 14.9ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-03-26 16:45:27 +1100
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 18ms (Views: 17.1ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2018-03-26 16:45:34 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 25ms (Views: 24.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-26 20:01:04 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 379ms (Views: 182.3ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2018-03-26 20:01:05 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 16ms (Views: 15.3ms)
+
+
+Started GET "/games/magic_8_ball" for 127.0.0.1 at 2018-03-26 20:01:08 +1100
+Processing by GamesController#magic_8_ball as HTML
+  Rendering games/magic_8_ball.html.erb within layouts/application
+  Rendered games/magic_8_ball.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 21ms (Views: 20.4ms)
+
+
+Started GET "/games/magic_8_ball/what%20is%20my%20name" for 127.0.0.1 at 2018-03-26 20:03:23 +1100
+  
+AbstractController::ActionNotFound (The action 'magic_8_ball_answer' could not be found for GamesController):
+  
+actionpack (5.1.5) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.5) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.5) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.5) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.5) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.5) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/games/magic_8_ball/what%20is%20my%20name" for 127.0.0.1 at 2018-03-26 20:03:46 +1100
+  
+AbstractController::ActionNotFound (The action 'magic_8_ball_answer' could not be found for GamesController):
+  
+actionpack (5.1.5) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.5) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.5) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.5) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.5) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.5) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/games/magic_8_ball/howoldareyou" for 127.0.0.1 at 2018-03-26 20:04:00 +1100
+  
+AbstractController::ActionNotFound (The action 'magic_8_ball_answer' could not be found for GamesController):
+  
+actionpack (5.1.5) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.5) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.5) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.5) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.5) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.5) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/games/magic_8_ball/howoldareyou" for 127.0.0.1 at 2018-03-26 20:04:41 +1100
+  
+AbstractController::ActionNotFound (The action 'magic_8_ball_answer' could not be found for GamesController):
+  
+actionpack (5.1.5) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.5) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.5) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.5) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.5) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.5) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/games/magic_8_ball/" for 127.0.0.1 at 2018-03-26 20:04:44 +1100
+Processing by GamesController#magic_8_ball as HTML
+  Rendering games/magic_8_ball.html.erb within layouts/application
+  Rendered games/magic_8_ball.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 20ms (Views: 19.5ms)
+
+
+Started GET "/games/magic_8_ball/" for 127.0.0.1 at 2018-03-26 20:38:50 +1100
+Processing by GamesController#magic_8_ball as HTML
+  Rendering games/magic_8_ball.html.erb within layouts/application
+  Rendered games/magic_8_ball.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 18ms (Views: 15.4ms)
+
+
+Started GET "/games/magic_8_ball/" for 127.0.0.1 at 2018-03-26 20:39:00 +1100
+Processing by GamesController#magic_8_ball as HTML
+  Rendering games/magic_8_ball.html.erb within layouts/application
+  Rendered games/magic_8_ball.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 15ms (Views: 12.8ms)
+
+
+Started GET "/games/magic_8_ball/question" for 127.0.0.1 at 2018-03-26 20:39:30 +1100
+Processing by GamesController#magic_8_ball as HTML
+  Parameters: {"question"=>"question"}
+  Rendering games/magic_8_ball.html.erb within layouts/application
+  Rendered games/magic_8_ball.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 17ms (Views: 14.4ms)
+
+
+Started GET "/games/magic_8_ball/whatthefuck" for 127.0.0.1 at 2018-03-26 20:40:09 +1100
+Processing by GamesController#magic_8_ball as HTML
+  Parameters: {"question"=>"whatthefuck"}
+  Rendering games/magic_8_ball.html.erb within layouts/application
+  Rendered games/magic_8_ball.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 16ms (Views: 12.8ms)
+
+
+Started GET "/games/magic_8_ball/what_the_fuck" for 127.0.0.1 at 2018-03-26 20:40:42 +1100
+Processing by GamesController#magic_8_ball as HTML
+  Parameters: {"question"=>"what_the_fuck"}
+  Rendering games/magic_8_ball.html.erb within layouts/application
+  Rendered games/magic_8_ball.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 17ms (Views: 14.5ms)
+
+
+Started GET "/games/magic_8_ball/what_the_fuck" for 127.0.0.1 at 2018-03-26 20:41:11 +1100
+Processing by GamesController#magic_8_ball as HTML
+  Parameters: {"question"=>"what_the_fuck"}
+  Rendering games/magic_8_ball.html.erb within layouts/application
+  Rendered games/magic_8_ball.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 23ms (Views: 20.3ms)
+
+
+Started GET "/games/magic_8_ball/what_the_fuck" for 127.0.0.1 at 2018-03-26 20:41:42 +1100
+Processing by GamesController#magic_8_ball as HTML
+  Parameters: {"question"=>"what_the_fuck"}
+  Rendering games/magic_8_ball.html.erb within layouts/application
+  Rendered games/magic_8_ball.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 18ms (Views: 15.0ms)
+
+
+Started GET "/games/magic_8_ball/what_the_fuck" for 127.0.0.1 at 2018-03-26 20:46:20 +1100
+  
+SyntaxError (/Users/moniquelee/Projects/WDi26-Homework/Monique_Lee/week_05/day_01/games_on_rails/app/controllers/games_controller.rb:13: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/games_controller.rb:13: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/games/magic_8_ball/what_the_fuck" for 127.0.0.1 at 2018-03-26 20:46:37 +1100
+Processing by GamesController#magic_8_ball as HTML
+  Parameters: {"question"=>"what_the_fuck"}
+  Rendering games/magic_8_ball.html.erb within layouts/application
+  Rendered games/magic_8_ball.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 28ms (Views: 24.5ms)
+
+
+Started GET "/games/magic_8_ball/what_the_fuck" for 127.0.0.1 at 2018-03-26 20:47:14 +1100
+Processing by GamesController#magic_8_ball as HTML
+  Parameters: {"question"=>"what_the_fuck"}
+  Rendering games/magic_8_ball.html.erb within layouts/application
+  Rendered games/magic_8_ball.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 18ms (Views: 15.5ms)
+
+
+Started GET "/games/magic_8_ball/what_the_fuck" for 127.0.0.1 at 2018-03-26 20:50:34 +1100
+Processing by GamesController#magic_8_ball as HTML
+  Parameters: {"question"=>"what_the_fuck"}
+Completed 500 Internal Server Error in 112ms
+
+
+  
+NameError (undefined local variable or method `answer' for #<GamesController:0x007fd8eb213470>):
+  
+app/controllers/games_controller.rb:8:in `magic_8_ball'
+Started GET "/games/magic_8_ball/what_the_fuck" for 127.0.0.1 at 2018-03-26 20:50:54 +1100
+Processing by GamesController#magic_8_ball as HTML
+  Parameters: {"question"=>"what_the_fuck"}
+Completed 500 Internal Server Error in 3ms
+
+
+  
+NoMethodError (undefined method `include' for "what_the_fuck":String
+Did you mean?  include?):
+  
+app/controllers/games_controller.rb:9:in `magic_8_ball'
+Started GET "/games/magic_8_ball/what_the_fuck" for 127.0.0.1 at 2018-03-26 20:51:06 +1100
+Processing by GamesController#magic_8_ball as HTML
+  Parameters: {"question"=>"what_the_fuck"}
+Completed 500 Internal Server Error in 1ms
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1)):
+  
+app/controllers/games_controller.rb:9:in `include?'
+app/controllers/games_controller.rb:9:in `magic_8_ball'
+Started GET "/games/magic_8_ball/what_the_fuck" for 127.0.0.1 at 2018-03-26 20:51:30 +1100
+Processing by GamesController#magic_8_ball as HTML
+  Parameters: {"question"=>"what_the_fuck"}
+Completed 500 Internal Server Error in 1ms
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1)):
+  
+app/controllers/games_controller.rb:9:in `include?'
+app/controllers/games_controller.rb:9:in `magic_8_ball'
+Started GET "/games/magic_8_ball/what_the_fuck" for 127.0.0.1 at 2018-03-26 20:52:01 +1100
+Processing by GamesController#magic_8_ball as HTML
+  Parameters: {"question"=>"what_the_fuck"}
+  Rendering games/magic_8_ball.html.erb within layouts/application
+  Rendered games/magic_8_ball.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 16.4ms)
+
+
+Started GET "/games/magic_8_ball/what_the_fuck" for 127.0.0.1 at 2018-03-26 20:52:44 +1100
+Processing by GamesController#magic_8_ball as HTML
+  Parameters: {"question"=>"what_the_fuck"}
+  Rendering games/magic_8_ball.html.erb within layouts/application
+  Rendered games/magic_8_ball.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 23ms (Views: 20.8ms)
+
+
+Started GET "/games/magic_8_ball/what_the_fuck" for 127.0.0.1 at 2018-03-26 20:53:10 +1100
+Processing by GamesController#magic_8_ball as HTML
+  Parameters: {"question"=>"what_the_fuck"}
+  Rendering games/magic_8_ball.html.erb within layouts/application
+  Rendered games/magic_8_ball.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 16.7ms)
+
+
+Started GET "/games/magic_8_ball/what's_your_name" for 127.0.0.1 at 2018-03-26 20:53:26 +1100
+Processing by GamesController#magic_8_ball as HTML
+  Parameters: {"question"=>"what's_your_name"}
+  Rendering games/magic_8_ball.html.erb within layouts/application
+  Rendered games/magic_8_ball.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 18ms (Views: 15.6ms)
+
+
+Started GET "/games/magic_8_ball/what's_your_name" for 127.0.0.1 at 2018-03-26 21:10:40 +1100
+  
+SyntaxError (/Users/moniquelee/Projects/WDi26-Homework/Monique_Lee/week_05/day_01/games_on_rails/app/controllers/games_controller.rb:8: syntax error, unexpected '=', expecting ';' or '\n'
+    def responses =
+                   ^
+/Users/moniquelee/Projects/WDi26-Homework/Monique_Lee/week_05/day_01/games_on_rails/app/controllers/games_controller.rb:40: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/games_controller.rb:8: syntax error, unexpected '=', expecting ';' or '\n'
+app/controllers/games_controller.rb:40: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/games/magic_8_ball/what's_your_name" for 127.0.0.1 at 2018-03-26 21:11:12 +1100
+Processing by GamesController#magic_8_ball as HTML
+  Parameters: {"question"=>"what's_your_name"}
+  Rendering games/magic_8_ball.html.erb within layouts/application
+  Rendered games/magic_8_ball.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 20ms (Views: 17.3ms)
+
+
+Started GET "/games/magic_8_ball/what's_your_name" for 127.0.0.1 at 2018-03-26 21:11:39 +1100
+  
+SyntaxError (/Users/moniquelee/Projects/WDi26-Homework/Monique_Lee/week_05/day_01/games_on_rails/app/controllers/games_controller.rb:39: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/games_controller.rb:39: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/games/magic_8_ball/what's_your_name" for 127.0.0.1 at 2018-03-26 21:11:52 +1100
+Processing by GamesController#magic_8_ball as HTML
+  Parameters: {"question"=>"what's_your_name"}
+  Rendering games/magic_8_ball.html.erb within layouts/application
+  Rendered games/magic_8_ball.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 19ms (Views: 16.2ms)
+
+
+Started GET "/games/magic_8_ball/what's_your_name" for 127.0.0.1 at 2018-03-26 21:16:04 +1100
+Processing by GamesController#magic_8_ball as HTML
+  Parameters: {"question"=>"what's_your_name"}
+  Rendering games/magic_8_ball.html.erb within layouts/application
+  Rendered games/magic_8_ball.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 18ms (Views: 14.8ms)
+
+
+Started GET "/games/magic_8_ball/what's_your_name" for 127.0.0.1 at 2018-03-26 21:16:44 +1100
+Processing by GamesController#magic_8_ball as HTML
+  Parameters: {"question"=>"what's_your_name"}
+  Rendering games/magic_8_ball.html.erb within layouts/application
+  Rendered games/magic_8_ball.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 16.2ms)
+
+
+Started GET "/games/magic_8_ball/what's_your_name" for 127.0.0.1 at 2018-03-26 21:17:47 +1100
+Processing by GamesController#magic_8_ball as HTML
+  Parameters: {"question"=>"what's_your_name"}
+  Rendering games/magic_8_ball.html.erb within layouts/application
+  Rendered games/magic_8_ball.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 18ms (Views: 15.5ms)
+
+
+Started GET "/games/magic_8_ball/what's_your_name" for 127.0.0.1 at 2018-03-26 21:18:20 +1100
+Processing by GamesController#magic_8_ball as HTML
+  Parameters: {"question"=>"what's_your_name"}
+  Rendering games/magic_8_ball.html.erb within layouts/application
+  Rendered games/magic_8_ball.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 18ms (Views: 15.1ms)
+
+
+Started GET "/games/magic_8_ball/" for 127.0.0.1 at 2018-03-26 21:18:26 +1100
+Processing by GamesController#magic_8_ball as HTML
+  Rendering games/magic_8_ball.html.erb within layouts/application
+  Rendered games/magic_8_ball.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 24ms (Views: 22.0ms)
+
+
+Started GET "/games/magic_8_ball/" for 127.0.0.1 at 2018-03-26 21:19:24 +1100
+  
+SyntaxError (/Users/moniquelee/Projects/WDi26-Homework/Monique_Lee/week_05/day_01/games_on_rails/app/controllers/games_controller.rb:42: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/games_controller.rb:42: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/games/magic_8_ball/" for 127.0.0.1 at 2018-03-26 21:19:35 +1100
+Processing by GamesController#magic_8_ball as HTML
+  Rendering games/magic_8_ball.html.erb within layouts/application
+  Rendered games/magic_8_ball.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 16.8ms)
+
+
+Started GET "/games/magic_8_ball/" for 127.0.0.1 at 2018-03-26 21:22:13 +1100
+Processing by GamesController#magic_8_ball as HTML
+Completed 500 Internal Server Error in 2ms
+
+
+  
+NoMethodError (undefined method `nil' for "":String
+Did you mean?  nil?):
+  
+app/controllers/games_controller.rb:33:in `random_response'
+app/controllers/games_controller.rb:40:in `magic_8_ball'
+Started GET "/games/magic_8_ball/" for 127.0.0.1 at 2018-03-26 21:22:47 +1100
+Processing by GamesController#magic_8_ball as HTML
+  Rendering games/magic_8_ball.html.erb within layouts/application
+  Rendered games/magic_8_ball.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 16.2ms)
+
+
+Started GET "/games/magic_8_ball/" for 127.0.0.1 at 2018-03-26 21:23:22 +1100
+Processing by GamesController#magic_8_ball as HTML
+  Rendering games/magic_8_ball.html.erb within layouts/application
+  Rendered games/magic_8_ball.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 18ms (Views: 15.5ms)
+
+
+Started GET "/games/magic_8_ball/" for 127.0.0.1 at 2018-03-26 21:24:04 +1100
+Processing by GamesController#magic_8_ball as HTML
+  Rendering games/magic_8_ball.html.erb within layouts/application
+  Rendered games/magic_8_ball.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 16.7ms)
+
+
+Started GET "/games/magic_8_ball/" for 127.0.0.1 at 2018-03-26 21:24:54 +1100
+Processing by GamesController#magic_8_ball as HTML
+  Rendering games/magic_8_ball.html.erb within layouts/application
+  Rendered games/magic_8_ball.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 18ms (Views: 16.0ms)
+
+
+Started GET "/games/magic_8_ball/" for 127.0.0.1 at 2018-03-26 21:25:14 +1100
+Processing by GamesController#magic_8_ball as HTML
+  Rendering games/magic_8_ball.html.erb within layouts/application
+  Rendered games/magic_8_ball.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 18ms (Views: 15.5ms)
+
+
+Started GET "/games/magic_8_ball/" for 127.0.0.1 at 2018-03-26 21:25:22 +1100
+Processing by GamesController#magic_8_ball as HTML
+  Rendering games/magic_8_ball.html.erb within layouts/application
+  Rendered games/magic_8_ball.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 20ms (Views: 17.1ms)
+
+
+Started GET "/games/magic_8_ball/" for 127.0.0.1 at 2018-03-26 21:25:44 +1100
+Processing by GamesController#magic_8_ball as HTML
+  Rendering games/magic_8_ball.html.erb within layouts/application
+  Rendered games/magic_8_ball.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 25ms (Views: 22.2ms)
+
+
+Started GET "/games/magic_8_ball/what_the_fuck" for 127.0.0.1 at 2018-03-26 21:26:02 +1100
+Processing by GamesController#magic_8_ball as HTML
+  Parameters: {"question"=>"what_the_fuck"}
+  Rendering games/magic_8_ball.html.erb within layouts/application
+  Rendered games/magic_8_ball.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 18ms (Views: 15.5ms)
+
+
+Started GET "/games/magic_8_ball/what_the_fuck" for 127.0.0.1 at 2018-03-26 21:26:29 +1100
+Processing by GamesController#magic_8_ball as HTML
+  Parameters: {"question"=>"what_the_fuck"}
+  Rendering games/magic_8_ball.html.erb within layouts/application
+  Rendered games/magic_8_ball.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 18ms (Views: 15.2ms)
+
+
+Started GET "/games/magic_8_ball/what_the_fuck" for 127.0.0.1 at 2018-03-26 21:30:35 +1100
+Processing by GamesController#magic_8_ball as HTML
+  Parameters: {"question"=>"what_the_fuck"}
+  Rendering games/magic_8_ball.html.erb within layouts/application
+  Rendered games/magic_8_ball.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 18ms (Views: 15.2ms)
+
+
+Started GET "/games/magic_8_ball/" for 127.0.0.1 at 2018-03-26 21:30:39 +1100
+Processing by GamesController#magic_8_ball as HTML
+  Rendering games/magic_8_ball.html.erb within layouts/application
+  Rendered games/magic_8_ball.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 17ms (Views: 15.1ms)
+
+
+Started GET "/games/magic_8_ball/whatistheweathertoday" for 127.0.0.1 at 2018-03-26 21:31:03 +1100
+Processing by GamesController#magic_8_ball as HTML
+  Parameters: {"question"=>"whatistheweathertoday"}
+  Rendering games/magic_8_ball.html.erb within layouts/application
+  Rendered games/magic_8_ball.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 18ms (Views: 14.8ms)
+
+
+Started GET "/games/magic_8_ball/amIgoodlooking" for 127.0.0.1 at 2018-03-26 21:31:24 +1100
+Processing by GamesController#magic_8_ball as HTML
+  Parameters: {"question"=>"amIgoodlooking"}
+  Rendering games/magic_8_ball.html.erb within layouts/application
+  Rendered games/magic_8_ball.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 17ms (Views: 14.6ms)
+
+
+Started GET "/games/magic_8_ball/amihungry" for 127.0.0.1 at 2018-03-26 21:31:41 +1100
+Processing by GamesController#magic_8_ball as HTML
+  Parameters: {"question"=>"amihungry"}
+  Rendering games/magic_8_ball.html.erb within layouts/application
+  Rendered games/magic_8_ball.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 19ms (Views: 16.1ms)
+
+
+Started GET "/games/magic_8_ball/amihungry" for 127.0.0.1 at 2018-03-26 21:32:40 +1100
+Processing by GamesController#magic_8_ball as HTML
+  Parameters: {"question"=>"amihungry"}
+  Rendering games/magic_8_ball.html.erb within layouts/application
+  Rendered games/magic_8_ball.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 18ms (Views: 14.4ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2018-03-26 21:34:23 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 15ms (Views: 14.6ms)
+
+
+Started GET "/games/magic_8_ball" for 127.0.0.1 at 2018-03-26 21:34:25 +1100
+Processing by GamesController#magic_8_ball as HTML
+  Rendering games/magic_8_ball.html.erb within layouts/application
+  Rendered games/magic_8_ball.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 22ms (Views: 18.7ms)
+
+
+Started GET "/games/magic_8_ball" for 127.0.0.1 at 2018-03-26 21:35:11 +1100
+Processing by GamesController#magic_8_ball as HTML
+  Rendering games/magic_8_ball.html.erb within layouts/application
+  Rendered games/magic_8_ball.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 18ms (Views: 15.5ms)
+
+
+Started GET "/games/hom" for 127.0.0.1 at 2018-03-26 21:35:16 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/games/hom"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/home" for 127.0.0.1 at 2018-03-26 21:35:58 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 21ms (Views: 20.8ms)
+
+
+Started GET "/games/magic_8_ball/" for 127.0.0.1 at 2018-03-26 21:36:03 +1100
+Processing by GamesController#magic_8_ball as HTML
+  Rendering games/magic_8_ball.html.erb within layouts/application
+  Rendered games/magic_8_ball.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 22ms (Views: 19.0ms)
+
+
+Started GET "/games/magic_8_ball/what's_my_name" for 127.0.0.1 at 2018-03-26 21:36:22 +1100
+Processing by GamesController#magic_8_ball as HTML
+  Parameters: {"question"=>"what's_my_name"}
+  Rendering games/magic_8_ball.html.erb within layouts/application
+  Rendered games/magic_8_ball.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 18ms (Views: 15.2ms)
+
+
+Started GET "/games/secret_number" for 127.0.0.1 at 2018-03-26 21:41:47 +1100
+  
+SyntaxError (/Users/moniquelee/Projects/WDi26-Homework/Monique_Lee/week_05/day_01/games_on_rails/app/controllers/games_controller.rb:49: syntax error, unexpected end-of-input):
+  
+app/controllers/games_controller.rb:49: syntax error, unexpected end-of-input
+Started GET "/games/secret_number" for 127.0.0.1 at 2018-03-26 21:42:20 +1100
+Processing by GamesController#secret_number as HTML
+  Rendering games/secret_number.html.erb within layouts/application
+  Rendered games/secret_number.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 21ms (Views: 17.5ms)
+
+
+Started GET "/games/secret_number" for 127.0.0.1 at 2018-03-26 21:43:36 +1100
+Processing by GamesController#secret_number as HTML
+  Rendering games/secret_number.html.erb within layouts/application
+  Rendered games/secret_number.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 19ms (Views: 16.5ms)
+
+
+Started GET "/games/secret_number" for 127.0.0.1 at 2018-03-26 21:44:59 +1100
+Processing by GamesController#secret_number as HTML
+  Rendering games/secret_number.html.erb within layouts/application
+  Rendered games/secret_number.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 20ms (Views: 17.7ms)
+
+
+Started GET "/games/secret_number" for 127.0.0.1 at 2018-03-26 22:13:12 +1100
+  
+SyntaxError (/Users/moniquelee/Projects/WDi26-Homework/Monique_Lee/week_05/day_01/games_on_rails/app/controllers/games_controller.rb:52: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/games_controller.rb:52: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/games/secret_number" for 127.0.0.1 at 2018-03-26 22:13:37 +1100
+Processing by GamesController#secret_number as HTML
+  Rendering games/secret_number.html.erb within layouts/application
+  Rendered games/secret_number.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 21ms (Views: 17.5ms)
+
+
+Started GET "/games/secret_number" for 127.0.0.1 at 2018-03-26 22:13:57 +1100
+Processing by GamesController#secret_number as HTML
+  Rendering games/secret_number.html.erb within layouts/application
+  Rendered games/secret_number.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 18ms (Views: 15.4ms)
+
+
+Started GET "/games/secret_number" for 127.0.0.1 at 2018-03-26 22:16:09 +1100
+Processing by GamesController#secret_number as HTML
+  Rendering games/secret_number.html.erb within layouts/application
+  Rendered games/secret_number.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 18ms (Views: 15.7ms)
+
+
+Started GET "/games/secret_number" for 127.0.0.1 at 2018-03-26 22:16:38 +1100
+Processing by GamesController#secret_number as HTML
+  Rendering games/secret_number.html.erb within layouts/application
+  Rendered games/secret_number.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 18ms (Views: 15.6ms)
+
+
+Started GET "/games/secret_number" for 127.0.0.1 at 2018-03-26 22:18:16 +1100
+  
+SyntaxError (/Users/moniquelee/Projects/WDi26-Homework/Monique_Lee/week_05/day_01/games_on_rails/app/controllers/games_controller.rb:48: syntax error, unexpected '{', expecting ';' or '\n'
+      def number_array {(1..10).to_a}
+                        ^
+/Users/moniquelee/Projects/WDi26-Homework/Monique_Lee/week_05/day_01/games_on_rails/app/controllers/games_controller.rb:48: syntax error, unexpected '}', expecting keyword_end
+ef number_array {(1..10).to_a}
+                              ^):
+  
+app/controllers/games_controller.rb:48: syntax error, unexpected '{', expecting ';' or '\n'
+app/controllers/games_controller.rb:48: syntax error, unexpected '}', expecting keyword_end
+Started GET "/games/secret_number" for 127.0.0.1 at 2018-03-26 22:23:30 +1100
+  
+SyntaxError (/Users/moniquelee/Projects/WDi26-Homework/Monique_Lee/week_05/day_01/games_on_rails/app/controllers/games_controller.rb:48: syntax error, unexpected '[', expecting ';' or '\n'
+    def nums [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+              ^):
+  
+app/controllers/games_controller.rb:48: syntax error, unexpected '[', expecting ';' or '\n'
+Started GET "/games/secret_number" for 127.0.0.1 at 2018-03-26 22:24:00 +1100
+Processing by GamesController#secret_number as HTML
+  Rendering games/secret_number.html.erb within layouts/application
+  Rendered games/secret_number.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 15ms (Views: 13.1ms)
+
+
+Started GET "/games/secret_number" for 127.0.0.1 at 2018-03-26 22:25:17 +1100
+Processing by GamesController#secret_number as HTML
+  Rendering games/secret_number.html.erb within layouts/application
+  Rendered games/secret_number.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 18ms (Views: 15.8ms)
+
+
+Started GET "/games/secret_number" for 127.0.0.1 at 2018-03-26 22:26:19 +1100
+Processing by GamesController#secret_number as HTML
+  Rendering games/secret_number.html.erb within layouts/application
+  Rendered games/secret_number.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 20ms (Views: 17.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-27 09:05:12 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 405ms (Views: 208.9ms)
+
+
+Started GET "/games/secret_number/" for 127.0.0.1 at 2018-03-27 09:09:20 +1100
+Processing by GamesController#secret_number as HTML
+  Rendering games/secret_number.html.erb within layouts/application
+  Rendered games/secret_number.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 18ms (Views: 14.6ms)
+
+
+Started GET "/games/secret_number/" for 127.0.0.1 at 2018-03-27 09:09:32 +1100
+Processing by GamesController#secret_number as HTML
+  Rendering games/secret_number.html.erb within layouts/application
+  Rendered games/secret_number.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 17ms (Views: 14.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-27 09:10:08 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 15ms (Views: 14.6ms)
+
+
+Started GET "/games/magic_8_ball/" for 127.0.0.1 at 2018-03-27 09:10:10 +1100
+Processing by GamesController#magic_8_ball as HTML
+  Rendering games/magic_8_ball.html.erb within layouts/application
+  Rendered games/magic_8_ball.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 16.6ms)
+
+
+Started GET "/games/magic_8_ball/what_the_fuck" for 127.0.0.1 at 2018-03-27 09:10:22 +1100
+Processing by GamesController#magic_8_ball as HTML
+  Parameters: {"question"=>"what_the_fuck"}
+  Rendering games/magic_8_ball.html.erb within layouts/application
+  Rendered games/magic_8_ball.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 26ms (Views: 24.0ms)
+
+
+Started GET "/games/magic_8_ball/what_the_fuck" for 127.0.0.1 at 2018-03-27 09:10:54 +1100
+Processing by GamesController#magic_8_ball as HTML
+  Parameters: {"question"=>"what_the_fuck"}
+  Rendering games/magic_8_ball.html.erb within layouts/application
+  Rendered games/magic_8_ball.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 17ms (Views: 14.7ms)
+
+
+Started GET "/games/magic_8_ball/" for 127.0.0.1 at 2018-03-27 09:10:58 +1100
+Processing by GamesController#magic_8_ball as HTML
+  Rendering games/magic_8_ball.html.erb within layouts/application
+  Rendered games/magic_8_ball.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 17ms (Views: 14.7ms)
+
+
+Started GET "/games/" for 127.0.0.1 at 2018-03-27 09:17:15 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/games"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-03-27 09:17:22 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 14ms (Views: 14.0ms)
+
+
+Started GET "/games/secret_number/" for 127.0.0.1 at 2018-03-27 09:17:27 +1100
+  
+SyntaxError (/Users/moniquelee/Projects/WDi26-Homework/Monique_Lee/week_05/day_01/games_on_rails/app/controllers/games_controller.rb:65: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/games_controller.rb:65: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/games/secret_number/" for 127.0.0.1 at 2018-03-27 09:17:35 +1100
+Processing by GamesController#secret_number as HTML
+Completed 500 Internal Server Error in 53ms
+
+
+  
+NoMethodError (undefined method `option' for #<GamesController:0x007f9f4e2af9a0>
+Did you mean?  url_options):
+  
+app/controllers/games_controller.rb:54:in `random_num'
+app/controllers/games_controller.rb:59:in `secret_number'
+Started GET "/games/secret_number/" for 127.0.0.1 at 2018-03-27 09:18:32 +1100
+Processing by GamesController#secret_number as HTML
+Completed 500 Internal Server Error in 48ms
+
+
+  
+NoMethodError (undefined method `option' for #<GamesController:0x007f9f551a9568>
+Did you mean?  url_options):
+  
+app/controllers/games_controller.rb:54:in `random_num'
+app/controllers/games_controller.rb:59:in `secret_number'
+Started GET "/games/secret_number/" for 127.0.0.1 at 2018-03-27 09:18:50 +1100
+Processing by GamesController#secret_number as HTML
+Completed 500 Internal Server Error in 2ms
+
+
+  
+NoMethodError (undefined method `attr' for nil:NilClass):
+  
+app/controllers/games_controller.rb:54:in `random_num'
+app/controllers/games_controller.rb:59:in `secret_number'
+Started GET "/games/secret_number/" for 127.0.0.1 at 2018-03-27 09:19:15 +1100
+Processing by GamesController#secret_number as HTML
+Completed 500 Internal Server Error in 96ms
+
+
+  
+NameError (undefined local variable or method `option' for #<GamesController:0x007f9f4e289d90>
+Did you mean?  url_options):
+  
+app/controllers/games_controller.rb:54:in `random_num'
+app/controllers/games_controller.rb:59:in `secret_number'
+Started GET "/games/secret_number/" for 127.0.0.1 at 2018-03-27 09:19:59 +1100
+Processing by GamesController#secret_number as HTML
+  Rendering games/secret_number.html.erb within layouts/application
+  Rendered games/secret_number.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 18ms (Views: 15.9ms)
+
+
+Started GET "/games/secret_number/" for 127.0.0.1 at 2018-03-27 09:20:05 +1100
+Processing by GamesController#secret_number as HTML
+  Rendering games/secret_number.html.erb within layouts/application
+  Rendered games/secret_number.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 16.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-27 09:20:07 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 16ms (Views: 15.5ms)
+
+
+Started GET "/games/rock_paper_scissors/" for 127.0.0.1 at 2018-03-27 09:22:25 +1100
+Processing by GamesController#rock_paper_scissors as HTML
+  Rendering games/rock_paper_scissors.html.erb within layouts/application
+  Rendered games/rock_paper_scissors.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 16ms (Views: 15.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-27 11:20:26 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 261ms (Views: 136.6ms)
+
+
+Started GET "/games/secret_number/" for 127.0.0.1 at 2018-03-27 11:20:29 +1100
+Processing by GamesController#secret_number as HTML
+  Rendering games/secret_number.html.erb within layouts/application
+  Rendered games/secret_number.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 32ms (Views: 27.5ms)
+
+
+Started GET "/secret_number_answer?selection=6" for 127.0.0.1 at 2018-03-27 11:20:35 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/secret_number_answer"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/secret_number_answer?selection=6" for 127.0.0.1 at 2018-03-27 11:21:47 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/secret_number_answer"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/secret_number_answer?selection=6" for 127.0.0.1 at 2018-03-27 11:22:58 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/secret_number_answer"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/secret_number_answer" for 127.0.0.1 at 2018-03-27 11:23:02 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/secret_number_answer"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-03-27 11:23:07 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 17ms (Views: 16.2ms)
+
+
+Started GET "/games/secret_number/" for 127.0.0.1 at 2018-03-27 11:23:09 +1100
+Processing by GamesController#secret_number as HTML
+  Rendering games/secret_number.html.erb within layouts/application
+  Rendered games/secret_number.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 22ms (Views: 18.5ms)
+
+
+Started GET "/secret_number_answer?selection=5" for 127.0.0.1 at 2018-03-27 11:23:13 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/secret_number_answer"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/secret_number_answer?selection=5" for 127.0.0.1 at 2018-03-27 11:24:13 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/secret_number_answer"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-03-27 11:24:18 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 15ms (Views: 14.1ms)
+
+
+Started GET "/games/secret_number/" for 127.0.0.1 at 2018-03-27 11:24:20 +1100
+Processing by GamesController#secret_number as HTML
+  Rendering games/secret_number.html.erb within layouts/application
+  Rendered games/secret_number.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 25ms (Views: 21.4ms)
+
+
+Started GET "/secret_number_answer?selection=4" for 127.0.0.1 at 2018-03-27 11:24:23 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/secret_number_answer"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/secret_number_answer?selection=4" for 127.0.0.1 at 2018-03-27 11:24:42 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/secret_number_answer"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/secret_number_answer" for 127.0.0.1 at 2018-03-27 11:24:46 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/secret_number_answer"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/secret_number" for 127.0.0.1 at 2018-03-27 11:24:52 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/secret_number"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-03-27 17:45:31 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 355ms (Views: 141.7ms)
+
+
+Started GET "/games/magic_8_ball/" for 127.0.0.1 at 2018-03-27 17:47:00 +1100
+Processing by GamesController#magic_8_ball as HTML
+  Rendering games/magic_8_ball.html.erb within layouts/application
+  Rendered games/magic_8_ball.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 27ms (Views: 17.6ms)
+
+
+Started GET "/games/magic_8_ball/am_i_amazing" for 127.0.0.1 at 2018-03-27 17:47:13 +1100
+Processing by GamesController#magic_8_ball as HTML
+  Parameters: {"question"=>"am_i_amazing"}
+  Rendering games/magic_8_ball.html.erb within layouts/application
+  Rendered games/magic_8_ball.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 23ms (Views: 20.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-27 17:47:43 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 23ms (Views: 22.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-27 17:50:19 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 23ms (Views: 22.1ms)
+
+
+Started GET "/games/secret_number/" for 127.0.0.1 at 2018-03-27 17:50:21 +1100
+Processing by GamesController#secret_number as HTML
+  Rendering games/secret_number.html.erb within layouts/application
+  Rendered games/secret_number.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 21ms (Views: 18.6ms)
+
+
+Started GET "/secret_number_answer" for 127.0.0.1 at 2018-03-27 17:50:24 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/secret_number_answer"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/secret_number_answer" for 127.0.0.1 at 2018-03-27 17:54:36 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/secret_number_answer"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-03-27 17:55:33 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 15ms (Views: 14.6ms)
+
+
+Started GET "/games/secret_number/" for 127.0.0.1 at 2018-03-27 17:55:34 +1100
+Processing by GamesController#secret_number as HTML
+  Rendering games/secret_number.html.erb within layouts/application
+  Rendered games/secret_number.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 22ms (Views: 18.6ms)
+
+
+Started GET "/secret_number_answer" for 127.0.0.1 at 2018-03-27 17:55:44 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/secret_number_answer"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-03-27 17:57:28 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 20ms (Views: 19.1ms)
+
+
+Started GET "/games/secret_number/" for 127.0.0.1 at 2018-03-27 17:57:30 +1100
+Processing by GamesController#secret_number as HTML
+  Rendering games/secret_number.html.erb within layouts/application
+  Rendered games/secret_number.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 23ms (Views: 20.5ms)
+
+
+Started GET "/secret_number_answer" for 127.0.0.1 at 2018-03-27 17:57:34 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/secret_number_answer"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-03-27 18:01:31 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 16ms (Views: 15.3ms)
+
+
+Started GET "/games/secret_number/" for 127.0.0.1 at 2018-03-27 18:01:33 +1100
+Processing by GamesController#secret_number as HTML
+  Rendering games/secret_number.html.erb within layouts/application
+  Rendered games/secret_number.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 22ms (Views: 19.3ms)
+
+
+Started GET "/secret_number_answer:selection" for 127.0.0.1 at 2018-03-27 18:01:36 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/secret_number_answer:selection"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-03-27 18:01:58 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 14ms (Views: 13.5ms)
+
+
+Started GET "/games/secret_number/" for 127.0.0.1 at 2018-03-27 18:02:01 +1100
+Processing by GamesController#secret_number as HTML
+  Rendering games/secret_number.html.erb within layouts/application
+  Rendered games/secret_number.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 23ms (Views: 20.6ms)
+
+
+Started GET "/secret_number_answer" for 127.0.0.1 at 2018-03-27 18:02:04 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/secret_number_answer"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-03-27 18:02:48 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 22ms (Views: 20.9ms)
+
+
+Started GET "/games/secret_number/" for 127.0.0.1 at 2018-03-27 18:02:51 +1100
+Processing by GamesController#secret_number as HTML
+  Rendering games/secret_number.html.erb within layouts/application
+  Rendered games/secret_number.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 21ms (Views: 18.1ms)
+
+
+Started GET "/secret_number_answer" for 127.0.0.1 at 2018-03-27 18:02:54 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/secret_number_answer"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/secret_number_answer" for 127.0.0.1 at 2018-03-27 18:02:56 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/secret_number_answer"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/secret_number_answer" for 127.0.0.1 at 2018-03-27 18:04:51 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/secret_number_answer"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/secret_number_answer/" for 127.0.0.1 at 2018-03-27 18:04:55 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/secret_number_answer"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-03-27 18:07:33 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 15ms (Views: 14.9ms)
+
+
+Started GET "/games/secret_number/" for 127.0.0.1 at 2018-03-27 18:07:36 +1100
+Processing by GamesController#secret_number as HTML
+  Rendering games/secret_number.html.erb within layouts/application
+  Rendered games/secret_number.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 22ms (Views: 19.6ms)
+
+
+Started GET "/secret_number_answer" for 127.0.0.1 at 2018-03-27 18:07:38 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/secret_number_answer"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/secret_number_answer" for 127.0.0.1 at 2018-03-27 18:08:17 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/secret_number_answer"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-03-27 18:08:21 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 16ms (Views: 15.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-27 18:08:23 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 18ms (Views: 17.6ms)
+
+
+Started GET "/games/secret_number/" for 127.0.0.1 at 2018-03-27 18:08:25 +1100
+Processing by GamesController#secret_number as HTML
+  Rendering games/secret_number.html.erb within layouts/application
+  Rendered games/secret_number.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 16.8ms)
+
+
+Started GET "/secret_number_answer" for 127.0.0.1 at 2018-03-27 18:08:52 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/secret_number_answer"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/secret_number_answer" for 127.0.0.1 at 2018-03-27 18:12:47 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/secret_number_answer"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-03-27 18:12:50 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 18.2ms)
+
+
+Started GET "/secret_number_answer" for 127.0.0.1 at 2018-03-27 18:12:52 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/secret_number_answer"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-03-27 18:12:59 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 23ms (Views: 21.3ms)
+
+
+Started GET "/games/secret_number/" for 127.0.0.1 at 2018-03-27 18:13:00 +1100
+Processing by GamesController#secret_number as HTML
+  Rendering games/secret_number.html.erb within layouts/application
+  Rendered games/secret_number.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 23ms (Views: 20.2ms)
+
+
+Started GET "/games/secret_number_answer" for 127.0.0.1 at 2018-03-27 18:13:01 +1100
+Processing by GamesController#secret_number_answer as HTML
+  Rendering games/secret_number_answer.html.erb within layouts/application
+  Rendered games/secret_number_answer.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 23ms (Views: 20.6ms)
+
+
+Started GET "/games/secret_number_answer" for 127.0.0.1 at 2018-03-27 18:14:36 +1100
+Processing by GamesController#secret_number_answer as HTML
+  Rendering games/secret_number_answer.html.erb within layouts/application
+  Rendered games/secret_number_answer.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 17.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-27 18:14:45 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 21ms (Views: 20.8ms)
+
+
+Started GET "/games/secret_number/" for 127.0.0.1 at 2018-03-27 18:14:47 +1100
+Processing by GamesController#secret_number as HTML
+  Rendering games/secret_number.html.erb within layouts/application
+  Rendered games/secret_number.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 23ms (Views: 19.9ms)
+
+
+Started GET "/games/secret_number_answer" for 127.0.0.1 at 2018-03-27 18:14:53 +1100
+Processing by GamesController#secret_number_answer as HTML
+  Rendering games/secret_number_answer.html.erb within layouts/application
+  Rendered games/secret_number_answer.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 18ms (Views: 15.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-27 18:15:23 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 13ms (Views: 12.3ms)
+
+
+Started GET "/games/magic_8_ball/" for 127.0.0.1 at 2018-03-27 18:15:25 +1100
+Processing by GamesController#magic_8_ball as HTML
+  Rendering games/magic_8_ball.html.erb within layouts/application
+  Rendered games/magic_8_ball.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 21ms (Views: 18.6ms)
+
+
+Started GET "/games/magic_8_ball/when_will_i_be_famous" for 127.0.0.1 at 2018-03-27 18:15:43 +1100
+Processing by GamesController#magic_8_ball as HTML
+  Parameters: {"question"=>"when_will_i_be_famous"}
+  Rendering games/magic_8_ball.html.erb within layouts/application
+  Rendered games/magic_8_ball.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 20ms (Views: 18.2ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2018-03-27 18:15:52 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/games"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-03-27 18:16:19 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 15ms (Views: 14.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-27 18:17:21 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 17ms (Views: 16.5ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2018-03-27 18:17:25 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 19ms (Views: 18.6ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-03-27 18:17:35 +1100
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 21ms (Views: 20.6ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2018-03-27 18:17:37 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 19ms (Views: 18.5ms)
+
+
+Started GET "/games/magic_8_ball/" for 127.0.0.1 at 2018-03-27 18:17:39 +1100
+Processing by GamesController#magic_8_ball as HTML
+  Rendering games/magic_8_ball.html.erb within layouts/application
+  Rendered games/magic_8_ball.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 21ms (Views: 18.5ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2018-03-27 18:17:41 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 21ms (Views: 20.6ms)
+
+
+Started GET "/games/secret_number/" for 127.0.0.1 at 2018-03-27 18:17:42 +1100
+Processing by GamesController#secret_number as HTML
+  Rendering games/secret_number.html.erb within layouts/application
+  Rendered games/secret_number.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 22ms (Views: 19.8ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2018-03-27 18:17:44 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 23ms (Views: 22.6ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-03-27 18:17:48 +1100
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 21ms (Views: 20.5ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2018-03-27 18:18:38 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 15ms (Views: 15.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-03-27 18:18:40 +1100
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 21ms (Views: 20.8ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2018-03-27 18:23:02 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 25ms (Views: 24.8ms)
+
+
+Started GET "/games/rock_paper_scissors/" for 127.0.0.1 at 2018-03-27 18:23:04 +1100
+Processing by GamesController#rock_paper_scissors as HTML
+  Rendering games/rock_paper_scissors.html.erb within layouts/application
+  Rendered games/rock_paper_scissors.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 20ms (Views: 18.8ms)
+
+
+Started GET "/games/rock_paper_scissors/" for 127.0.0.1 at 2018-03-27 18:23:10 +1100
+Processing by GamesController#rock_paper_scissors as HTML
+  Rendering games/rock_paper_scissors.html.erb within layouts/application
+  Rendered games/rock_paper_scissors.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 16ms (Views: 15.3ms)
+
+
+Started GET "/games/rock_paper_scissors/" for 127.0.0.1 at 2018-03-27 18:23:49 +1100
+Processing by GamesController#rock_paper_scissors as HTML
+  Rendering games/rock_paper_scissors.html.erb within layouts/application
+  Rendered games/rock_paper_scissors.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 16ms (Views: 15.7ms)
+
+
+Started GET "/games/rock_paper_scissors/" for 127.0.0.1 at 2018-03-27 18:24:10 +1100
+Processing by GamesController#rock_paper_scissors as HTML
+  Rendering games/rock_paper_scissors.html.erb within layouts/application
+  Rendered games/rock_paper_scissors.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 17ms (Views: 16.1ms)
+
+
+Started GET "/games/rock_paper_scissors/" for 127.0.0.1 at 2018-03-27 18:24:16 +1100
+Processing by GamesController#rock_paper_scissors as HTML
+  Rendering games/rock_paper_scissors.html.erb within layouts/application
+  Rendered games/rock_paper_scissors.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 16ms (Views: 15.3ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-03-27 18:24:36 +1100
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 16ms (Views: 15.6ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2018-03-27 18:24:42 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 20ms (Views: 19.7ms)
+
+
+Started GET "/games/magic_8_ball/" for 127.0.0.1 at 2018-03-27 18:24:44 +1100
+Processing by GamesController#magic_8_ball as HTML
+  Rendering games/magic_8_ball.html.erb within layouts/application
+  Rendered games/magic_8_ball.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 22ms (Views: 18.7ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2018-03-27 18:24:46 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 20ms (Views: 19.1ms)
+
+
+Started GET "/games/secret_number/" for 127.0.0.1 at 2018-03-27 18:24:48 +1100
+Processing by GamesController#secret_number as HTML
+  Rendering games/secret_number.html.erb within layouts/application
+  Rendered games/secret_number.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 22ms (Views: 19.6ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2018-03-27 18:24:50 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 20ms (Views: 19.6ms)
+
+
+Started GET "/games/rock_paper_scissors/" for 127.0.0.1 at 2018-03-27 18:24:52 +1100
+Processing by GamesController#rock_paper_scissors as HTML
+  Rendering games/rock_paper_scissors.html.erb within layouts/application
+  Rendered games/rock_paper_scissors.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 20ms (Views: 19.9ms)
+
+
+Started GET "/games/rock_paper_scissors/" for 127.0.0.1 at 2018-03-27 18:25:07 +1100
+Processing by GamesController#rock_paper_scissors as HTML
+  Rendering games/rock_paper_scissors.html.erb within layouts/application
+  Rendered games/rock_paper_scissors.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 17ms (Views: 17.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-03-27 18:25:14 +1100
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 22ms (Views: 21.5ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2018-03-27 18:26:05 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 15ms (Views: 14.8ms)
+
+
+Started GET "/games/rock_paper_scissors/" for 127.0.0.1 at 2018-03-27 18:26:06 +1100
+Processing by GamesController#rock_paper_scissors as HTML
+  Rendering games/rock_paper_scissors.html.erb within layouts/application
+  Rendered games/rock_paper_scissors.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 18.2ms)
+
+
+Started POST "/games/rock_paper_scissors/" for 127.0.0.1 at 2018-03-27 18:26:20 +1100
+  
+ActionController::RoutingError (No route matches [POST] "/games/rock_paper_scissors"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/games/rock_paper_scissors/" for 127.0.0.1 at 2018-03-27 18:27:45 +1100
+  
+ActionController::RoutingError (No route matches [POST] "/games/rock_paper_scissors"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/about" for 127.0.0.1 at 2018-03-27 18:28:04 +1100
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 20ms (Views: 19.3ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2018-03-27 18:31:42 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 16ms (Views: 15.4ms)
+
+
+Started GET "/games/rock_paper_scissors/" for 127.0.0.1 at 2018-03-27 18:31:44 +1100
+Processing by GamesController#rock_paper_scissors as HTML
+  Rendering games/rock_paper_scissors.html.erb within layouts/application
+  Rendered games/rock_paper_scissors.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 20ms (Views: 19.7ms)
+
+
+Started POST "/games/rock_paper_scissors/games/rock_paper_scissors_play" for 127.0.0.1 at 2018-03-27 18:31:47 +1100
+  
+ActionController::RoutingError (No route matches [POST] "/games/rock_paper_scissors/games/rock_paper_scissors_play"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/games/rock_paper_scissors/games/rock_paper_scissors_play" for 127.0.0.1 at 2018-03-27 18:34:07 +1100
+  
+ActionController::RoutingError (No route matches [POST] "/games/rock_paper_scissors/games/rock_paper_scissors_play"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-03-27 18:34:12 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 18ms (Views: 17.5ms)
+
+
+Started GET "/games/rock_paper_scissors/" for 127.0.0.1 at 2018-03-27 18:34:14 +1100
+Processing by GamesController#rock_paper_scissors as HTML
+  Rendering games/rock_paper_scissors.html.erb within layouts/application
+  Rendered games/rock_paper_scissors.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 20ms (Views: 19.3ms)
+
+
+Started POST "/games/rock_paper_scissors/games/rock_paper_scissors_play" for 127.0.0.1 at 2018-03-27 18:34:20 +1100
+  
+ActionController::RoutingError (No route matches [POST] "/games/rock_paper_scissors/games/rock_paper_scissors_play"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-03-27 18:35:59 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 16ms (Views: 15.5ms)
+
+
+Started GET "/games/rock_paper_scissors/" for 127.0.0.1 at 2018-03-27 18:36:03 +1100
+Processing by GamesController#rock_paper_scissors as HTML
+  Rendering games/rock_paper_scissors.html.erb within layouts/application
+  Rendered games/rock_paper_scissors.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 21ms (Views: 20.3ms)
+
+
+Started POST "/games/rock_paper_scissors/games/rock_paper_scissors_play" for 127.0.0.1 at 2018-03-27 18:36:07 +1100
+  
+ActionController::RoutingError (No route matches [POST] "/games/rock_paper_scissors/games/rock_paper_scissors_play"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-03-27 18:37:20 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 18ms (Views: 17.8ms)
+
+
+Started GET "/games/rock_paper_scissors/" for 127.0.0.1 at 2018-03-27 18:37:22 +1100
+Processing by GamesController#rock_paper_scissors as HTML
+  Rendering games/rock_paper_scissors.html.erb within layouts/application
+  Rendered games/rock_paper_scissors.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 19ms (Views: 18.6ms)
+
+
+Started POST "/games/rock_paper_scissors_play" for 127.0.0.1 at 2018-03-27 18:37:26 +1100
+  
+ActionController::RoutingError (No route matches [POST] "/games/rock_paper_scissors_play"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-03-27 18:38:32 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 15ms (Views: 15.0ms)
+
+
+Started GET "/games/rock_paper_scissors/" for 127.0.0.1 at 2018-03-27 18:38:34 +1100
+Processing by GamesController#rock_paper_scissors as HTML
+  Rendering games/rock_paper_scissors.html.erb within layouts/application
+  Rendered games/rock_paper_scissors.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 22ms (Views: 21.9ms)
+
+
+Started POST "/games/rock_paper_scissors_play" for 127.0.0.1 at 2018-03-27 18:38:37 +1100
+  
+ActionController::RoutingError (No route matches [POST] "/games/rock_paper_scissors_play"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-03-27 18:39:12 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 23ms (Views: 22.4ms)
+
+
+Started GET "/games/rock_paper_scissors/" for 127.0.0.1 at 2018-03-27 18:39:13 +1100
+Processing by GamesController#rock_paper_scissors as HTML
+  Rendering games/rock_paper_scissors.html.erb within layouts/application
+  Rendered games/rock_paper_scissors.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 20ms (Views: 19.5ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-03-27 18:39:15 +1100
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 21ms (Views: 20.1ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2018-03-27 18:40:13 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 17ms (Views: 16.3ms)
+
+
+Started GET "/games/rock_paper_scissors/" for 127.0.0.1 at 2018-03-27 18:40:14 +1100
+Processing by GamesController#rock_paper_scissors as HTML
+  Rendering games/rock_paper_scissors.html.erb within layouts/application
+  Rendered games/rock_paper_scissors.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 20ms (Views: 19.3ms)
+
+
+Started POST "/games/rock_paper_scissors/:throw" for 127.0.0.1 at 2018-03-27 18:40:17 +1100
+Processing by GamesController#rock_paper_scissors_play as HTML
+  Parameters: {"throw"=>":throw"}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms
+
+
+  
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+actionpack (5.1.5) lib/action_controller/metal/request_forgery_protection.rb:195:in `handle_unverified_request'
+actionpack (5.1.5) lib/action_controller/metal/request_forgery_protection.rb:227:in `handle_unverified_request'
+actionpack (5.1.5) lib/action_controller/metal/request_forgery_protection.rb:222:in `verify_authenticity_token'
+activesupport (5.1.5) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.5) lib/active_support/callbacks.rb:197:in `block (2 levels) in halting'
+actionpack (5.1.5) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.5) lib/active_support/callbacks.rb:198:in `block in halting'
+activesupport (5.1.5) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.5) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.5) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.5) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.5) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.5) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.5) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.5) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.5) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.5) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.5) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.5) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.5) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.5) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.5) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.5) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.5) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-03-27 18:41:05 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 24ms (Views: 23.4ms)
+
+
+Started GET "/games/rock_paper_scissors/" for 127.0.0.1 at 2018-03-27 18:41:09 +1100
+Processing by GamesController#rock_paper_scissors as HTML
+  Rendering games/rock_paper_scissors.html.erb within layouts/application
+  Rendered games/rock_paper_scissors.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 21ms (Views: 20.0ms)
+
+
+Started GET "/games/rock_paper_scissors/:throw" for 127.0.0.1 at 2018-03-27 18:41:14 +1100
+Processing by GamesController#rock_paper_scissors_play as HTML
+  Parameters: {"throw"=>":throw"}
+  Rendering games/rock_paper_scissors_play.html.erb within layouts/application
+  Rendered games/rock_paper_scissors_play.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 18ms (Views: 16.1ms)
+
+

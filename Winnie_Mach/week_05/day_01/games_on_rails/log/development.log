@@ -4834,3 +4834,87 @@ Processing by PagesController#home as HTML
 Completed 200 OK in 34ms (Views: 28.6ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-03-27 14:59:00 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 422ms (Views: 278.1ms)
+
+
+Started GET "/magic8_index" for 127.0.0.1 at 2018-03-27 14:59:03 +1100
+Processing by Magic8Controller#magic8_index as HTML
+  Rendering magic8/magic8_index.html.erb within layouts/application
+  Rendered magic8/magic8_index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 25ms (Views: 21.0ms)
+
+
+Started GET "/magic8_answer?question=30" for 127.0.0.1 at 2018-03-27 14:59:06 +1100
+Processing by Magic8Controller#magic8_answer as HTML
+  Parameters: {"question"=>"30"}
+  Rendering magic8/magic8_answer.html.erb within layouts/application
+  Rendered magic8/magic8_answer.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 22ms (Views: 17.8ms)
+
+
+Started GET "/magic8_answer?question=30" for 127.0.0.1 at 2018-03-27 14:59:10 +1100
+Processing by Magic8Controller#magic8_answer as HTML
+  Parameters: {"question"=>"30"}
+  Rendering magic8/magic8_answer.html.erb within layouts/application
+  Rendered magic8/magic8_answer.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 21ms (Views: 17.5ms)
+
+
+Started GET "/magic8_answer?question=30" for 127.0.0.1 at 2018-03-27 14:59:12 +1100
+Processing by Magic8Controller#magic8_answer as HTML
+  Parameters: {"question"=>"30"}
+  Rendering magic8/magic8_answer.html.erb within layouts/application
+  Rendered magic8/magic8_answer.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 23ms (Views: 19.8ms)
+
+
+Started GET "/magic8_answer?question=30" for 127.0.0.1 at 2018-03-27 14:59:15 +1100
+Processing by Magic8Controller#magic8_answer as HTML
+  Parameters: {"question"=>"30"}
+  Rendering magic8/magic8_answer.html.erb within layouts/application
+  Rendered magic8/magic8_answer.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 21ms (Views: 17.7ms)
+
+
+Started GET "/secretnum_index" for 127.0.0.1 at 2018-03-27 14:59:18 +1100
+Processing by SecretnumController#secretnum_index as HTML
+  Rendering secretnum/secretnum_index.html.erb within layouts/application
+  Rendered secretnum/secretnum_index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 22ms (Views: 19.1ms)
+
+
+Started GET "/secretnum_result?guess_number=22" for 127.0.0.1 at 2018-03-27 14:59:21 +1100
+Processing by SecretnumController#secretnum_result as HTML
+  Parameters: {"guess_number"=>"22"}
+  Rendering secretnum/secretnum_result.html.erb within layouts/application
+  Rendered secretnum/secretnum_result.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 35ms (Views: 25.9ms)
+
+
+Started GET "/secretnum_result?guess_number=4" for 127.0.0.1 at 2018-03-27 14:59:26 +1100
+Processing by SecretnumController#secretnum_result as HTML
+  Parameters: {"guess_number"=>"4"}
+  Rendering secretnum/secretnum_result.html.erb within layouts/application
+  Rendered secretnum/secretnum_result.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 21ms (Views: 17.6ms)
+
+
+Started GET "/rps_index" for 127.0.0.1 at 2018-03-27 14:59:29 +1100
+Processing by RpsController#rps_index as HTML
+  Rendering rps/rps_index.html.erb within layouts/application
+  Rendered rps/rps_index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 25ms (Views: 21.1ms)
+
+
+Started GET "/rps_winlose?throw=scissors" for 127.0.0.1 at 2018-03-27 14:59:32 +1100
+Processing by RpsController#rps_winlose as HTML
+  Parameters: {"throw"=>"scissors"}
+  Rendering rps/rps_winlose.html.erb within layouts/application
+  Rendered rps/rps_winlose.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 23ms (Views: 19.7ms)
+
+

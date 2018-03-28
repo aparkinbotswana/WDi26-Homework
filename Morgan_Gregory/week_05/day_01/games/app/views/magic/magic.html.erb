@@ -1,0 +1,12 @@
+<h2>Magic 8 Ball</h2>
+
+<p>The answer to your question
+  "<%= @user_question %>" is: <%= @answer%>
+</p>
+
+<form action="/magic">
+  <label>What is your question?</label>
+  <input type="text" name="user_question">
+
+  <button>submit</button>
+</form>
