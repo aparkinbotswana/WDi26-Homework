@@ -1,0 +1,10 @@
+<h1>Movies Index</h1>
+
+<% @movies.each do |movie| %>
+  <ul>
+    <li><%= link_to movie.name, movie %></li> <%# movie aka movie_path(movie.id) %>
+  </ul>
+  <% if movie.image.present? %>
+  <%= image_tag movie.image, :alt => movie.name, :class => 'thumb' %>
+  <% end %>
+<% end %>

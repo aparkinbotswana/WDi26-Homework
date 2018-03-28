@@ -1,0 +1,14 @@
+<h1><%= @movie.name %></h1>
+<% if @movie.image.present? %>
+<%= image_tag @movie.image, :alt => @movie.name, :title => @movie.name %>
+<% end %>
+<ul>
+  <li><%= @movie.year %></li>
+  <li><%= @movie.director %></li>
+  <li><%= @movie.rating %></li>
+</ul>
+
+<div class="controls">
+  <%= link_to 'Edit Movie', edit_movie_path(@movie) %>
+  <%= link_to 'Delete Movie', @movie, :method => 'Delete', :data => {:confirm => 'Are you sure?'} %>
+</div>
