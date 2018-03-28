@@ -1,0 +1,10 @@
+<h2>Edit Author</h2>
+
+<form method="post" action="/authors/<%= @author.id %>">
+  <label>Name:</label>
+  <input type="text" name="name" placeholder="Author name" value="<%= @plant.name %>">
+  <label>Image:</label>
+  <input type="url" name="image" placeholder="http://..." value="<%= @plant.image %>">
+
+  <button>Update Author</button>
+</form>
