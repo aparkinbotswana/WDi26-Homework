@@ -1,0 +1,23 @@
+<h2>About</h2>
+
+<p> Games on Rails is a web application with three games</p>
+
+<ul>
+  <li>Magic 8 Ball</li>
+  <li>Secret Number</li>
+  <li>Rock Paper Scissors</li>
+</ul>
+
+<h3>Magic 8 Ball</h3>
+<p>Magic 8 ball takes user's questions from the the URL as params and returns a positive or negative answer.</p>
+
+<h3>Secret Number</h3>
+<p>Users click a number between 1 and 10. The controller validates the guess and renders the win or lose view.</p>
+
+<h3>Rock Paper Scissors</h3>
+<ul>
+  <li>Create a route that goes from /games/rock_paper_scissors/:throw to games#rock_paper_scissors_play</li>
+  <li>Use params[:throw] as a user's choice</li>
+  <li>Compare the 2! If users throw matches the apps throw, the user wins.</li>
+  <li>i.e. If a user throws rock http://localhost:3000/games/rock_paper_scissors/rock and the server picks rock player wins! (Yes, I know that is not how RPS works) Bonus: Set the win or lose condition based on the real rules of Rock Paper Scissors.</li>
+</ul>

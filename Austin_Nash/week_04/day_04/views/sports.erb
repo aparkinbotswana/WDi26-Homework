@@ -1,0 +1,12 @@
+<h2>Sports</h2>
+
+<ul>
+  <!-- non-echoing ERB -->
+  <% @sports.each do |sports| %>
+    <li>
+      <a href="/sports/<%= sports['id'] %>">
+        <%= sports["sport"] %>
+      </a>
+    </li>
+  <% end %>
+</ul>

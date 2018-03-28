@@ -1,0 +1,33 @@
+<div class="container">
+  <h2><%= @mountain.name %></h2>
+
+  <% if @mountain.image.present? %>
+    <%= image_tag @mountain.image, :alt => @mountain.name, :class => "feature" %>
+  <% end %>
+
+  <% if @mountain.state.present? %>
+  <h3>State in Australia: </h3>
+  <p><%= @mountain.state %></p>
+  <% end %>
+
+  <% if @mountain.elevation.present? %>
+  <h3>Elevation: </h3>
+  <p><%= @mountain.elevation %></p>
+  <% end %>
+
+  <% if @mountain.prominence.present? %>
+  <h3>Prominence: </h3>
+  <p><%= @mountain.prominence %></p>
+  <% end %>
+
+  <% if @mountain.isolation.present? %>
+  <h3>Isolation: </h3>
+  <p><%= @mountain.isolation %></p>
+  <% end %>
+
+  <div class="controls">
+    <%= link_to 'Edit', mountains_edit_path(@mountain.id) %>
+    <%= button_to 'Delete Mountain', mountain_path(@mountain.id), :method => 'delete' %>
+  </div>
+
+</div>

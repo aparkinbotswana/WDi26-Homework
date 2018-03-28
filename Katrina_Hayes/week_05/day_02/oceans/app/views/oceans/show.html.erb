@@ -1,0 +1,15 @@
+<h2><%= @ocean.name %></h2>
+
+<p><strong>Location: </strong><%= @ocean.location %></p>
+<p><strong>Percentage of Earth's surface: </strong><%= @ocean.surface_percent %></p>
+
+<p><strong>Fun Fact: </strong><%= @ocean.fun_fact %></p>
+
+<% if @ocean.image.present? %>
+  <%= image_tag @ocean.image, :alt => @ocean.name, :class => 'feature' %>
+<% end %>
+
+<div class="controls">
+  <div><%= link_to 'Edit', oceans_edit_path(@ocean.id) %></div>
+  <%= button_to 'Delete', ocean_path(@ocean.id), :method => 'delete' %>
+</div>

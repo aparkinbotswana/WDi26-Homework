@@ -21,6 +21,9 @@ end
 
 # home page display
 get '/' do
+  @planets = Planet.all
+  # @planets.image.clip
+  # binding.pry
   erb :home
 end
 

@@ -1,0 +1,15 @@
+<h2>Edit driver</h2>
+
+<form method="post" action="/motorsport/<%= @motorsport['id'] %>">
+  <label>Name: </label>
+  <input type="text" name="name" placeholder="Driver's fullname" value="<%= @motorsport['name'] %>">
+  <label>Team: </label>
+  <input type="text" name="team" placeholder="Team name" value="<%= @motorsport['team'] %>">
+  <label>Number: </label>
+  <input type="integer" name="num" placeholder="Helmet number" value="<%= @motorsport['num'] %>">
+  <label>Image: </label>
+  <input type="url" name="image" placeholder="http://" value="<%= @motorsport['image'] %>">
+
+  <button>Update driver</button>
+
+</form>

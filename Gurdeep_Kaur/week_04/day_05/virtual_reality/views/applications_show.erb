@@ -1,0 +1,22 @@
+<h2><%= @application.name %></h2>
+
+<% unless @application.virtuals.empty? %>
+<h3>Associated applications
+  <!-- <ul>
+    <% @virtual.applications.each do |application| %>
+    <li> -->
+      <a href="/applications/<%= @virtual.application.id %>"><%= @virtual.application.name %></a>
+    <!-- </li> -->
+  <!-- <% end %>
+  </ul> -->
+</h3>
+<% end %>
+
+<% unless @application.image.nil? || @application.image.empty? %>
+<img class="feature" src="<%= @application.image %>" alt="<%= @application.name %>">
+<% end %>
+
+<div class="controls">
+  <a href="/applications/<%= @application.id %>/edit">Edit</a>
+  <a href="/applications/<%= @application.id %>/delete">Delete</a>
+</div>

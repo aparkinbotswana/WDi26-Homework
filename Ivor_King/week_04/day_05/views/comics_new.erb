@@ -1,0 +1,17 @@
+<h2>New comic</h2>
+
+<form method="post" action="/comics">
+    <label>Name</label>
+    <input type="text" name="name" placeholder="e.g. Jim Jeffries">
+    <label>Nationality</label>
+    <input type="text" name="nationality" placeholder="e.g. Australian">
+    <label>Age</label>
+    <input type="integer" name="age" placeholder="e.g. 42">
+    <select name="comic_id">
+        <option selected="true" disabled="disabled">Select style</option>
+        <% Style.all.each do |style| %>
+            <option value="<%= style.id %>"><%= style.name %></option>
+        <% end %>
+    </select>
+    <button>Create comic</button>
+</form>

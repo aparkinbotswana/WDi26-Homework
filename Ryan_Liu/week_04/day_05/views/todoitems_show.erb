@@ -1,0 +1,13 @@
+<h2><%= @todoitem.item_name %></h2>
+<p>Belongs to list</p>
+<% unless @todoitem.todolist.nil? %>
+<div class="todolists">
+  <a href="/todolists/<%= @todoitem.todolist.id%>"><%= @todoitem.todolist.list_name%></a>
+
+<%end%>
+
+<div class="controls">
+  <a href="/todoitems/<%= @todoitem.id%>/edit">Edit</a>
+  <a href="/todoitems/<%= @todoitem.id%>/delete">Delete</a>
+</div>
+</div>

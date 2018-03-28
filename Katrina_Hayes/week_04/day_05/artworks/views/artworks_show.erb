@@ -8,6 +8,8 @@
 
   <% unless @artwork.image.nil? || @artwork.image.empty? %>
     <img class="feature" src="<%= @artwork.image %>" alt="Image of <%= @artwork.name %>">
+  <% else %>
+    <div class="empty-artwork-image large">Image to come</div>
   <% end %>
 
   <nav class="controls">

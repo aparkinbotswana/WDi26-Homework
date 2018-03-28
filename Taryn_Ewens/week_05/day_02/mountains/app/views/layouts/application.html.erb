@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mountains</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+      <nav>
+        <ul>
+        <li><%= link_to 'Home', root_path %></li>
+        <li><%= link_to 'All Mountains', mountains_path %></li>
+        <li><%= link_to 'New Mountain', mountains_new_path %></li>
+        </ul>
+      </nav>
+      <%= yield %>
+  </body>
+</html>

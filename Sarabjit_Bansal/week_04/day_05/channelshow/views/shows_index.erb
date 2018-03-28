@@ -1,0 +1,10 @@
+<h2>Show Index</h2>
+
+<ul>
+  <% @shows.each do |show| %>
+  <li>
+    <a href="/shows/<%= show['id'] %>"><%= show['name'] %></a>
+  </li>
+  <% end %>
+
+</ul>

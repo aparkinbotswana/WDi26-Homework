@@ -1,0 +1,2586 @@
+Started GET "/" for 127.0.0.1 at 2018-03-26 16:02:50 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 328ms (Views: 217.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-26 16:03:22 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 17ms (Views: 16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-26 16:03:32 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 17ms (Views: 16.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-26 16:19:45 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 17ms (Views: 16.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-26 16:29:06 +1100
+  
+ArgumentError (Missing :action key on routes definition, please check your routes.):
+  
+config/routes.rb:6:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started GET "/" for 127.0.0.1 at 2018-03-26 16:29:08 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 18.2ms)
+
+
+Started GET "/magicball" for 127.0.0.1 at 2018-03-26 16:29:10 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/magicball"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-03-26 16:34:20 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 17ms (Views: 16.5ms)
+
+
+Started GET "/magicball" for 127.0.0.1 at 2018-03-26 16:34:22 +1100
+Processing by MagicballController#form as HTML
+  Rendering magicball/form.html.erb within layouts/application
+  Rendered magicball/form.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 21ms (Views: 18.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-26 16:39:59 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 17ms (Views: 16.1ms)
+
+
+Started GET "/magicball" for 127.0.0.1 at 2018-03-26 16:40:02 +1100
+Processing by MagicballController#form as HTML
+  Rendering magicball/form.html.erb within layouts/application
+  Rendered magicball/form.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 22ms (Views: 18.9ms)
+
+
+Started GET "/magicball/lookup?quest=are+you+ok" for 127.0.0.1 at 2018-03-26 16:40:09 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/magicball/lookup"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started PUT "/__web_console/repl_sessions/7d2375ae8d8a88d122181068f385f2eb" for 127.0.0.1 at 2018-03-26 16:40:24 +1100
+Started PUT "/__web_console/repl_sessions/7d2375ae8d8a88d122181068f385f2eb" for 127.0.0.1 at 2018-03-26 16:40:25 +1100
+Started GET "/magicball/lookup?quest=are+you+ok" for 127.0.0.1 at 2018-03-26 16:40:55 +1100
+  
+LoadError (cannot load such file -- /Users/soniabansal/Projects/WDi26-Homework/Sarabjit_Bansal/week_05/day_01/games/magicball/config/routes.rb):
+  
+activesupport (5.1.5) lib/active_support/dependencies.rb:286:in `load'
+activesupport (5.1.5) lib/active_support/dependencies.rb:286:in `block in load'
+activesupport (5.1.5) lib/active_support/dependencies.rb:258:in `load_dependency'
+activesupport (5.1.5) lib/active_support/dependencies.rb:286:in `load'
+railties (5.1.5) lib/rails/application/routes_reloader.rb:55:in `block in load_paths'
+railties (5.1.5) lib/rails/application/routes_reloader.rb:55:in `each'
+railties (5.1.5) lib/rails/application/routes_reloader.rb:55:in `load_paths'
+railties (5.1.5) lib/rails/application/routes_reloader.rb:18:in `reload!'
+railties (5.1.5) lib/rails/application/routes_reloader.rb:41:in `block in updater'
+activesupport (5.1.5) lib/active_support/file_update_checker.rb:81:in `execute'
+railties (5.1.5) lib/rails/application/routes_reloader.rb:25:in `execute'
+railties (5.1.5) lib/rails/application/finisher.rb:141:in `block (2 levels) in <module:Finisher>'
+activesupport (5.1.5) lib/active_support/callbacks.rb:413:in `instance_exec'
+activesupport (5.1.5) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.5) lib/active_support/callbacks.rb:197:in `block (2 levels) in halting'
+activesupport (5.1.5) lib/active_support/callbacks.rb:601:in `block (2 levels) in default_terminator'
+activesupport (5.1.5) lib/active_support/callbacks.rb:600:in `catch'
+activesupport (5.1.5) lib/active_support/callbacks.rb:600:in `block in default_terminator'
+activesupport (5.1.5) lib/active_support/callbacks.rb:198:in `block in halting'
+activesupport (5.1.5) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.5) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.5) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.5) lib/active_support/callbacks.rb:130:in `run_callbacks'
+activesupport (5.1.5) lib/active_support/execution_wrapper.rb:108:in `run!'
+activesupport (5.1.5) lib/active_support/reloader.rb:113:in `run!'
+activesupport (5.1.5) lib/active_support/execution_wrapper.rb:70:in `block in run!'
+activesupport (5.1.5) lib/active_support/execution_wrapper.rb:67:in `tap'
+activesupport (5.1.5) lib/active_support/execution_wrapper.rb:67:in `run!'
+activesupport (5.1.5) lib/active_support/reloader.rb:59:in `run!'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:10:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/favicon.ico" for 127.0.0.1 at 2018-03-26 16:40:56 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-03-26 16:41:02 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-03-26 16:41:30 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 333ms (Views: 189.7ms)
+
+
+Started GET "/magicball" for 127.0.0.1 at 2018-03-26 16:41:32 +1100
+Processing by MagicballController#form as HTML
+  Rendering magicball/form.html.erb within layouts/application
+  Rendered magicball/form.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 21ms (Views: 18.2ms)
+
+
+Started GET "/magicball/lookup?quest=are+you+ok" for 127.0.0.1 at 2018-03-26 16:41:36 +1100
+Processing by MagicballController#lookup as HTML
+  Parameters: {"quest"=>"are you ok"}
+Completed 500 Internal Server Error in 3ms
+
+
+  
+NoMethodError (undefined method `scramble' for #<Array:0x007f87f1e9c840>
+Did you mean?  sample):
+  
+app/controllers/magicball_controller.rb:31:in `lookup'
+Started GET "/magicball/lookup?quest=are+you+ok" for 127.0.0.1 at 2018-03-26 16:41:57 +1100
+Processing by MagicballController#lookup as HTML
+  Parameters: {"quest"=>"are you ok"}
+  Rendering magicball/lookup.html.erb within layouts/application
+  Rendered magicball/lookup.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 23ms (Views: 19.7ms)
+
+
+Started GET "/magicball/lookup?quest=are+you+ok" for 127.0.0.1 at 2018-03-26 16:42:04 +1100
+Processing by MagicballController#lookup as HTML
+  Parameters: {"quest"=>"are you ok"}
+  Rendering magicball/lookup.html.erb within layouts/application
+  Rendered magicball/lookup.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 27ms (Views: 24.1ms)
+
+
+Started GET "/magicball/lookup?quest=are+you+ok" for 127.0.0.1 at 2018-03-26 16:42:06 +1100
+Processing by MagicballController#lookup as HTML
+  Parameters: {"quest"=>"are you ok"}
+  Rendering magicball/lookup.html.erb within layouts/application
+  Rendered magicball/lookup.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 20ms (Views: 17.4ms)
+
+
+Started GET "/magicball/lookup?quest=how+is+your+day" for 127.0.0.1 at 2018-03-26 16:42:25 +1100
+Processing by MagicballController#lookup as HTML
+  Parameters: {"quest"=>"how is your day"}
+  Rendering magicball/lookup.html.erb within layouts/application
+  Rendered magicball/lookup.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 20ms (Views: 16.5ms)
+
+
+Started GET "/magicball" for 127.0.0.1 at 2018-03-26 16:54:20 +1100
+Processing by MagicballController#form as HTML
+  Rendering magicball/form.html.erb within layouts/application
+  Rendered magicball/form.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 18ms (Views: 14.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-26 16:54:22 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 21ms (Views: 20.1ms)
+
+
+Started GET "/secretno" for 127.0.0.1 at 2018-03-26 16:54:23 +1100
+  
+LoadError (Unable to autoload constant SecretnoController, expected /Users/soniabansal/Projects/WDi26-Homework/Sarabjit_Bansal/week_05/day_01/games/magicball-1/app/controllers/secretno_controller.rb to define it):
+  
+activesupport (5.1.5) lib/active_support/dependencies.rb:512:in `load_missing_constant'
+activesupport (5.1.5) lib/active_support/dependencies.rb:202:in `const_missing'
+activesupport (5.1.5) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.5) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.5) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.5) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.5) lib/active_support/inflector/methods.rb:267:in `constantize'
+activesupport (5.1.5) lib/active_support/dependencies.rb:583:in `get'
+activesupport (5.1.5) lib/active_support/dependencies.rb:614:in `constantize'
+actionpack (5.1.5) lib/action_dispatch/http/request.rb:85:in `controller_class_for'
+actionpack (5.1.5) lib/action_dispatch/http/parameters.rb:99:in `binary_params_for?'
+actionpack (5.1.5) lib/action_dispatch/http/parameters.rb:90:in `set_binary_encoding'
+actionpack (5.1.5) lib/action_dispatch/http/parameters.rb:67:in `path_parameters='
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:48:in `block in serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.5) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.5) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/secretno" for 127.0.0.1 at 2018-03-26 16:55:53 +1100
+  
+LoadError (Unable to autoload constant SecretnoController, expected /Users/soniabansal/Projects/WDi26-Homework/Sarabjit_Bansal/week_05/day_01/games/magicball-1/app/controllers/secretno_controller.rb to define it):
+  
+activesupport (5.1.5) lib/active_support/dependencies.rb:512:in `load_missing_constant'
+activesupport (5.1.5) lib/active_support/dependencies.rb:202:in `const_missing'
+activesupport (5.1.5) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.5) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.5) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.5) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.5) lib/active_support/inflector/methods.rb:267:in `constantize'
+activesupport (5.1.5) lib/active_support/dependencies.rb:583:in `get'
+activesupport (5.1.5) lib/active_support/dependencies.rb:614:in `constantize'
+actionpack (5.1.5) lib/action_dispatch/http/request.rb:85:in `controller_class_for'
+actionpack (5.1.5) lib/action_dispatch/http/parameters.rb:99:in `binary_params_for?'
+actionpack (5.1.5) lib/action_dispatch/http/parameters.rb:90:in `set_binary_encoding'
+actionpack (5.1.5) lib/action_dispatch/http/parameters.rb:67:in `path_parameters='
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:48:in `block in serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.5) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.5) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-03-26 16:55:55 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 16ms (Views: 15.6ms)
+
+
+Started GET "/secretno" for 127.0.0.1 at 2018-03-26 16:55:56 +1100
+  
+LoadError (Unable to autoload constant SecretnoController, expected /Users/soniabansal/Projects/WDi26-Homework/Sarabjit_Bansal/week_05/day_01/games/magicball-1/app/controllers/secretno_controller.rb to define it):
+  
+activesupport (5.1.5) lib/active_support/dependencies.rb:512:in `load_missing_constant'
+activesupport (5.1.5) lib/active_support/dependencies.rb:202:in `const_missing'
+activesupport (5.1.5) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.5) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.5) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.5) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.5) lib/active_support/inflector/methods.rb:267:in `constantize'
+activesupport (5.1.5) lib/active_support/dependencies.rb:583:in `get'
+activesupport (5.1.5) lib/active_support/dependencies.rb:614:in `constantize'
+actionpack (5.1.5) lib/action_dispatch/http/request.rb:85:in `controller_class_for'
+actionpack (5.1.5) lib/action_dispatch/http/parameters.rb:99:in `binary_params_for?'
+actionpack (5.1.5) lib/action_dispatch/http/parameters.rb:90:in `set_binary_encoding'
+actionpack (5.1.5) lib/action_dispatch/http/parameters.rb:67:in `path_parameters='
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:48:in `block in serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.5) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.5) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-03-26 16:57:03 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 25ms (Views: 25.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-26 16:57:03 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 16ms (Views: 16.1ms)
+
+
+Started GET "/secretno" for 127.0.0.1 at 2018-03-26 16:57:04 +1100
+  
+LoadError (Unable to autoload constant SecretnoController, expected /Users/soniabansal/Projects/WDi26-Homework/Sarabjit_Bansal/week_05/day_01/games/magicball-1/app/controllers/secretno_controller.rb to define it):
+  
+activesupport (5.1.5) lib/active_support/dependencies.rb:512:in `load_missing_constant'
+activesupport (5.1.5) lib/active_support/dependencies.rb:202:in `const_missing'
+activesupport (5.1.5) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.5) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.5) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.5) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.5) lib/active_support/inflector/methods.rb:267:in `constantize'
+activesupport (5.1.5) lib/active_support/dependencies.rb:583:in `get'
+activesupport (5.1.5) lib/active_support/dependencies.rb:614:in `constantize'
+actionpack (5.1.5) lib/action_dispatch/http/request.rb:85:in `controller_class_for'
+actionpack (5.1.5) lib/action_dispatch/http/parameters.rb:99:in `binary_params_for?'
+actionpack (5.1.5) lib/action_dispatch/http/parameters.rb:90:in `set_binary_encoding'
+actionpack (5.1.5) lib/action_dispatch/http/parameters.rb:67:in `path_parameters='
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:48:in `block in serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.5) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.5) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/secretno" for 127.0.0.1 at 2018-03-26 16:57:40 +1100
+Processing by SecretnoController#form as HTML
+  Rendering secretno/form.html.erb within layouts/application
+  Rendered secretno/form.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 14ms
+
+
+  
+SyntaxError (/Users/soniabansal/Projects/WDi26-Homework/Sarabjit_Bansal/week_05/day_01/games/magicball-1/app/views/secretno/form.html.erb:7: syntax error, unexpected ')', expecting keyword_do_cond or ';' or '\n'
+uffer.append=( while i < 11  );@output_buffer.safe_append='
+                              ^
+/Users/soniabansal/Projects/WDi26-Homework/Sarabjit_Bansal/week_05/day_01/games/magicball-1/app/views/secretno/form.html.erb:9: syntax error, unexpected keyword_end
+ze;@output_buffer.append=( end );@output_buffer.safe_append=
+                              ^
+/Users/soniabansal/Projects/WDi26-Homework/Sarabjit_Bansal/week_05/day_01/games/magicball-1/app/views/secretno/form.html.erb:15: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+/Users/soniabansal/Projects/WDi26-Homework/Sarabjit_Bansal/week_05/day_01/games/magicball-1/app/views/secretno/form.html.erb:17: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/secretno/form.html.erb:7: syntax error, unexpected ')', expecting keyword_do_cond or ';' or '\n'
+app/views/secretno/form.html.erb:9: syntax error, unexpected keyword_end
+app/views/secretno/form.html.erb:15: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/secretno/form.html.erb:17: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2018-03-26 16:57:43 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 16ms (Views: 15.9ms)
+
+
+Started GET "/secretno" for 127.0.0.1 at 2018-03-26 16:57:44 +1100
+Processing by SecretnoController#form as HTML
+  Rendering secretno/form.html.erb within layouts/application
+  Rendered secretno/form.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 13ms
+
+
+  
+SyntaxError (/Users/soniabansal/Projects/WDi26-Homework/Sarabjit_Bansal/week_05/day_01/games/magicball-1/app/views/secretno/form.html.erb:7: syntax error, unexpected ')', expecting keyword_do_cond or ';' or '\n'
+uffer.append=( while i < 11  );@output_buffer.safe_append='
+                              ^
+/Users/soniabansal/Projects/WDi26-Homework/Sarabjit_Bansal/week_05/day_01/games/magicball-1/app/views/secretno/form.html.erb:9: syntax error, unexpected keyword_end
+ze;@output_buffer.append=( end );@output_buffer.safe_append=
+                              ^
+/Users/soniabansal/Projects/WDi26-Homework/Sarabjit_Bansal/week_05/day_01/games/magicball-1/app/views/secretno/form.html.erb:15: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+/Users/soniabansal/Projects/WDi26-Homework/Sarabjit_Bansal/week_05/day_01/games/magicball-1/app/views/secretno/form.html.erb:17: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/secretno/form.html.erb:7: syntax error, unexpected ')', expecting keyword_do_cond or ';' or '\n'
+app/views/secretno/form.html.erb:9: syntax error, unexpected keyword_end
+app/views/secretno/form.html.erb:15: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/secretno/form.html.erb:17: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/secretno" for 127.0.0.1 at 2018-03-26 16:58:21 +1100
+Processing by SecretnoController#form as HTML
+  Rendering secretno/form.html.erb within layouts/application
+  Rendered secretno/form.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 10ms
+
+
+  
+SyntaxError (/Users/soniabansal/Projects/WDi26-Homework/Sarabjit_Bansal/week_05/day_01/games/magicball-1/app/views/secretno/form.html.erb:8: syntax error, unexpected ')', expecting keyword_do_cond or ';' or '\n'
+uffer.append=( while i < 11  );@output_buffer.safe_append='
+                              ^
+/Users/soniabansal/Projects/WDi26-Homework/Sarabjit_Bansal/week_05/day_01/games/magicball-1/app/views/secretno/form.html.erb:11: syntax error, unexpected keyword_end
+ze;@output_buffer.append=( end );@output_buffer.safe_append=
+                              ^
+/Users/soniabansal/Projects/WDi26-Homework/Sarabjit_Bansal/week_05/day_01/games/magicball-1/app/views/secretno/form.html.erb:17: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+/Users/soniabansal/Projects/WDi26-Homework/Sarabjit_Bansal/week_05/day_01/games/magicball-1/app/views/secretno/form.html.erb:19: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/secretno/form.html.erb:8: syntax error, unexpected ')', expecting keyword_do_cond or ';' or '\n'
+app/views/secretno/form.html.erb:11: syntax error, unexpected keyword_end
+app/views/secretno/form.html.erb:17: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/secretno/form.html.erb:19: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2018-03-26 16:58:23 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 17ms (Views: 16.8ms)
+
+
+Started GET "/secretno" for 127.0.0.1 at 2018-03-26 16:58:24 +1100
+Processing by SecretnoController#form as HTML
+  Rendering secretno/form.html.erb within layouts/application
+  Rendered secretno/form.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 12ms
+
+
+  
+SyntaxError (/Users/soniabansal/Projects/WDi26-Homework/Sarabjit_Bansal/week_05/day_01/games/magicball-1/app/views/secretno/form.html.erb:8: syntax error, unexpected ')', expecting keyword_do_cond or ';' or '\n'
+uffer.append=( while i < 11  );@output_buffer.safe_append='
+                              ^
+/Users/soniabansal/Projects/WDi26-Homework/Sarabjit_Bansal/week_05/day_01/games/magicball-1/app/views/secretno/form.html.erb:11: syntax error, unexpected keyword_end
+ze;@output_buffer.append=( end );@output_buffer.safe_append=
+                              ^
+/Users/soniabansal/Projects/WDi26-Homework/Sarabjit_Bansal/week_05/day_01/games/magicball-1/app/views/secretno/form.html.erb:17: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+/Users/soniabansal/Projects/WDi26-Homework/Sarabjit_Bansal/week_05/day_01/games/magicball-1/app/views/secretno/form.html.erb:19: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/secretno/form.html.erb:8: syntax error, unexpected ')', expecting keyword_do_cond or ';' or '\n'
+app/views/secretno/form.html.erb:11: syntax error, unexpected keyword_end
+app/views/secretno/form.html.erb:17: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/secretno/form.html.erb:19: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/secretno" for 127.0.0.1 at 2018-03-26 16:59:13 +1100
+Processing by SecretnoController#form as HTML
+  Rendering secretno/form.html.erb within layouts/application
+  Rendered secretno/form.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 11ms
+
+
+  
+SyntaxError (/Users/soniabansal/Projects/WDi26-Homework/Sarabjit_Bansal/week_05/day_01/games/magicball-1/app/views/secretno/form.html.erb:8: syntax error, unexpected ')', expecting keyword_do_cond or ';' or '\n'
+uffer.append=( while i < 11  );@output_buffer.safe_append='
+                              ^
+/Users/soniabansal/Projects/WDi26-Homework/Sarabjit_Bansal/week_05/day_01/games/magicball-1/app/views/secretno/form.html.erb:11: syntax error, unexpected keyword_end
+ze;@output_buffer.append=( end );@output_buffer.safe_append=
+                              ^
+/Users/soniabansal/Projects/WDi26-Homework/Sarabjit_Bansal/week_05/day_01/games/magicball-1/app/views/secretno/form.html.erb:15: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+/Users/soniabansal/Projects/WDi26-Homework/Sarabjit_Bansal/week_05/day_01/games/magicball-1/app/views/secretno/form.html.erb:17: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/secretno/form.html.erb:8: syntax error, unexpected ')', expecting keyword_do_cond or ';' or '\n'
+app/views/secretno/form.html.erb:11: syntax error, unexpected keyword_end
+app/views/secretno/form.html.erb:15: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/secretno/form.html.erb:17: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/secretno" for 127.0.0.1 at 2018-03-26 16:59:28 +1100
+Processing by SecretnoController#form as HTML
+  Rendering secretno/form.html.erb within layouts/application
+  Rendered secretno/form.html.erb within layouts/application (176.2ms)
+Completed 500 Internal Server Error in 187ms
+
+
+  
+ActionView::Template::Error (undefined local variable or method `i' for #<#<Class:0x007f87f366c6a0>:0x007f87f34d45b8>):
+     5:   <!-- action="/secretno/lookup" -->
+     6:   <option></option>
+     7:   i = 1
+     8:   <% while i < 11  %>
+     9:     <option value="<%= i %>"><%= i %></option>
+    10:     i+=1
+    11:   <% end %>
+  
+app/views/secretno/form.html.erb:8:in `_app_views_secretno_form_html_erb__4145699312022241293_70110939621340'
+Started GET "/secretno" for 127.0.0.1 at 2018-03-26 17:00:20 +1100
+Processing by SecretnoController#form as HTML
+  Rendering secretno/form.html.erb within layouts/application
+  Rendered secretno/form.html.erb within layouts/application (3.9ms)
+Completed 500 Internal Server Error in 14ms
+
+
+  
+ActionView::Template::Error (undefined method `<' for nil:NilClass):
+     5:   <!-- action="/secretno/lookup" -->
+     6:   <option></option>
+     7:   @i = 1
+     8:   <% while @i < 11  %>
+     9:     <option value="<%= @i %>"><%= @i %></option>
+    10:     @i+=1
+    11:   <% end %>
+  
+app/views/secretno/form.html.erb:8:in `_app_views_secretno_form_html_erb__4145699312022241293_70110932326560'
+Started GET "/secretno" for 127.0.0.1 at 2018-03-26 17:01:56 +1100
+Processing by SecretnoController#form as HTML
+  Rendering secretno/form.html.erb within layouts/application
+  Rendered secretno/form.html.erb within layouts/application (191.4ms)
+Completed 500 Internal Server Error in 201ms
+
+
+  
+ActionView::Template::Error (undefined local variable or method `i' for #<#<Class:0x007f87f366c6a0>:0x007f87f2553030>):
+     5:   <!-- action="/secretno/lookup" -->
+     6:   <option></option>
+     7:   i = 1
+     8:   <% while i < 11  %>
+     9:     <option value="<%= i %>"><%= i %></option>
+    10:     i+=1
+    11:   <% end %>
+  
+app/views/secretno/form.html.erb:8:in `_app_views_secretno_form_html_erb__4145699312022241293_70110931492060'
+Started GET "/" for 127.0.0.1 at 2018-03-26 17:01:59 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 18ms (Views: 17.2ms)
+
+
+Started GET "/secretno" for 127.0.0.1 at 2018-03-26 17:02:02 +1100
+Processing by SecretnoController#form as HTML
+  Rendering secretno/form.html.erb within layouts/application
+  Rendered secretno/form.html.erb within layouts/application (131.8ms)
+Completed 500 Internal Server Error in 144ms
+
+
+  
+ActionView::Template::Error (undefined local variable or method `i' for #<#<Class:0x007f87f366c6a0>:0x007f87f35847d8>):
+     5:   <!-- action="/secretno/lookup" -->
+     6:   <option></option>
+     7:   i = 1
+     8:   <% while i < 11  %>
+     9:     <option value="<%= i %>"><%= i %></option>
+    10:     i+=1
+    11:   <% end %>
+  
+app/views/secretno/form.html.erb:8:in `_app_views_secretno_form_html_erb__4145699312022241293_70110939982120'
+Started GET "/secretno" for 127.0.0.1 at 2018-03-26 17:02:44 +1100
+Processing by SecretnoController#form as HTML
+  Rendering secretno/form.html.erb within layouts/application
+  Rendered secretno/form.html.erb within layouts/application (182.6ms)
+Completed 500 Internal Server Error in 193ms
+
+
+  
+ActionView::Template::Error (undefined local variable or method `i' for #<#<Class:0x007f87f366c6a0>:0x007f87f936b888>):
+     7:   i = 1
+     8: 
+     9:   while i < 11
+    10:     <option value="<%= i %>"><%= i %></option>
+    11:     i+=1
+    12:    end 
+    13:   <!-- <% while i < 11  %>
+  
+app/views/secretno/form.html.erb:10:in `_app_views_secretno_form_html_erb__4145699312022241293_70110989107520'
+Started GET "/" for 127.0.0.1 at 2018-03-26 17:02:46 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 24ms (Views: 23.3ms)
+
+
+Started GET "/secretno" for 127.0.0.1 at 2018-03-26 17:02:48 +1100
+Processing by SecretnoController#form as HTML
+  Rendering secretno/form.html.erb within layouts/application
+  Rendered secretno/form.html.erb within layouts/application (140.3ms)
+Completed 500 Internal Server Error in 153ms
+
+
+  
+ActionView::Template::Error (undefined local variable or method `i' for #<#<Class:0x007f87f366c6a0>:0x007f87f947de10>):
+     7:   i = 1
+     8: 
+     9:   while i < 11
+    10:     <option value="<%= i %>"><%= i %></option>
+    11:     i+=1
+    12:    end 
+    13:   <!-- <% while i < 11  %>
+  
+app/views/secretno/form.html.erb:10:in `_app_views_secretno_form_html_erb__4145699312022241293_70110989775820'
+Started GET "/secretno" for 127.0.0.1 at 2018-03-26 17:03:14 +1100
+Processing by SecretnoController#form as HTML
+  Rendering secretno/form.html.erb within layouts/application
+  Rendered secretno/form.html.erb within layouts/application (147.3ms)
+Completed 500 Internal Server Error in 158ms
+
+
+  
+ActionView::Template::Error (undefined local variable or method `i' for #<#<Class:0x007f87f366c6a0>:0x007f87f98fd710>):
+    10:     <option value=" i ">i</option>
+    11:     i+=1
+    12:    end 
+    13:   <!-- <% while i < 11  %>
+    14:     <option value="<%= i %>"><%= i %></option>
+    15:     i+=1
+    16:   <% end %> -->
+  
+app/views/secretno/form.html.erb:13:in `_app_views_secretno_form_html_erb__4145699312022241293_70110992134320'
+Started GET "/" for 127.0.0.1 at 2018-03-26 17:03:17 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 18ms (Views: 17.8ms)
+
+
+Started GET "/secretno" for 127.0.0.1 at 2018-03-26 17:03:20 +1100
+Processing by SecretnoController#form as HTML
+  Rendering secretno/form.html.erb within layouts/application
+  Rendered secretno/form.html.erb within layouts/application (135.6ms)
+Completed 500 Internal Server Error in 149ms
+
+
+  
+ActionView::Template::Error (undefined local variable or method `i' for #<#<Class:0x007f87f366c6a0>:0x007f87f92c9a10>):
+    10:     <option value=" i ">i</option>
+    11:     i+=1
+    12:    end 
+    13:   <!-- <% while i < 11  %>
+    14:     <option value="<%= i %>"><%= i %></option>
+    15:     i+=1
+    16:   <% end %> -->
+  
+app/views/secretno/form.html.erb:13:in `_app_views_secretno_form_html_erb__4145699312022241293_70110988882400'
+Started GET "/secretno" for 127.0.0.1 at 2018-03-26 17:04:08 +1100
+Processing by SecretnoController#form as HTML
+  Rendering secretno/form.html.erb within layouts/application
+  Rendered secretno/form.html.erb within layouts/application (158.1ms)
+Completed 500 Internal Server Error in 168ms
+
+
+  
+ActionView::Template::Error (undefined local variable or method `i' for #<#<Class:0x007f87f366c6a0>:0x007f87f924a4b8>):
+     6:   <option></option>
+     7:   i = 1
+     8: 
+     9:   <% while i < 11  %>
+    10:     <option value="<%= i %>"><%= i %></option>
+    11:     i+=1
+    12:   <% end %>
+  
+app/views/secretno/form.html.erb:9:in `_app_views_secretno_form_html_erb__4145699312022241293_70110988621740'
+Started GET "/" for 127.0.0.1 at 2018-03-26 17:04:10 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 20ms (Views: 19.7ms)
+
+
+Started GET "/secretno" for 127.0.0.1 at 2018-03-26 17:04:12 +1100
+Processing by SecretnoController#form as HTML
+  Rendering secretno/form.html.erb within layouts/application
+  Rendered secretno/form.html.erb within layouts/application (145.3ms)
+Completed 500 Internal Server Error in 158ms
+
+
+  
+ActionView::Template::Error (undefined local variable or method `i' for #<#<Class:0x007f87f366c6a0>:0x007f87f9168108>):
+     6:   <option></option>
+     7:   i = 1
+     8: 
+     9:   <% while i < 11  %>
+    10:     <option value="<%= i %>"><%= i %></option>
+    11:     i+=1
+    12:   <% end %>
+  
+app/views/secretno/form.html.erb:9:in `_app_views_secretno_form_html_erb__4145699312022241293_70110988158280'
+Started GET "/secretno" for 127.0.0.1 at 2018-03-26 17:04:46 +1100
+Processing by SecretnoController#form as HTML
+  Rendering secretno/form.html.erb within layouts/application
+Started GET "/" for 127.0.0.1 at 2018-03-26 17:04:48 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 1327ms (Views: 1326.3ms)
+
+
+Started GET "/secretno" for 127.0.0.1 at 2018-03-26 17:04:50 +1100
+Processing by SecretnoController#form as HTML
+  Rendering secretno/form.html.erb within layouts/application
+Started GET "/secretno" for 127.0.0.1 at 2018-03-26 17:04:51 +1100
+Processing by SecretnoController#form as HTML
+  Rendering secretno/form.html.erb within layouts/application
+Started GET "/secretno" for 127.0.0.1 at 2018-03-26 17:05:16 +1100
+Processing by SecretnoController#form as HTML
+  Rendering secretno/form.html.erb within layouts/application
+Started GET "/secretno" for 127.0.0.1 at 2018-03-26 17:05:17 +1100
+Processing by SecretnoController#form as HTML
+  Rendering secretno/form.html.erb within layouts/application
+Started GET "/" for 127.0.0.1 at 2018-03-26 17:17:10 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 394ms (Views: 217.7ms)
+
+
+Started GET "/secretno" for 127.0.0.1 at 2018-03-26 17:17:37 +1100
+Processing by SecretnoController#form as HTML
+  Rendering secretno/form.html.erb within layouts/application
+  Rendered secretno/form.html.erb within layouts/application (167.2ms)
+Completed 500 Internal Server Error in 286ms
+
+
+  
+ActionView::Template::Error (undefined local variable or method `i' for #<#<Class:0x007fb8d8828eb0>:0x007fb8d8810310>):
+     5:   <!-- action="/secretno/lookup" -->
+     6:   <option></option>
+     7:   i = 1
+     8:   <% while i < 11  %>
+     9:     <option value="<%= i %>"><%= i %></option>
+    10:     i+=1
+    11:   <% end %>
+  
+app/views/secretno/form.html.erb:8:in `_app_views_secretno_form_html_erb__2997424981914907148_70215911573320'
+Started GET "/secretno" for 127.0.0.1 at 2018-03-26 17:20:31 +1100
+Processing by SecretnoController#form as HTML
+  Rendering secretno/form.html.erb within layouts/application
+  Rendered secretno/form.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 11ms
+
+
+  
+SyntaxError (/Users/soniabansal/Projects/WDi26-Homework/Sarabjit_Bansal/week_05/day_01/games/magicball-1/app/views/secretno/form.html.erb:8: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+utput_buffer.append=  10 times do |i| @output_buffer.safe_ap
+                              ^
+/Users/soniabansal/Projects/WDi26-Homework/Sarabjit_Bansal/week_05/day_01/games/magicball-1/app/views/secretno/form.html.erb:10: syntax error, unexpected keyword_end
+ze;@output_buffer.append=( end );@output_buffer.safe_append=
+                              ^
+/Users/soniabansal/Projects/WDi26-Homework/Sarabjit_Bansal/week_05/day_01/games/magicball-1/app/views/secretno/form.html.erb:14: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+/Users/soniabansal/Projects/WDi26-Homework/Sarabjit_Bansal/week_05/day_01/games/magicball-1/app/views/secretno/form.html.erb:16: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/secretno/form.html.erb:8: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/views/secretno/form.html.erb:10: syntax error, unexpected keyword_end
+app/views/secretno/form.html.erb:14: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/secretno/form.html.erb:16: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2018-03-26 17:20:34 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 175ms (Views: 174.5ms)
+
+
+Started GET "/secretno" for 127.0.0.1 at 2018-03-26 17:20:36 +1100
+Processing by SecretnoController#form as HTML
+  Rendering secretno/form.html.erb within layouts/application
+  Rendered secretno/form.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 13ms
+
+
+  
+SyntaxError (/Users/soniabansal/Projects/WDi26-Homework/Sarabjit_Bansal/week_05/day_01/games/magicball-1/app/views/secretno/form.html.erb:8: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+utput_buffer.append=  10 times do |i| @output_buffer.safe_ap
+                              ^
+/Users/soniabansal/Projects/WDi26-Homework/Sarabjit_Bansal/week_05/day_01/games/magicball-1/app/views/secretno/form.html.erb:10: syntax error, unexpected keyword_end
+ze;@output_buffer.append=( end );@output_buffer.safe_append=
+                              ^
+/Users/soniabansal/Projects/WDi26-Homework/Sarabjit_Bansal/week_05/day_01/games/magicball-1/app/views/secretno/form.html.erb:14: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+/Users/soniabansal/Projects/WDi26-Homework/Sarabjit_Bansal/week_05/day_01/games/magicball-1/app/views/secretno/form.html.erb:16: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/secretno/form.html.erb:8: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/views/secretno/form.html.erb:10: syntax error, unexpected keyword_end
+app/views/secretno/form.html.erb:14: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/secretno/form.html.erb:16: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/secretno" for 127.0.0.1 at 2018-03-26 17:21:02 +1100
+Processing by SecretnoController#form as HTML
+  Rendering secretno/form.html.erb within layouts/application
+  Rendered secretno/form.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 11ms
+
+
+  
+SyntaxError (/Users/soniabansal/Projects/WDi26-Homework/Sarabjit_Bansal/week_05/day_01/games/magicball-1/app/views/secretno/form.html.erb:10: syntax error, unexpected keyword_end
+ze;@output_buffer.append=( end );@output_buffer.safe_append=
+                              ^
+/Users/soniabansal/Projects/WDi26-Homework/Sarabjit_Bansal/week_05/day_01/games/magicball-1/app/views/secretno/form.html.erb:14: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+/Users/soniabansal/Projects/WDi26-Homework/Sarabjit_Bansal/week_05/day_01/games/magicball-1/app/views/secretno/form.html.erb:16: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/secretno/form.html.erb:10: syntax error, unexpected keyword_end
+app/views/secretno/form.html.erb:14: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/secretno/form.html.erb:16: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2018-03-26 17:21:04 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 17ms (Views: 16.4ms)
+
+
+Started GET "/secretno" for 127.0.0.1 at 2018-03-26 17:21:06 +1100
+Processing by SecretnoController#form as HTML
+  Rendering secretno/form.html.erb within layouts/application
+  Rendered secretno/form.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 13ms
+
+
+  
+SyntaxError (/Users/soniabansal/Projects/WDi26-Homework/Sarabjit_Bansal/week_05/day_01/games/magicball-1/app/views/secretno/form.html.erb:10: syntax error, unexpected keyword_end
+ze;@output_buffer.append=( end );@output_buffer.safe_append=
+                              ^
+/Users/soniabansal/Projects/WDi26-Homework/Sarabjit_Bansal/week_05/day_01/games/magicball-1/app/views/secretno/form.html.erb:14: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+/Users/soniabansal/Projects/WDi26-Homework/Sarabjit_Bansal/week_05/day_01/games/magicball-1/app/views/secretno/form.html.erb:16: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/secretno/form.html.erb:10: syntax error, unexpected keyword_end
+app/views/secretno/form.html.erb:14: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/secretno/form.html.erb:16: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/secretno" for 127.0.0.1 at 2018-03-26 17:21:34 +1100
+Processing by SecretnoController#form as HTML
+  Rendering secretno/form.html.erb within layouts/application
+  Rendered secretno/form.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 20ms (Views: 17.4ms)
+
+
+Started GET "/secretno" for 127.0.0.1 at 2018-03-26 17:24:37 +1100
+Processing by SecretnoController#form as HTML
+  Rendering secretno/form.html.erb within layouts/application
+  Rendered secretno/form.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 20ms (Views: 17.1ms)
+
+
+Started GET "/secretno" for 127.0.0.1 at 2018-03-26 17:49:31 +1100
+Processing by SecretnoController#form as HTML
+  Rendering secretno/form.html.erb within layouts/application
+  Rendered secretno/form.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 20ms (Views: 17.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-26 17:49:34 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 17ms (Views: 16.5ms)
+
+
+Started GET "/secretno" for 127.0.0.1 at 2018-03-26 17:49:35 +1100
+Processing by SecretnoController#form as HTML
+  Rendering secretno/form.html.erb within layouts/application
+  Rendered secretno/form.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 27ms (Views: 23.8ms)
+
+
+Started GET "/secretno" for 127.0.0.1 at 2018-03-26 17:49:41 +1100
+Processing by SecretnoController#form as HTML
+  Rendering secretno/form.html.erb within layouts/application
+  Rendered secretno/form.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 25ms (Views: 20.2ms)
+
+
+Started GET "/secretno" for 127.0.0.1 at 2018-03-26 17:53:17 +1100
+Processing by SecretnoController#form as HTML
+  Rendering secretno/form.html.erb within layouts/application
+  Rendered secretno/form.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 21ms (Views: 18.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-26 17:53:18 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 20ms (Views: 19.9ms)
+
+
+Started GET "/secretno" for 127.0.0.1 at 2018-03-26 17:53:19 +1100
+Processing by SecretnoController#form as HTML
+  Rendering secretno/form.html.erb within layouts/application
+  Rendered secretno/form.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 22ms (Views: 18.6ms)
+
+
+Started GET "/secretno" for 127.0.0.1 at 2018-03-26 17:53:41 +1100
+Processing by SecretnoController#form as HTML
+  Rendering secretno/form.html.erb within layouts/application
+  Rendered secretno/form.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 20ms (Views: 16.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-26 17:53:42 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 18ms (Views: 17.3ms)
+
+
+Started GET "/secretno" for 127.0.0.1 at 2018-03-26 17:53:44 +1100
+Processing by SecretnoController#form as HTML
+  Rendering secretno/form.html.erb within layouts/application
+  Rendered secretno/form.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 21ms (Views: 17.3ms)
+
+
+Started GET "/secretno/lookup?secretno=3" for 127.0.0.1 at 2018-03-26 17:53:47 +1100
+Processing by SecretnoController#lookup as HTML
+  Parameters: {"secretno"=>"3"}
+Completed 500 Internal Server Error in 115ms
+
+
+  
+NameError (undefined local variable or method `secretno' for #<SecretnoController:0x007fb8d8ad0500>
+Did you mean?  secretno_url):
+  
+app/controllers/secretno_controller.rb:9:in `lookup'
+Started GET "/secretno" for 127.0.0.1 at 2018-03-26 17:55:59 +1100
+Processing by SecretnoController#form as HTML
+  Rendering secretno/form.html.erb within layouts/application
+  Rendered secretno/form.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 22ms (Views: 18.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-26 17:56:01 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 20ms (Views: 19.5ms)
+
+
+Started GET "/secretno" for 127.0.0.1 at 2018-03-26 17:56:02 +1100
+Processing by SecretnoController#form as HTML
+  Rendering secretno/form.html.erb within layouts/application
+  Rendered secretno/form.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 26ms (Views: 21.8ms)
+
+
+Started GET "/secretno/lookup?secretno=3" for 127.0.0.1 at 2018-03-26 17:56:05 +1100
+Processing by SecretnoController#lookup as HTML
+  Parameters: {"secretno"=>"3"}
+  Rendering secretno/lookup.html.erb within layouts/application
+  Rendered secretno/lookup.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 23ms (Views: 20.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-26 17:57:01 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 18ms (Views: 17.3ms)
+
+
+Started GET "/secretno" for 127.0.0.1 at 2018-03-26 17:57:03 +1100
+Processing by SecretnoController#form as HTML
+  Rendering secretno/form.html.erb within layouts/application
+  Rendered secretno/form.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 22ms (Views: 18.2ms)
+
+
+Started GET "/secretno/lookup?secretno=4" for 127.0.0.1 at 2018-03-26 17:57:05 +1100
+Processing by SecretnoController#lookup as HTML
+  Parameters: {"secretno"=>"4"}
+  Rendering secretno/lookup.html.erb within layouts/application
+  Rendered secretno/lookup.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 16.5ms)
+
+
+Started GET "/secretno/lookup?secretno=4" for 127.0.0.1 at 2018-03-26 17:57:52 +1100
+Processing by SecretnoController#lookup as HTML
+  Parameters: {"secretno"=>"4"}
+  Rendering secretno/lookup.html.erb within layouts/application
+  Rendered secretno/lookup.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 21ms (Views: 18.2ms)
+
+
+Started GET "/secretno/lookup?secretno=2" for 127.0.0.1 at 2018-03-26 17:57:56 +1100
+Processing by SecretnoController#lookup as HTML
+  Parameters: {"secretno"=>"2"}
+  Rendering secretno/lookup.html.erb within layouts/application
+  Rendered secretno/lookup.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 20ms (Views: 16.3ms)
+
+
+Started GET "/secretno/lookup?secretno=2" for 127.0.0.1 at 2018-03-26 17:58:41 +1100
+Processing by SecretnoController#lookup as HTML
+  Parameters: {"secretno"=>"2"}
+  Rendering secretno/lookup.html.erb within layouts/application
+  Rendered secretno/lookup.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 23ms (Views: 19.9ms)
+
+
+Started GET "/secretno" for 127.0.0.1 at 2018-03-26 17:58:50 +1100
+Processing by SecretnoController#form as HTML
+  Rendering secretno/form.html.erb within layouts/application
+  Rendered secretno/form.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 20ms (Views: 16.8ms)
+
+
+Started GET "/secretno/lookup?secretno=3" for 127.0.0.1 at 2018-03-26 17:58:52 +1100
+Processing by SecretnoController#lookup as HTML
+  Parameters: {"secretno"=>"3"}
+  Rendering secretno/lookup.html.erb within layouts/application
+  Rendered secretno/lookup.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 24ms (Views: 20.4ms)
+
+
+Started GET "/secretno/lookup?secretno=3" for 127.0.0.1 at 2018-03-26 17:59:00 +1100
+Processing by SecretnoController#lookup as HTML
+  Parameters: {"secretno"=>"3"}
+  Rendering secretno/lookup.html.erb within layouts/application
+  Rendered secretno/lookup.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 20ms (Views: 17.4ms)
+
+
+Started GET "/secretno/lookup?secretno=8" for 127.0.0.1 at 2018-03-26 17:59:03 +1100
+Processing by SecretnoController#lookup as HTML
+  Parameters: {"secretno"=>"8"}
+  Rendering secretno/lookup.html.erb within layouts/application
+  Rendered secretno/lookup.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 20ms (Views: 16.5ms)
+
+
+Started GET "/secretno" for 127.0.0.1 at 2018-03-26 17:59:08 +1100
+Processing by SecretnoController#form as HTML
+  Rendering secretno/form.html.erb within layouts/application
+  Rendered secretno/form.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 20ms (Views: 16.8ms)
+
+
+Started GET "/secretno/lookup?secretno=2" for 127.0.0.1 at 2018-03-26 21:10:25 +1100
+Processing by SecretnoController#lookup as HTML
+  Parameters: {"secretno"=>"2"}
+  Rendering secretno/lookup.html.erb within layouts/application
+  Rendered secretno/lookup.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 76ms (Views: 60.8ms)
+
+
+Started GET "/secretno" for 127.0.0.1 at 2018-03-26 21:10:35 +1100
+Processing by SecretnoController#form as HTML
+  Rendering secretno/form.html.erb within layouts/application
+  Rendered secretno/form.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 30ms (Views: 26.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-26 21:10:36 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 29ms (Views: 27.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-26 21:31:35 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 20ms (Views: 19.7ms)
+
+
+Started GET "/rockpaper" for 127.0.0.1 at 2018-03-26 21:31:36 +1100
+Processing by RockpaperController#form as HTML
+  Rendering rockpaper/form.html.erb within layouts/application
+  Rendered rockpaper/form.html.erb within layouts/application (5.8ms)
+Completed 500 Internal Server Error in 17ms
+
+
+  
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::Rock):
+    2: <form action="/rockpaper/lookup">
+    3:   <select name="throw">
+    4:     <option></option>
+    5:       <option value="<%= Rock %>"><%= Rock %></option>
+    6:       <option value="<%= Paper %>"><%= Paper %></option>
+    7:       <option value="<%= Scissors %>"><%= Scissors %></option>
+    8:   </select>
+  
+app/views/rockpaper/form.html.erb:5:in `_app_views_rockpaper_form_html_erb___1703520464213603937_70215972114780'
+Started GET "/" for 127.0.0.1 at 2018-03-26 21:32:17 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 24ms (Views: 23.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-26 21:32:18 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 17ms (Views: 16.5ms)
+
+
+Started GET "/rockpaper" for 127.0.0.1 at 2018-03-26 21:32:19 +1100
+Processing by RockpaperController#form as HTML
+  Rendering rockpaper/form.html.erb within layouts/application
+  Rendered rockpaper/form.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 24ms (Views: 19.8ms)
+
+
+Started GET "/rockpaper" for 127.0.0.1 at 2018-03-26 21:32:33 +1100
+Processing by RockpaperController#form as HTML
+  Rendering rockpaper/form.html.erb within layouts/application
+  Rendered rockpaper/form.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 24ms (Views: 21.3ms)
+
+
+Started GET "/rockpaper" for 127.0.0.1 at 2018-03-26 21:40:51 +1100
+  
+SyntaxError (/Users/soniabansal/Projects/WDi26-Homework/Sarabjit_Bansal/week_05/day_01/games/magicball-1/app/controllers/rockpaper_controller.rb:9: syntax error, unexpected tIDENTIFIER, expecting '}'
+      paper => {rock=>win, paper=>win, sc
+           ^
+/Users/soniabansal/Projects/WDi26-Homework/Sarabjit_Bansal/week_05/day_01/games/magicball-1/app/controllers/rockpaper_controller.rb:10: syntax error, unexpected =>, expecting keyword_end
+      scissors => {rock=>lose, paper=>win, scis
+                 ^
+/Users/soniabansal/Projects/WDi26-Homework/Sarabjit_Bansal/week_05/day_01/games/magicball-1/app/controllers/rockpaper_controller.rb:11: syntax error, unexpected '}', expecting keyword_end
+    }
+     ^):
+  
+app/controllers/rockpaper_controller.rb:9: syntax error, unexpected tIDENTIFIER, expecting '}'
+app/controllers/rockpaper_controller.rb:10: syntax error, unexpected =>, expecting keyword_end
+app/controllers/rockpaper_controller.rb:11: syntax error, unexpected '}', expecting keyword_end
+Started GET "/rockpaper" for 127.0.0.1 at 2018-03-26 21:41:39 +1100
+Processing by RockpaperController#form as HTML
+  Rendering rockpaper/form.html.erb within layouts/application
+  Rendered rockpaper/form.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 15.9ms)
+
+
+Started GET "/rockpaper/lookup?throw=Paper" for 127.0.0.1 at 2018-03-26 21:41:41 +1100
+Processing by RockpaperController#lookup as HTML
+  Parameters: {"throw"=>"Paper"}
+Completed 500 Internal Server Error in 113ms
+
+
+  
+NameError (undefined local variable or method `rock' for #<RockpaperController:0x007fb8dc31a7f8>):
+  
+app/controllers/rockpaper_controller.rb:8:in `lookup'
+Started GET "/rockpaper" for 127.0.0.1 at 2018-03-26 21:42:22 +1100
+Processing by RockpaperController#form as HTML
+  Rendering rockpaper/form.html.erb within layouts/application
+  Rendered rockpaper/form.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 20ms (Views: 17.1ms)
+
+
+Started GET "/rockpaper/lookup?throw=Rock" for 127.0.0.1 at 2018-03-26 21:42:25 +1100
+Processing by RockpaperController#lookup as HTML
+  Parameters: {"throw"=>"Rock"}
+Completed 500 Internal Server Error in 102ms
+
+
+  
+NameError (undefined local variable or method `rock' for #<RockpaperController:0x007fb8d8b08310>):
+  
+app/controllers/rockpaper_controller.rb:8:in `lookup'
+Started PUT "/__web_console/repl_sessions/ab45b08b0c1389da65cb6005b7f46dbb" for 127.0.0.1 at 2018-03-26 21:42:33 +1100
+Started PUT "/__web_console/repl_sessions/ab45b08b0c1389da65cb6005b7f46dbb" for 127.0.0.1 at 2018-03-26 21:42:35 +1100
+Started PUT "/__web_console/repl_sessions/ab45b08b0c1389da65cb6005b7f46dbb" for 127.0.0.1 at 2018-03-26 21:42:51 +1100
+Started GET "/rockpaper/lookup?throw=Rock" for 127.0.0.1 at 2018-03-26 21:43:44 +1100
+Processing by RockpaperController#lookup as HTML
+  Parameters: {"throw"=>"Rock"}
+Completed 500 Internal Server Error in 2ms
+
+
+  
+NoMethodError (undefined method `keys' for #<Array:0x007fb8dc21ac68>):
+  
+app/controllers/rockpaper_controller.rb:13:in `lookup'
+Started PUT "/__web_console/repl_sessions/2066ca90980bd3c90a55d4e42ae40337" for 127.0.0.1 at 2018-03-26 21:43:49 +1100
+Started PUT "/__web_console/repl_sessions/2066ca90980bd3c90a55d4e42ae40337" for 127.0.0.1 at 2018-03-26 21:43:49 +1100
+Started PUT "/__web_console/repl_sessions/2066ca90980bd3c90a55d4e42ae40337" for 127.0.0.1 at 2018-03-26 21:43:56 +1100
+Started PUT "/__web_console/repl_sessions/2066ca90980bd3c90a55d4e42ae40337" for 127.0.0.1 at 2018-03-26 21:43:57 +1100
+Started PUT "/__web_console/repl_sessions/2066ca90980bd3c90a55d4e42ae40337" for 127.0.0.1 at 2018-03-26 21:44:07 +1100
+Started PUT "/__web_console/repl_sessions/2066ca90980bd3c90a55d4e42ae40337" for 127.0.0.1 at 2018-03-26 21:44:14 +1100
+Started PUT "/__web_console/repl_sessions/2066ca90980bd3c90a55d4e42ae40337" for 127.0.0.1 at 2018-03-26 21:44:15 +1100
+Started PUT "/__web_console/repl_sessions/2066ca90980bd3c90a55d4e42ae40337" for 127.0.0.1 at 2018-03-26 21:44:22 +1100
+Started GET "/rockpaper/lookup?throw=Rock" for 127.0.0.1 at 2018-03-26 21:45:49 +1100
+Processing by RockpaperController#lookup as HTML
+  Parameters: {"throw"=>"Rock"}
+Completed 500 Internal Server Error in 3ms
+
+
+  
+NoMethodError (undefined method `values' for #<Array:0x007fb8dba3c618>
+Did you mean?  values_at):
+  
+app/controllers/rockpaper_controller.rb:13:in `lookup'
+Started GET "/rockpaper/lookup?throw=Paper" for 127.0.0.1 at 2018-03-26 21:45:52 +1100
+Processing by RockpaperController#lookup as HTML
+  Parameters: {"throw"=>"Paper"}
+Completed 500 Internal Server Error in 2ms
+
+
+  
+NoMethodError (undefined method `values' for #<Array:0x007fb8dc409718>
+Did you mean?  values_at):
+  
+app/controllers/rockpaper_controller.rb:13:in `lookup'
+Started GET "/rockpaper" for 127.0.0.1 at 2018-03-26 21:47:19 +1100
+Processing by RockpaperController#form as HTML
+  Rendering rockpaper/form.html.erb within layouts/application
+  Rendered rockpaper/form.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 20ms (Views: 17.4ms)
+
+
+Started GET "/rockpaper/lookup?throw=Paper" for 127.0.0.1 at 2018-03-26 21:47:21 +1100
+Processing by RockpaperController#lookup as HTML
+  Parameters: {"throw"=>"Paper"}
+Completed 500 Internal Server Error in 3ms
+
+
+  
+NoMethodError (undefined method `values' for #<Array:0x007fb8d5bad7a0>
+Did you mean?  values_at):
+  
+app/controllers/rockpaper_controller.rb:13:in `lookup'
+Started GET "/rockpaper" for 127.0.0.1 at 2018-03-26 21:47:57 +1100
+Processing by RockpaperController#form as HTML
+  Rendering rockpaper/form.html.erb within layouts/application
+  Rendered rockpaper/form.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 18ms (Views: 15.4ms)
+
+
+Started GET "/rockpaper/lookup?throw=Paper" for 127.0.0.1 at 2018-03-26 21:47:59 +1100
+Processing by RockpaperController#lookup as HTML
+  Parameters: {"throw"=>"Paper"}
+  Rendering rockpaper/lookup.html.erb within layouts/application
+  Rendered rockpaper/lookup.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 22ms (Views: 18.2ms)
+
+
+Started GET "/rockpaper" for 127.0.0.1 at 2018-03-26 21:48:09 +1100
+Processing by RockpaperController#form as HTML
+  Rendering rockpaper/form.html.erb within layouts/application
+  Rendered rockpaper/form.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 20ms (Views: 17.2ms)
+
+
+Started GET "/rockpaper/lookup?throw=Paper" for 127.0.0.1 at 2018-03-26 21:48:11 +1100
+Processing by RockpaperController#lookup as HTML
+  Parameters: {"throw"=>"Paper"}
+Completed 500 Internal Server Error in 97ms
+
+
+  
+NameError (undefined local variable or method `bjjjhjk' for #<RockpaperController:0x007fb8d676d1f8>):
+  
+app/controllers/rockpaper_controller.rb:16:in `lookup'
+Started PUT "/__web_console/repl_sessions/149579b5106844ead36b4423c4cd5294" for 127.0.0.1 at 2018-03-26 21:48:14 +1100
+Started PUT "/__web_console/repl_sessions/149579b5106844ead36b4423c4cd5294" for 127.0.0.1 at 2018-03-26 21:48:16 +1100
+Started PUT "/__web_console/repl_sessions/149579b5106844ead36b4423c4cd5294" for 127.0.0.1 at 2018-03-26 21:48:36 +1100
+Started PUT "/__web_console/repl_sessions/149579b5106844ead36b4423c4cd5294" for 127.0.0.1 at 2018-03-26 21:48:36 +1100
+Started PUT "/__web_console/repl_sessions/149579b5106844ead36b4423c4cd5294" for 127.0.0.1 at 2018-03-26 21:48:40 +1100
+Started PUT "/__web_console/repl_sessions/149579b5106844ead36b4423c4cd5294" for 127.0.0.1 at 2018-03-26 21:48:47 +1100
+Started GET "/rockpaper" for 127.0.0.1 at 2018-03-26 21:48:51 +1100
+Processing by RockpaperController#form as HTML
+  Rendering rockpaper/form.html.erb within layouts/application
+  Rendered rockpaper/form.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 21ms (Views: 17.6ms)
+
+
+Started GET "/rockpaper/lookup?throw=Rock" for 127.0.0.1 at 2018-03-26 21:48:52 +1100
+Processing by RockpaperController#lookup as HTML
+  Parameters: {"throw"=>"Rock"}
+Completed 500 Internal Server Error in 96ms
+
+
+  
+NameError (undefined local variable or method `bjjjhjk' for #<RockpaperController:0x007fb8dc168158>):
+  
+app/controllers/rockpaper_controller.rb:16:in `lookup'
+Started PUT "/__web_console/repl_sessions/0fe569d1f5c5befeb9200ba09a55ecac" for 127.0.0.1 at 2018-03-26 21:48:55 +1100
+Started PUT "/__web_console/repl_sessions/0fe569d1f5c5befeb9200ba09a55ecac" for 127.0.0.1 at 2018-03-26 21:48:59 +1100
+Started PUT "/__web_console/repl_sessions/0fe569d1f5c5befeb9200ba09a55ecac" for 127.0.0.1 at 2018-03-26 21:49:02 +1100
+Started GET "/rockpaper/lookup?throw=Rock" for 127.0.0.1 at 2018-03-26 21:49:22 +1100
+Processing by RockpaperController#lookup as HTML
+  Parameters: {"throw"=>"Rock"}
+Completed 500 Internal Server Error in 2ms
+
+
+  
+NoMethodError (undefined method `keys' for #<Array:0x007fb8dc0f92a8>):
+  
+app/controllers/rockpaper_controller.rb:15:in `lookup'
+Started GET "/rockpaper/lookup?throw=Scissors" for 127.0.0.1 at 2018-03-26 21:49:25 +1100
+Processing by RockpaperController#lookup as HTML
+  Parameters: {"throw"=>"Scissors"}
+Completed 500 Internal Server Error in 2ms
+
+
+  
+NoMethodError (undefined method `keys' for #<Array:0x007fb8d5c27780>):
+  
+app/controllers/rockpaper_controller.rb:15:in `lookup'
+Started PUT "/__web_console/repl_sessions/833022b6a660d2015e71a7b710c4d5ac" for 127.0.0.1 at 2018-03-26 21:49:28 +1100
+Started PUT "/__web_console/repl_sessions/833022b6a660d2015e71a7b710c4d5ac" for 127.0.0.1 at 2018-03-26 21:49:29 +1100
+Started GET "/rockpaper" for 127.0.0.1 at 2018-03-26 21:51:16 +1100
+  
+SyntaxError (/Users/soniabansal/Projects/WDi26-Homework/Sarabjit_Bansal/week_05/day_01/games/magicball-1/app/controllers/rockpaper_controller.rb:16: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+2 =  arr{my key = shuffle keys arr};
+                              ^):
+  
+app/controllers/rockpaper_controller.rb:16: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+Started PUT "/__web_console/repl_sessions/0066fb324c0c9e4634821dc599561863" for 127.0.0.1 at 2018-03-26 21:51:21 +1100
+Started PUT "/__web_console/repl_sessions/0066fb324c0c9e4634821dc599561863" for 127.0.0.1 at 2018-03-26 21:51:22 +1100
+Started GET "/rockpaper" for 127.0.0.1 at 2018-03-26 21:51:26 +1100
+  
+SyntaxError (/Users/soniabansal/Projects/WDi26-Homework/Sarabjit_Bansal/week_05/day_01/games/magicball-1/app/controllers/rockpaper_controller.rb:16: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+2 =  arr{my key = shuffle keys arr};
+                              ^):
+  
+app/controllers/rockpaper_controller.rb:16: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+Started GET "/" for 127.0.0.1 at 2018-03-26 22:04:59 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 19ms (Views: 18.3ms)
+
+
+Started GET "/rockpaper" for 127.0.0.1 at 2018-03-26 22:05:01 +1100
+  
+SyntaxError (/Users/soniabansal/Projects/WDi26-Homework/Sarabjit_Bansal/week_05/day_01/games/magicball-1/app/controllers/rockpaper_controller.rb:30: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/rockpaper_controller.rb:30: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/" for 127.0.0.1 at 2018-03-26 22:05:41 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 18ms (Views: 17.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-26 22:05:41 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 18ms (Views: 17.4ms)
+
+
+Started GET "/rockpaper" for 127.0.0.1 at 2018-03-26 22:05:42 +1100
+Processing by RockpaperController#form as HTML
+  Rendering rockpaper/form.html.erb within layouts/application
+  Rendered rockpaper/form.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 20ms (Views: 17.0ms)
+
+
+Started GET "/rockpaper/lookup?throw=Paper" for 127.0.0.1 at 2018-03-26 22:05:44 +1100
+Processing by RockpaperController#lookup as HTML
+  Parameters: {"throw"=>"Paper"}
+Completed 500 Internal Server Error in 3ms
+
+
+  
+NoMethodError (undefined method `downside' for "Paper":String
+Did you mean?  downcase):
+  
+app/controllers/rockpaper_controller.rb:13:in `lookup'
+Started GET "/rockpaper" for 127.0.0.1 at 2018-03-26 22:06:01 +1100
+Processing by RockpaperController#form as HTML
+  Rendering rockpaper/form.html.erb within layouts/application
+  Rendered rockpaper/form.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 32ms (Views: 29.0ms)
+
+
+Started GET "/rockpaper/lookup?throw=Rock" for 127.0.0.1 at 2018-03-26 22:06:03 +1100
+Processing by RockpaperController#lookup as HTML
+  Parameters: {"throw"=>"Rock"}
+Completed 500 Internal Server Error in 106ms
+
+
+  
+NameError (undefined local variable or method `result' for #<RockpaperController:0x007fb8dc5c7640>
+Did you mean?  @result):
+  
+app/controllers/rockpaper_controller.rb:15:in `lookup'
+Started GET "/rockpaper" for 127.0.0.1 at 2018-03-26 22:06:24 +1100
+  
+SyntaxError (/Users/soniabansal/Projects/WDi26-Homework/Sarabjit_Bansal/week_05/day_01/games/magicball-1/app/controllers/rockpaper_controller.rb:17: syntax error, unexpected tIVAR, expecting keyword_do or '{' or '('
+erchoice == 'paper' && r@esult == 'rock'
+                              ^):
+  
+app/controllers/rockpaper_controller.rb:17: syntax error, unexpected tIVAR, expecting keyword_do or '{' or '('
+Started GET "/" for 127.0.0.1 at 2018-03-26 22:06:44 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 17ms (Views: 16.5ms)
+
+
+Started GET "/rockpaper" for 127.0.0.1 at 2018-03-26 22:06:45 +1100
+Processing by RockpaperController#form as HTML
+  Rendering rockpaper/form.html.erb within layouts/application
+  Rendered rockpaper/form.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 22ms (Views: 18.3ms)
+
+
+Started GET "/rockpaper/lookup?throw=Paper" for 127.0.0.1 at 2018-03-26 22:06:47 +1100
+Processing by RockpaperController#lookup as HTML
+  Parameters: {"throw"=>"Paper"}
+  Rendering rockpaper/lookup.html.erb within layouts/application
+  Rendered rockpaper/lookup.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 23ms (Views: 19.2ms)
+
+
+Started GET "/rockpaper" for 127.0.0.1 at 2018-03-26 22:07:16 +1100
+Processing by RockpaperController#form as HTML
+  Rendering rockpaper/form.html.erb within layouts/application
+  Rendered rockpaper/form.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 20ms (Views: 16.6ms)
+
+
+Started GET "/rockpaper/lookup?throw=Rock" for 127.0.0.1 at 2018-03-26 22:07:18 +1100
+Processing by RockpaperController#lookup as HTML
+  Parameters: {"throw"=>"Rock"}
+  Rendering rockpaper/lookup.html.erb within layouts/application
+  Rendered rockpaper/lookup.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 24ms (Views: 21.2ms)
+
+
+Started GET "/rockpaper/lookup?throw=Rock" for 127.0.0.1 at 2018-03-26 22:07:55 +1100
+Processing by RockpaperController#lookup as HTML
+  Parameters: {"throw"=>"Rock"}
+  Rendering rockpaper/lookup.html.erb within layouts/application
+  Rendered rockpaper/lookup.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 21ms (Views: 17.8ms)
+
+
+Started GET "/rockpaper/lookup?throw=Scissors" for 127.0.0.1 at 2018-03-26 22:07:58 +1100
+Processing by RockpaperController#lookup as HTML
+  Parameters: {"throw"=>"Scissors"}
+  Rendering rockpaper/lookup.html.erb within layouts/application
+  Rendered rockpaper/lookup.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 23ms (Views: 19.3ms)
+
+
+Started GET "/rockpaper" for 127.0.0.1 at 2018-03-26 22:08:22 +1100
+  
+SyntaxError (/Users/soniabansal/Projects/WDi26-Homework/Sarabjit_Bansal/week_05/day_01/games/magicball-1/app/controllers/rockpaper_controller.rb:31: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/rockpaper_controller.rb:31: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/" for 127.0.0.1 at 2018-03-26 22:08:26 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 19ms (Views: 18.5ms)
+
+
+Started GET "/rockpaper" for 127.0.0.1 at 2018-03-26 22:08:27 +1100
+  
+SyntaxError (/Users/soniabansal/Projects/WDi26-Homework/Sarabjit_Bansal/week_05/day_01/games/magicball-1/app/controllers/rockpaper_controller.rb:31: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/rockpaper_controller.rb:31: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/" for 127.0.0.1 at 2018-03-26 22:08:54 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 18ms (Views: 17.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-26 22:08:54 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 18.5ms)
+
+
+Started GET "/rockpaper" for 127.0.0.1 at 2018-03-26 22:08:55 +1100
+Processing by RockpaperController#form as HTML
+  Rendering rockpaper/form.html.erb within layouts/application
+  Rendered rockpaper/form.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 28ms (Views: 24.1ms)
+
+
+Started GET "/rockpaper/lookup?throw=Scissors" for 127.0.0.1 at 2018-03-26 22:09:01 +1100
+Processing by RockpaperController#lookup as HTML
+  Parameters: {"throw"=>"Scissors"}
+Completed 500 Internal Server Error in 95ms
+
+
+  
+NameError (undefined local variable or method `endjhjhjhjkhendjhjhjhjkh' for #<RockpaperController:0x007fb8dc606fe8>):
+  
+app/controllers/rockpaper_controller.rb:30:in `lookup'
+Started PUT "/__web_console/repl_sessions/436bb3e58fff18b452a3ff4ee6e162dc" for 127.0.0.1 at 2018-03-26 22:09:05 +1100
+Started PUT "/__web_console/repl_sessions/436bb3e58fff18b452a3ff4ee6e162dc" for 127.0.0.1 at 2018-03-26 22:09:09 +1100
+Started PUT "/__web_console/repl_sessions/436bb3e58fff18b452a3ff4ee6e162dc" for 127.0.0.1 at 2018-03-26 22:09:18 +1100
+Started PUT "/__web_console/repl_sessions/436bb3e58fff18b452a3ff4ee6e162dc" for 127.0.0.1 at 2018-03-26 22:09:26 +1100
+Started PUT "/__web_console/repl_sessions/436bb3e58fff18b452a3ff4ee6e162dc" for 127.0.0.1 at 2018-03-26 22:09:44 +1100
+Started GET "/rockpaper" for 127.0.0.1 at 2018-03-26 22:12:56 +1100
+Processing by RockpaperController#form as HTML
+  Rendering rockpaper/form.html.erb within layouts/application
+  Rendered rockpaper/form.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 23ms (Views: 19.7ms)
+
+
+Started GET "/rockpaper/lookup?throw=Scissors" for 127.0.0.1 at 2018-03-26 22:13:00 +1100
+Processing by RockpaperController#lookup as HTML
+  Parameters: {"throw"=>"Scissors"}
+Completed 500 Internal Server Error in 105ms
+
+
+  
+NameError (undefined local variable or method `endjhjhjhjkhendjhjhjhjkh' for #<RockpaperController:0x007fb8dc111470>):
+  
+app/controllers/rockpaper_controller.rb:30:in `lookup'
+Started PUT "/__web_console/repl_sessions/12e3aaab2e78701fb99caf06a592d682" for 127.0.0.1 at 2018-03-26 22:13:05 +1100
+Started PUT "/__web_console/repl_sessions/12e3aaab2e78701fb99caf06a592d682" for 127.0.0.1 at 2018-03-26 22:13:09 +1100
+Started PUT "/__web_console/repl_sessions/12e3aaab2e78701fb99caf06a592d682" for 127.0.0.1 at 2018-03-26 22:13:15 +1100
+Started PUT "/__web_console/repl_sessions/12e3aaab2e78701fb99caf06a592d682" for 127.0.0.1 at 2018-03-26 22:13:20 +1100
+Started GET "/rockpaper/lookup?throw=Scissors" for 127.0.0.1 at 2018-03-26 22:13:28 +1100
+Processing by RockpaperController#lookup as HTML
+  Parameters: {"throw"=>"Scissors"}
+  Rendering rockpaper/lookup.html.erb within layouts/application
+  Rendered rockpaper/lookup.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 25ms (Views: 20.9ms)
+
+
+Started GET "/rockpaper/lookup?throw=Scissors" for 127.0.0.1 at 2018-03-26 22:13:31 +1100
+Processing by RockpaperController#lookup as HTML
+  Parameters: {"throw"=>"Scissors"}
+  Rendering rockpaper/lookup.html.erb within layouts/application
+  Rendered rockpaper/lookup.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 28ms (Views: 24.2ms)
+
+
+Started GET "/rockpaper/lookup?throw=Scissors" for 127.0.0.1 at 2018-03-26 22:13:33 +1100
+Processing by RockpaperController#lookup as HTML
+  Parameters: {"throw"=>"Scissors"}
+  Rendering rockpaper/lookup.html.erb within layouts/application
+  Rendered rockpaper/lookup.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 35ms (Views: 31.7ms)
+
+
+Started GET "/rockpaper/lookup?throw=Scissors" for 127.0.0.1 at 2018-03-26 22:13:35 +1100
+Processing by RockpaperController#lookup as HTML
+  Parameters: {"throw"=>"Scissors"}
+  Rendering rockpaper/lookup.html.erb within layouts/application
+  Rendered rockpaper/lookup.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 23ms (Views: 19.6ms)
+
+
+Started GET "/rockpaper/lookup?throw=Paper" for 127.0.0.1 at 2018-03-26 22:13:38 +1100
+Processing by RockpaperController#lookup as HTML
+  Parameters: {"throw"=>"Paper"}
+  Rendering rockpaper/lookup.html.erb within layouts/application
+  Rendered rockpaper/lookup.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 21ms (Views: 17.1ms)
+
+
+Started GET "/rockpaper/lookup?throw=Paper" for 127.0.0.1 at 2018-03-26 22:13:40 +1100
+Processing by RockpaperController#lookup as HTML
+  Parameters: {"throw"=>"Paper"}
+  Rendering rockpaper/lookup.html.erb within layouts/application
+  Rendered rockpaper/lookup.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 16.3ms)
+
+
+Started GET "/rockpaper/lookup?throw=Rock" for 127.0.0.1 at 2018-03-26 22:13:45 +1100
+Processing by RockpaperController#lookup as HTML
+  Parameters: {"throw"=>"Rock"}
+  Rendering rockpaper/lookup.html.erb within layouts/application
+  Rendered rockpaper/lookup.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 21ms (Views: 17.5ms)
+
+
+Started GET "/rockpaper/lookup?throw=Rock" for 127.0.0.1 at 2018-03-26 22:13:50 +1100
+Processing by RockpaperController#lookup as HTML
+  Parameters: {"throw"=>"Rock"}
+  Rendering rockpaper/lookup.html.erb within layouts/application
+  Rendered rockpaper/lookup.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 21ms (Views: 17.7ms)
+
+
+Started GET "/rockpaper/lookup?throw=Scissors" for 127.0.0.1 at 2018-03-26 22:14:01 +1100
+Processing by RockpaperController#lookup as HTML
+  Parameters: {"throw"=>"Scissors"}
+  Rendering rockpaper/lookup.html.erb within layouts/application
+  Rendered rockpaper/lookup.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 21ms (Views: 17.7ms)
+
+
+Started GET "/rockpaper/lookup?throw=Paper" for 127.0.0.1 at 2018-03-26 22:14:27 +1100
+Processing by RockpaperController#lookup as HTML
+  Parameters: {"throw"=>"Paper"}
+  Rendering rockpaper/lookup.html.erb within layouts/application
+  Rendered rockpaper/lookup.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 24ms (Views: 20.0ms)
+
+
+Started GET "/rockpaper/lookup?throw=Rock" for 127.0.0.1 at 2018-03-26 22:14:32 +1100
+Processing by RockpaperController#lookup as HTML
+  Parameters: {"throw"=>"Rock"}
+  Rendering rockpaper/lookup.html.erb within layouts/application
+  Rendered rockpaper/lookup.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 21ms (Views: 17.6ms)
+
+
+Started GET "/rockpaper/lookup?throw=Paper" for 127.0.0.1 at 2018-03-26 22:14:43 +1100
+Processing by RockpaperController#lookup as HTML
+  Parameters: {"throw"=>"Paper"}
+Completed 500 Internal Server Error in 103ms
+
+
+  
+NameError (undefined local variable or method `endjhjhjhjkhendjhjhjhjkh' for #<RockpaperController:0x007fb8d4e27e78>):
+  
+app/controllers/rockpaper_controller.rb:30:in `lookup'
+Started PUT "/__web_console/repl_sessions/3be08defacc64ea773cab3a83bd71cb9" for 127.0.0.1 at 2018-03-26 22:14:48 +1100
+Started PUT "/__web_console/repl_sessions/3be08defacc64ea773cab3a83bd71cb9" for 127.0.0.1 at 2018-03-26 22:14:49 +1100
+Started PUT "/__web_console/repl_sessions/3be08defacc64ea773cab3a83bd71cb9" for 127.0.0.1 at 2018-03-26 22:14:56 +1100
+Started PUT "/__web_console/repl_sessions/3be08defacc64ea773cab3a83bd71cb9" for 127.0.0.1 at 2018-03-26 22:15:00 +1100
+Started GET "/rockpaper/lookup?throw=Paper" for 127.0.0.1 at 2018-03-26 22:17:35 +1100
+Processing by RockpaperController#lookup as HTML
+  Parameters: {"throw"=>"Paper"}
+Completed 500 Internal Server Error in 107ms
+
+
+  
+NameError (undefined local variable or method `endjhjhjhjkhendjhjhjhjkh' for #<RockpaperController:0x007fb8d5b2f378>):
+  
+app/controllers/rockpaper_controller.rb:30:in `lookup'
+Started GET "/rockpaper" for 127.0.0.1 at 2018-03-26 22:17:38 +1100
+Processing by RockpaperController#form as HTML
+  Rendering rockpaper/form.html.erb within layouts/application
+  Rendered rockpaper/form.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 29ms (Views: 25.5ms)
+
+
+Started GET "/rockpaper/lookup?throw=Paper" for 127.0.0.1 at 2018-03-26 22:17:41 +1100
+Processing by RockpaperController#lookup as HTML
+  Parameters: {"throw"=>"Paper"}
+Completed 500 Internal Server Error in 98ms
+
+
+  
+NameError (undefined local variable or method `endjhjhjhjkhendjhjhjhjkh' for #<RockpaperController:0x007fb8dc59cc38>):
+  
+app/controllers/rockpaper_controller.rb:30:in `lookup'
+Started GET "/rockpaper/lookup?throw=Paper" for 127.0.0.1 at 2018-03-26 22:17:44 +1100
+Processing by RockpaperController#lookup as HTML
+  Parameters: {"throw"=>"Paper"}
+Completed 500 Internal Server Error in 104ms
+
+
+  
+NameError (undefined local variable or method `endjhjhjhjkhendjhjhjhjkh' for #<RockpaperController:0x007fb8dc371be8>):
+  
+app/controllers/rockpaper_controller.rb:30:in `lookup'
+Started GET "/" for 127.0.0.1 at 2018-03-26 22:17:46 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 20ms (Views: 19.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-26 22:17:47 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 23ms (Views: 22.2ms)
+
+
+Started GET "/rockpaper" for 127.0.0.1 at 2018-03-26 22:17:48 +1100
+Processing by RockpaperController#form as HTML
+  Rendering rockpaper/form.html.erb within layouts/application
+  Rendered rockpaper/form.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 23ms (Views: 20.2ms)
+
+
+Started GET "/rockpaper/lookup?throw=Rock" for 127.0.0.1 at 2018-03-26 22:17:50 +1100
+Processing by RockpaperController#lookup as HTML
+  Parameters: {"throw"=>"Rock"}
+Completed 500 Internal Server Error in 162ms
+
+
+  
+NameError (undefined local variable or method `endjhjhjhjkhendjhjhjhjkh' for #<RockpaperController:0x007fb8db963f70>):
+  
+app/controllers/rockpaper_controller.rb:30:in `lookup'
+Started GET "/rockpaper" for 127.0.0.1 at 2018-03-26 22:17:59 +1100
+Processing by RockpaperController#form as HTML
+  Rendering rockpaper/form.html.erb within layouts/application
+  Rendered rockpaper/form.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 20ms (Views: 16.0ms)
+
+
+Started GET "/rockpaper/lookup?throw=Scissors" for 127.0.0.1 at 2018-03-26 22:18:02 +1100
+Processing by RockpaperController#lookup as HTML
+  Parameters: {"throw"=>"Scissors"}
+  Rendering rockpaper/lookup.html.erb within layouts/application
+  Rendered rockpaper/lookup.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 22ms (Views: 19.2ms)
+
+
+Started GET "/rockpaper/lookup?throw=Rock" for 127.0.0.1 at 2018-03-26 22:18:09 +1100
+Processing by RockpaperController#lookup as HTML
+  Parameters: {"throw"=>"Rock"}
+  Rendering rockpaper/lookup.html.erb within layouts/application
+  Rendered rockpaper/lookup.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 21ms (Views: 17.8ms)
+
+
+Started GET "/rockpaper/lookup?throw=Paper" for 127.0.0.1 at 2018-03-26 22:18:16 +1100
+Processing by RockpaperController#lookup as HTML
+  Parameters: {"throw"=>"Paper"}
+  Rendering rockpaper/lookup.html.erb within layouts/application
+  Rendered rockpaper/lookup.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 15.9ms)
+
+
+Started GET "/rockpaper/lookup?throw=Rock" for 127.0.0.1 at 2018-03-26 22:18:20 +1100
+Processing by RockpaperController#lookup as HTML
+  Parameters: {"throw"=>"Rock"}
+  Rendering rockpaper/lookup.html.erb within layouts/application
+  Rendered rockpaper/lookup.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 22ms (Views: 18.2ms)
+
+
+Started GET "/rockpaper/lookup?throw=Paper" for 127.0.0.1 at 2018-03-26 22:18:25 +1100
+Processing by RockpaperController#lookup as HTML
+  Parameters: {"throw"=>"Paper"}
+  Rendering rockpaper/lookup.html.erb within layouts/application
+  Rendered rockpaper/lookup.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 21ms (Views: 17.8ms)
+
+
+Started GET "/rockpaper/lookup?throw=Rock" for 127.0.0.1 at 2018-03-26 22:18:39 +1100
+Processing by RockpaperController#lookup as HTML
+  Parameters: {"throw"=>"Rock"}
+  Rendering rockpaper/lookup.html.erb within layouts/application
+  Rendered rockpaper/lookup.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 21ms (Views: 17.8ms)
+
+
+Started GET "/rockpaper" for 127.0.0.1 at 2018-03-26 22:18:43 +1100
+Processing by RockpaperController#form as HTML
+  Rendering rockpaper/form.html.erb within layouts/application
+  Rendered rockpaper/form.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 29ms (Views: 26.4ms)
+
+
+Started GET "/rockpaper/lookup?throw=Rock" for 127.0.0.1 at 2018-03-26 22:18:46 +1100
+Processing by RockpaperController#lookup as HTML
+  Parameters: {"throw"=>"Rock"}
+  Rendering rockpaper/lookup.html.erb within layouts/application
+  Rendered rockpaper/lookup.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 20ms (Views: 16.4ms)
+
+
+Started GET "/rockpaper" for 127.0.0.1 at 2018-03-26 22:18:49 +1100
+Processing by RockpaperController#form as HTML
+  Rendering rockpaper/form.html.erb within layouts/application
+  Rendered rockpaper/form.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 20ms (Views: 17.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-26 22:18:50 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 18ms (Views: 17.9ms)
+
+
+Started GET "/rockpaper" for 127.0.0.1 at 2018-03-26 22:18:51 +1100
+Processing by RockpaperController#form as HTML
+  Rendering rockpaper/form.html.erb within layouts/application
+  Rendered rockpaper/form.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 22ms (Views: 17.9ms)
+
+
+Started GET "/rockpaper/lookup?throw=Rock" for 127.0.0.1 at 2018-03-26 22:18:53 +1100
+Processing by RockpaperController#lookup as HTML
+  Parameters: {"throw"=>"Rock"}
+  Rendering rockpaper/lookup.html.erb within layouts/application
+  Rendered rockpaper/lookup.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 22ms (Views: 18.7ms)
+
+
+Started GET "/rockpaper/lookup?throw=Rock" for 127.0.0.1 at 2018-03-26 22:19:01 +1100
+Processing by RockpaperController#lookup as HTML
+  Parameters: {"throw"=>"Rock"}
+  Rendering rockpaper/lookup.html.erb within layouts/application
+  Rendered rockpaper/lookup.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 20ms (Views: 16.4ms)
+
+
+Started GET "/rockpaper/lookup?throw=Scissors" for 127.0.0.1 at 2018-03-26 22:19:04 +1100
+Processing by RockpaperController#lookup as HTML
+  Parameters: {"throw"=>"Scissors"}
+  Rendering rockpaper/lookup.html.erb within layouts/application
+  Rendered rockpaper/lookup.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 20ms (Views: 16.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-26 22:19:06 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 20ms (Views: 19.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-26 22:19:08 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 18ms (Views: 17.7ms)
+
+
+Started GET "/rockpaper" for 127.0.0.1 at 2018-03-26 22:19:08 +1100
+Processing by RockpaperController#form as HTML
+  Rendering rockpaper/form.html.erb within layouts/application
+  Rendered rockpaper/form.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 22ms (Views: 17.7ms)
+
+
+Started GET "/rockpaper/lookup?throw=Paper" for 127.0.0.1 at 2018-03-26 22:19:11 +1100
+Processing by RockpaperController#lookup as HTML
+  Parameters: {"throw"=>"Paper"}
+  Rendering rockpaper/lookup.html.erb within layouts/application
+  Rendered rockpaper/lookup.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 21ms (Views: 17.9ms)
+
+
+Started GET "/rockpaper" for 127.0.0.1 at 2018-03-26 22:19:13 +1100
+Processing by RockpaperController#form as HTML
+  Rendering rockpaper/form.html.erb within layouts/application
+  Rendered rockpaper/form.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 22ms (Views: 19.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-26 22:19:14 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 19ms (Views: 18.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-26 22:19:15 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 18.0ms)
+
+
+Started GET "/rockpaper" for 127.0.0.1 at 2018-03-26 22:19:16 +1100
+Processing by RockpaperController#form as HTML
+  Rendering rockpaper/form.html.erb within layouts/application
+  Rendered rockpaper/form.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 22ms (Views: 17.5ms)
+
+
+Started GET "/rockpaper/lookup?throw=Paper" for 127.0.0.1 at 2018-03-26 22:19:19 +1100
+Processing by RockpaperController#lookup as HTML
+  Parameters: {"throw"=>"Paper"}
+  Rendering rockpaper/lookup.html.erb within layouts/application
+  Rendered rockpaper/lookup.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 21ms (Views: 17.9ms)
+
+
+Started GET "/rockpaper/lookup?throw=Scissors" for 127.0.0.1 at 2018-03-26 22:19:24 +1100
+Processing by RockpaperController#lookup as HTML
+  Parameters: {"throw"=>"Scissors"}
+  Rendering rockpaper/lookup.html.erb within layouts/application
+  Rendered rockpaper/lookup.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 20ms (Views: 16.3ms)
+
+
+Started GET "/rockpaper/lookup?throw=Rock" for 127.0.0.1 at 2018-03-26 22:19:29 +1100
+Processing by RockpaperController#lookup as HTML
+  Parameters: {"throw"=>"Rock"}
+  Rendering rockpaper/lookup.html.erb within layouts/application
+  Rendered rockpaper/lookup.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 22ms (Views: 18.4ms)
+
+
+Started GET "/rockpaper/lookup?throw=Paper" for 127.0.0.1 at 2018-03-26 22:19:35 +1100
+Processing by RockpaperController#lookup as HTML
+  Parameters: {"throw"=>"Paper"}
+  Rendering rockpaper/lookup.html.erb within layouts/application
+  Rendered rockpaper/lookup.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 29ms (Views: 25.3ms)
+
+
+Started GET "/rockpaper/lookup?throw=Scissors" for 127.0.0.1 at 2018-03-26 22:19:45 +1100
+Processing by RockpaperController#lookup as HTML
+  Parameters: {"throw"=>"Scissors"}
+  Rendering rockpaper/lookup.html.erb within layouts/application
+  Rendered rockpaper/lookup.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 16.2ms)
+
+
+Started GET "/rockpaper/lookup?throw=Rock" for 127.0.0.1 at 2018-03-26 22:19:50 +1100
+Processing by RockpaperController#lookup as HTML
+  Parameters: {"throw"=>"Rock"}
+  Rendering rockpaper/lookup.html.erb within layouts/application
+  Rendered rockpaper/lookup.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 20ms (Views: 16.4ms)
+
+
+Started GET "/rockpaper" for 127.0.0.1 at 2018-03-26 22:21:29 +1100
+Processing by RockpaperController#form as HTML
+  Rendering rockpaper/form.html.erb within layouts/application
+  Rendered rockpaper/form.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 19ms (Views: 16.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-26 22:21:30 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 22ms (Views: 21.2ms)
+
+
+Started GET "/rockpaper" for 127.0.0.1 at 2018-03-26 22:21:31 +1100
+Processing by RockpaperController#form as HTML
+  Rendering rockpaper/form.html.erb within layouts/application
+  Rendered rockpaper/form.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 23ms (Views: 18.6ms)
+
+
+Started GET "/rockpaper/lookup?throw=Paper" for 127.0.0.1 at 2018-03-26 22:21:33 +1100
+Processing by RockpaperController#lookup as HTML
+  Parameters: {"throw"=>"Paper"}
+  Rendering rockpaper/lookup.html.erb within layouts/application
+  Rendered rockpaper/lookup.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 21ms (Views: 17.2ms)
+
+
+Started GET "/rockpaper/lookup?throw=Scissors" for 127.0.0.1 at 2018-03-26 22:21:36 +1100
+Processing by RockpaperController#lookup as HTML
+  Parameters: {"throw"=>"Scissors"}
+  Rendering rockpaper/lookup.html.erb within layouts/application
+  Rendered rockpaper/lookup.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 20ms (Views: 16.7ms)
+
+
+Started GET "/rockpaper/lookup?throw=Rock" for 127.0.0.1 at 2018-03-26 22:21:40 +1100
+Processing by RockpaperController#lookup as HTML
+  Parameters: {"throw"=>"Rock"}
+  Rendering rockpaper/lookup.html.erb within layouts/application
+  Rendered rockpaper/lookup.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 25ms (Views: 21.8ms)
+
+
+Started GET "/rockpaper/lookup?throw=Paper" for 127.0.0.1 at 2018-03-26 22:21:42 +1100
+Processing by RockpaperController#lookup as HTML
+  Parameters: {"throw"=>"Paper"}
+  Rendering rockpaper/lookup.html.erb within layouts/application
+  Rendered rockpaper/lookup.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 23ms (Views: 19.7ms)
+
+
+Started GET "/rockpaper" for 127.0.0.1 at 2018-03-26 22:22:37 +1100
+Processing by RockpaperController#form as HTML
+  Rendering rockpaper/form.html.erb within layouts/application
+  Rendered rockpaper/form.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 15.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-26 22:22:37 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 19ms (Views: 18.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-26 23:10:19 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 406ms (Views: 256.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-26 23:11:11 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 26ms (Views: 25.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-26 23:11:14 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 19ms (Views: 19.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-26 23:12:51 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 26ms (Views: 25.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-26 23:13:04 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 30ms (Views: 29.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-26 23:13:28 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 27ms (Views: 26.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-26 23:13:49 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 25ms (Views: 24.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-26 23:14:13 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 25ms (Views: 25.0ms)
+
+
+Started GET "/magicball" for 127.0.0.1 at 2018-03-26 23:14:17 +1100
+Processing by MagicballController#form as HTML
+  Rendering magicball/form.html.erb within layouts/application
+  Rendered magicball/form.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 23ms (Views: 19.3ms)
+
+
+Started GET "/magicball/lookup?quest=how+old+are+you%3F" for 127.0.0.1 at 2018-03-26 23:14:42 +1100
+Processing by MagicballController#lookup as HTML
+  Parameters: {"quest"=>"how old are you?"}
+  Rendering magicball/lookup.html.erb within layouts/application
+  Rendered magicball/lookup.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 21ms (Views: 17.2ms)
+
+
+Started GET "/magicball/lookup?quest=how+old+are+you%3F" for 127.0.0.1 at 2018-03-26 23:15:11 +1100
+Processing by MagicballController#lookup as HTML
+  Parameters: {"quest"=>"how old are you?"}
+  Rendering magicball/lookup.html.erb within layouts/application
+  Rendered magicball/lookup.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 26ms (Views: 23.1ms)
+
+
+Started GET "/magicball/lookup?quest=hello" for 127.0.0.1 at 2018-03-26 23:15:29 +1100
+Processing by MagicballController#lookup as HTML
+  Parameters: {"quest"=>"hello"}
+  Rendering magicball/lookup.html.erb within layouts/application
+  Rendered magicball/lookup.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 20ms (Views: 17.1ms)
+
+
+Started GET "/magicball/lookup?quest=hello" for 127.0.0.1 at 2018-03-26 23:16:37 +1100
+Processing by MagicballController#lookup as HTML
+  Parameters: {"quest"=>"hello"}
+  Rendering magicball/lookup.html.erb within layouts/application
+  Rendered magicball/lookup.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 20ms (Views: 16.8ms)
+
+
+Started GET "/magicball/lookup?quest=hello" for 127.0.0.1 at 2018-03-26 23:16:59 +1100
+Processing by MagicballController#lookup as HTML
+  Parameters: {"quest"=>"hello"}
+  Rendering magicball/lookup.html.erb within layouts/application
+  Rendered magicball/lookup.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 22ms (Views: 18.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-26 23:17:17 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 22ms (Views: 21.5ms)
+
+
+Started GET "/secretno" for 127.0.0.1 at 2018-03-26 23:17:18 +1100
+Processing by SecretnoController#form as HTML
+  Rendering secretno/form.html.erb within layouts/application
+  Rendered secretno/form.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 22ms (Views: 18.4ms)
+
+
+Started GET "/secretno/lookup?secretno=6" for 127.0.0.1 at 2018-03-26 23:17:21 +1100
+Processing by SecretnoController#lookup as HTML
+  Parameters: {"secretno"=>"6"}
+  Rendering secretno/lookup.html.erb within layouts/application
+  Rendered secretno/lookup.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 20ms (Views: 16.4ms)
+
+
+Started GET "/secretno/lookup?secretno=6" for 127.0.0.1 at 2018-03-26 23:17:26 +1100
+Processing by SecretnoController#lookup as HTML
+  Parameters: {"secretno"=>"6"}
+  Rendering secretno/lookup.html.erb within layouts/application
+  Rendered secretno/lookup.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 20ms (Views: 17.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-26 23:17:36 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 26ms (Views: 25.1ms)
+
+
+Started GET "/secretno" for 127.0.0.1 at 2018-03-26 23:17:37 +1100
+Processing by SecretnoController#form as HTML
+  Rendering secretno/form.html.erb within layouts/application
+  Rendered secretno/form.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 25ms (Views: 20.4ms)
+
+
+Started GET "/rockpaper" for 127.0.0.1 at 2018-03-26 23:17:46 +1100
+Processing by RockpaperController#form as HTML
+  Rendering rockpaper/form.html.erb within layouts/application
+  Rendered rockpaper/form.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 24ms (Views: 21.1ms)
+
+
+Started GET "/rockpaper/lookup?throw=Rock" for 127.0.0.1 at 2018-03-26 23:17:49 +1100
+Processing by RockpaperController#lookup as HTML
+  Parameters: {"throw"=>"Rock"}
+  Rendering rockpaper/lookup.html.erb within layouts/application
+  Rendered rockpaper/lookup.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 20ms (Views: 17.2ms)
+
+
+Started GET "/rockpaper/lookup?throw=Scissors" for 127.0.0.1 at 2018-03-26 23:17:54 +1100
+Processing by RockpaperController#lookup as HTML
+  Parameters: {"throw"=>"Scissors"}
+  Rendering rockpaper/lookup.html.erb within layouts/application
+  Rendered rockpaper/lookup.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 20ms (Views: 16.5ms)
+
+
+Started GET "/rockpaper/lookup?throw=Rock" for 127.0.0.1 at 2018-03-26 23:18:05 +1100
+Processing by RockpaperController#lookup as HTML
+  Parameters: {"throw"=>"Rock"}
+  Rendering rockpaper/lookup.html.erb within layouts/application
+  Rendered rockpaper/lookup.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 20ms (Views: 17.2ms)
+
+
+Started GET "/rockpaper/lookup?throw=Paper" for 127.0.0.1 at 2018-03-26 23:18:15 +1100
+Processing by RockpaperController#lookup as HTML
+  Parameters: {"throw"=>"Paper"}
+  Rendering rockpaper/lookup.html.erb within layouts/application
+  Rendered rockpaper/lookup.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 20ms (Views: 16.9ms)
+
+
+Started GET "/rockpaper/lookup?throw=Rock" for 127.0.0.1 at 2018-03-26 23:18:19 +1100
+Processing by RockpaperController#lookup as HTML
+  Parameters: {"throw"=>"Rock"}
+  Rendering rockpaper/lookup.html.erb within layouts/application
+  Rendered rockpaper/lookup.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 20ms (Views: 16.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-26 23:18:21 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 21ms (Views: 20.5ms)
+
+
+Started GET "/rockpaper" for 127.0.0.1 at 2018-03-26 23:18:22 +1100
+Processing by RockpaperController#form as HTML
+  Rendering rockpaper/form.html.erb within layouts/application
+  Rendered rockpaper/form.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 31ms (Views: 27.2ms)
+
+
+Started GET "/rockpaper/lookup?throw=Rock" for 127.0.0.1 at 2018-03-26 23:18:24 +1100
+Processing by RockpaperController#lookup as HTML
+  Parameters: {"throw"=>"Rock"}
+  Rendering rockpaper/lookup.html.erb within layouts/application
+  Rendered rockpaper/lookup.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 22ms (Views: 18.2ms)
+
+
+Started GET "/rockpaper/lookup?throw=Paper" for 127.0.0.1 at 2018-03-26 23:18:29 +1100
+Processing by RockpaperController#lookup as HTML
+  Parameters: {"throw"=>"Paper"}
+  Rendering rockpaper/lookup.html.erb within layouts/application
+  Rendered rockpaper/lookup.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 20ms (Views: 16.8ms)
+
+
+Started GET "/rockpaper" for 127.0.0.1 at 2018-03-26 23:20:53 +1100
+Processing by RockpaperController#form as HTML
+  Rendering rockpaper/form.html.erb within layouts/application
+  Rendered rockpaper/form.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 20ms (Views: 16.8ms)
+
+
+Started GET "/rockpaper/lookup?throw=Paper" for 127.0.0.1 at 2018-03-26 23:20:57 +1100
+Processing by RockpaperController#lookup as HTML
+  Parameters: {"throw"=>"Paper"}
+  Rendering rockpaper/lookup.html.erb within layouts/application
+  Rendered rockpaper/lookup.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 22ms (Views: 18.4ms)
+
+
+Started GET "/rockpaper/lookup?throw=Scissors" for 127.0.0.1 at 2018-03-26 23:21:03 +1100
+Processing by RockpaperController#lookup as HTML
+  Parameters: {"throw"=>"Scissors"}
+  Rendering rockpaper/lookup.html.erb within layouts/application
+  Rendered rockpaper/lookup.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 20ms (Views: 16.8ms)
+
+
+Started GET "/rockpaper/lookup?throw=Scissors" for 127.0.0.1 at 2018-03-26 23:21:27 +1100
+Processing by RockpaperController#lookup as HTML
+  Parameters: {"throw"=>"Scissors"}
+  Rendering rockpaper/lookup.html.erb within layouts/application
+  Rendered rockpaper/lookup.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 31ms (Views: 27.7ms)
+
+
+Started GET "/rockpaper/lookup?throw=Rock" for 127.0.0.1 at 2018-03-26 23:21:31 +1100
+Processing by RockpaperController#lookup as HTML
+  Parameters: {"throw"=>"Rock"}
+  Rendering rockpaper/lookup.html.erb within layouts/application
+  Rendered rockpaper/lookup.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 20ms (Views: 17.4ms)
+
+
+Started GET "/rockpaper/lookup?throw=" for 127.0.0.1 at 2018-03-26 23:21:35 +1100
+Processing by RockpaperController#lookup as HTML
+  Parameters: {"throw"=>""}
+  Rendering rockpaper/lookup.html.erb within layouts/application
+  Rendered rockpaper/lookup.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 24ms (Views: 20.4ms)
+
+
+Started GET "/rockpaper" for 127.0.0.1 at 2018-03-26 23:21:44 +1100
+Processing by RockpaperController#form as HTML
+  Rendering rockpaper/form.html.erb within layouts/application
+  Rendered rockpaper/form.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 21ms (Views: 17.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-27 12:36:23 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 415ms (Views: 273.5ms)
+
+
+Started GET "/magicball" for 127.0.0.1 at 2018-03-27 12:36:25 +1100
+Processing by MagicballController#form as HTML
+  Rendering magicball/form.html.erb within layouts/application
+  Rendered magicball/form.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 27ms (Views: 22.8ms)
+
+
+Started GET "/magicball/lookup?quest=d" for 127.0.0.1 at 2018-03-27 12:36:29 +1100
+Processing by MagicballController#lookup as HTML
+  Parameters: {"quest"=>"d"}
+  Rendering magicball/lookup.html.erb within layouts/application
+  Rendered magicball/lookup.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 24ms (Views: 19.2ms)
+
+
+Started GET "/magicball/lookup?quest=d" for 127.0.0.1 at 2018-03-27 12:36:32 +1100
+Processing by MagicballController#lookup as HTML
+  Parameters: {"quest"=>"d"}
+  Rendering magicball/lookup.html.erb within layouts/application
+  Rendered magicball/lookup.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 22ms (Views: 18.7ms)
+
+
+Started GET "/magicball/lookup?quest=d" for 127.0.0.1 at 2018-03-27 12:36:33 +1100
+Processing by MagicballController#lookup as HTML
+  Parameters: {"quest"=>"d"}
+  Rendering magicball/lookup.html.erb within layouts/application
+  Rendered magicball/lookup.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 23ms (Views: 19.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-27 12:36:37 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 22ms (Views: 21.2ms)
+
+
+Started GET "/secretno" for 127.0.0.1 at 2018-03-27 12:36:39 +1100
+Processing by SecretnoController#form as HTML
+  Rendering secretno/form.html.erb within layouts/application
+  Rendered secretno/form.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 25ms (Views: 20.8ms)
+
+
+Started GET "/secretno/lookup?secretno=6" for 127.0.0.1 at 2018-03-27 12:36:42 +1100
+Processing by SecretnoController#lookup as HTML
+  Parameters: {"secretno"=>"6"}
+  Rendering secretno/lookup.html.erb within layouts/application
+  Rendered secretno/lookup.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 28ms (Views: 18.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-27 12:36:45 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 21ms (Views: 20.4ms)
+
+
+Started GET "/rockpaper" for 127.0.0.1 at 2018-03-27 12:37:20 +1100
+Processing by RockpaperController#form as HTML
+  Rendering rockpaper/form.html.erb within layouts/application
+  Rendered rockpaper/form.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 24ms (Views: 19.9ms)
+
+
+Started GET "/rockpaper/lookup?throw=Paper" for 127.0.0.1 at 2018-03-27 12:37:24 +1100
+Processing by RockpaperController#lookup as HTML
+  Parameters: {"throw"=>"Paper"}
+  Rendering rockpaper/lookup.html.erb within layouts/application
+  Rendered rockpaper/lookup.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 28ms (Views: 18.9ms)
+
+

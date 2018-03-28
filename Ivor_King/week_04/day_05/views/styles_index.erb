@@ -1,0 +1,11 @@
+<h2>Styles index</h2>
+
+<ul>
+    <% @styles.each do |style| %>
+        <li>
+            <a href="/styles/<%= style.id %>">
+                <%= style.name %>
+            </a>
+        </li>
+    <% end %>
+</ul>
