@@ -1,0 +1,25 @@
+<h2><%= @ocean.name %></h2>
+<% if @ocean.map_ocean.present? %>
+  <%= image_tag @ocean.map_ocean, :alt => @ocean.name, :class => 'ocean_images' %>
+<% end %>
+<table>
+  <thead>
+    <tr>
+      <td>Ocean Name</td>
+      <td>Maximum depth (m)</td>
+      <td>Average depth (m)</td>
+      <td>Surface area (km&sup2)</td>
+    </tr>
+  </thead>
+  <tbody>
+    <td><%= @ocean.name %></td>
+    <td><%= @ocean.max_depth %></td>
+    <td><%= @ocean.average_depth %></td>
+    <td><%= @ocean.surface_area %></td>
+  </tbody>
+</table>
+
+<div class="controls">
+  <%= link_to 'Edit ocean record', oceans_edit_path(@ocean.id) %> *|*
+  <%= link_to 'Delete ocean record', ocean_path(@ocean.id), :method => 'delete' %>
+</div>

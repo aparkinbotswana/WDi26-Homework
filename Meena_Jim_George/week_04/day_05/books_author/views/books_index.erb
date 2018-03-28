@@ -1,0 +1,8 @@
+<h2>Book Collection</h2>
+<ul>
+  <% @books.each do |book| %>
+  <li>
+    <a href ="books/<%= book['id'] %>"><%= book['name']  %></a>
+  </li>
+  <% end %>
+</ul>

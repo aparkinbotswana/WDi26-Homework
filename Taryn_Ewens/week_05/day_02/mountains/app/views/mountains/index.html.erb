@@ -1,0 +1,13 @@
+<div class="container">
+  <h2>All Mountains</h2>
+
+
+  <ul>
+    <% @mountains.each do | mountain | %>
+    <li>
+      <%= link_to mountain.name, mountain_path(mountain.id) %>
+    </li>
+    <% end %>
+  </ul>
+
+</div>

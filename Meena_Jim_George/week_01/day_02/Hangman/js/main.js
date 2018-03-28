@@ -41,5 +41,7 @@ let checker=0;
 
 }
 guessLetter('w');
-guessLetter('O');
-guessLetter('k');
+// guessLetter('O');
+// guessLetter('k');
+// guessLetter('m');
+// guessLetter('n');

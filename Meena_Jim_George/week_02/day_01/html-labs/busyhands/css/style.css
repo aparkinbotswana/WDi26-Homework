@@ -1,46 +1,185 @@
-body{
-  text-align:justify;
-  padding-left: 10%;
-  padding-right: 22%;
-  width :960px;
-  /* padding:20px; */
-  /* margin:0 60px; */
+
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #7f7d78;
+	font-size: 13px;
+	line-height: 1.1;
+	background: #FFF;
+	background: #ccc;
 }
 
-li{
-  display: inline;
+#container {
+	width: 950px;
 
-  font-size:20px;
-  font-family: Arial;
-  color:white;
-  margin : 10px;
-}
-ul {
-  width:100%;
-  background-color: black;
-  padding:20px;
-
+	margin: 0 auto; /*centers our container on the page */
 }
 
 
-a.rollover:hover {
-	background-color:blue;
-	}
-
-.box {
-    display: inline-block;
-    width: 225px;
-    height: 100px;
-
-  }
-.box2 {
-      display: inline-block;
-      width: 225px;
-      height: 500px;
-      background-color: black;
-      color:white;
-    }
-/*.column{
-  display: inline;
+.home-box a{
+	color:blue;
 }
-*/
+
+p {
+		margin: 0px 0px 15px 0px;
+		line-height: 1.2;
+
+	} /* there's no explicit rule, but putting about 15px margin only to the bottom of your p is generally a good rule of thumb */
+
+nav {
+	width: 100%;
+	float: left;
+	display: block;
+	background-color: black;
+	margin: 0 0 1em 0;
+	padding: 0;
+}
+a {
+	color:white;
+}
+nav ul li {
+	display: inline-block;
+	color: white;
+	width: 100px;
+
+}
+
+nav li a {
+	display: block;
+	width: 100px;
+	padding: 0;
+	padding-left: 160px;
+	margin: 0 0 1em 0;
+}
+footer	{
+	background-color: black;
+	color: white;
+}
+footer li {
+
+border-bottom: 1px solid white;
+border-top: 1px solid white;
+line-height: 1.8;
+}
+footer ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+#home-boxes:after {
+	content: "";
+	display: table;
+	clear:both;
+
+}
+#blurb p {
+	display: inline-block;
+	border-top: 1px solid grey;
+	border-left: 1px solid grey;
+	border-bottom: 1px solid white;
+	border-right: 1px solid white;
+	padding-left: 10px;
+	width: 950px;
+	text-align: top;
+}
+.home-box {
+	float:left;
+	width: 31%;
+	padding:11px;
+	height: 300px;
+
+}
+
+.column {
+    float: left;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left, .right {
+  width: 22%;
+	/*border-bottom: dashed #999 2px;*/
+
+}
+.column right li {
+
+}
+.middle {
+  width: 50%;
+
+}
+
+#socialMedia {
+	float: right;
+}
+
+#socialMedia ul li {
+	 display:inline-block;
+	 width:60px;
+	 height:60px;
+	 background:blue;
+	 text-indent:-9999em;
+}
+
+#socialMedia ul li.linkedIn {
+	background:url(../images/socialNav.png) 0px 64px;
+}
+#socialMedia ul li.twitter {
+	background:url(../images/socialNav.png) -60px 64px;
+}
+
+#socialMedia ul li.facebook {
+	background:url(../images/socialNav.png) -120px 64px;
+}
+
+#socialMedia ul li.rss {
+	background:url(../images/socialNav.png) -180px 64px;
+}
+
+
+
+#socialMedia ul li.linkedIn:hover {
+	background:url(../images/socialNav.png) 0px 0px;
+}
+
+#socialMedia ul li.twitter:hover {
+	background:url(../images/socialNav.png) -60px 0px;
+}
+
+#socialMedia ul li.facebook:hover {
+	background:url(../images/socialNav.png) -120px 0px;
+}
+
+#socialMedia ul li.rss:hover {
+	background:url(../images/socialNav.png) -180px 0px;
+}
+
+
+
+/*-----------------------------------------------------------------------------
+=06 MISC
+-----------------------------------------------------------------------------*/
+
+
+.clear {
+	clear: both;
+}
+
+.imgright {
+	float: right;
+}
+
+.imgleft {
+	float: left;
+}
+
+
+.split-para      {
+	 display:block;
+ }
+
+.split-para span {
+	display:block;
+	float:right;
+	margin-left:10px;}
