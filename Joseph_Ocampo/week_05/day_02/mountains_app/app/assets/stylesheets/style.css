@@ -1,0 +1,14 @@
+.edit_form input {
+  display: block;
+  border: none;
+  border-bottom: 1px solid grey;
+  width: 100%;
+  padding: 2em;
+  padding-left: 0;
+  margin-bottom: 1em;
+}
+
+input[type=text]:focus {
+    outline: none;
+    border-bottom: 2px solid pink;
+}

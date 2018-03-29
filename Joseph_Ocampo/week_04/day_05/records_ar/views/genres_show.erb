@@ -1,0 +1,23 @@
+<h2><%= @genre.genre %></h2>
+
+<% unless @genre.records.empty? %>
+  <h3>Associated Records</h3>
+  <ul>
+    <% @genre.records.each do |record| %>
+    <a href="/records/ <%= record.id%>">
+    <li><%= record.title %></li>
+    </a>
+    <%end%>
+  </ul>
+<% end %>
+
+<% unless @genre.image.nil? || @genre.image.empty? %>
+  <img class="feature" src="<%= @genre.image %>" alt="<%= @genre.genre %>">
+<% end %>
+
+
+
+<div class="controls">
+  <a href="/genres/<%= @genre.id %>/edit">Edit</a>
+  <a href="/genres/<%= @genre.id %>/delete">Delete</a>
+</div>

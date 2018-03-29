@@ -71,7 +71,7 @@ def plan_trip
     # conditional statments to check if start and end line are the same
 
     if line1name == line2name
-        # conditional to check reverse or forward on line
+        # check reverse or forward on line
         if start_stop > last_stop
           trip = line1[last_stop..start_stop].reverse
         else
@@ -88,15 +88,16 @@ def plan_trip
         # conditional to check reverse or forward on line
         # first part of trip
         if start_stop > union_transfer
-        trip1 = line1[union_transfer..start_stop].reverse
-        elsif
-        trip1 = line1[start_stop..union_transfer]
+          trip1 = line1[union_transfer..start_stop].reverse
+        else
+          trip1 = line1[start_stop..union_transfer]
         end
+
         # second part of trip
         if last_stop > union_transfer2
-          trip2 = line1[last_stop..union_transfer2]
+          trip2 = line2[union_transfer2..last_stop]
         else
-          trip2 = line1[union_transfer..start_stop].reverse
+          trip2 = line2[last_stop..union_transfer2].reverse
         end
 
         puts "-=" * 40

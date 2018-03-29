@@ -1,0 +1,10 @@
+<h2>Edit genre</h2>
+
+<form method="post" action="/genres/<%= @genre.id %>">
+  <label>Name:</label>
+  <input type="text" name="genre" placeholder="genre name" value="<%= @genre.genre %>">
+  <label>Image:</label>
+  <input type="url" name="image" placeholder="http://..." value="<%= @genre.image %>">
+
+  <button>Update genre</button>
+</form>
