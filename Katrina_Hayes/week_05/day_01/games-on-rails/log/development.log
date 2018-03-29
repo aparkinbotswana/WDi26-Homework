@@ -1169,3 +1169,218 @@ Processing by PagesController#home as HTML
 Completed 200 OK in 68ms (Views: 61.6ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-03-27 09:29:04 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 1623ms (Views: 861.5ms)
+
+
+Started GET "/games/scissors_paper_rock/scissors" for 127.0.0.1 at 2018-03-27 09:29:26 +1100
+Processing by GamesController#scissors_paper_rock_play as HTML
+  Parameters: {"throw"=>"scissors"}
+Completed 500 Internal Server Error in 172ms
+
+
+  
+NameError (undefined local variable or method `winner' for #<GamesController:0x007fa5f9ce1a48>):
+  
+app/controllers/games_controller.rb:16:in `scissors_paper_rock_play'
+Started GET "/" for 127.0.0.1 at 2018-03-27 09:32:52 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 67ms (Views: 59.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-27 09:32:55 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 51ms (Views: 45.1ms)
+
+
+Started GET "/games/scissors_paper_rock/scissors" for 127.0.0.1 at 2018-03-27 09:32:59 +1100
+Processing by GamesController#scissors_paper_rock_play as HTML
+  Parameters: {"throw"=>"scissors"}
+Completed 500 Internal Server Error in 223ms
+
+
+  
+NameError (undefined local variable or method `winner' for #<GamesController:0x007fa5f9c4b7a0>):
+  
+app/controllers/games_controller.rb:16:in `scissors_paper_rock_play'
+Started GET "/" for 127.0.0.1 at 2018-03-27 09:33:25 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 53ms (Views: 48.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-27 09:33:28 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 33ms (Views: 24.4ms)
+
+
+Started GET "/games/scissors_paper_rock/scissors" for 127.0.0.1 at 2018-03-27 09:33:32 +1100
+Processing by GamesController#scissors_paper_rock_play as HTML
+  Parameters: {"throw"=>"scissors"}
+  Rendering games/scissors_paper_rock_play.html.erb within layouts/application
+  Rendered games/scissors_paper_rock_play.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 47ms (Views: 34.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-27 09:34:23 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 26ms (Views: 22.5ms)
+
+
+Started GET "/games/scissors_paper_rock/scissors" for 127.0.0.1 at 2018-03-27 09:34:25 +1100
+Processing by GamesController#scissors_paper_rock_play as HTML
+  Parameters: {"throw"=>"scissors"}
+  Rendering games/scissors_paper_rock_play.html.erb within layouts/application
+  Rendered games/scissors_paper_rock_play.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 53ms (Views: 32.5ms)
+
+
+Started GET "/games/scissors_paper_rock/paper" for 127.0.0.1 at 2018-03-27 09:36:16 +1100
+Processing by GamesController#scissors_paper_rock_play as HTML
+  Parameters: {"throw"=>"paper"}
+  Rendering games/scissors_paper_rock_play.html.erb within layouts/application
+  Rendered games/scissors_paper_rock_play.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 76ms (Views: 67.2ms)
+
+
+Started GET "/games/scissors_paper_rock/rock" for 127.0.0.1 at 2018-03-27 09:36:20 +1100
+Processing by GamesController#scissors_paper_rock_play as HTML
+  Parameters: {"throw"=>"rock"}
+  Rendering games/scissors_paper_rock_play.html.erb within layouts/application
+  Rendered games/scissors_paper_rock_play.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 64ms (Views: 54.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-27 09:37:50 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 35ms (Views: 31.1ms)
+
+
+Started GET "/games/scissors_paper_rock/scissors" for 127.0.0.1 at 2018-03-27 09:37:55 +1100
+Processing by GamesController#scissors_paper_rock_play as HTML
+  Parameters: {"throw"=>"scissors"}
+  Rendering games/scissors_paper_rock_play.html.erb within layouts/application
+  Rendered games/scissors_paper_rock_play.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 40ms (Views: 32.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-27 09:38:12 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 37ms (Views: 32.0ms)
+
+
+Started GET "/games/scissors_paper_rock/scissors" for 127.0.0.1 at 2018-03-27 09:38:13 +1100
+Processing by GamesController#scissors_paper_rock_play as HTML
+  Parameters: {"throw"=>"scissors"}
+  Rendering games/scissors_paper_rock_play.html.erb within layouts/application
+  Rendered games/scissors_paper_rock_play.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 66ms (Views: 58.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-27 09:38:47 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 92ms (Views: 75.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-27 09:40:07 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 69ms (Views: 63.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-27 09:40:50 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 84ms (Views: 76.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-27 09:41:21 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 76ms (Views: 67.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-27 09:45:52 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 58ms (Views: 52.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-27 09:49:20 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 73ms (Views: 67.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-27 09:50:10 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 83ms (Views: 76.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-27 09:51:23 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 49ms (Views: 43.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-27 09:51:44 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 100ms (Views: 91.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-27 09:53:01 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 78ms (Views: 72.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-27 09:53:24 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 62ms (Views: 57.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-27 09:54:26 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 88ms (Views: 81.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-27 09:54:40 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 57ms (Views: 52.7ms)
+
+
