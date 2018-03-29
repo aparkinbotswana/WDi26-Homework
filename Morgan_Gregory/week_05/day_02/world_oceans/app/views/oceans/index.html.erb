@@ -1,0 +1,11 @@
+<h2>Oceans of the world</h2>
+<h3>What's happening here ????? :-) ??????</h3>
+<h4>Why the array?</h4>
+<h5>I understand there is a loopsi loop</h5>
+<h6>How do I control this code ;-) ???</h6>
+
+<%= @oceans.each do |ocean| %>
+  <p>
+    <%= link_to ocean.name, ocean_path(ocean.id)%>
+  </p>
+<% end %>

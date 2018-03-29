@@ -22,6 +22,7 @@ let meena = halfNumber(5);
 console.log(meena);
 
 // Write a function called percentOf that will take two numbers, figure out what percent the first number represents of the second number, and return the result. It should also log a string like "2 is 50% of 4."
+//solution:how much of second num will make the first number
 const percentOf=function(num1,num2){
   //const myNum = num1 % num2;
   const myNum = Math.ceil((num2/num1)*100);
@@ -30,13 +31,13 @@ const percentOf=function(num1,num2){
   console.log(result);
   return myNum;
 }
-const result=percentOf(4, 2);
+ const result=percentOf(4,2);
 console.log(result);
 
 // Write a function called areaOfCircle that will take one argument (the radius), calculate the area based on that, and return the result. It should also log a string like "The area for a circle with radius 2 is 12.566370614359172."
 
 const areaOfCircle=function(radius){
-  const area = round((Math.PI * radius *radius),2);
+  const area = round((Math.PI * radius *radius),3);
   const result=`The area for a circle with radius ${radius} is ${area}.`;
 console.log(result);
 //const roundnum=Math.round(result);
