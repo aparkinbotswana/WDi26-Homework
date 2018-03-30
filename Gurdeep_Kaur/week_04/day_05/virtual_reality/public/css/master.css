@@ -1,0 +1,51 @@
+
+
+body{
+
+}
+h2{
+  color: darkblue;
+  font-size: 30px;
+}
+
+a{
+  font-size: 20px;
+  padding: 20px;
+  color: inherit;
+}
+.container{
+  /* display: flex; */
+
+}
+
+#homepage {
+  height: 100vh;
+  background-size: cover;
+  background-image: url(/css/img/robot1.jpg);
+}
+
+.center {
+  margin: 0 auto;
+  text-align: center;
+}
+
+#img{
+  background: content-box radial-gradient(darkblue, green);
+  height: 100vh;
+
+
+
+}
+
+#bg{
+  background-color: rgba(255, 255, 128, .5);
+  height: 100vh;
+  font-size: 20px;
+}
+
+#bgcolor{
+  background:linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),
+                  url(/css/img/virtual.jpg);
+  height: 100vh;
+  font-size: 30px;
+}

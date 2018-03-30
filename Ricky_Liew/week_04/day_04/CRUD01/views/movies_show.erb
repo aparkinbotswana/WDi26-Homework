@@ -1,0 +1,17 @@
+<h2>
+  <%=  @movie['title']%>
+</h2>
+<p>
+  <ul>
+    <li>Year released: <%= @movie['release_year'] %></li>
+    <li>Rotten Tomatoes Rating: <% @movie['rating'] %></li>
+  </ul>
+</p>
+<% unless @movie['poster'].nil? || @movie['poster'].empty? %>
+  <img class="picture" src = "<%= @movie['poster'] %>">
+  <% end %>
+
+<div class = "controls">
+  <a href="/movies/<%= @movie['id']%>/edit">EDIT</a>
+  <a href="/movies/<%= @movie['id']%>/delete">DELETE</a>
+</div>

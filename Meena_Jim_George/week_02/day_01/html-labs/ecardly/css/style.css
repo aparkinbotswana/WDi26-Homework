@@ -20,35 +20,38 @@ Developer @GA in NYC
      visibility: hidden;
      line-height: 0;
      height: 0;
-     /* overflow:auto; */
 }
 
 .clear {
 	clear: both;
 }
-
-
-
-article img
-{
-  float:left;
-}
-
 body{
-  background-color: grey;
-  width: 950px;
+
+  margin: 0 auto;
+  text-align: center;
+  background-color: #d6d6d6;
+}
+p{
+  font-size: 12px;
 }
 
-article
-{
-  background-color:white;
+header {
+  background-image: url("../images/background.jpg");
+
 }
-a{
-  color: red;
+#main {
+background-color: white;
+max-width: 960px;
+margin: 0 auto;
+text-align: left;
+padding-left:30px;
+padding-top: 10px;
+
 }
-.imgone{
-  background-repeat: repeat;
+p {
+  display: inline-block;  display: inline-block;
+    float: right;
+    vertical-align: top;
+    width :300px;
+    margin-right: 20px;
 }
-/* header{
-  background:url("/Users/meena/projects/wdi26-classwork/02-html-css/html-labs/ecardly/images/background.jpg");
-} */

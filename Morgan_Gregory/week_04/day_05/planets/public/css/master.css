@@ -8,7 +8,7 @@
 body {
   background-image: url(https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/20150420_active_regions_171.jpg);
   background-size: cover;
-  color: rgba(255, 215,000, 1);
+  color: rgba(255, 215, 000, 1);
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -19,7 +19,7 @@ h1 {
   font-family: 'Faster One', cursive;
   letter-spacing: 2px;
   font-size: 4em;
-  color: rgba(255, 215,000, 1);
+  color: rgba(255, 215, 000, 1);
   /* -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
   -moz-animation: neon1 1.5s ease-in-out infinite alternate;
   animation: neon1 1.5s ease-in-out infinite alternate; */

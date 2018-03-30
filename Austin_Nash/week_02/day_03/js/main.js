@@ -11,15 +11,16 @@ let move = function() {
     let newCat = oldCat + 10
     cat.style.left = newCat + 'px';
 
-    if (newCat > 700) {
+    if (newCat === 700) {
 //stop timer
       window.clearInterval(walkTimer);
 //flip cat
       cat.style.transform = "scaleX(-1)"
+      walkTimer = setInterval(move, 50);
     }
 };
 
-let walkTimer = window.setInterval(move, 50);
+// let walkTimer = window.setInterval(move, 50);
 
 // not walking back ward -- still working
       let moveBack = function() {
@@ -27,10 +28,15 @@ let walkTimer = window.setInterval(move, 50);
           let newCat = oldCat - 10
           cat.style.left = newCat + 'px';
 
-          if (newCat < 700) {
-            window.clearInterval(walkTimerBack);
+          if (newCat === 0) {
+            window.clearInterval(walkTimer);
             cat.style.transform = "scaleX(1)"
+            walkTimer = setInterval(moveBack, 50);
           }
       };
 
-      let walkTimerBack = window.setInterval(moveBack, 50);
+  let walkTimer = window.setInterval(move, 50);
+
+for (var i = 0; i < array.length; i++) {
+  array[i]
+}

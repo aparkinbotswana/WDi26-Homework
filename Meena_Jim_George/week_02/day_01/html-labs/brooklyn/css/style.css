@@ -12,15 +12,32 @@ Link Hover Color = #20222a
 */
 
 body {
-padding-left: 10%;
-padding-right: 22%;
-margin: 0;
-font-family: "Times New Roman", serif;
-color:#656565;
-line-height:17px;
-font-size:12px;
+	margin: 0,auto;
+	padding: 0px;
+	font-family: Times New Roman, serif;
+	font-size: 12px;
+  Color:#656565;
 }
 
-a:hover{
-color:#20222a;
+#container {
+	width: 950px;
+	margin: 0 auto; /*centers our container on the page */
+  color: grey;
+}
+h1{
+  font-family: Times New Roman, serif;
+  color: #656565;
+}
+
+h3 {
+  Font Family:"Times New Roman", serif;
+  Color:#1E90FF;
+
+}
+p{
+  font-size: 12px;
+  Line Height = 17px;
+}
+a{
+  color:	#1E90FF;
 }

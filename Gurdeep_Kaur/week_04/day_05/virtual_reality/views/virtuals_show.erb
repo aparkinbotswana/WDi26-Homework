@@ -1,0 +1,25 @@
+<h2><%= @virtual['name'] %></h2>
+<h3>Gadget: <%= @virtual['gadgets'] %></h3>
+
+<% unless @virtual.applications.empty? %>
+
+<h3>Application:</h3>
+<ul>
+<% @application.virtuals.each do |application| %>
+<li>
+<a href="/applications/<%= @application.id %>"><%= application.name %></a>
+</li>
+</h3>
+<% end %>
+<ul>
+  <% end %>
+
+<%  unless @virtual['image'].nil? || @virtual['image'].empty? %>
+  <img class="feature" src="<%= @virtual['image'] %>" alt="<%= @virtual['name'] %>">
+<% end %>
+
+<div class="controls">
+
+  <a href="/virtuals/<%= @virtual['id'] %>/edit">Edit</a>
+  <a href="/virtuals/<%= @virtual['id'] %>/delete">Delete</a>
+</div>

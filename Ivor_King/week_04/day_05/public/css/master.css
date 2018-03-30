@@ -1,0 +1,77 @@
+body {
+    background-color: rgb(255, 247, 247);
+    color: blue;
+    line-height: 1;
+}
+  
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+a {
+    color: rgb(27, 31, 248);
+}
+  
+nav {
+    list-style: none;
+    margin: 0 5px;
+    padding: 10px;
+    display: flex;
+    background-color: rgb(223, 221, 221);
+    justify-content: space-around;
+    border-radius: 25px;
+    font-family: 'Port Lligat Slab', serif;
+}
+
+img.feature {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+iframe {
+    /* margin-top: 20px;
+    margin-bottom: 30px; */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    border-radius: 12px;
+  
+    -moz-box-shadow: 4px 4px 14px #000;
+    -webkit-box-shadow: 4px 4px 14px #000;
+    box-shadow: 8px 8px 18px rgb(88, 88, 88);
+  
+    filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=.2);
+    resize: both;
+    overflow: auto;
+}
+
+button {
+    margin-top: 20px;
+}
+
+h2, h3 {
+    margin-top: 30px;
+}
+
+.cover_font {
+    font-family: 'Sunshiney', cursive;
+    font-size: 2.5em;
+}
+
+.scroller {
+    font-family: 'Port Lligat Slab', serif;
+    margin-top: 40px;
+    font-size: 30px;
+    color: black;
+}
+
+input:focus {
+    background-color: rgb(217, 242, 250);
+}

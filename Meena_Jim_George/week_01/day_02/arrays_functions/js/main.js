@@ -48,20 +48,9 @@ const character=function(vowel){
 character('f');
 
 /*Define a function sumArray and a function multiplyArray that sums and multiplies (respectively) all the numbers in
-an array of numbers. For example, sumArray([1,2,3,4]) should return 10, and multiplyArray([1,2,3,4]) should return 24.*/
-/*
-const sumArray=function(){
-  // const sum=['','','',''];
-  let asum = 0;
-  for(let i = 0; i < arguments.length; i++)
- {
-  asum = asum + arguments[i];
-console.log(`${asum}`);
- }
- console.log(`${asum}`);
-}
-sumArray(1,2,3);
-*/
+an array of numbers.
+For example, sumArray([1,2,3,4]) should return 10, and multiplyArray([1,2,3,4]) should return 24.*/
+
 
 
 const sumArray=function(sumThisArray){
@@ -92,11 +81,6 @@ multiplyArray([1,2,3,5]);
 
 /*Bonus
 
-Write a function findLongestWord that takes an array of words and returns the length of the longest one.
-
-Write a function filterLongWords that takes an array of words and an number i and
-returns the array of words that are longer than i.*/
-
 /*Define a function reverseString that computes the reversal of a string.
 For example, reverseString("jag testar") should return the string "ratset gaj".*/
 const reverseString = function(str){
@@ -112,8 +96,13 @@ reverseString('Malayalam');
 
 //Write a function findLongestWord that takes an array of words and returns the length of the longest one.
 const findLongestWord= function(arrayOfWords){
-  for(let i=0;i<arrayOfWords;i++){
-    const arrayOfWords[i].length;
+  for(let i=0;i<arrayOfWords.length;i++){
+    console.log(arrayOfWords[i].length);
   }
 }
-arrayOfWords(["orange","1","seasons","celebrations"])
+
+
+findLongestWord(["orange","1","seasons","celebrations"])
+
+/*Write a function filterLongWords that takes an array of words and an number i and
+returns the array of words that are longer than i.*/

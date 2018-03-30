@@ -1,0 +1,11 @@
+<h2>Edit Todo List</h2>
+
+<form method="post" action="/todolists/<%= @todolist.id %>">
+  <label>List Name: </label>
+  <input type="text" name="list_name" placeholder="Plan US trip" value="<%= @todolist.list_name %>">
+  <label>Tag: </label>
+  <input type="text" name="tag" placeholder="personal, work..." value="<%= @todolist.tag%>">
+
+
+  <button>Edit Todo List</button>
+</form>

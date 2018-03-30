@@ -1,0 +1,22 @@
+<h2>Edit Virtual Reality</h2>
+<div id="bg">
+<form method="post" action="/virtuals/<%= @virtual['id'] %>">
+  <label>Name:</label>
+  <input type="text" name="name" placeholder="Virtual Reality Name" value="<%= @virtual['name'] %>">
+  <label>Gadgets:</label>
+  <input type="text" name="gadgets" placeholder="Gadgets Name" value="<%= @virtual['gadget'] %>">
+  <label>Image:</label>
+  <input type="url" name="image" placeholder="https://..." value="<%= @virtual['image'] %>">
+
+<label> Applications: </label>
+<select name="application_id">
+  <option></option>
+  <% Application.all.each do |application| %>
+  <option value="<% application.id %>" <%="selected" if application.id == @virtual.application_id %> ><%= application.id %>
+  </option>
+  <% end %>
+</select>
+
+  <button>Update Virtual Reality</button>
+</form>
+</div>
