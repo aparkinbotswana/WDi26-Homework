@@ -1,0 +1,16 @@
+<h2><%= @monument.name %></h2>
+<p><%= @monument.description %></p>
+<p><%= @monument.year %></p>
+
+
+<%= image_tag(@monument.image, alt: @monument.name) unless @monument.image.nil? %>
+
+<% if @monument.city.present? %>
+    <%= link_to(@monument.city.name, @monument.city) %>
+<% end %>
+
+
+<div class="controls">
+    <%= link_to 'Edit Monument', edit_monument_path(@monument) %>
+    <%= link_to 'Delete Monument', @monument, :method => 'delete', :data => { :confirm => 'Are you sure?' } %>
+</div>
