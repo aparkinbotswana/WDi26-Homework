@@ -1,0 +1,33 @@
+<h1>Games on Rails!</h1>
+<br>
+<hr>
+<br>
+<h2>Magic 8 Ball</h2>
+<form action="/games/8ball">
+    <label>Question</label>
+    <input type="text" placeholder="type your question here" required>
+    <button>Ask Your Question</button>
+</form>
+<br>
+<hr>
+<br>
+<h2>Number Guess</h2>
+<form action="/games/guess">
+    <label>Guess a number between 1 and 20</label>
+    <input type="number" min="1" max="20" name="guess" required>
+    <button>Make a Guess!</button>
+</form>
+<br>
+<hr>
+<br>
+<h2>Rock Paper Scissors</h2>
+<form action="/games/rps">
+    <label>Rock / Paper / Scissors?</label>
+    <select name="rps">
+        <option value="rock">Rock</option>
+        <option value="paper">Paper</option>
+        <option value="scissors">Scissors</option>
+    </select>
+
+    <button>Play!</button>
+</form>

@@ -1,0 +1,18 @@
+<h2><%= @city.name.capitalize %></h2>
+
+<h3><%= @city.country.capitalize %></h3>
+<h3>Population: <%= number_to_human @city.population %></h3>
+
+<% if @city.wikilink.present? %>
+    <%= link_to 'Wikipedia Link', @city.wikilink %>
+<% end %>
+
+<% if @city.image.present? %>
+    <div><%= image_tag @city.image, :class => 'show' %></div>
+<% end %>
+
+
+<div class="controls">
+    <%= link_to 'Edit City', cities_edit_path(@city.id) %>
+    <%= button_to 'Delete City', city_path(@city.id), :method => 'delete' %>
+</div>
