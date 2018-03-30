@@ -1,0 +1,16 @@
+<h1><%= @ideology.name %></h1>
+<ul>
+  <li><%= @ideology.country %></li>
+  <li><%= @ideology.created %></li>
+</ul>
+<% unless @ideology.politicians.empty? %>
+  <h2>Politicians</h2>
+  <% @ideology.politicians.each do |politician| %>
+    <%= link_to image_tag(politician.image, :alt => politician.name, :class => 'thumb'), politician, :name => politician.name %>
+  <% end %>
+<% end %>
+
+<div class="controls">
+  <%= link_to 'Edit ideology', edit_ideology_path(@ideology) %>
+  <%= link_to 'Delete ideology', @ideology, :method => 'delete', :data => { :confirm => 'Are you sure?' } %>
+</div>
