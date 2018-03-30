@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-image: url(https://cdn-ak.f.st-hatena.com/images/fotolife/t/tanemori/20110123/20110123095716.jpg);
+  background-size: cover;
+  color: rgba(204,244,224,1);
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+header {
+    color: rgba(152,255,152,1);
+    margin-bottom: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  margin-top: 18px;
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+p {
+  font-size: 22px;
+}
+
+nav {
+  border-top: 2px solid;
+  padding-top: 12px;
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+nav a {
+  padding: 20px;
+}
+
+li {
+  list-style-type: square;
+  list-style-position: inside;
+  font-size: 22px;
+  text-align: left;
+  padding-bottom: 3px;
+}
+
+############### RE FORMS FOR NEW/EDIT ##########
+
+form {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+label, input, select {
+  margin-bottom: 20px;
+  font-size: 18px;
+  padding: 5px;
+}
+
+label {
+  text-align: right;
+}
+
+input, select {
+  background-color: rgba(204,244,224,1);
+  color: #232323;
+}
+
+button {
+  margin-top: 20px;
+  font-size: 24px;
+  color: teal;
+  padding: 10px;
+  border-radius: 50%;
+  border: 3px solid teal;
+  width: 100px;
+  height: 100px;
+}
+.controls {
+  margin-top: 20px;
+}
+.controls div {
+  width: 64px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  padding: 4px 16px;
+  color: #232323;
+  background-color:rgba(204,244,224,1)
+}

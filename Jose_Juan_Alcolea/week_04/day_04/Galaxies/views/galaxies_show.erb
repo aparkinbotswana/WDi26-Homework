@@ -1,0 +1,11 @@
+<h2><%= @galaxies['name'] %></h2>
+<h3>Type: <%= @galaxies['type'] %></h3>
+
+<% unless @galaxies['image'].nil? || @galaxies['image'].empty? %>
+  <img class="feature" src="<%= @galaxies['image'] %>" alt="<%= @galaxies['name'] %>">
+  <% end %>
+
+  <div class="controls">
+    <a href="/galaxies/<%= @galaxies['id'] %>/edit">Edit</a>
+    <a href="/galaxies/<%= @galaxies['id'] %>/delete">Delete</a>
+  </div>

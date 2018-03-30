@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Oceans & Seas</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1>Earth's oceans and seas</h1>
+        <nav>
+          <%= link_to 'Index', oceans_path %>
+          <%= link_to 'Add', oceans_new_path %>
+        </nav>
+      </header>
+    <%= yield %>
+    </div>
+  </body>
+</html>

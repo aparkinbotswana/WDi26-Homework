@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  font-family: 'Raleway', sans-serif;
+}
+
+.feature {
+  max-width: 100%;
+}
+
+button {
+  color: red;
+}
