@@ -27,6 +27,6 @@
 </table>
 
 <div class="controls">
-  <%= link_to 'Edit ocean', oceans_edit_path(@ocean.id) %>
-  <%= button_to 'Delete ocean', ocean_path(@ocean.id), :method => 'delete' %>
+  <%= link_to 'Edit ocean', oceans_edit_path(@ocean.id), :class => "edit-link" %>
+  <%= button_to 'Delete ocean', ocean_path(@ocean.id), :method => 'delete', :class => "action-button" %>
 </div>
