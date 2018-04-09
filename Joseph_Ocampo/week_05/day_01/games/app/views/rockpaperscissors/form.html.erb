@@ -1,0 +1,16 @@
+<h1>Choose rock paper or scissors</h1>
+
+<form action="/rockpaperscissors/play">
+
+  <select name="throw">
+    <option></option>
+    <% 0.upto(2) do |i| arr = ['rock','paper','scissors'] ;%>
+
+    <option value="<%= arr[i] %>"><%= arr[i] %></option>
+    <% end %>
+  </select>
+
+  <button>Go</button>
+
+
+</form>
