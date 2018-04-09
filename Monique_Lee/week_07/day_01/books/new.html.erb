@@ -1,0 +1,20 @@
+<h1>Create a category</h1>
+
+<!-- error handling -->
+<div>
+  <% if @category.errors.any? %>
+    <ol>
+      <% @category.errors.full_messages.each do |msg| %>
+        <li class="alert alert-danger" role="alert"><%= msg.capitalize %></li>
+      <% end %>
+    </ol>
+  <% end %>
+</div>
+
+<div>
+  <%= render :partial => 'form' %>
+</div>
+
+<div>
+  [ <%= link_to 'Go back to categories listing', categories_path %> ]
+</div>
