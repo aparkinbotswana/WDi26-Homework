@@ -1,0 +1,29 @@
+<h2><%= @mountain.name %></h2>
+<% if @mountain.image.present? %>
+  <%= image_tag @mountain.image, :alt => @mountain.name, :class => 'feature' %>
+<% end %>
+<table>
+  <thead>
+    <tr>
+      <td>Name</td>
+      <td>Height</td>
+      <td>Country</td>
+      <td>Volcano</td>
+      <td>Continent</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><%= @mountain.name %></td>
+      <td><%= @mountain.height %></td>
+      <td><%= @mountain.country %></td>
+      <td><%= @mountain.volcano %></td>
+      <td><%= @mountain.continent %></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="controls">
+  <%= link_to 'Edit mountain', mountain_edit_path(@mountain.id) %>
+  <%= button_to 'Delete mountain', mountain_path(@mountain.id), :method => 'delete' %>
+</div>
