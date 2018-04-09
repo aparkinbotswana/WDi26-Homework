@@ -1,0 +1,16 @@
+<%= form_for @city do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name, autofocus: true %>
+
+    <%= f.label :country %>
+    <%= f.text_field :country %>
+
+    <%= f.label :population %>
+    <%= f.text_field :population %>
+
+    <%= f.label :image %>
+    <%= f.url_field :image %>
+
+    <%= f.submit class: 'btn waves-effect waves-light blue' %>
+
+<% end %>
