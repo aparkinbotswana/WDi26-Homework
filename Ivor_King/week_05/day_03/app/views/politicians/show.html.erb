@@ -1,0 +1,18 @@
+<h1><%= @politician.title %></h1>
+
+<%= link_to image_tag(@politician.image, :alt => @politician.name, :class => 'feature'), @politician.image %>
+
+<ul>
+  <li><%= @politician.name %></li>
+  <% if @politician.ideology.present? %>
+    <li><%= link_to @politician.ideology.name, @politician.ideology %></li>
+  <% end %>
+  <li><%= @politician.age %></li>
+  <li><%= @politician.state %></li>
+  <li><%= @politician.image %></li>
+</ul>
+
+<div class="controls">
+  <%= link_to 'Edit politician', edit_politician_path(@politician) %>
+  <%= link_to 'Delete politician', @politician, :method => 'delete', :data => { :confirm => 'Are you sure?' } %>
+</div>
