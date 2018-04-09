@@ -1,0 +1,18 @@
+<%= form_for @politician do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name, :required => true %>
+
+  <%= f.label :age %>
+  <%= f.text_field :age %>
+
+  <%= f.label :state %>
+  <%= f.text_field :state, :placeholder => 'e.g. Queensland' %>
+
+  <%= f.label :image %>
+  <%= f.text_field :image %>
+
+  <%= f.label :ideology_id %>
+  <%= f.select :ideology_id, Ideology.pluck(:name, :id), :include_blank => true %>
+
+  <%= f.submit %>
+<% end %>

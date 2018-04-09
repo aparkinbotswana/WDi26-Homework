@@ -1,0 +1,5 @@
+<h1>All Politicians</h1>
+
+<% @politicians.each do |politician| %>
+  <%= link_to image_tag(politician.image, :class => 'thumb', :alt => politician.name), politician, :name => politician.name %>
+<% end %>

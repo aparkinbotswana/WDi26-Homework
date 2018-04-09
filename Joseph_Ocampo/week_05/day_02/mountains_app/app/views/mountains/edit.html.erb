@@ -1,0 +1,21 @@
+<h2> Edit Mountain</h2>
+<form class="edit_form" action="/mountains/<%= @mountain.id %>" method="post">
+
+  <label>Name</label>
+  <input type="text" name="mountain[name]" placeholder="Gallifrey" value="<%=  @mountain.name %>">
+
+  <label>Location:</label>
+  <input type="url" name="mountain[place]" placeholder="location" value="<%=  @mountain.place %>">
+
+  <label>Height:</label>
+  <input type="url" name="mountain[height]" placeholder="location" value="<%=  @mountain.height%>">
+
+  <label>Image:</label>
+  <input type="url" name="mountain[image]" placeholder="http://..." value="<%=  @mountain.image %>">
+
+
+
+
+
+  <button>Update mountain</button>
+</form>

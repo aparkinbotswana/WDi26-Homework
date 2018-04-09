@@ -1,0 +1,11 @@
+<%= form_for @ideology do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name, :autofocus => true %>
+
+  <%= f.label :country %>
+  <%= f.text_field :country %>
+
+  <%= f.label :created, 'Year created' %>
+
+  <%= f.submit %>
+<% end %>

@@ -4,5 +4,6 @@ Rails.application.routes.draw do
   get '/magic' => 'magic#form'
   get '/magic/lookup' => 'magic#lookup'
 
-  # get '/secret' => 'secret#form'
+  get '/secret' => 'secret#form'
+  get '/secret/lookup' => 'secret#lookup'
 end

@@ -1,0 +1,16 @@
+<h1>Cities Index</h1>
+
+<div class="index">
+
+
+    <% @cities.each do |city| %>
+        <a href=<%= city_path(city.id) %>>
+            <div class="city" style="background-image: url(<%=city.image%>)">
+                <h2><%= city.name.capitalize %></h2>
+                <h3><%= city.country.capitalize %></h3>
+            </div>
+
+        </a>
+    <% end %>
+
+</div>

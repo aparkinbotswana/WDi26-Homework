@@ -1,0 +1,11 @@
+<h2>All Mountains</h2>
+
+<ul>
+  <%= @mountains.each do |mountain| %>
+  <li>
+    <a href="/mountains/<%= mountain['id'] %>">
+      <%= mountain["name"] %>
+    </a>
+  </li>
+  <% end %>
+</ul>
