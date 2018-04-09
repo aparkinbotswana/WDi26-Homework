@@ -1,0 +1,31 @@
+<div style="font-family: <%= @font.name %>">
+
+  <header>
+    <h1><%= @font.name %></h1>
+  </header>
+
+  <div class="main">
+    <div class="alphabet">
+      <p>Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz</p>
+    </div>
+
+    <div class="description">
+      <% if @font.description.present? %>
+        <p><%= @font.description %></p>
+      <% else %>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <% end %>
+    </div>
+
+    <div class="aside">
+      <% if @font.font_family.present? %>
+      <h3>Category: <%= link_to @font.font_family.name, @font.font_family %></h3>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<div class="controls">
+  <%= link_to 'Edit', edit_font_path(@font) %>
+  <%= link_to "Delete", @font, :method => 'delete', :data => {:confirm => 'Are you sure'} %>
+</div>

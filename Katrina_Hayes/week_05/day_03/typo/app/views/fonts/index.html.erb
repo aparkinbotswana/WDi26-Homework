@@ -1,0 +1,13 @@
+<header class="index">
+  <h1>Fonts</h1>
+</header>
+
+<div class="gallery">
+  <% @fonts.each do |font| %>
+    <a href="/fonts/<%= font.id %>">
+      <div class="font-tile">
+        <%= font.name %>
+      </div>
+    </a>
+  <% end %>
+</div>
