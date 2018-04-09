@@ -16,30 +16,36 @@ body {
   text-align: center;
 }
 
-header {
-  margin-top: 0;
-}
-h1 {
-  color: crimson;
-  margin-top: inherit;
-  margin-bottom: 15px;
-  padding: 20px;
-  font-size: 60px;
+.container {
+  max-width: 960px;
+  margin: 60px auto 0 auto;
 }
 
-#results, .search {
+header, .form {
   display: inline-block;
-  max-width: 90%;
-  padding: 30px;
   vertical-align: top;
+  margin: 0 10px;
+  padding: 20px;
 }
+
+h2 {
+  margin-top: 0;
+}
+
+h1 {
+  color: crimson;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 70px;
+}
+
+
 
 /* FORM */
 form {
   text-align: center;
   font-size: 18px;
   font-family: sans-serif;
-  margin-top: 50px;
 }
 
 form div {
@@ -67,15 +73,18 @@ input {
 
 /* RESULTS STYLING */
 
+
 img {
   float: left;
-  padding: 10px;
+  padding-right: 10px;
 }
 
 p {
-  max-width: 500px;
+  max-width: 100%;
 }
 
 #results {
   text-align: left;
+  margin: 30px auto;
+  width: 90%;
 }
