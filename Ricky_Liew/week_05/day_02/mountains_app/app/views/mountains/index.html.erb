@@ -1,0 +1,8 @@
+<h2>Mountains</h2>
+
+<% @mountains.each do |mountain| %>
+
+<p>
+The <%= link_to mountain.name, mountain_path(mountain.id) %> mountain range is in <%= mountain.continent %>
+</p>
+<% end %>

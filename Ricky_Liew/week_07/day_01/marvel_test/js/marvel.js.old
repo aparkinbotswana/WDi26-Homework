@@ -1,0 +1,44 @@
+
+let privKey = 'a8f53d74ff1b0b36fe8cb260b585e054243d9bc4'
+let pubKey  = '01c7334ab72d75bf17262f6a543261f3'
+
+// Finds comic by title string and issue number
+// Parameters: format: comic
+//             formatType: comic
+//             noVariants: true
+//             title: <input_value>
+//             issueNumber: <input_value>
+//
+
+const findIssueByTitle = function(titleName, issueNo){
+  let request = new XMLHttpRequest();
+  let ts = new Date().getTime();
+  let web = 'https://gateway.marvel.com:443/v1/public/comics?format=comic&formatType=comic&noVariants=true&title=' +
+            titleName +
+            '&issueNumber=' + issueNo +
+            "&ts=" + ts +
+            '&apikey=' + pubKey +
+            "&hash=" + md5(ts+privKey+pubKey);
+
+//console.log(web);
+
+  request.open('GET', web, true);
+  request.setRequestHeader('Content-Type', 'application/json');
+  request.send();
+
+  request.onload = function (){
+    if(request.status >= 200 && request.status < 400){
+      let result = JSON.parse(request.responseText).data.results;
+      for (var i = 0; i < result.length; i++){
+        console.log(result[i]);
+      }
+    }
+  }
+}
+
+
+// https://gateway.marvel.com:443/v1/public/comics?format=comic&formatType=comic&noVariants=true&title=punisher&issueNumber=5&apikey=01c7334ab72d75bf17262f6a543261f3
+
+
+
+findComicByTitle('x-men', 43);

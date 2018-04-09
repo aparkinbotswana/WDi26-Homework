@@ -1,0 +1,21 @@
+.container {
+  font-family: sans-serif;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.feature {
+  max-width: 100%;
+}
+
+.controls{
+  display: inline-block;
+}
+
+thead{
+  background-color: #c2d6d6;
+}
+
+td{
+  width: 155px;
+}

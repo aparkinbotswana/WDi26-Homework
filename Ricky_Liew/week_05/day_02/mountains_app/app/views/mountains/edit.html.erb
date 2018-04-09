@@ -1,0 +1,19 @@
+<h2>Edit Mountain Range</h2>
+<form action="/mountains/<%= @mountain.id %>" method="post">
+  <label>Name:</label>
+  <input type="text" name="mountain[name]" placeholder="name of mountain range" value="<%= @mountain.name %>">
+
+  <label>Which continent is it on</label>
+  <input type="text" name="mountain[continent]" placeholder="continent" value="<%= @mountain.continent %>">
+
+  <label>Name of Highest Peak</label>
+  <input type="text" name="mountain[peak_name]" placeholder="name of highest peak" value="<%= @mountain.peak_name %>">
+
+  <label>Height of Highest Peak</label>
+  <input type="number" name="mountain[peak_height]" placeholder="height in m" value="<%= @mountain.peak_height %>">
+
+  <label>Image</label>
+  <input type="url" name="mountain[pic_url]" placeholder="http://..." value="<%= @mountain.pic_url %>">
+
+  <button>Update Mountain</button>
+</form>
