@@ -1,0 +1,12 @@
+<%= form_for @director do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name, :autofocus => true %>
+
+  <%= f.label :dob, 'Date of birth' %>
+  <%= f.text_field :dob %>
+
+  <%= f.label :image %>
+  <%= f.url_field :image %>
+
+  <%= f.submit %>
+<% end %>
