@@ -13,14 +13,13 @@ const searchFlickr = function(term, pageIndex){
 
   const flickrURL = 'https://api.flickr.com/services/rest?jsoncallback=?';
 
-//not really AJAX because flicker doesn't let you do an ajax request => it's doing JSONP (JSON with Padding)
   $.getJSON(flickrURL, {
     method: 'flickr.photos.search', //data to be sent to Flickr
     api_key: '2f5ac274ecfac5a455f38745704ad084', //public
     text: term, //text to search for
     format: 'json', //Flickr needs to be told specifically
     page: pageIndex,
-    per_page: '499',
+    per_page: '499'
   }).done(showImages);
 };
 
