@@ -7,6 +7,7 @@ const getBook = function () {
   let title = document.getElementById('search').value
 
   const xhr = new XMLHttpRequest();
+  let lastfive = [];
 
   xhr.onreadystatechange = function () {
     if (xhr.readyState != 4) {
@@ -14,7 +15,7 @@ const getBook = function () {
     }
 
     const book = JSON.parse(xhr.responseText);
-    console.log(book);
+    // console.log(book);
 
     // add image of cover to page
     const img = document.createElement('img');
@@ -35,8 +36,11 @@ const getBook = function () {
     const publisher = document.createElement('p');
     publisher.innerHTML = book.items[0].volumeInfo.publisher;
     document.body.appendChild(publisher);
-  };
 
+    lastfive.push(book.items[0].volumeInfo.title);
+    console.log(lastfive);
+
+  };
 
   xhr.open('GET', 'https://www.googleapis.com/books/v1/volumes?q=' + title);
   xhr.send();
