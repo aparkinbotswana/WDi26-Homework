@@ -1,0 +1,22 @@
+<h2>Edit Mountain</h2>
+<form action="/mountains" method="post">
+  <label>Name:</label>
+  <input type="text" name="mountain[name]" placeholder="k2" value="<%= @mountain.name %>">
+
+  <label>Image:</label>
+  <input type="url" name="mountain[image]" placeholder="http://..." value="<%= @mountain.image %>">
+
+  <label>Height:</label>
+  <input type="number" name="mountain[height]" placeholder="5000" value="<%= @mountain.heigth %>">
+
+  <label>Country:</label>
+  <input type="text" name="mountain[country]" placeholder="Nepal" value="<%= @mountain.country %>">
+
+  <label>Volcano:</label>
+  <input type="text" name="mountain[volcano]" placeholder="Yes/No" value="<%= @mountain.volcano %>">
+
+  <label>Continent:</label>
+  <input type="text" name="mountain[continent]" placeholder="Asia" value="<%= @mountain.continent %>">
+
+  <button>Update mountain</button>
+</form>
