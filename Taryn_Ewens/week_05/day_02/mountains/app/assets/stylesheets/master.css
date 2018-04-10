@@ -54,6 +54,10 @@ div.controls {
   margin: 1em auto;
 }
 
+a {
+  color: inherit;
+}
+
 .controls a {
   border-bottom: 1px solid #353535;
 }
@@ -66,7 +70,7 @@ div.controls {
 }
 
 .container {
-  max-width: 960px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
