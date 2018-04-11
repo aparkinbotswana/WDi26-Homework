@@ -50,3 +50,7 @@ h6 {
 a {
   font-size: 2em;
 }
+
+img {
+  animation: 10s ease-in-out infinite alternate scale;
+}

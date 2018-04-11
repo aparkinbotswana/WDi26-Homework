@@ -1,0 +1,12 @@
+<h1>Australian Directors</h1>
+
+<% @directors.each do |director| %>
+  <%= image_tag director.image, :alt => director.name, :class => 'thumb' %>
+  <ul>
+    <li><%= link_to director.name, director %></li>
+    <% if director.dob.present? %>
+      <li><%= director.dob.strftime '%A, %B %e, %Y' %></li>
+    <% end %>
+    <li><%= director.period %></li>
+  </ul>
+<% end %>
