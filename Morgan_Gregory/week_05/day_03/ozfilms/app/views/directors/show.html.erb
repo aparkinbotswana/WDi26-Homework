@@ -1,0 +1,19 @@
+<h1><%= @director.name %></h1>
+<ul>
+  <% if @director.dob.present? %>
+    <li><%= @director.dob.strftime '%A, %B %e, %Y' %></li>
+  <% end %>
+</ul>
+<%= image_tag @director.image, :alt => @director.name, :class => 'feature' %>
+
+<%= unless @director.movies.empty? %>
+  <h2>Movies</h2>
+  <%= @director.movies.each do |movie| %>
+    <%= link_to image_tag(movie.image, :alt => movie.title, :class => 'thumb'), movie, :title => movie.title %>
+  <%= end %>
+<%= end %>
+
+<div class="controls">
+  <%= link_to 'Edit director', edit_director_path(@director) %>
+  <%= link_to 'Delete director', @director, :method => 'delete', :data => { :confirm => 'Are you sure?' } %>
+</div>

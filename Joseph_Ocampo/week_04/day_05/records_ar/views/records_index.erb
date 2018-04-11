@@ -1,0 +1,25 @@
+<section class="hero">
+
+</section>
+<h1>The Record Index</h1>
+
+<h2>Featured Selections</h2>
+
+  <!-- non-echoing ERB -->
+  <% @records.each do |record| %>
+
+    <div class="card">
+      <a href="/records/<%= record['id'] %>">
+        <!-- <%= record["title"] %> -->
+        <img class="index_img" src="<%= record["image"] %>" alt="">
+      </a>
+
+      <div>
+      <a href="/records/<%= record['id'] %>">
+        <p><%= record["title"] %></p>
+        <p><%= record["artist"] %></p>
+      </a>
+      </div>
+    </div>
+
+  <% end %>

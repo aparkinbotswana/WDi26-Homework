@@ -8,8 +8,8 @@ body, html {
 
 #formbox {
   color: black;
-  width: 200px;
-  height: 200px;
+  width: 400px;
+  height: 400px;
   border-color: aliceblue;
   background-color: lightsteelblue;
   margin: auto;
@@ -21,6 +21,11 @@ body, html {
 .container {
   max-width: 960px;
   margin: auto;
+}
+
+.answerbox {
+  margin: 40px 20px;
+  color: black;
 }
 
 h1 {

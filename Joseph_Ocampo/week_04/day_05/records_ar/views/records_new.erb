@@ -1,0 +1,51 @@
+<section class="newrec">
+
+
+  <div class="text">
+    <h1>Add New<br>Record</h1>
+    <h2>Log the record details in to add it to your collection!</h2>
+  </div>
+
+  <form method="post" action="/records" >
+    <!-- <label>Title:</label> -->
+    <input type="text" name="title" placeholder="Record Title">
+    <!-- <label>Artist:</label> -->
+    <input type="text" name="artist" placeholder="Artist"><br />
+    <label>Image:</label>
+    <input type="url" name="image" placeholder="http://...">
+
+
+    <label>Genre</label>
+    <select name="genre_id">
+      <option></option>
+      <% Genre.all.each do |genre| %>
+      <option value="<%= genre.id %>"><%= genre.genre %></option>
+      <% end %>
+    </select>
+
+    <button>Add Record</button>
+
+  </form>
+
+  <div class="content">
+
+    <!-- <div class="form-box">
+      <div class="form">
+        <form action="#">
+          <label for="name">Title</label><br>
+          <input type="text" name="title" id="name" placeholder="Record Title" required><br><br>
+
+          <label for="email">Email</label><br>
+          <input type="email" name="email" id="email" placeholder="Your email address" required><br><br>
+
+          <label for="pw">Choose a password</label><br>
+          <input type="password" name="password" id="pw" placeholder="Must have atleast 10 characters" required><br><br>
+
+          <button class="proceed">Add Record</button>
+        </form>
+      </div>
+
+      <!-- <input class="proceed" type="submit" name="proceed" value="Proceed"> -->
+    </div> -->
+  </div>
+</section>

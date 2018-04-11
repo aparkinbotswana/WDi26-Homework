@@ -1,0 +1,137 @@
+body {
+  background: #222;
+  color: #e5e5e5;
+
+}
+
+.a_mixin {
+  color: dodgerblue;
+  text-decoration: none;
+  transition: all .25s ease;
+  font-size: 20px;
+  padding: 30px;
+  &:hover {
+    color: #EFEFEF;
+  }
+}
+
+nav {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  text-align: center;
+  a {
+    .a_mixin;
+  }
+
+}
+
+.shadow_mixin {
+  box-shadow: 3px 3px 5px 0 black;
+
+}
+
+input[type="submit"], button {
+  margin: 15px;
+  background: tomato;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all .25s ease;
+  padding: 8px;
+  color: #EFEFEF;
+  font-size: 20px;
+  .shadow_mixin;
+  &:hover {
+    background: red;
+    transform: scale(1.1);
+  }
+}
+
+button {
+  background: dodgerblue;
+  &:hover {
+    background: blue;
+    transform: scale(1.1);
+  }
+}
+
+form div{
+  margin: 20px;
+}
+
+input {
+  padding: 6px;
+}
+
+label {
+  margin-right: 5px;
+  margin-left: 15px;
+}
+
+.indent_mixin {
+  border-left: 4px solid #171717;
+  border-bottom: 4px solid #373737;
+  border-right: 4px solid #373737;
+  border-top: 4px solid #171717;
+  border-radius: 8px;
+  background: #202020;
+}
+
+.outdent_mixin {
+  border-right: 3px solid #171717;
+  border-top: 3px solid #373737;
+  border-left: 3px solid #373737;
+  border-bottom: 3px solid #171717;
+  border-radius: 8px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+  padding-bottom: 50px;
+  a {
+    .a_mixin;
+
+  }
+  img {
+    max-width: 80%;
+    margin: 25px;
+    .shadow_mixin;
+
+  }
+  .indent_mixin;
+}
+
+.index {
+  .flex_mixin;
+}
+
+.city {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-size: cover;
+  text-shadow: 2px 2px 2px #171717;
+  width: 180px;
+  height: 180px;
+  .shadow_mixin;
+  color: #EFEFEF;
+  transition: all .25s ease;
+  &:hover {
+    transform: scale(1.1);
+  }
+
+}
+
+.flex_mixin {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+form {
+  .flex_mixin;
+}

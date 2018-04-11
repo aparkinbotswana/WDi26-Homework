@@ -1,0 +1,14 @@
+<h1>Guess the secret number</h1>
+
+<form action="/secretnumber/lookup">
+  <!-- <input type="text" name="secret_number" placeholder="guess the number" required> -->
+
+  <select name="secret_number">
+    <option></option>
+    <% 1.upto(10) do |i| %>
+    <option value="<%= i %>"><%= i %></option>
+    <% end %>
+  </select>
+
+  <button>Go</button>
+</form>

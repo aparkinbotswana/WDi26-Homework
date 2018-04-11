@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  font-family: monospace;
+}
+
+.side-panel {
+  width: 23%;
+  height: 100vh;
+  background-color: rgba(255,0,44,1);
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: monospace;
+  padding-top: 20px;
+  padding-right: 10px;
+  font-size: 22px;
+}
+
+nav a {
+  font: Monospace;
+  text-align: right;
+  display: block;
+}
+
+.major-panel {
+  width: 79%;
+  height: 100vh;
+  background-color: rgba(255,103,167,1);
+  color: black;
+}
+
+.container {
+  max-width: 960px;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.font-tile {
+  height: 150px;
+  width: 150px;
+  border: 2px solid black;
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.controls {
+  margin-top: 20px;
+}
+.controls a {
+  padding: 5px 10px;
+  border: 2px solid black;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+p {
+  font-size: 20px;
+}
+
+form label, form input, form select {
+  margin: 10px 0;
+}
+
+form input, form select {
+  background-color: pink;
+}
+.monospace {
+  font-family: monospace;
+}
+.serif {
+  font-family: serif;
+}
+.sans-serif {
+  font-family: sans-serif;
+}
+.display {
+  font-family: display;
+}
+.handwriting {
+  font-family: handwriting;
+}
+.Macondo {
+  font-family: 'Macondo', cursive;
+}
+.Amatic {
+  font-family: 'Amatic SC', cursive;
+}
+
+.ibm-serif {
+  font-family: 'IBM Plex Serif', serif;
+}
+.ibm-sans {
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+}

@@ -1,0 +1,9 @@
+<%= form_for @font_family do |f| %>
+<%= f.label :name %>
+<%= f.text_field :name, :autofocus => true %><br>
+<%= f.label :description %>
+<%= f.text_field :description %><br>
+<%= f.label :famous_examples %>
+<%= f.text_field :famous_examples %><br>
+<%= f.submit %>
+<% end %>

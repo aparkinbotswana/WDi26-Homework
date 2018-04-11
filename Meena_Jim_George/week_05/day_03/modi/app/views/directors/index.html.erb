@@ -1,0 +1,14 @@
+<h1>Directors</h1>
+
+<% @directors.each do |director|%>
+<%= image_tag director.image, :alt =>director.name, :class =>'thumb'%>
+<ul>
+<li><%= link_to director.name, director%></li>
+<li><%=director.nationality%></li>
+<% if director.dob.present? %>
+  <li><%=director.dob.strftime '%A,%B %e,%Y'%></li>
+  <%end%>
+  <li><%=director.moviecount%></li>
+
+</ul>
+<%end%>

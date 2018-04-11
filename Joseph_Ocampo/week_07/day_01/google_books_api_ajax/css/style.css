@@ -1,0 +1,35 @@
+body {
+  margin: 0 auto;
+  text-align: center;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2em;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 5em;
+}
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    overflow-y: hidden;
+    transform: translate(50em,0);
+    transition: 0.5s cubic-bezier(.17,.67,.58,.97);
+}
+
+input:checked + .overlay{
+	opacity: 1;
+	transform: translate(0,0);
+	z-index: 1;
+}
