@@ -2,8 +2,17 @@ const qs = (query) => document.querySelector(query);
 const createEl = (el) => document.createElement(el);
 const appendEl = (child, parent) => parent.appendChild(child);
 
-const showWeather = async () => {
-  const data = await getWeather();
+const main = () => {
+  showWeather();
+  qs('#search').addEventListener('submit', (e) => {
+    e.preventDefault();
+    qs('#weather').innerHTML = '<h3>Please wait while the weather is loaded...</h3>';
+    showWeather(qs('#query').value);
+  });
+};
+
+const showWeather = async (searchAddress = 0) => {
+  const data = await getWeather(searchAddress);
   const weatherData = data.weatherData;
   const icons = new Skycons({
     color: 'white',
@@ -25,6 +34,7 @@ const showWeather = async () => {
   };
   qs('body').style.backgroundImage = `url(${bgImages[iconNow]})`;
   const weatherDiv = qs('#weather');
+  weatherDiv.innerHTML = '';
 
   const dateEl = createEl('h3');
   dateEl.textContent = `${dateNow[0]}, ${dateNow[1]} ${dateNow[2]}`;
@@ -62,10 +72,32 @@ const showWeather = async () => {
   icons.play();
 };
 
-const getWeather = async () => {
-  const locationUrl = 'https://www.googleapis.com/geolocation/v1/geolocate?key=AIzaSyBW9MkinNsa0YbNZo_4SYrWFCo5rGswrMs';
+const getWeather = async (searchAddress = 0) => {
+  let location;
+  if (searchAddress) {
+    const locationResults = await fetch(
+      `https://maps.googleapis.com/maps/api/geocode/json?address=${searchAddress
+        .split(' ')
+        .join('+')}}&key=AIzaSyBW9MkinNsa0YbNZo_4SYrWFCo5rGswrMs`
+    ).then((res) => res.json());
+    console.log(locationResults);
 
-  const location = await fetch(locationUrl, { method: 'POST' }).then((res) => res.json());
+    if (locationResults.status === 'ZERO_RESULTS') {
+      qs('#weather').innerHTML = `<h3>Cannot find:</h3><h3><em>${searchAddress}</em></h3><h3>Please search again</h3>`;
+    }
+
+    location = {
+      location: {
+        lat: locationResults.results[0].geometry.location.lat,
+        lng: locationResults.results[0].geometry.location.lng
+      }
+    };
+  } else {
+    const locationUrl =
+      'https://www.googleapis.com/geolocation/v1/geolocate?key=AIzaSyBW9MkinNsa0YbNZo_4SYrWFCo5rGswrMs';
+
+    location = await fetch(locationUrl, { method: 'POST' }).then((res) => res.json());
+  }
 
   const weatherUrl = `https://cors-anywhere.herokuapp.com/https://api.forecast.io/forecast/206bf30a98c8331e37e68b65ff38ef33/${
     location.location.lat
@@ -83,4 +115,4 @@ const getWeather = async () => {
   return { weatherData, formattedAddress };
 };
 
-document.addEventListener('DOMContentLoaded', showWeather);
+document.addEventListener('DOMContentLoaded', main);

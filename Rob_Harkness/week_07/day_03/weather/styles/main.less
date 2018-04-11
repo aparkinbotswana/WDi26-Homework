@@ -7,9 +7,6 @@
 body,
 html {
   color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url('../img/partly-cloudy-day.jpg');
@@ -25,23 +22,32 @@ h2,
 p {
   margin: 10px;
 }
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 80px;
+  height: 100%;
+}
 #weather {
+  min-height: 50%;
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 50%;
   padding: 20px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.55);
   font-size: 20px;
-//   border: 2px solid grey;
+  //   border: 2px solid grey;
   border-radius: 10px;
-  margin-bottom: 280px;
+  //   margin-bottom: 280px;
 }
 
 #icon-now {
   width: 160px;
   transform: scale(2);
-  margin: 30px;
+  margin: 45px;
 }
 
 .min {
@@ -50,4 +56,31 @@ p {
 
 .max {
   color: @red;
+}
+
+#search {
+  input {
+    font-size: 18px;
+    padding: 8px;
+    height: 32px;
+    grid-column: 1 / span 3;
+    grid-row: 2;
+    width: 280px;
+  }
+  button {
+    font-size: 18px;
+    grid-column: 4;
+    grid-row: 2;
+    height: 32px;
+    background: @blue;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s all;
+
+    &:hover {
+      background: lighten(dodgerblue, 10%);
+      color: #fefefe;
+    }
+  }
 }
