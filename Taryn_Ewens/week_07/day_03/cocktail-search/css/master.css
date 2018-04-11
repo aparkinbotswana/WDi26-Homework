@@ -28,10 +28,11 @@ h1, #title {
   font-family: "Oswald", "Helvetica", Arial, sans-serif;
   font-size: 4em;
   margin: 0;
-  color: #FF4362;
+  color: #fcbe85;
   text-transform: uppercase;
   line-height: 1.2em;
   text-align: center;
+  display: inline-block;
 }
 
 h2, h3 {
@@ -40,14 +41,14 @@ h2, h3 {
 }
 
 h3 {
-  color: #FF4362;
+  color: #71c8c0;
   font-size: 1.5em;
   margin: 0;
   padding: 0.4em;
 }
 
 h2 {
-  color: #6DA7E8;
+  color: #71c8c0;
   font-size: 2em;
   margin: 2.5em 0 0 0;
 }
@@ -98,7 +99,7 @@ button {
   text-align: center;
   background-color: #FFF;
   border-radius: 50%;
-  border: 4px solid #FF4362;
+  border: 4px solid #fcbe85;
   display: block;
   margin: 2em auto;
   width: 150px;
@@ -162,4 +163,19 @@ div.cocktail {
 }
 :-moz-placeholder { /* Firefox 18- */
   color: rgba(119,118,118,0.5);
+}
+
+img.icon {
+  max-width: 50px;
+  margin: 2em 2em 0 2em;
+}
+
+img.icon:hover {
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,.2);
 }
