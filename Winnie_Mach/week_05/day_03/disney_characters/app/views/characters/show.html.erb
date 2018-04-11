@@ -9,7 +9,7 @@
   <li><%= @character.dob.strftime '%A, %B %e, %Y' %></li>
   <% end %>
   <li><%= @character.description %></li>
-  <li>Need to show link to character movies</li>
+  <li><%= link_to @character.movie.name, movie_path(@character.movie.id) %></li>
 </ul>
 
 <div class="controls">
