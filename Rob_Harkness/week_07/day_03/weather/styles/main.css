@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+body,
+html {
+  color: #ffffff;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../img/partly-cloudy-day.jpg');
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 100%;
+  font-family: 'Lato', sans-serif;
+  text-shadow: 1px 1px 2px #222;
+  margin: 0;
+}
+h2,
+p {
+  margin: 10px;
+}
+#weather {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: center;
+          align-items: center;
+  width: 50%;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 20px;
+  border-radius: 10px;
+  margin-bottom: 280px;
+}
+#icon-now {
+  width: 160px;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  margin: 30px;
+}
+.min {
+  color: #82d6ff;
+}
+.max {
+  color: #ff977c;
+}
