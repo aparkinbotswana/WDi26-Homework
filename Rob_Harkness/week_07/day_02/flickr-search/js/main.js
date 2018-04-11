@@ -50,9 +50,10 @@ const search = (query, page = 1) => {
           a.appendChild(img);
           a.classList.add('result');
           qs('#results').appendChild(a);
-
-          state.setState('canScroll', true);
         });
+      })
+      .then(() => {
+        state.setState('canScroll', true);
       });
   }
 };
