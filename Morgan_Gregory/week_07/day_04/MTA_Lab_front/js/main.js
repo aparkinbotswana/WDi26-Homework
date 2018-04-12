@@ -129,8 +129,8 @@ const tripPlanner  = function (departL, departS, arriveL, arriveS) {
       stationStops = departureLine.slice(arriveIndex + 1, departIndex).reverse().join(', ');
     };
     // output for single line trip
-    console.log(`You must travel through the following stops ${ stationStops } on the ${ departL } line. `);
-    console.log(`${ numStops } stops in total`);
+    document.getElementById("message1").innerHTML =`You must travel through the following stops ${ stationStops } on the ${ departL } line. `;
+    document.getElementById("message2").innerHTML = `${ numStops } stops in total`;
   } else { // multiline trip
       let departStIndex = departureLine.indexOf(departS);
       let arriveStIndex = arrivalLine.indexOf(arriveS);
