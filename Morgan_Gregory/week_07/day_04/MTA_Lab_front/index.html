@@ -9,7 +9,7 @@
     <div class="container">
       <h1>MTA Lab week 7</h1>
         <!-- DEPARTURE -->
-        <h2>Journey starts:</h2>
+        <h2>Departure:</h2>
         <select id="departNLine" onchange="setDeparture(this.id)"></select>
         <select id="departLLine" onchange="setDeparture(this.id)"></select>
         <select id="depart6Line" onchange="setDeparture(this.id)"></select>
@@ -27,11 +27,13 @@
         </div>
         <button onclick="getUserTrip()">GO!</button>
 
+      <div class="message">
         <div id="message1"></div>
         <div id="message2"></div>
         <div id="message3"></div>
         <div id="message4"></div>
         <div id="message5"></div>
+      </div>
     </div>
 
 
