@@ -2,12 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/main.css">
   <title>Ajax Lab</title>
+  <script src="js/jquery.js">
+
+  </script>
+  <script src="js/codealong.js"></script>
 </head>
 <body>
-  <h2>Google Books Ajax API</h2>
-  <input id="book" type="text" placeholder="Name of the book">
-  <button id="go">Go</button>
-  <script src="js/ajax-books.js"></script>
+  <div class="books">
+    <h1>Google Books Ajax API</h1>
+
+    <form id="title-search">
+      <input type="search" id="query" name="book-title">
+      <button id="search">Search</button>
+  </form>
+
+    <img src="#" alt="" id="cover">
+  </div>
 </body>
 </html>
