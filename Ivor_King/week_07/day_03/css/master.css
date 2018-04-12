@@ -1,0 +1,33 @@
+body, html {
+  background:linear-gradient(rgb(38, 0, 255), yellow);
+  color: white;
+  margin-top: 0px;
+  height: 100%;
+  margin: 0px;
+}
+
+#formbox {
+  color: black;
+  width: 400px;
+  height: 400px;
+  border-color: aliceblue;
+  background-color: lightsteelblue;
+  margin: auto;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 5px 10px #6e6e6e;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+}
+
+.answerbox {
+  margin: 40px 20px;
+  color: black;
+}
+
+h1 {
+  text-align: center;
+}
