@@ -1,16 +1,86 @@
-// MTA Lab week 1
-console.log('LOG ARRAYS TO CONSOLE:')
+// MTA Lab week 7
 // Subway line names array:
-const subwayLines = ['N', 'L', '6' ];
+const subwayLines = ['N', 'L', '6'];
+
 // N line station names array:
-const nLine = ['N', 'Times Square', '34th', '28th', '23rd', 'Union Square', '8th'];
-console.log(nLine);
+const nLine = ['N', 'Times Square', '34th', '28th', '23rd', 'Union Square', '8th']; // [l]
+
 // L line station names array:
-const lLine = ['L', '8th', '6th', '28th', 'Union Square', '3rd', '1st'];
-console.log(lLine);
+const lLine = ['L', '8th', '6th', '28th', 'Union Square', '3rd', '1st']; // [l]
+
 // 6 line station names array:
-const sixLine = ['6', 'Grand Central', '33rd', '28th', '23rd', 'Union Square', 'Astor Place'];
-console.log(sixLine);
+const sixLine = ['6', 'Grand Central', '33rd', '28th', '23rd', 'Union Square', 'Astor Place']; // [l]
+
+const subwayArrays = [nLine, lLine, sixLine]; // [a]
+const departLines = ['departNLine', 'departLLine', 'depart6Line'];
+const arriveLines = ['arriveNLine', 'arriveLLine', 'arrive6Line'];
+
+let userDepartLine;
+let userDepartStation;
+let userArriveLine;
+let userArriveStation;
+
+// USER DROPDOWN MENUS:
+// DEPART LOOP:
+for (let a = 0; a < subwayArrays.length; a++) { // loops X num of lines
+  let sel = document.getElementById(departLines[a]);
+  for (let l = 0; l < subwayArrays[a].length; l++) { // loops X num of stations
+      let opt = document.createElement('option');
+      opt.innerHTML = subwayArrays[a][l]; // too exciting!!!
+      opt.value = subwayArrays[a][l]; // too exciting!!!
+      sel.appendChild(opt);
+    }
+  }
+
+  // ARRIVE LOOP:
+  for (let a = 0; a < subwayArrays.length; a++) { // loops X num of lines
+    let sel = document.getElementById(arriveLines[a]);
+
+    for (let l = 0; l < subwayArrays[a].length; l++) { // loops X num of stations
+        let opt = document.createElement('option');
+        opt.innerHTML = subwayArrays[a][l]; // too exciting!!!
+        opt.value = subwayArrays[a][l]; // too exciting!!!
+        sel.appendChild(opt);
+      }
+    }
+
+    // SET DEPARTURE FUNCTION:
+    const setDeparture = function (dropdown) {
+      let departStatus = document.getElementById(dropdown).value;
+      document.getElementById("depart").innerHTML = "Depart from: " + departStatus;
+
+      if (dropdown === 'departNLine') {
+         userDepartLine = "N";
+      } else if (dropdown === 'departLLine') {
+         userDepartLine = "L";
+      } else if (dropdown === 'depart6Line') {
+         userDepartLine = "6";
+      }
+
+      userDepartStation = document.getElementById(dropdown).value;
+    };
+
+    // SET ARRIVAL FUNCTION:
+    const setArrival = function (dropdown) {
+
+      let arriveStatus = document.getElementById(dropdown).value;
+      document.getElementById("arrive").innerHTML = "Arrive at: " + arriveStatus;
+
+      if (dropdown === 'arriveNLine') {
+         userArriveLine = "N";
+      } else if (dropdown === 'arriveLLine') {
+         userArriveLine = "L";
+      } else if (dropdown === 'arrive6Line') {
+         userArriveLine = "6";
+      }
+
+      userArriveStation = document.getElementById(dropdown).value;
+    };
+
+    const getUserTrip = function () {
+      tripPlanner(userDepartLine, userDepartStation, userArriveLine, userArriveStation);
+    };
+
 // trip planner function begins
 const tripPlanner  = function (departL, departS, arriveL, arriveS) {
   console.log(`USER INPUT: ${ departL }, ${ departS }, ${ arriveL }, ${ arriveS } `);
@@ -84,14 +154,15 @@ const tripPlanner  = function (departL, departS, arriveL, arriveS) {
       // determine number of stops when trip requires changing lines
       let changeNumStops = departNumStUS + arriveNumStUS;
       // output for multiline trip
-      console.log(`You must travel through the following stops on the ${ departL } line: ${ departLStops }.`);
-      console.log(`Then change at Union Square to the ${ arriveL } line.`);
+      document.getElementById("message1").innerHTML = `You must travel through the following stops on the ${ departL } line: ${ departLStops }.`;
+      document.getElementById("message2").innerHTML = `Then change at Union Square to the ${ arriveL } line.`;
+
       if (arriveStIndex === arriveUSqIndex + 1 || arriveStIndex === arriveUSqIndex - 1) {
-        console.log(`Your journey will continue 1 stop to ${ arriveS }.`);
+        document.getElementById("message3").innerHTML = `Your journey will continue 1 stop to ${ arriveS }.`;
       } else {
-        console.log(`Your journey continues through the following stops: ${ arriveLStops }`);
+        document.getElementById("message4").innerHTML = `Your journey continues through the following stops: ${ arriveLStops }`;
       }
-      console.log(`${ changeNumStops } stops in total.`);
+      document.getElementById("message5").innerHTML = `${ changeNumStops } stops in total.`;
   };
 };
-tripPlanner('N', '28th', 'L', '28th');
+// tripPlanner('N', '28th', 'L', '28th');
