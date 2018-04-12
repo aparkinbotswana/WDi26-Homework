@@ -1,18 +1,14 @@
-// const state = {
-//   page: 1,
-//   lastPage: false
-//
-// };
+
 
 const searchFlickr = function(term){
-  // if( state.lastPage  ) { return; }
+
 
 
   console.log('searching for flickr', term);
 
   const flickrURL = 'https://rickandmortyapi.com/api/character';
 
-  // $.ajax('https://random.dog/woof.json');
+
 
 
   //not really ajax
@@ -35,7 +31,7 @@ const searchFlickr = function(term){
 });
 };
 const showImages = function(results){
-  console.log(results.results[1].image);
+  console.log(results.results[1]);
   const generateURL = function(p){
     // return [
     //   'https://farm',
@@ -56,6 +52,10 @@ const showImages = function(results){
     const $img = $('<img />',{ src: results.results[1].image }); //.attr('src', thumbnailURL)
       //display the image
     $img.appendTo('#images');
+    //append the fact to the page
+    const $p = $('<p>');
+    $p.html(results.results[1].gender);
+    $p.appendTo('#images');
   // });
 
   //create an image for that url
