@@ -1,0 +1,22 @@
+<h2>Edit ocean</h2>
+<form action="/oceans/<%= @ocean.id %>" method="post">
+  <label>Name:</label>
+  <input type="text" name="ocean[name]" placeholder="Gallifrey" value="<%= @ocean.name %>">
+
+  <label>Image:</label>
+  <input type="url" name="ocean[image]" placeholder="http://..." value="<%= @ocean.image %>">
+
+  <label>Orbit:</label>
+  <input type="number" name="ocean[orbit]" placeholder="(in Earth days)" value="<%= @ocean.orbit %>">
+
+  <label>Diameter:</label>
+  <input type="number" name="ocean[diameter]" placeholder="10000000" value="<%= @ocean.diameter %>">
+
+  <label>Mass:</label>
+  <input type="number" name="ocean[mass]" placeholder="10000000" value="<%= @ocean.mass %>">
+
+  <label>Moons:</label>
+  <input type="number" name="ocean[moons]" placeholder="7" value="<%= @ocean.moons %>">
+
+  <button>Update ocean</button>
+</form>

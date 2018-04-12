@@ -1,0 +1,44 @@
+/* *{
+  border: solid green 1px;
+} */
+
+body{
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  background-color: #ecf2f9;
+}
+
+#envelope{
+  margin-top: 5px;
+  background-color: #c4d8ed;
+}
+
+.issue-cover{
+  max-width: 100px;
+}
+
+
+
+.item{
+  max-width: 210px;
+  display: inline-block;
+  margin: 8px;
+  vertical-align: top;
+  background-color: #b1cbe7;
+  box-shadow: 0 0 10px #2a5889;
+  /* border: solid grey 1px; */
+}
+.title{
+  margin: 6px;
+  font-size: 15px;
+}
+
+.image{
+  margin: 3px;
+}
+
+.txt-box{
+  height: 100px;
+  margin: 3px;
+  overflow: hidden;
+}
