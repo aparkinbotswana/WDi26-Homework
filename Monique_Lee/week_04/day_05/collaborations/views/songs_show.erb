@@ -1,0 +1,24 @@
+<h2><%= @song.name %></h2>
+<h3>Genre: <%= @song.genre %></h3>
+<h3>Year Released: <%= @song.released %></h3>
+<h3 id="record_label">Record Label: <%= @song.company %></h3>
+
+<% unless @song.artists.empty? %>
+  <h3>Artists:</h3>
+    <ul>
+        <% @song.artists.each do |artist| %>
+          <li>
+            <a href="/artists/<%= artist.id %>"><%= artist.name %></a>
+          </li>
+        <% end %>
+      </ul>
+    <% end %>
+
+<% unless @song.clip.nil? || @song.clip.empty? %>
+  <iframe class="video_clip" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen src="<%= @song.clip %>"></iframe>
+<% end %>
+
+<div class="controls">
+  <a href="/songs/<%= @song.id %>/edit">Edit</a>
+  <a href="/songs/<%= @song.id %>/delete">Delete</a>
+</div>

@@ -1,0 +1,11 @@
+<h2><%= @fluffy_dog['breed'] %></h2>
+<h3>Origin: <%= @fluffy_dog['origin'] %></h3>
+
+<% unless @fluffy_dog['image'].nil? || @fluffy_dog['image'].empty? %>
+  <img class="feature" src="<%= @fluffy_dog['image'] %>" alt="<%= @fluffy_dog['breed'] %>">
+<% end %>
+
+<div class="controls">
+  <a href="/fluffy_dogs/<%= @fluffy_dog['id'] %>/edit">Edit</a>
+  <a href="/fluffy_dogs/<%= @fluffy_dog['id'] %>/delete">Delete</a>
+</div>

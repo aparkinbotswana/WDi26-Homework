@@ -1,0 +1,17 @@
+<h2>Wine index</h2>
+<div class="container">
+
+
+    <ul>
+        <% @wines.each do |wine| %>
+            <div class="item">
+
+                <li>
+                    <a href=/wines/<%= wine.id %>>
+                        <%= wine.variety %>
+                    </a>
+                </li>
+            </div>
+        <% end %>
+    </ul>
+</div>

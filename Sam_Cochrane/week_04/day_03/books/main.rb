@@ -21,11 +21,12 @@ book_info = HTTParty.get book_url
     book_info.class
 
     book_info.keys
-binding.pry
+
+    binding.pry
 
     # in volume info for picture
 
-    book_info ["items"].first['volumeInfo']["title"]
+    book_info["items"].first['volumeInfo']["title"]
 
   redirect to ('/') if @book_info.nil?
 

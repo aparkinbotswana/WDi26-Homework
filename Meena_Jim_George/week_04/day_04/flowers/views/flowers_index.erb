@@ -1,0 +1,8 @@
+<h2>Flower Display</h2>
+<ul>
+  <% @flowers.each do |flower| %>
+  <li>
+    <a href ="/flowers/<%= flower['id']%>"><%= flower["name"] %></a>
+  </li>
+  <% end %>
+</ul>

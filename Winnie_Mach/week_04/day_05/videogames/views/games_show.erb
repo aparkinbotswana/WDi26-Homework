@@ -1,0 +1,29 @@
+<h1>Game Page!</h1>
+
+<h2>Name: <%= @game.name %></h2>
+
+<!-- TODO: validation for when image is empty and nil -->
+
+<p>Company: <%= @game.company %></p>
+
+<p>Year Released: <%= @game.year %></p>
+
+<% unless @game.console.nil? %>
+<p>Available on:
+  <a href="/consoles/<%= @game.console_id %>"><%= @game.console.name %></a>
+</p>
+<% end %>
+
+<% unless @game.image.nil? || @game.image.empty? %>
+<h2>
+  Image:
+  <img src="<%= @game.image %>" alt="<%= @game.image %>">
+</h2>
+<% end %>
+
+
+
+<div class="controls">
+<a href="/games/<%= @game.id %>/edit">Edit</a>
+<a href="/games/<%= @game.id %>/delete">Delete</a>
+</div>

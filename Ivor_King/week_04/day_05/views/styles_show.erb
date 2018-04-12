@@ -1,0 +1,19 @@
+<h2><%= @style.name %></h2>
+
+<% unless @style.comics.empty? %>
+    <h3>
+    Comics using this style:
+    </h3>
+    <ul>
+        <% @style.comics.each do |comic| %>
+            <li>
+                <a href="/comics/<%= @style.id %>"><%= comic.name %></a>
+            </li>
+        <% end %>
+    </ul>
+<% end %>
+
+<div class="controls">
+    <a href="/styles/<%= @style.id %>/edit">Edit</a>
+    <a href="/styles/<%= @style.id %>/delete">Delete</a>
+</div>

@@ -1,0 +1,7 @@
+<h2>All mountains</h2>
+<% @mountains.each do |mountain| %>
+<p>
+<%= link_to mountain.name, mountain_path(mountain.id) %> has  <%= pluralize(mountain.years,'year')%>
+
+</p>
+<%end%>

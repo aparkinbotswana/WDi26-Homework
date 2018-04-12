@@ -1,0 +1,15 @@
+* {
+    background-color: lightgrey;
+}
+
+h1 {
+    text-align: center
+}
+
+aside {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    border: 1px solid black;
+    text-align: center;
+}

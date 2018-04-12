@@ -1,0 +1,11 @@
+<h1>Cities Index</h1>
+
+<% @cities.each do |city| %>
+    <%= link_to city do %>
+        <div class="index-city" style="background-image: url('<%= city.image %>')">
+            <h2><%= city.name %></h2>
+            <h3><%= city.country %></h3>
+        </div>
+    <% end %>
+<% end %>
+

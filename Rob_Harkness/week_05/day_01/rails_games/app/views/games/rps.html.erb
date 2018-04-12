@@ -1,0 +1,8 @@
+<% if @result == 'win!' %>
+    <h3><%= @player %> beats <%= @opponent %> you <%= @result %></h3>
+<% elsif @result == 'lose' %>
+    <h3><%= @opponent %> beats <%= @player %> you <%= @result %></h3>
+<% else %>
+    <h3><%= @player %> and <%= @opponent %>, it's a <%= @result %></h3>
+<% end %>
+<a href="/">Play Again</a>

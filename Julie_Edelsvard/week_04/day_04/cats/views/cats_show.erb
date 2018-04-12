@@ -1,0 +1,6 @@
+<h2><%= @cat['name'] %></h2>
+<h3>Breed: <%= @cat['breed'] %></h3>
+
+ <% unless @cat['image'].nil? || @cat['image'].empty? %>
+ <img class="feature" src="<%= @cat['image'] %>" alt"<%= @cat['name'] %>">
+ <% end %>

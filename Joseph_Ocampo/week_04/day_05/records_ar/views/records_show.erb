@@ -1,0 +1,20 @@
+<h2>Title:<%= @record['title'] %></h2>
+<h3>Artist: <%= @record['artist'] %></h3>
+
+<% unless @record.genre.nil?%>
+<a href="/genres/<%= @record.genre.id %>">
+  <h3>Genre:<%= @record.genre.genre %></h3>
+</a>
+<% end %>
+
+
+<% unless @record['image'].nil? || @record['image'].empty? %>
+  <img class="feature" src="<%= @record['image'] %>" alt="<%= @record['title'] %>">
+<% end %>
+
+
+
+<div class="controls">
+  <a href="/records/<%= @record['id'] %>/edit">Edit</a>
+  <a href="/records/<%= @record['id'] %>/delete">Delete</a>
+</div>

@@ -1,0 +1,12 @@
+<h2>Name: <%= @board_game['gname'] %></h2>
+<h3>Type: <%= @board_game['gtype'] %></h3>
+<h3>Score: <%= @board_game['gscore'] %></h3>
+
+<% unless @board_game['gimage'].nil? || @board_game['gimage'].empty? %>
+  <img class="feature" src="<%= @board_game['gimage'] %>" alt="<%= @board_game['gname'] %>">
+<% end %>
+
+<div class="controls">
+  <a href="/board_games/<%= @board_game['id'] %>/edit">Edit</a>
+  <a href="/board_games/<%= @board_game['id'] %>/delete">Delete</a>
+</div>

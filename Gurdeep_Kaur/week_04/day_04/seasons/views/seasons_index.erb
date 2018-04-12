@@ -1,0 +1,11 @@
+<h2>Seasons Index</h2>
+<ul>
+  <!--non-echoing ERB-->
+  <% @seasons.each do |seasons| %>
+  <li>
+    <a href="/seasons/<%= seasons['id'] %>">
+  <%= seasons["name"] %>
+</a>
+</li>
+  <% end %>
+</ul>

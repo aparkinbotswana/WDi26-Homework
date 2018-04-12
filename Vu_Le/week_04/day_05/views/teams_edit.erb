@@ -1,0 +1,10 @@
+<h2>Edit Teams</h2>
+
+<form method="post" action="/teams/<%= @team.id %>">
+  <label>Name:</label>
+  <input type="text" name="name" placeholder="Team name" value="<%= @team.name %>">
+  <label>"Image:"</label>
+  <input type="url" name="image" name="http://..." value="<%= @team.image %>">
+
+  <button>Update team</button>
+</form>

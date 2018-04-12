@@ -1,0 +1,17 @@
+<h2><%= @todolist.list_name %></h2>
+
+<h3>Todo Items in this list</h3>
+
+
+
+<% unless @todolist.todoitems.empty? %>
+<ul>
+  <% @todolist.todoitems.each do |todoItem| %>
+    <li class="todolist">
+      <a href="/todoitems/<%=todoItem.id%>"><%= todoItem.item_name%></a>
+    </li>
+  <%end%>
+</ul>
+<% end %>
+
+<p>Tags: <%=@todolist.tag%></p>

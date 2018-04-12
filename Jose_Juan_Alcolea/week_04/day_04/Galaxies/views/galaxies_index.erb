@@ -1,0 +1,11 @@
+<h2>Glaxies Index</h2>
+
+<ul>
+  <% @galaxies.each do |galaxies| %>
+  <li>
+    <a href="/galaxies/<%= galaxies['id'] %>">
+      <%= galaxies["name"] %>
+    </a>
+  </li>
+  <% end %>
+</ul>

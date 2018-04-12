@@ -1,0 +1,8 @@
+<h2>All Oceans</h2>
+
+<% @ocean.each do |ocean| %>
+<p>
+  <%= link_to ocean.name, ocean_path(ocean.id) %> has <%= (ocean.coastline) %>
+</p>
+
+<% end %>

@@ -1,0 +1,1 @@
+ALTER TABLE comics ADD COLUMN style_id INTEGER;

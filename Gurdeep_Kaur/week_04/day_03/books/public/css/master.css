@@ -1,0 +1,18 @@
+body{
+  background-color: violet;
+}
+
+h2{
+  text-align: center;
+  text-decoration: underline;
+}
+h3{
+  text-align: center;
+}
+form{
+  text-align: center;
+  margin-top: 100px;
+}
+label{
+  font-size: 40px;
+}

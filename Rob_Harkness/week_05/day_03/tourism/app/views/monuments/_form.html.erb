@@ -1,0 +1,19 @@
+<%= form_for @monument do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name, autofocus: true %>
+
+    <%= f.label :year %>
+    <%= f.text_field :year %>
+
+    <%= f.label :description %>
+    <%= f.text_field :description %>
+
+    <%= f.label :image %>
+    <%= f.url_field :image %>
+
+    <%= f.label :city_id %>
+    <%= f.select(:city_id, City.pluck(:name, :id), {include_blank: true}, {class: 'browser-default'}) %>
+
+    <%= f.submit class: 'btn waves-effect waves-light blue' %>
+
+<% end %>

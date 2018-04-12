@@ -32,40 +32,75 @@
 // Bonus #3: When the cat reaches the middle of the screen, replace the img with an image of a cat dancing, keep it dancing for 10 seconds, and then replace the img with the original image and have it continue the walk.
 //
 // Bonus #4: Pretty much go nuts or whatever.
-console.log("connected");
 
 //change image to this one: https://orig00.deviantart.net/9b93/f/2012/245/5/7/zeit___cat_dance_by_thefaileddream-d5daxhp.gif
-
-let image = document.getElementsByTagName("img")[0];
-// image.style.position = 'absolute';
-image.style.left = '0px';
-
-let catWalk = function(){
-let oldPosition = parseInt(image.style.left);
-let newPosition = oldPosition + 5;
-image.style.left=newPosition + "px";
-
-
-//Make the cat repeat the walk
-//if(newPosition > 1450)
-if(newPosition >500)
-{
-  //window.clearInterval(stopwalk);
-//Make the cat start over
-image.style.left = '0px';
-image.style.transform = 'scaleX(-1)';
-
-let b_oldPosition = parseInt(image.style.left);
-let b_newPosition = b_oldPosition + 10
-//Flip the cat
-// image.style.transform = 'scaleX(-1)';
-//let newPosition = oldPosition - 10;
-// console.log('old pos '+oldPosition);
-// console.log('new pos ' +newPosition);
-image.style.left= b_newPosition + "px";
-}
-}
+console.log("connected");
 
 
 
-let stopwalk = window.setInterval(catWalk,50);
+var timer1;
+var timer;
+
+var img = document.querySelector('img');
+var oldimg = img.src;
+img.style.position = 'absolute';
+img.style.left = '0px';
+var watchCatWalk = function() {
+
+// subtract client Width.
+
+  var oldLeft = parseInt(img.style.left);
+  var newLeft = oldLeft + 3;
+  img.style.left = newLeft + 'px';
+
+  if (newLeft > +window.outerWidth) {
+    window.clearInterval(timer);
+    img.className = 'flip';
+   timer1 = window.setInterval(watchCatWalkFlip, 10);
+  }
+};
+timer = window.setInterval(watchCatWalk, 10);
+
+///////////
+
+var watchCatWalkFlip = function() {
+
+  var oldleft = parseInt(img.style.left);
+  var newleft = oldleft - 3;
+  img.style.left = newleft + 'px';
+  if (newleft === 0) {
+    window.clearInterval(timer1);
+    img.className = '';
+    timer = window.setInterval(watchCatWalk, 10);
+  }
+  if((window.outerWidth)/2 === newleft)
+  {
+    // window.outerWidth)/2 === newleft
+    ////catDance();
+    // window.clearInterval(timer1);
+    // var timer2 = window.setInterval(catDance, 100);
+    // window.clearInterval(timer2)
+    //  img.src = oldimg;
+
+  }
+
+};
+
+
+// cat event click
+
+
+
+const catDance = function() {
+  if (img.src === oldimg) {
+    img.src= "https://media.giphy.com/media/tkjfU5IIjbqbm/giphy.gif";
+  }
+  else {
+    img.src = oldimg;
+  }
+
+};
+
+
+
+img.addEventListener('click', catDance);

@@ -1,0 +1,37 @@
+body {
+  background-color: grey;
+  font-style: Arial cursive;
+  color: white;
+}
+
+a {
+  font-size: 30px;
+  color: white;
+  padding: 20px;
+
+}
+
+h2 {
+  font-size: 20px;
+  padding: 20px;
+}
+
+h3 {
+  font-size: 15px;
+  padding: 20px;
+}
+
+img {
+  padding: 30px;
+}
+
+label {
+  background-color: red;
+  font-size: 20px;
+  padding: 20px;
+}
+
+button {
+  padding: 20px;
+  margin: 20px;
+}

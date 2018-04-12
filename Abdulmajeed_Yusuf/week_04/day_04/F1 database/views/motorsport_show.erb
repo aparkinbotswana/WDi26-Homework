@@ -1,0 +1,12 @@
+<h2><%= @motorsport['name'] %></h2>
+<h3>Team: <%= @motorsport['team'] %></h3>
+<h3>Helmet number: <%= @motorsport['num'] %></h3>
+
+<% unless @motorsport['image'].nil? || @motorsport['image'].empty? %>
+  <img class="feature" src="<%= @motorsport['image'] %>"
+<% end %>
+
+<div class="controls">
+  <a href="/motorsport/<%= @motorsport['id'] %>/edit">Edit</a>
+  <a href="/motorsport/<%= @motorsport['id'] %>/delete">Delete</a>
+</div>

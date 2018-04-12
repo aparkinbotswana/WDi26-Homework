@@ -1,0 +1,28 @@
+<h1>Console Page!</h1>
+
+<h2>Name: <%= @console.name %></h2>
+
+<!-- TODO: validation for when image is empty and nil -->
+
+<p>Company: <%= @console.company %></p>
+
+<p>Games on <%= @console.name %>: </p>
+<ul>
+  <% @console.games.each do |game| %>
+  <li>
+    <a href="/games/<%= game.id %>"><%= game.name %></a>
+  </li>
+  <% end %>
+</ul>
+
+<% unless @console.image.nil? || @console.image.empty? %>
+<h2>
+  Image:
+  <img src="<%= @console.image %>" alt="<%= @console.image %>">
+</h2>
+<% end %>
+
+<div class="controls">
+<a href="/consoles/<%= @console.id %>/edit">Edit</a>
+<a href="/consoles/<%= @console.id %>/delete">Delete</a>
+</div>

@@ -1,0 +1,24 @@
+<h2><%= @character['name'] %></h2>
+
+<h3>Home World: <%= @character['home_world']%></h3>
+<h3>Film: <%= @character['film']%></h3>
+<h3>Height: <%= @character['height']%></h3>
+<% unless @character['film_url'].nil? || @character['film_url'].empty? %>
+  <!--<img class="feature" src="<%= @character['film_url'] %>" alt="<%= @character['name'] %>">-->
+  <div class="parallax">
+  <div class="parallax-top-left"></div>
+  <div class="parallax-top-right"></div>
+  <div class="parallax-bottom-left"></div>
+  <div class="parallax-bottom-right"></div>
+  <div class="parallax-content">
+   <div class="parallax-back">
+    <img src="<%= @character['film_url'] %>" alt="<%= @character['name'] %>" class="img-responsive rounded">
+   </div>
+  </div>
+ </div>
+<% end %>
+
+<div class="controls">
+  <a href="/profiles/<%= @character['id']%>/edit">Edit</a>
+  <a href="/profiles/<%= @character['id']%>/delete">Delete</a>
+</div>
