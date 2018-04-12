@@ -1,0 +1,9 @@
+<h1>Ideologies</h1>
+
+<% @ideologies.each do |ideology| %>
+  <ul>
+    <li><%= link_to ideology.name, ideology %></li>
+    <li><%= ideology.country %></li>
+    <li><%= ideology.created %></li>
+  </ul>
+<% end %>

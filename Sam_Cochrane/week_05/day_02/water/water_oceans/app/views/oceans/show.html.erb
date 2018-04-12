@@ -1,0 +1,29 @@
+<h2><%= @ocean.name %></h2>
+<% if @ocean.image.present? %>
+  <%= image_tag @ocean.image, :alt => @ocean.name, :class => 'feature' %>
+<% end %>
+<table>
+  <thead>
+    <tr>
+      <td>Name</td>
+      <td>Area</td>
+      <td>Volume</td>
+      <td>Depth</td>
+      <td>Coastline</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><%= @ocean.name %></td>
+      <td><%= @planet.area %></td>
+      <td><%= @planet.volume %></td>
+      <td><%= @planet.depth %></td>
+      <td><%= @planet.coastline %></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="controls">
+  <%= link_to 'Edit ocean', oceans_edit_path(@ocean.id) %>
+  <%= button_to 'Delete ocean', ocean_path(@ocean.id), :method => 'delete' %>
+</div>

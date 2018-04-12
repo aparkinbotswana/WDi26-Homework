@@ -1,0 +1,13 @@
+<%= form_for @font do |f| %>
+<%= f.label :name %>
+<%= f.text_field :name, :autofocus => true %><br>
+<%# f.label :alphabet %>
+<%# f.text_field :alphabet %>
+<%= f.label :description %>
+<%= f.text_field :description %><br>
+
+<%= f.label :font_family_id %>
+<%= f.select :font_family_id, FontFamily.pluck(:name, :id), :include_blank => true %><br>
+
+<%= f.submit %>
+<% end %>

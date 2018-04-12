@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
+thead {
+  font-weight: bold;
+}
+
+td {
+  border: 1px solid black;
+  text-align: center;
+}
+
 .container {
   max-width: 960px;
   margin: 0 auto;
@@ -7,9 +16,22 @@
 }
 
 .feature {
-  max-width: 100%;
+  max-width: 20em;
+  margin: 20px;
 }
 
-button {
+.action-button {
+  background-color: red;
+  border: 1px solid red;
+  border-radius: 10px;
+}
+
+.add-button {
+  background-color: green;
+  border: 1px solid green;
+  border-radius: 10px;
+}
+
+.edit-link {
   color: red;
 }

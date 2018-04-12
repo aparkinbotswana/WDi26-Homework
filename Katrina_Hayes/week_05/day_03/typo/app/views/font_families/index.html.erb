@@ -1,0 +1,13 @@
+<header class="index">
+  <h1>Font Families</h1>
+</header>
+
+<div class="gallery">
+  <% @font_families.each do |font_family| %>
+    <ul>
+      <li>
+        <%= link_to font_family.name, font_family %>
+      </li>
+    </ul>
+  <% end %>
+</div>

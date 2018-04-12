@@ -19,23 +19,29 @@ class GamesController < ApplicationController
     @computer_throw = possible_throws[0]
     if @computer_throw == "scissors"
       if @human_throw == "paper"
-        @winner = "Computer"
+        @winner = "Computer wins."
+      elsif @human_throw == "rock"
+        @winner = "Human wins."
       else
-        @winner = "Human"
+        @winner = "It's a draw."
       end
     end
     if @computer_throw == "paper"
       if @human_throw == "rock"
-        @winner = "Computer"
+        @winner = "Computer wins."
+      elsif @human_throw == "scissors"
+        @winner = "Human wins."
       else
-        @winner = "Human"
+        @winner = "It's a draw."
       end
     end
     if @computer_throw == "rock"
       if @human_throw == "scissors"
-        @winner = "Computer"
+        @winner = "Computer wins."
+      elsif @human_throw = "paper"
+        @winner = "Human wins."
       else
-        @winner = "Human"
+        @winner = "It's a draw."
       end
     end
   end

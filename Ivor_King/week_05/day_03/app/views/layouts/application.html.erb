@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Politicians and Ideologies</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class="">
+      <nav>
+        <%= link_to 'All Ideologies', ideologies_path %>
+        <%= link_to 'New Ideology', new_ideology_path %>
+        |
+        <%= link_to 'All Politicians', politicians_path %>
+        <%= link_to 'New Politician', new_politician_path %>
+      </nav>
+      <%= yield %>
+    </div>
+  </body>
+</html>

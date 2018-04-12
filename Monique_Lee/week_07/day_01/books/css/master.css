@@ -1,0 +1,13 @@
+.container {
+  text-align: center ;
+}
+
+label {
+  font-weight: bold;
+}
+
+button {
+  background-color: lightgreen;
+  border: 1px solid green;
+  border-radius: 5px;
+}

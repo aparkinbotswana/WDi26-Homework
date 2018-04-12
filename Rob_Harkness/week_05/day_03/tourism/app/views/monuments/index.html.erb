@@ -1,0 +1,11 @@
+<h1>Monuments Index</h1>
+
+<% @monuments.each do |monument| %>
+    <%= link_to monument do %>
+        <div class="index-city" style="background-image: url('<%= monument.image %>')">
+            <h2><%= monument.name %></h2>
+        <p><%= monument.city.name %></p>
+        </div>
+    <% end %>
+<% end %>
+

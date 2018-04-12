@@ -1,0 +1,22 @@
+<h2>Edit Record</h2>
+
+<form method="post" action="/records/<%= @record['id'] %>">
+  <label>Title:</label>
+  <input type="text" name="title" placeholder="record name" value="<%= @record['title'] %>">
+  <label>Artist:</label>
+  <input type="text" name="artist" placeholder="record artist" value="<%= @record['artist'] %>">
+  <label>Image:</label>
+  <input type="url" name="image" placeholder="http://..." value="<%= @record['image'] %>">
+
+  <label>Record Genre:</label>
+  <select name="genre_id">
+    <option></option>
+    <% Genre.all.each do |genre| %>
+    <option value="<%= genre.id %>" <%= "selected" if genre.id == @record.genre_id %> ><%= genre.genre %></option>
+    <% end %>
+  </select>
+
+
+  <button>Update record</button>
+
+</form>

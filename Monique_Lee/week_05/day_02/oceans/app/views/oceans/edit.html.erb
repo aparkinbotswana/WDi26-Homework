@@ -1,0 +1,22 @@
+<h2>EDIT OCEAN</h2>
+
+<form action="/oceans/<%= @ocean.id %>" method="post">
+
+  <label>Name:</label>
+  <input type="text" name="ocean[name]" placeholder="Pacific" value="<%= @ocean.name %>">
+
+  <label>Image:</label>
+  <input type="url" name="ocean[image]" placeholder="http://..." value="<%= @ocean.image %>">
+
+  <label>Surface Area (kms squared):</label>
+  <input type="number" name="ocean[area]" placeholder="165250000" value="<%= @ocean.area %>">
+
+  <label>Average Depth (metres):</label>
+  <input type="number" name="ocean[depth]" placeholder="4280" value="<%= @ocean.depth %>">
+
+  <label>Water Volume (cubic kms):</label>
+  <input type="number" name="ocean[volume]" placeholder="710000000" value="<%= @ocean.volume %>">
+
+  <button class="action-button">Update Ocean!</button>
+
+</form>

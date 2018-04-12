@@ -1,0 +1,26 @@
+<h2><%= @city.name %></h2>
+<h3><%= @city.country %></h3>
+<h3><%= @city.population %></h3>
+
+<%= image_tag(@city.image, alt: @city.name) unless @city.image.nil? %>
+
+<% if @city.monuments.present? %>
+    <h3>Monuments:</h3>
+    <ul>
+        <% @city.monuments.each do |monument| %>
+
+            <li>
+                <%= link_to(monument.name, monument) %>
+
+            </li>
+
+        <% end %>
+    </ul>
+
+<% end %>
+
+
+<div class="controls">
+    <%= link_to 'Edit City', edit_city_path(@city) %>
+    <%= link_to 'Delete City', @city, :method => 'delete', :data => { :confirm => 'Are you sure?' } %>
+</div>

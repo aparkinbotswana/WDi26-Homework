@@ -1,0 +1,20 @@
+<% if @num == @guess %>
+    <h2><%= @num %> is correct! Winner!</h2>
+
+    <a href="/">Play Another Game</a>
+
+<% else %>
+
+    <% if @num < @guess %>
+        <h2>Lower....Guess again:</h2>
+    <% elsif @num > @guess %>
+        <h2>higher....Guess again:</h2>
+    <% end %>
+
+    <form action="/games/guess">
+        <input type="number" min="1" max="20" name="guess" required>
+        <input type="hidden" name="num" value=<%= @num %>>
+        <button>Guess Again!</button>
+    </form>
+
+<% end %>

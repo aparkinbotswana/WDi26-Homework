@@ -1,0 +1,13 @@
+body {
+  background-image: url('http://2.bp.blogspot.com/_xXoMIJIKSUU/TUB_ScpqnhI/AAAAAAAAG7k/jTBk9udywxw/s1600/DSC_0048.JPG');
+}
+
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.feature {
+  max-width: 100%;
+}

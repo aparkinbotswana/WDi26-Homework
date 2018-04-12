@@ -1,0 +1,119 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    background: url('https://images.unsplash.com/photo-1497215842964-222b430dc094?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=48fe9f87e4a3344a46e80ddf5c3bdfa6&auto=format&fit=crop&w=750&q=80');
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+    z-index: -10;
+
+}
+
+#overlay{
+    position: absolute;
+    background-color: rgba(0,0,0,0.7);
+    z-index: -5;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+
+}
+
+.stockbox{
+    width: 320px;
+    height: 360px;
+    color: #000;
+    top: 50%;
+    left: 50%;
+    padding: 60px 30px;
+    position: absolute;
+    transform: translate(-50%,  -50%);
+    box-sizing: border-box;
+    border-radius: 3%;
+    box-shadow: 8px 8px 50px #000;
+}
+h1{
+    color: #fff;
+    margin: 0;
+    padding: 0 0 0px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.stockbox p {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.stockbox input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.stockbox input[type="text"], input[type="password"]{
+    border: none;
+    border-bottom: 1px solid #bdc3c7;
+    background: transparent;
+    outline: none;
+    height: 30px;
+    font-size: 16px;
+    opacity: 1;
+    color: #ccc;
+}
+
+
+.stockbox input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #2ecc71;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.stockbox input[type="submit"]:hover {
+    cursor: pointer;
+    background: #27ae60;
+    color: #fff;
+
+}
+
+.stockbox a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.8;
+}
+
+.stockbox a:hover {
+    color: #fff;
+    opacity: 1;
+}
+
+#text-account {
+    font-size: 14px;
+    color: #fff;
+    opacity: 0.4;
+}
+
+#create-account: hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+label {
+  color: white;
+}
+
+.pricebox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
