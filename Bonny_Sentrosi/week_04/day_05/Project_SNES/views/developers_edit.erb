@@ -1,0 +1,12 @@
+<h2>Edit developer</h2>
+
+<form method="post" action="/developers/<%= @developer.id %>">
+  <label>Name:</label>
+  <input type="text" name="name" placeholder="developer name" value="<%= @developer.name %>">
+  <label>Image:</label>
+  <input type="url" name="image" placeholder="http://..." value="<%= @developer.image %>">
+  <label>Country:</label>
+  <input type="url" name="image" placeholder="http://..." value="<%= @developer.country %>">
+
+  <button>Update developer</button>
+</form>

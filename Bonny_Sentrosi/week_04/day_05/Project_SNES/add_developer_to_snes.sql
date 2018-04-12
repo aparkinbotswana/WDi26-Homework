@@ -1,0 +1,1 @@
+ALTER TABLE snes ADD COLUMN developer_id INTEGER;

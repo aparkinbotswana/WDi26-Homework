@@ -1,0 +1,19 @@
+<h2><%= @game['name']%></h2>
+<h3>Producer <%= @game['producer']%></h3>
+<h3>Year <%= @game['year']%></h3>
+
+
+<% unless @game['image'].nil? || @game['image'].empty?%>
+<img class="feature" src="<%= @game['image'] %>" alt="<%= @game['name']%>">
+
+<% end %>
+
+<% unless @game['video'].nil? || @game['video'].empty?%>
+<video src="<%= @game['video'] %>" autoplay poster="<%= @game['image']%>"></video>
+
+ <% end %>
+
+<div class="controls">
+  <a href="/snes/<%= @game['id'] %>/edit">Edit</a>
+  <a href="/snes/<%= @game['id'] %>/delete">Delete</a>
+</div>
