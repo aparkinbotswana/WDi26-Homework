@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>MTA Lab week 1</title>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>MTA Lab week 7</h1>
+        <!-- DEPARTURE -->
+        <h2>Departure:</h2>
+        <select id="departNLine" onchange="setDeparture(this.id)"></select>
+        <select id="departLLine" onchange="setDeparture(this.id)"></select>
+        <select id="depart6Line" onchange="setDeparture(this.id)"></select>
+
+        <!-- ARRIVE -->
+        <h2>Destination:</h2>
+        <select id="arriveNLine" onchange="setArrival(this.id)"></select>
+        <select id="arriveLLine" onchange="setArrival(this.id)"></select>
+        <select id="arrive6Line" onchange="setArrival(this.id)"></select>
+
+
+        <div id="userChoice">
+          <div id="depart"></div>
+          <div id="arrive"></div>
+        </div>
+        <button onclick="getUserTrip()">GO!</button>
+
+      <div class="message">
+        <div id="message1"></div>
+        <div id="message2"></div>
+        <div id="message3"></div>
+        <div id="message4"></div>
+        <div id="message5"></div>
+      </div>
+    </div>
+
+
+  <script src="js/main.js"></script>
+  </body>
+</html>
