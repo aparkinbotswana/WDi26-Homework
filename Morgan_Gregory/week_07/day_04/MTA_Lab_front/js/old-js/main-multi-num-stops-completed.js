@@ -11,9 +11,10 @@ console.log(lLine);
 // 6 line station names array:
 const sixLine = ['6', 'Grand Central', '33rd', '28th', '23rd', 'Union Square', 'Astor Place'];
 console.log(sixLine);
-// trip planner function begins
+
 const tripPlanner  = function (departL, departS, arriveL, arriveS) {
-  console.log(`USER INPUT: ${ departL }, ${ departS }, ${ arriveL }, ${ arriveS } `);
+console.log(`USER INPUT: ${ departL }, ${ departS }, ${ arriveL }, ${ arriveS } `);
+
   let departureLine = [];
   let arrivalLine = [];
   let numStops;
@@ -23,6 +24,7 @@ const tripPlanner  = function (departL, departS, arriveL, arriveS) {
   let stationStops;
   let departLStops;
   let arriveLStops;
+
   // determine departure line from user input:
   if (departL === nLine[0]) {
     departureLine = nLine;
@@ -61,11 +63,14 @@ const tripPlanner  = function (departL, departS, arriveL, arriveS) {
     // output for single line trip
     console.log(`You must travel through the following stops ${ stationStops } on the ${ departL } line. `);
     console.log(`${ numStops } stops in total`);
+
   } else { // multiline trip
-      let departStIndex = departureLine.indexOf(departS);
-      let arriveStIndex = arrivalLine.indexOf(arriveS);
-      let departUSqIndex = departureLine.indexOf('Union Square');
-      let arriveUSqIndex = arrivalLine.indexOf('Union Square');
+    // if statement works out how many stops and what stations will be travelled thru to Union Square
+    // if the departure line is not the same as the arrival line
+    let departStIndex = departureLine.indexOf(departS);
+    let arriveStIndex = arrivalLine.indexOf(arriveS);
+    let departUSqIndex = departureLine.indexOf('Union Square');
+    let arriveUSqIndex = arrivalLine.indexOf('Union Square');
 
       if (departStIndex < departUSqIndex) { // depart station is before Union Square
         departNumStUS = departUSqIndex - departStIndex;
@@ -83,15 +88,12 @@ const tripPlanner  = function (departL, departS, arriveL, arriveS) {
       }
       // determine number of stops when trip requires changing lines
       let changeNumStops = departNumStUS + arriveNumStUS;
+
       // output for multiline trip
-      console.log(`You must travel through the following stops on the ${ departL } line: ${ departLStops }.`);
-      console.log(`Then change at Union Square to the ${ arriveL } line.`);
-      if (arriveStIndex === arriveUSqIndex + 1 || arriveStIndex === arriveUSqIndex - 1) {
-        console.log(`Your journey will continue 1 stop to ${ arriveS }.`);
-      } else {
-        console.log(`Your journey continues through the following stops: ${ arriveLStops }`);
-      }
-      console.log(`${ changeNumStops } stops in total.`);
+      console.log(`You must travel through the following stops on the ${ departL } line: ${ departLStops }`);
+      console.log('Change at Union Square.');
+      console.log(`Your journey continues through the following stops: ${ arriveLStops }`);
+      console.log(`${ changeNumStops } stops in total`);
   };
 };
-tripPlanner('N', '28th', 'L', '28th');
+tripPlanner('N', 'Times Square', '6', 'Astor Place');
