@@ -4,7 +4,7 @@ const state = {
   long: 0,
   lat: 0,
   map: undefined, // or can leave this out, because if map is left out will be undefined anyway.
-  active: true // DOESN'T WORK
+  active: true
 };
 
 const getISS = function() {
@@ -14,7 +14,7 @@ const getISS = function() {
 const updateCoords = function(info) {
   state.lat = parseFloat(info.iss_position.latitude); //turning the returned data which is a string to a number.
   state.long = parseFloat(info.iss_position.longitude);
-  console.log(state.lat, state.long);
+//  console.log(state.lat, state.long);
   displayCoords();
 }
 
@@ -295,27 +295,24 @@ const displayCoords = function() {
 ]
     });
   }
+  //state.active = true;
+  console.log("Before marker placed:", state.active);
   const issMarker = new google.maps.Marker ({
     position: {lat: state.lat, lng: state.long},
     map: state.map,
-    label: "ISS",
-    icon: mapIcon
+    title: "ISS Location Now",
+    icon: state.active ? 'images/marker01.png' : 'images/marker02.png' //--> condition? true : false
   });
-  state.active = false; //DOESN'T WORK
+  state.active = false;
+  //issMarker.setIcon(icon: 'images/marker02.png');
+  console.log("After marker placed:", state.active);  //need something in state called previous marker. when a new marker is drawn, change colour of current marker then make it the previous marker.
 }
 
 
-//// Putting your long and lat on a map using google maps api ////////
-let mapIcon;
-if(state.active) {
-  mapIcon = 'images/marker01.png'
-} else {
-  mapIcon = 'images/marker02.png'
-};
+
 
 //This initMap function is called by the <script> tag in html page. That loads before the dom.
 function initMap() { //instead of making initMap create a map, calls my getISS function, which will create map eventually.
-  state.active = false, //DOESN'T WORK
   getISS();
 }
 ///////// DOM Stuff /////////
