@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Gugi');
+
+body {
+  background-color: yellow;
+  font-family: 'Gugi', cursive;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+button {
+  font-size: 2em;
+  border-radius: 25px;
+  margin: 30px 0 30px 0;
+  padding: 20px;
+  background-color: rgb(230, 208, 251);
+}
+
+select {
+  font-size: 1.5em;
+  font-family: 'Gugi', cursive;
+}
+
+#userChoice {
+  margin: 35px 0 0 0;
+}
+
+.message:nth-child(n)  {
+  font-size: 1.5em;
+}
