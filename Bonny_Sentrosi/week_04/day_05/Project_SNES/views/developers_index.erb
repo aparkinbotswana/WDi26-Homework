@@ -1,0 +1,11 @@
+<h2>developer Index</h2>
+
+<ul>
+  <% @developers.each do |developer| %>
+    <li>
+      <a href="/developers/<%= developer.id %>">
+        <%= developer.name %>
+      </a>
+    </li>
+  <% end %>
+</ul>

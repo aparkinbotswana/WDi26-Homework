@@ -1,0 +1,23 @@
+<h2>Edit game</h2>
+
+<form method="post" action="/snes/<%= @game['id'] %>">
+  <label>Name:</label>
+  <input type="text" name="name" placeholder="Game name" value="<%= @game['name'] %>">
+  <label>Year:</label>
+  <input type="text" name="year" placeholder="Game year" value="<%= @game['year'] %>">
+  <label>Video:</label>
+  <input type="text" name="video" placeholder="http://..." value="<%= @game['video'] %>">
+  <label>Image:</label>
+  <input type="url" name="image" placeholder="http://..." value="<%= @game['image'] %>">
+
+  <label>Larval developer:</label>
+  <select name="developer_id">
+    <option></option>
+    <% developer.all.each do |developer| %>
+      <option value="<%= developer.id %>" <%= "selected" if developer.id == @game.developer_id %> ><%= developer.name %></option>
+    <% end %>
+  </select>
+
+
+  <button>Update game</button>
+</form>
