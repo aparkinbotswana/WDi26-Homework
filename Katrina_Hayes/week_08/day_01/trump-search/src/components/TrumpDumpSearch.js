@@ -85,6 +85,7 @@ class TrumpDumpSearch extends Component {
     return (
       <div className="main">
         <h1>The Trump Dump</h1>
+        <h3>Bite-sized servings of shit Donald Trump says</h3>
         <div className="button">
         <QuoteSearch onClick={this.fetchQuote}/>
         </div>

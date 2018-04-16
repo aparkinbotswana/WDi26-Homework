@@ -19,11 +19,19 @@ body {
 h1 {
   font-size: 60px;
   text-align: center;
+  margin-bottom: 13px;
+}
+
+h3 {
+  font-size: 26px;
+  text-align: center;
+  font-weight: normal;
+  margin-top: 0;
 }
 
 
 button {
-  margin-top: 10px;
+  margin-top: 30px;
   font-size: 24px;
   color: inherit;
   background-color: #d3dad9;
@@ -37,14 +45,14 @@ button {
 }
 
 .button {
-  margin: 0 auto;
+  margin: inherit auto;
   text-align: center;
 }
 
 .results {
-  max-width: 700px;
+  max-width: 400px;
   margin: 50px auto;
-  border: 2px solid #101010;
+  border: 1px solid #101010;
   padding: 20px 20px;
   font-size: 20px;
 }
