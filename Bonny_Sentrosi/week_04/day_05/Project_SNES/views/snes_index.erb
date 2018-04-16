@@ -1,0 +1,12 @@
+<h2>Game Index</h2>
+
+<ul>
+  <!-- non-echoing ERB -->
+  <% @snes.each do |game| %>
+    <li>
+      <a href="/snes/<%= game['id'] %>">
+        <%= game["name"] %>
+      </a>
+    </li>
+  <% end %>
+</ul>
