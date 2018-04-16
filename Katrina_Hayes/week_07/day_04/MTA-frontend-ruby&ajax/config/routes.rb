@@ -4,5 +4,4 @@ Rails.application.routes.draw do
   root :to => 'pages#home'
   post '/stations' => 'mta#populate_stations'
   post '/planner' => 'mta#trip_planner'
-  post '/reverse' => 'mta#post'
 end
