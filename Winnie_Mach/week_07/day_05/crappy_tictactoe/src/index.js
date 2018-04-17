@@ -15,7 +15,7 @@ class Board extends React.Component {
     return (
       <Square
         value={this.props.squares[i]}
-        onClick={() => this.props.onClick(i)}
+        onClick={() => this.props.onClick(i)} //this is a function. So that you don't have
       />
     );
   }
@@ -60,7 +60,7 @@ class Game extends React.Component {
     const current = history[history.length - 1];
     const squares = current.squares.slice();
     if (calculateWinner(squares) || squares[i]) {
-      return;
+      return; //squares[i]
     }
     squares[i] = this.state.xIsNext ? 'X' : 'O';
     this.setState({

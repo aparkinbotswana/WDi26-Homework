@@ -33,3 +33,14 @@ $(document).ready(function() {
     generateDog();
   })
 });
+
+
+///// HTML ////
+{/* <div class="container">
+<h1>Generate Dog Images</h1>
+
+<form id="search">
+  <button>Generate!</button>
+</form>
+<div id="results"></div>
+</div> */}
