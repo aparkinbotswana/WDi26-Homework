@@ -101,25 +101,25 @@ const tripPlan = function(lineStart, startStation, lineEnd, endStation){
     // check if they are not same line
   } else if(lineStart != lineEnd) {
     //add trip from first line upto 'Union Square' station to first trip list
-      firstLineTrip = singleLineTrip(lineStart, startStation, exchangeStation);
-     //add trip from second line and start from 'Union Square' station to end trip to trip list
+    firstLineTrip = singleLineTrip(lineStart, startStation, exchangeStation);
+    //add trip from second line and start from 'Union Square' station to end trip to trip list
     secondLineTrip  = singleLineTrip(lineEnd, exchangeStation, endStation);
-     // join first trip leg with second trip leg to make whole trip plan
-     trip = firstLineTrip.concat(secondLineTrip) ;
-     // console.log(`check trip list ${trip} and number station ${trip.length}`);
-     console.log(`You must travel through the following stops on the ${lineStart} line : ${firstLineTrip}`);
-     console.log(`Change at Union Square.`);
-     console.log(`Your journey continues through the following stops: ${secondLineTrip}.`);
-     console.log(`${trip.length} stops in total.`);
+    // join first trip leg with second trip leg to make whole trip plan
+    trip = firstLineTrip.concat(secondLineTrip) ;
+    // console.log(`check trip list ${trip} and number station ${trip.length}`);
+    console.log(`You must travel through the following stops on the ${lineStart} line : ${firstLineTrip}`);
+    console.log(`Change at Union Square.`);
+    console.log(`Your journey continues through the following stops: ${secondLineTrip}.`);
+    console.log(`${trip.length} stops in total.`);
   }
-   return trip;
+  return trip;
 };
 
 //Test---
 // console.log(`Test for single line trip`);
-// tripPlan('N', 'Times Square', 'N','8th-N');
+// tripPlan('N', 'Times Square', 'N','8th');
 
 // console.log(`Test result for 2 lines trip`);
- //tripPlan('N', 'Times Square', 'L','1st');
+//tripPlan('N', 'Times Square', 'L','1st');
 // tripPlan('N', 'Times Square', '6','33rd');
 // tripPlan('6', 'Grand Central', 'N','Times Square');

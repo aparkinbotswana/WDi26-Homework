@@ -1,0 +1,21 @@
+<h2><%= @developer.name %></h2>
+
+<% unless @developer.snes.empty? %>
+  <h3>Associated snes</h3>
+  <ul>
+    <% @developer.snes.each do |game| %>
+      <li>
+        <a href="/snes/<%= game.id %>"><%= game.name %></a>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<% unless @developer.image.nil? || @developer.image.empty? %>
+  <img class="feature" src="<%= @developer.image %>" alt="<%= @developer.name %>">
+<% end %>
+
+<div class="controls">
+  <a href="/developers/<%= @developer.id %>/edit">Edit</a>
+  <a href="/developers/<%= @developer.id %>/delete">Delete</a>
+</div>

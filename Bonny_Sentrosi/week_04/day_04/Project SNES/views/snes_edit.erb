@@ -1,0 +1,16 @@
+<h2>Edit Game Title</h2>
+
+<form method="post" action="/snes/<%= @game['id'] %>">
+  <label>Name:</label>
+  <input type="text" name="name" placeholder="game name" value="<%= @game['name']%>">
+  <label>Producer:</label>
+  <input type="text" name="producer" placeholder="game producer" value="<%= @game['producer']%>">
+  <label>Year:</label>
+  <input type="text" name="year" placeholder="game year" value="<%= @game['year']%>">
+  <label>Image:</label>
+  <input type="url" name="image" placeholder="http://..." value="<%= @game['image'] %>">
+  <label>Video:</label>
+  <input type="url" name="video" placeholder="http://..." value="<%= @game['video'] %>">
+
+  <button>Update Game</button>
+</form>

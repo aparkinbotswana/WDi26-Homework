@@ -4,7 +4,7 @@ var lastPage;
 var updatePosition;
 
 const searchFlickr = function (term) {
-  
+
   // NOTE: below the throttle function from http://underscorejs.org/#throttle
   let throttled = _.throttle(updatePosition, 100);
   $(window).scroll(throttled);

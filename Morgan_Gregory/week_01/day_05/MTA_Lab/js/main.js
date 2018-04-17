@@ -94,4 +94,4 @@ const tripPlanner  = function (departL, departS, arriveL, arriveS) {
       console.log(`${ changeNumStops } stops in total.`);
   };
 };
-tripPlanner('L', '8th', 'L', '28th');
+tripPlanner('N', '28th', 'L', '28th');
