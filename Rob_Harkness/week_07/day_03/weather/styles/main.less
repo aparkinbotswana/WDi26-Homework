@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+@blue: #82d6ff;
+
+@red: #ff977c;
+
+body,
+html {
+  color: #ffffff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../img/partly-cloudy-day.jpg');
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 100%;
+  font-family: 'Lato', sans-serif;
+  text-shadow: 1px 1px 2px #222;
+  margin: 0;
+}
+h2,
+p {
+  margin: 10px;
+}
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 80px;
+  height: 100%;
+}
+#weather {
+  min-height: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.55);
+  font-size: 20px;
+  //   border: 2px solid grey;
+  border-radius: 10px;
+  //   margin-bottom: 280px;
+}
+
+#icon-now {
+  width: 160px;
+  transform: scale(2);
+  margin: 45px;
+}
+
+.min {
+  color: @blue;
+}
+
+.max {
+  color: @red;
+}
+
+#search {
+  input {
+    font-size: 18px;
+    padding: 8px;
+    height: 32px;
+    grid-column: 1 / span 3;
+    grid-row: 2;
+    width: 280px;
+  }
+  button {
+    font-size: 18px;
+    grid-column: 4;
+    grid-row: 2;
+    height: 32px;
+    background: @blue;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s all;
+
+    &:hover {
+      background: lighten(dodgerblue, 10%);
+      color: #fefefe;
+    }
+  }
+}

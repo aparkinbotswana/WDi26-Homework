@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+body,
+html {
+  color: #ffffff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../img/partly-cloudy-day.jpg');
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 100%;
+  font-family: 'Lato', sans-serif;
+  text-shadow: 1px 1px 2px #222;
+  margin: 0;
+}
+h2,
+p {
+  margin: 10px;
+}
+#container {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: center;
+          align-items: center;
+  margin: 80px;
+  height: 100%;
+}
+#weather {
+  min-height: 50%;
+  text-align: center;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: center;
+          align-items: center;
+  width: 50%;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.55);
+  font-size: 20px;
+  border-radius: 10px;
+}
+#icon-now {
+  width: 160px;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  margin: 45px;
+}
+.min {
+  color: #82d6ff;
+}
+.max {
+  color: #ff977c;
+}
+#search input {
+  font-size: 18px;
+  padding: 8px;
+  height: 32px;
+  grid-column: 1 / span 3;
+  grid-row: 2;
+  width: 280px;
+}
+#search button {
+  font-size: 18px;
+  grid-column: 4;
+  grid-row: 2;
+  height: 32px;
+  background: #82d6ff;
+  color: #333;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+#search button:hover {
+  background: #51a9ff;
+  color: #fefefe;
+}
