@@ -1,0 +1,8 @@
+<h1>Characters Index</h1>
+
+<% @characters.each do |character| %>
+  <p><%= link_to character.name, character %></p>
+  <% if character.image.present? %>
+  <%= image_tag character.image, :alt => character.name, :class => 'thumb' %>
+  <% end %>
+<% end %>

@@ -1,0 +1,18 @@
+<%= form_for @movie do |f| %>
+<%= f.label :name %>
+<%= f.text_field :name, :autofocus => true, :placeholder => 'Frozen' %> <%# autofocus, means cursor will be on name field. %>
+
+<%= f.label :year %>
+<%= f.text_field :year, :placeholder => 1978 %>
+
+<%= f.label :director %>
+<%= f.text_field :director, :placeholder => 'Bill Jones' %>
+
+<%= f.label :rating %>
+<%= f.text_field :rating, :placeholder => '4 stars' %>
+
+<%= f.label :image %>
+<%= f.url_field :image, :placeholder => 'http://...'%>
+
+<%= f.submit %>
+<% end %>

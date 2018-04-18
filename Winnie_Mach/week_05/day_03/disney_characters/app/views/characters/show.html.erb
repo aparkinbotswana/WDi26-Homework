@@ -1,0 +1,18 @@
+<h1><%= @character.name %></h1>
+
+<% if @character.image.present? %>
+<%= image_tag @character.image, :alt => @character.name, :class => 'feature' %>
+<% end %>
+<ul>
+  <li><%= pluralize(@character.age, 'year') %> old</li>
+  <% if @character.dob.present? %>
+  <li><%= @character.dob.strftime '%A, %B %e, %Y' %></li>
+  <% end %>
+  <li><%= @character.description %></li>
+  <li><%= link_to @character.movie.name, movie_path(@character.movie.id) %></li>
+</ul>
+
+<div class="controls">
+  <%= link_to 'Edit Character', edit_character_path(@character) %>
+  <%= link_to 'Delete Character', @character, :method => 'delete', :data => {:confirm => 'Are you sure?'} %> <%# This is sending a delete request (kind of like post, get request etc). Therefore in the routes, there is one delete request, which points to the destroy action in the characters controller. %>
+</div>

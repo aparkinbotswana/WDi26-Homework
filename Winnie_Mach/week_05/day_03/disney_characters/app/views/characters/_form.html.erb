@@ -1,0 +1,21 @@
+<%= form_for @character do |f| %>
+<%= f.label :name %>
+<%= f.text_field :name, :autofocus => true, :placeholder => 'Mickey Mouse' %> <%# autofocus, means cursor will be on name field. %>
+
+<%= f.label :age %>
+<%= f.text_field :age, :placeholder => 68 %>
+
+<%= f.label :dob, 'Date of Birth' %> <%# another argument, 'Date of Birth' so the label doesn't show up as dob on the rendered form. %>
+<%= f.text_field :dob, :placeholder => 'dd/mm/yyy' %>
+
+<%= f.label :description %>
+<%= f.text_field :description, :placeholder => 'She was a princess who was...' %>
+
+<%= f.label :image %>
+<%= f.url_field :image, :placeholder => 'http://...'%>
+
+<%= f.label :movie_id %> <%# must be movie_id, can't be movie %>
+<%= f.select :movie_id, Movie.pluck(:name, :id), :include_blank => true %> <%# don't fully get this %>
+
+<%= f.submit %>
+<% end %>

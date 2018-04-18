@@ -1,0 +1,13 @@
+<h2>Create your own mountain</h2>
+
+<form action="/mountains" method="post">
+  <label>Name:</label>
+  <input type="text" name="mountain[name]" placeholder="Mount Kailash" required>
+  <label>Height:</label>
+  <input type="number" name="mountain[height]" placeholder="33922">
+  <label>Country:</label>
+  <input type="text" name="mountain[country]" placeholder="Australia">
+  <label>Image:</label>
+  <input type="url" name="mountain[image]" placeholder="http://...">
+  <button>Create!</button>
+</form>

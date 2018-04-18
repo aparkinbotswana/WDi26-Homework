@@ -1,0 +1,13 @@
+<h2>Edit Mountain</h2>
+
+<form action="/mountains/<%= @mountain.id %>" method="post">
+  <label>Name:</label>
+  <input type="text" name="mountain[name]" placeholder="Mount Kailash" value="<%= @mountain.name %>"required>
+  <label>Height:</label>
+  <input type="number" name="mountain[height]" placeholder="33922" value="<%= @mountain.height %>">
+  <label>Country:</label>
+  <input type="text" name="mountain[country]" placeholder="Australia" value="<%= @mountain.country %>">
+  <label>Image:</label>
+  <input type="url" name="mountain[image]" placeholder="http://..." value="<%= @mountain.image %>">
+  <button>Edit!</button>
+</form>

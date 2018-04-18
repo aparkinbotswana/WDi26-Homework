@@ -1,0 +1,22 @@
+<h1>MTA</h1>
+
+
+<h3>Select your start line and station: </h3>
+<select id="start">
+  <option disabled selected value> -- select an option -- </option>
+  <% @lines.each do |line, stations| %>
+      <% stations.each do |station| %>
+      <option value="<%= "#{line},#{station}" %>"><%= line %> - <%= station %></option>
+      <% end %>
+<% end %>
+</select>
+
+<h3>Select your end line and station: </h3>
+<select id="finish">
+  <option disabled selected value> -- select an option -- </option>
+  <% @lines.each do |line, stations| %>
+      <% stations.each do |station| %>
+      <option value="<%= "#{line},#{station}" %>"><%= line %> - <%= station %></option>
+      <% end %>
+<% end %>
+</select>
