@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: rgba(147,204,178,0.75);
+  color: #101010;
+}
+
+h1 {
+  font-size: 70px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+/* FORM */
+
+div.form {
+  max-width: 476px;
+  margin: 0 auto;
+}
+
+form {
+  font-size: 18px;
+  margin-top: 50px;
+}
+
+label {
+  display: inline-block;
+  min-width: 225px;
+  text-align: right;
+}
+select {
+  display: inline-block;
+  /* margin-bottom: 18px; */
+  min-width: 215px;
+  font-size: 16px;
+}
+
+button {
+  margin-top: 10px;
+  font-size: 24px;
+  color: inherit;
+  background-color: white;
+  padding: 8px;
+  border: 2px solid #101010;
+  cursor: pointer;
+  font-family: sans-serif;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.button {
+  text-align: center;
+}
+
+fieldset {
+  border: none;
+}
+
+/* TRIP DETAILS */
+
+#trip-results {
+  max-width: 700px;
+  margin: 0 auto;
+  border: 2px solid #101010;
+  padding: 0 10px;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.visible {
+  visibility: visible;
+}

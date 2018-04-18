@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script src="js/presentation.js"></script>
+    <script src="js/logic.js"></script>
+    <title>NYC Metro Trip Planner</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Plan your trip on the<br>New York City metro</h1>
+
+      <div class="form">
+        <form>
+          <fieldset>
+            <label>Starting Line:</label>
+            <select id="line1" autofocus>
+              <option value="N">N Line</option>
+              <option value="L">L Line</option>
+              <option value="6">6 Line</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <label>Station you're getting on at:</label>
+            <select id="stationOn">
+            </select>
+          </fieldset>
+          <fieldset>
+            <label>End Line:</label>
+            <select id="line2">
+              <option value="N">N Line</option>
+              <option value="L">L Line</option>
+              <option value="6">6 Line</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <label>Station you're getting off at:</label>
+            <select id="stationOff">
+            </select>
+          </fieldset>
+          
+          <div class="button"><button id="submit">Get trip plan</button></div>
+        </form>
+      </div>
+
+      <div id="trip-results" class="hidden"></div>
+
+    </div>
+  </body>
+</html>

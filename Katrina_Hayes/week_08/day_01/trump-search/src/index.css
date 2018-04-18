@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: sans-serif;
+  background-color: rgba(147,204,178,0.75);
+}
+
+.App {
+  max-width: 960px;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.main {
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 13px;
+}
+
+h3 {
+  font-size: 26px;
+  text-align: center;
+  font-weight: normal;
+  margin-top: 0;
+}
+
+
+button {
+  margin-top: 30px;
+  font-size: 24px;
+  color: inherit;
+  background-color: #d3dad9;
+  padding: 8px;
+  border: 2px solid #101010;
+  cursor: pointer;
+  font-family: sans-serif;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.button {
+  margin: inherit auto;
+  text-align: center;
+}
+
+.results {
+  max-width: 400px;
+  margin: 50px auto;
+  border: 1px solid #101010;
+  padding: 20px 20px;
+  font-size: 20px;
+}
