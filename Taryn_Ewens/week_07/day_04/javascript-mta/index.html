@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MTA</title>
+  <script src="js/jquery.js"></script>
+  <script src="js/underscore.js"></script>
+  <script src="js/mta-logic.js"></script>
+  <script src="js/mta-dom.js"></script>
+  <link rel="stylesheet" href="css/master.css">
+
+</head>
+<body>
+  <h1>MTA</h1>
+  <h2>Select your trip details:</h2>
+  <div id="mta-form">
+
+  <p class="mta-form">Start Line:</p>
+    <select name="startLine" id="startLine">
+      <option value="0"></option>
+      <option value="N">N</option>
+      <option value="L">L</option>
+      <option value="six">6</option>
+    </select>
+
+    <p class="mta-form">Start Station:</p>
+      <select name="startStation" id="startStation">
+      </select>
+
+    <p class="mta-form">End Line:</p>
+        <select name="endLine" id="endLine">
+          <option value="0"></option>
+          <option value="N">N</option>
+          <option value="L">L</option>
+          <option value="six">6</option>
+        </select>
+
+    <p class="mta-form">End Station:</p>
+    <select name="endStation" id="endStation">
+    </select>
+
+    <button id="submit">Plan Trip!</button>
+  </div>
+
+  <div id="mta-results">
+
+  </div>
+
+</body>
+</html>
