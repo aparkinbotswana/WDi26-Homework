@@ -1,0 +1,19 @@
+<h2>New Mountain Range</h2>
+<form action="/mountains" method="post">
+  <label>Name:</label>
+  <input type="text" name="mountain[name]" placeholder="name of mountain range">
+
+  <label>Which continent is it on</label>
+  <input type="text" name="mountain[continent]" placeholder="continent">
+
+  <label>Name of Highest Peak</label>
+  <input type="text" name="mountain[peak_name]" placeholder="name of highest peak">
+
+  <label>Height of Highest Peak</label>
+  <input type="number" name="mountain[peak_height]" placeholder="height in m">
+
+  <label>Image</label>
+  <input type="url" name="mountain[pic_url]" placeholder="http://...">
+
+  <button>Create Mountain</button>
+</form>

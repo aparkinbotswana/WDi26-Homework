@@ -1,0 +1,5 @@
+this application needs to run on a server
+
+run the following command at the root of this project:
+
+python -m SimpleHTTPServer <port_no>
