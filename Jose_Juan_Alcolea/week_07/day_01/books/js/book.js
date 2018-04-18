@@ -10,7 +10,7 @@ const book = function () {
       return;
     }
 
-    const cover = JSON.parse( xhr.responseText );
+    const cover = JSON.parse( xhr.responseText ); //Change the string into a object
 
     const img = document.createElement('img');
     img.src = cover.items[0].volumeInfo.imageLinks.thumbnail;
