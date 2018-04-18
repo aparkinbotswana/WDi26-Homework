@@ -1,0 +1,22 @@
+.container {
+  font-weight: bold !important;
+}
+
+h1 {
+  margin-bottom: 50px !important;
+  color: hotpink !important;
+}
+
+h2 {
+  color: turquoise !important;
+}
+
+#tripForm {
+  margin-top: 50px !important;
+  margin-bottom: 50px !important;
+}
+
+#searchTrip {
+  color: white !important;
+  font-weight: bold !important;
+}
