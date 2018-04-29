@@ -1,0 +1,25 @@
+.container {
+    width: 80%;
+    font-family: arial;
+    margin: auto;
+  }
+  
+  .controls {
+    text-align: center;
+    width: 300px;
+    margin: auto;
+  }
+  
+  .canvasWrap {
+    width: 300px;
+    margin: auto;
+  }
+  
+  canvas {
+    border: 1px solid gray;
+  }
+  
+  button {
+    display: block;
+    margin: auto;
+  }

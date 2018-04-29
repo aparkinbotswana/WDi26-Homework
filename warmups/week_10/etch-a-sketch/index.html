@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>canvasTest</title>
+		<script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    </head>
+  <body>
+
+
+    <div class="container">
+      <h2 id="etchasketch">Etch-a-sketch</h2>
+      <div class="controls">
+        <hr>
+        <p class="controls">W A S D to move.</p>
+        <hr />
+      </div>
+
+      <div class="canvasWrap">
+        <canvas width="300px" height="300px"></canvas>
+        <hr>
+        <button>Clear</button>
+      </div>
+
+
+      <p>The etch-a-sketch used to be the go-to for keeping children entertained back when phones only made phonecalls, iPads weren't an alternative babysitting service, and colours had not yet been invented.</p>
+      <p>Using the 2 dials on the pad, you could control what was effectively a pixel along an X and Y axis to make pictures - as the pixel moved moved, it left a trail behind it, until the drawing area was reset.</p>
+
+      <h4 id="task">Task</h4>
+
+      <hr />
+
+      <p>I don't remember he last time I saw one of these things, entertain me with a small dose of nostalgia by recreating a basic etch-a-sketch in the browser.</p>
+
+      <p>To do this:</p>
+
+      <ul>
+        <li>Create a canvas element</li>
+        <li>On the canvas element, draw a filled rectangle in the center. <a href="https://www.w3schools.com/tags/canvas_fillrect.asp">See an example here.</a></li>
+
+        <li>Add an event listener on keypresses, if the key is "W", move the square vertically by the square's height, if it is "A", move one square to the left, "S", down and lastly "D", is to the right. After each move, draw the new position as a new rectangle.</li>
+      </ul>
+
+      <h4 id="bonus">Bonus</h4>
+
+      <hr />
+
+      <ul>
+        <li>The square should never be able to venture beyond the edges of the canvas.</li>
+        <li>Add a reset button that wipes the canvas.</li>
+      </ul>
+
+      <h4 id="tips">Tips</h4>
+      <hr />
+
+      <ul>
+        <li><p>The top left corner of a canvas is 0 for both axises, counting up to the maximum height (y axis), and maximum width (x axis) of the canvas. Giving your canvas some dimensions and a border will make it easier to see and control: <code>&lt;canvas width="300" height="300" style="border: 1px solid black"&gt;&lt;/canvas&gt;</code>.</p></li>
+        <li><p>Looking at the example provided in the link above: <code>ctx.fillRect(20,20,150,100);</code> -- A rectangle takes the following parameters: ( x, y, number of pixels from X, number of pixels from Y). That line of code draws a box 20px down and in from the top left corner of the canvas, 150px wide, and 100px high.</p></li>
+      </ul>
+    </div>
+
+
+
+  </body>
+  </html>
