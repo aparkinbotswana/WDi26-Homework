@@ -1,14 +1,15 @@
 // These variables just serve to get my canvas and context in the global namespace when they are defined.
 // Because they hold no value, I can get away with chaining the definitions together.
 let canvas, context;
-
 const draw = {
+
   pixel: {
     x: 150,
     y: 150,
     size: 10,
     hue: 0
   },
+
 
   render: function(){
 
@@ -22,7 +23,8 @@ const draw = {
 
     // Draw a filled rect at: x, y, length along x, length along y
     // x and y refer to the top left of the pixel, the height and width are drawn right and down from those points.
-    context.fillRect( draw.pixel.x ,draw.pixel.y, draw.pixel.size, draw.pixel.size );
+    context.fillRect( this.pixel.x ,this.pixel.y, this.pixel.size, this.pixel.size );
+    console.log(this.pixel);
     // After it's drawn, bump the hue up on the pixel so the next pixel is a different color on the sprectrum
     this.pixel.hue += 3;
   },
