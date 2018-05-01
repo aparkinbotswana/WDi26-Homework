@@ -4,10 +4,8 @@
 let robot;
 
 $(document).ready(function() {
-
     // The Robot.turn() function uses the index of the current direction to determine the next direction when L/R keys pressed.
   let directions = ["up", "right", "down", "left"];
-
 
   // Function to create a 9x9 board comprised of a table, rows and cells.
   const createBoard = function() {
@@ -24,10 +22,12 @@ $(document).ready(function() {
   };
 
     // Create a Robot constructor.
-  const Robot = function() {
+  const Robot = function(startingX, startingY, forwardSpeak, rightSpeak, backwardSpeak, leftSpeak) {
+
+  
       // Initial robot direction and x/y position values
-    let x = 0;
-    let y = 0;
+    let x = startingX;
+    let y = startingY;
     let dir = "up";
 
     // Create an element for our robot...
@@ -92,8 +92,18 @@ $(document).ready(function() {
       moveRobot();
     };
 
+    const voicePlay = function(text){
+      if(responsiveVoice.voiceSupport()) {
+      responsiveVoice.speak(text);
+      }  //checks to see if browser supports text to speech
+    }  //close voicePlay function - converts string to audible speech
+
+
         // When we create a new robot, return an object with keys we can use to access functions within the Robot constructor.
     return {
+      voicePlay: function(text){
+        voicePlay(text)
+      },
       advance: advance,
       left: function() {
         turn("left");
@@ -101,20 +111,37 @@ $(document).ready(function() {
       right: function() {
         turn("right");
       },
+      forwardSpeak: forwardSpeak,
+      leftSpeak: leftSpeak,
+      rightSpeak: rightSpeak,
+      backwardSpeak: backwardSpeak,
     };
   };
   createBoard();
-  robot = new Robot();
+  robot = new Robot(0, 0, 'Joel brings fire to my loins.', 'I love Joel.', 'Hi Joel, you devilish minx', 'Marry me Joel.');
+  // robottwo = new Robot(3, 3, );
+
 });
 
 $(document).keyup(function(e) {
   if (e.keyCode == 38) {
-    robot.advance(1);
+    robot.advance(1); // this is to control our first robot
+    // robottwo.advance(1); // this is to control our second robot 
+    robot.voicePlay(robot.forwardSpeak);
   } else if (e.keyCode == 37) {
-    robot.left();
+    robot.left(); // this is to control our first robot
+    // robottwo.left(); // this is to control our second robot
+
+    robot.voicePlay(robot.leftSpeak);
   } else if (e.keyCode == 40) {
-    robot.advance(-1);
+    robot.advance(-1); // this is to control our first robot
+    // robottwo.advance(-1); // this is to control our second robot
+
+    robot.voicePlay(robot.backwardSpeak);
   } else if (e.keyCode == 39) {
-    robot.right();
+    robot.right(); // this is to control our first robot
+    // robottwo.right(); // this is to control our second robot
+
+    robot.voicePlay(robot.rightSpeak);
   }
 });
