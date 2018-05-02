@@ -1,0 +1,64 @@
+table {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* The border-collapse: collapse declaration collapses borders of adjacent table elements together, so even though the table, the rows and all table cells all have a width of 1px, adjacent borders will only occupy 1px width*/
+  
+  /* The box-sizing: border-box declaration sets the width and height properties (and min/max properties) to _include_ content, padding and border (excl margins). */
+  
+  table, tr, td {
+    border: 1px black solid;
+    border-collapse: collapse;
+    box-sizing: border-box;
+  }
+  
+  tr, td {
+    height: 40px;
+    width: 40px;
+  }
+  
+  /* Create the checkerboard effect:*/
+    /* Shade the background of the even-numbered cells within odd-numbered rows */
+    /* Shade the background of the odd-numbered cells within even-numbered rows*/
+  
+  tr:nth-child(odd) td:nth-child(even) {
+    background-color: grey;
+    opacity: 0.6;
+  }
+  
+  
+  tr:nth-child(even) td:nth-child(odd) {
+    background-color: grey;
+    opacity: 0.6;
+  }
+  
+  /*The robot's position needs to be fixed since we will be repositioning it (on the board) relative to the viewport (to which the board's position is fixed) */
+  
+  .robot {
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    box-sizing: border-box;
+    position: fixed;
+  }
+  
+  /* Thee 'left', 'right', 'up', 'down' classes will be added/removed when the robot turns to indicate the direction the robot is facing */
+  
+  .left {
+      border-left: 4px black solid;
+  }
+  
+  .right {
+    border-right: 4px black solid;
+  }
+  
+  .up {
+    border-top: 4px black solid;
+  }
+  
+  .down {
+    border-bottom: 4px black solid;
+  }
