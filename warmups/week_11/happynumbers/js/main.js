@@ -1,5 +1,4 @@
 
-
 // A happy number is defined by the following process:
 
 // Starting with any positive integer,
@@ -61,10 +60,6 @@ let happyNums = {
           // If the sqNum isn't one yet -- repeat
           if( lastIndex !== 1 ){
             steps.push( this.squareSum( lastIndex ) );
-
-          // If the number is greater than 1, and exists more than once -- we're in a loop. Return to escape.
-          } else if ( lastIndex > 1 && steps.indexOf( lastIndex ) > 0 ){
-            return;
           } else {
             // We've got a 1 -- Save the original number in the object's list array.
             this.list.push( num );
@@ -90,4 +85,4 @@ let happyNums = {
 
 };
 
-happyNums.answer( 10 );
+happyNums.answer( 30 );
